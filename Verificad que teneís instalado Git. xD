@@ -1,0 +1,6 @@
+Verificad que teneís instalado Git. xD
+
+Primero meteos en una carpeta donde querais el proyecto, tipo "practicahada" y abris una terminal ahí.
+
+git clone https://github.com/aliagaHyder/practicahada.git
+
