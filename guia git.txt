@@ -4,3 +4,15 @@ Primero meteos en una carpeta donde querais el proyecto, tipo "practicahada" y a
 
 git clone https://github.com/aliagaHyder/practicahada.git
 
+
+para actualizar vuestro git con el remoto después de eso, sería:
+ git pull origin/master
+
+para subir vuestra shit al git remoto:
+ git push 
+
+para saber en que rama estas:
+ git branch
+
+para cambiaros de rama a la rama buh:
+ git checkout buh
