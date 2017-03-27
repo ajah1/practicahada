@@ -7,7 +7,8 @@ Primero meteos en una carpeta donde querais el proyecto, tipo "practicahada" y a
 Actualizais vuestro git con el remoto:
 2. git pull
 
-Despues de actualizar la rama master (esto se hace solo al principio, antes de crear vuestra rama DESPUES DE CREAR LA RAMA NO), creais la rama en la que vais a trabajar.
+Despues de actualizar la rama master (esto se hace solo al principio, antes de crear vuestra rama, DESPUES DE CREAR LA RAMA NO)
+creais la rama en la que vais a trabajar.
 3. git branch <nombre de la rama> (sin los <>).
 
 Despues os cambiais de rama a la que acabais de crear:
@@ -33,4 +34,5 @@ Despues de esto avisais al administrador para que el haga el merge de vuestra ra
 git merge 
 
 
-SI DESPUES DE HACER MERGE HAY ERRORES EN LA RAMA MASTER SE REVISARAN ENTRE EL ADMINISTRADOR Y EL PROPIETARIO DE LA RAMA QUE LOS HA PRODUCIDO.
+SI DESPUES DE HACER MERGE HAY ERRORES EN LA RAMA MASTER SE REVISARAN,
+ENTRE EL ADMINISTRADOR Y EL PROPIETARIO DE LA RAMA QUE LOS HA PRODUCIDO.
