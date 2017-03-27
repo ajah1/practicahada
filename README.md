@@ -36,7 +36,9 @@ También podría ver el ranking de los jugadores y los productos a comprar de la
 ------------------
 Listado EN Pública
 ------------------
-juego (sin acumular puntos), productos, interfaz para registrarse, interfaz logging,
+Un buscador de productos, una lista de los productos (separados por categorias) con su respectivo precio, descripción y foto.
+Además de una interfaz para poder darse de alta en la página web y otra para poder logearse. Y poder jugar al snake (sin acumular puntos).
+
 ------------------
 Parte privada
 ------------------
@@ -47,8 +49,7 @@ En el caso de ser administrador, acceder a la parte más privada de la web, acce
 ------------------
 Listado EN Privada
 ------------------
-.
-ranking, perfil, comprar, acumulacion de puntos, carrito, conversor (puntos -> productos, dinero -> puntos), historial de compras
+Un ranking con las mejores puntuaciones y acumulación de puntos en tu perfil y poder modificar tu perfil. Comprar los productos que desees y añadirlos al carrito si vas a comprar varias cosas. También un historial de registro de todas las compras que hizo. Y por último un conversor de puntos a monedas y viceversa.
 
 ------------------
 Posibles mejoras
