@@ -2,17 +2,35 @@ Verificad que teneís instalado Git. xD
 
 Primero meteos en una carpeta donde querais el proyecto, tipo "practicahada" y abris una terminal ahí.
 
-git clone https://github.com/aliagaHyder/practicahada.git
+1. git clone https://github.com/aliagaHyder/practicahada.git
+
+Actualizais vuestro git con el remoto:
+2. git pull
+
+Despues de actualizar la rama master (esto se hace solo al principio, antes de crear vuestra rama DESPUES DE CREAR LA RAMA NO), creais la rama en la que vais a trabajar.
+3. git branch <nombre de la rama> (sin los <>).
+
+Despues os cambiais de rama a la que acabais de crear:
+ 4. git checkout <nombre de vuestra rama> (sin los <>)
+Podeis comprobar en que rama estais con:
+ 4.1 git branch
 
 
-para actualizar vuestro git con el remoto después de eso, sería:
- git pull origin/master
 
-para subir vuestra shit al git remoto:
- git push 
+Cada vez que añadais algo y querais subirlo A VUESTRA RAMA:
 
-para saber en que rama estas:
- git branch
+ANTES DE HACER EL GIT PUSH ACORDAROS DE HACER LOS CORRESPONDIENTES GIT ADD . Y GIT COMMIT -M "NOMBRE DEL COMMIT"
+5. git push
 
-para cambiaros de rama a la rama buh:
- git checkout buh
+
+
+
+Cuando termineis de hacer TODO lo que tengais que hacer en vuestra rama (haceis el push y despues):
+
+6. git checkout master (para cambiaros a la rama master)
+
+Despues de esto avisais al administrador para que el haga el merge de vuestra rama a la rama master.
+git merge 
+
+
+SI DESPUES DE HACER MERGE HAY ERRORES EN LA RAMA MASTER SE REVISARAN ENTRE EL ADMINISTRADOR Y EL PROPIETARIO DE LA RAMA QUE LOS HA PRODUCIDO.
