@@ -36,8 +36,7 @@ También podría ver el ranking de los jugadores y los productos a comprar de la
 ------------------
 Listado EN Pública
 ------------------
-.
-
+juego (sin acumular puntos), productos, interfaz para registrarse, interfaz logging,
 ------------------
 Parte privada
 ------------------
@@ -49,7 +48,7 @@ En el caso de ser administrador, acceder a la parte más privada de la web, acce
 Listado EN Privada
 ------------------
 .
-
+ranking, perfil, comprar, acumulacion de puntos, carrito, conversor (puntos -> productos, dinero -> puntos), historial de compras
 
 ------------------
 Posibles mejoras
