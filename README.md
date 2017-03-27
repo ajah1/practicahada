@@ -7,10 +7,15 @@ Proyecto en grupo: Aplicación web
 Autores
 ------------------
 Alejandro Jesús Aliaga Hydro
+
 Alfonso Aracil Andrés
+
 Jose Ignacio Gosalvez Muñoz
+
 Javier Ponce Garrido
+
 Laila Pascual Clemente
+
 Mario Puche Aparicio
 
 ------------------
