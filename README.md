@@ -36,12 +36,13 @@ También podría ver el ranking de los jugadores y los productos a comprar de la
 ------------------
 Listado EN Pública
 ------------------
-Un buscador de productos, una lista de los productos (separados por categorias) con su respectivo precio, descripción y foto.
-Además de una interfaz para poder darse de alta en la página web y otra para poder logearse. Y poder jugar al snake (sin acumular puntos).
-
+1.- Productos +
+2.- Juego +
+3.- Promociones +
+4.- Productos populares *
 ------------------
 Parte privada
-------------------
+-----------------
 Este funcionamiento de la web consiste en acumular puntos al jugar al Snake habiéndose registrado, acceder a tu propio perfil, modificarlo, eliminarlo y acumular puntos del juego, y comprar cosas de nuestra tienda.
 Dentro de nuestros productos de la tienda, existe la posibilidad de comprar, con puntos conseguidos jugando o comprados con dinero, skins o aspectos de nuestra Serpiente, y nuevas habilidades del juego.
 En el caso de ser administrador, acceder a la parte más privada de la web, accediendo a la sección de los pedidos y las compras realizados por los usuarios registrados en la web.
@@ -49,7 +50,13 @@ En el caso de ser administrador, acceder a la parte más privada de la web, acce
 ------------------
 Listado EN Privada
 ------------------
-Un ranking con las mejores puntuaciones y acumulación de puntos en tu perfil y poder modificar tu perfil. Comprar los productos que desees y añadirlos al carrito si vas a comprar varias cosas. También un historial de registro de todas las compras que hizo. Y por último un conversor de puntos a monedas y viceversa.
+1.- Ranking de puntos +
+2.- Usuarios +
+3.- Comprar +
+4.- Historial de compra +
+5.- Puntuacion +
+6.- Habilidades extra +
+7.- Almacen +
 
 ------------------
 Posibles mejoras
@@ -57,5 +64,6 @@ Posibles mejoras
 Con respecto al ranking de jugadores, podríamos hacer el premio más llamativo, haciendo un nivel extra difícil del juego con el objetivo de ganar un premio sorpresa.
 Como posible mejora la opción de poder ver la aplicación web en otros idiomas.
 Enlaces a redes sociales.
+Añadir ligas, torneos, enfrentamientos...
 
 
