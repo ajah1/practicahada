@@ -36,10 +36,10 @@ También podría ver el ranking de los jugadores y los productos a comprar de la
 ------------------
 Listado EN Pública
 ------------------
-1.- Productos +
-2.- Juego +
-3.- Promociones +
-4.- Productos populares *
+* 1.- Productos
+* 2.- Juego
+* 3.- Promociones
+* 4.- Productos populares
 ------------------
 Parte privada
 -----------------
@@ -50,13 +50,13 @@ En el caso de ser administrador, acceder a la parte más privada de la web, acce
 ------------------
 Listado EN Privada
 ------------------
-1.- Ranking de puntos +
-2.- Usuarios +
-3.- Comprar +
-4.- Historial de compra +
-5.- Puntuacion +
-6.- Habilidades extra +
-7.- Almacen +
+* 1.- Ranking de puntos
+* 2.- Usuarios
+* 3.- Comprar
+* 4.- Historial de compra
+* 5.- Puntuacion
+* 6.- Habilidades extra
+* 7.- Almacen
 
 ------------------
 Posibles mejoras
