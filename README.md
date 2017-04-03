@@ -52,11 +52,11 @@ Listado EN Privada
 ------------------
 * 1.- Ranking de puntos
 * 2.- Usuarios
-* 3.- Comprar
-* 4.- Historial de compra
+* 3.- Pedidos
+* 4.- Historial de compra de un usuario
 * 5.- Puntuacion
 * 6.- Habilidades extra
-* 7.- Almacen
+* 7.- Stock
 
 ------------------
 Posibles mejoras
