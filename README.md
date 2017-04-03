@@ -6,7 +6,7 @@ Proyecto en grupo: Aplicación web
 ------------------
 Autores
 ------------------
-Alejandro Jesús Aliaga Hydro
+Alejandro Jesús Aliaga Hyder
 
 Alfonso Aracil Andrés
 
