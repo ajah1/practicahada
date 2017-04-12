@@ -17,7 +17,7 @@ namespace ClassLibrary.EN
 
         public Promocion() { }
 
-        public 
+        public
             Promocion(int id,
                          double descuento,
                          string f_inicio,
