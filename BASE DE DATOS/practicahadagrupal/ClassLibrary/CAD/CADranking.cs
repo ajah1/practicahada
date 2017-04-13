@@ -5,19 +5,24 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace ClassLibrary.CAD
-{
-	public class CADranking
-	{
+namespace ClassLibrary.CAD{
+	public class CADranking{
 		public CADranking() { }
 
-		public void create() { }
+		public void add( EN.ranking r) {
+			
+		}
 
-		public void add() { }
+		public void remove(string usuario) {
+			
+		}
 
-		public void remove() { }
+		public void read(string usuario) {
+		
+		}
 
-		public void save() { }
-
+		public void update(EN.ranking r) {
+		
+		}
 	}
 }

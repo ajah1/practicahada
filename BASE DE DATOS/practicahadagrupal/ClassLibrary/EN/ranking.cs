@@ -13,24 +13,45 @@ namespace ClassLibrary.EN{
 
 		public ranking() { }
 
-		public ranking(string user, int p, int f)
+		public ranking(string user, int pt, string f, puntuacion p)
 		{
 			this.usuario = user;
-			this.puntuacion = p;
+			this.puntuacion = pt;
 			this.fecha = f;
+			puntuacion.username = p.username;
+			puntuacion.record = p.record;
+			puntuacion.vidas = p.vidas;
+			puntuacion.puntosTotales = p.puntosTotales;
+
+
 		}
 
 		public string user { get; set; }
 		public int p { get; set; }
-		public int f { get; set; }
+		public string f { get; set; }
 
 
 
 
-		public void saveRanking(string dbname) { }
+		public void addRanking(string dbname) {
+			CAD.CADranking aux = new CAD.CADranking();
+			aux.add(this);
+		}
 
-		public void removeRanking(string dbname) { }
-
-		public void addRanking(string dbname) { }
+		public void removeRanking(string dbname)
+		{
+			CAD.CADranking aux = new CAD.CADranking();
+			aux.remove(usuario);
+		}
+		public void readRanking(string dbname)
+		{
+			CAD.CADranking aux = new CAD.CADranking();
+			aux.read(this);
+		}
+		public void updateRanking(string dbname)
+		{
+			CAD.CADranking aux = new CAD.CADranking();
+			aux.update(this);
+		}
 	}
 }

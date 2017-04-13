@@ -43,7 +43,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CAD\CADpuntuacion.cs" />
-    <Compile Include="EN\puntuacion.cs" />
+    <Compile Include="EN\Puntuacion.cs" />
     <Compile Include="CAD\CADranking.cs" />
     <Compile Include="EN\ranking.cs" />
   </ItemGroup>
