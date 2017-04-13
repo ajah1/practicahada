@@ -40,9 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CAD\UsuarioCad.cs" />
+    <Compile Include="CAD\CADusuario.cs" />
     <Compile Include="Class1.cs" />
-    <Compile Include="EN\UsuarioEn.cs" />
+    <Compile Include="EN\usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
