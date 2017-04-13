@@ -10,7 +10,7 @@ namespace ClassLibrary.CAD{
 
         public CADusuario{}
 		
-		public void Add(string usuario, string direccion, string contrasena, string ciudad, string pais, string descripcion, string email, int edad){
+		public void Add(EN.usuario user){
 
         }
 
@@ -18,7 +18,11 @@ namespace ClassLibrary.CAD{
 
         }
 
-        public void update(string usuario, string direccion, string contrasena, string ciudad, string pais, string descripcion, string email, int edad){
+        public void update(EN.usuario user){
+
+        }
+
+        public void read(string usuario){
 
         }
     }
