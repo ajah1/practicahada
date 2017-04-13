@@ -1,16 +1,16 @@
 ﻿<Properties StartupConfiguration="{2B71AE63-046D-4323-B9B2-DA1B27DB0857}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="practicahadagrupal/cadranking.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="practicahadagrupal/cadpuntuacion.cs">
     <Files>
       <File FileName="practicahadagrupal/Web.config" Line="8" Column="8" />
-      <File FileName="practicahadagrupal/cadpuntuacion.cs" Line="1" Column="1" />
-      <File FileName="practicahadagrupal/cadranking.cs" Line="1" Column="1" />
+      <File FileName="practicahadagrupal/cadpuntuacion.cs" Line="11" Column="1" />
+      <File FileName="practicahadagrupal/cadranking.cs" Line="4" Column="12" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="practicahadagrupal" expanded="True">
             <Node name="practicahadagrupal" expanded="True">
-              <Node name="cadranking.cs" selected="True" />
+              <Node name="cadpuntuacion.cs" selected="True" />
             </Node>
           </Node>
         </State>

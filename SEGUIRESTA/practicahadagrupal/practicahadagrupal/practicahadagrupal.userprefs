@@ -1,19 +1,9 @@
-﻿<Properties StartupConfiguration="{2B71AE63-046D-4323-B9B2-DA1B27DB0857}|">
+﻿<Properties>
   <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="practicahadagrupal" expanded="True">
-            <Node name="practicahadagrupal" expanded="True">
-              <Node name="References" expanded="True">
-                <Node name="System.Web.Entity" selected="True" />
-              </Node>
-              <Node name="Packages" expanded="True" />
-              <Node name="App_Data" expanded="True" />
-              <Node name="Properties" expanded="True" />
-              <Node name="scripts" expanded="True" />
-            </Node>
-          </Node>
+          <Node name="practicahadagrupal" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
