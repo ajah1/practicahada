@@ -8,23 +8,21 @@ namespace ClassLibrary.CAD
 {
     public class CADpopular
     {
-        // supongo que cerrar la conexion
+
         public CADpopular() { }
 
         public
-            void create()
+            void create( EN.Popular p )
         {
 
         }
 
-        public
-            void add()
+        public void add( EN.Popular p )
         {
 
         }
 
-        public
-            void remove()
+        public void remove( int id )
         {
 
         }

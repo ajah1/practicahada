@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary.EN
 {
-    public class Popular //:Producto
+    // falta lo que herede de la clase Producto
+    // actualizar automaticamente desde la base de datos a todas las tuplas
+
+    public class Popular : Producto
     {
-        // private int id; lo hereda de Producto
         private int numero_ventas;
-        //private productos = new List<Producto> {};
 
         public Popular() { }
 
@@ -21,25 +22,17 @@ namespace ClassLibrary.EN
         }
         
         public int Numero_ventas { get; set; }
-        //public List<Producto> Productos { get; }
 
-        public
-            void save (string dbname)
+
+        public void savePopular (string dbname)
         {
-            // esto depende de como funcione
-            // el gestor de la bd
+            CAD.CADpopular aux = new CAD.CADpopular();
+            aux.add(this);
         }
-
-        public
-            void addPopular(string dbname)
+        public void removePopular(string dbname)
         {
-            
-        }
-
-        public
-            void removePopular(string dbname)
-        {
-
+            CAD.CADpopular aux = new CAD.CADpopular();
+            aux.remove(id);
         }
     }
 }

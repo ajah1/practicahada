@@ -11,20 +11,12 @@ namespace ClassLibrary.CAD
 
         public CADpromocion() { }
 
-        public
-            void create()
+        public void add( EN.Promocion p )
         {
 
         }
 
-        public
-            void add()
-        {
-
-        }
-
-        public
-            void remove()
+        public void remove( int id )
         {
 
         }

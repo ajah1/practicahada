@@ -42,7 +42,7 @@
   <ItemGroup>
     <Compile Include="CAD\cadpopular.cs" />
     <Compile Include="CAD\cadpromocion.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="pruebas.cs" />
     <Compile Include="EN\popular.cs" />
     <Compile Include="EN\promocion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

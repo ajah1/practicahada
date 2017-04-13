@@ -13,7 +13,7 @@ namespace ClassLibrary.EN
         private double descuento;
         private string f_inicio;
         private string f_limite;
-        // private Producto producto;
+        private Producto producto;
 
         public Promocion() { }
 
@@ -21,14 +21,17 @@ namespace ClassLibrary.EN
             Promocion(int id,
                          double descuento,
                          string f_inicio,
-                         string f_limite)
-                       //Producto producto
+                         string f_limite,
+                         Producto p)
         {
             this.id_promocion = id;
             this.descuento = descuento;
             this.f_inicio = f_inicio;
             this.f_limite = f_limite;
-            //this.producto = producto;
+            producto.id = p.id;
+            producto.nombre = p.nombre;
+            producto.descripcion = p.descripcion;
+            producto.imagen = p.imagen;
         }
 
         public int Id{ get; set;}
@@ -36,23 +39,20 @@ namespace ClassLibrary.EN
         public string Fecha_Inicio { get; set; }
         public string F_limite { get; set; }
 
-        public 
-            void save(string dbname)
+        //public void save(string dbname)
+        //{
+        //}
+
+        public void addPromocion(string dbname)
         {
-            // esto depende de como funcione
-            // el gestor de la bd
+            CAD.CADpromocion aux = new CAD.CADpromocion();
+            aux.add(this);
         }
 
-        public
-            void addPromocion(string dbname)
+        public void removePromocion(string dbname)
         {
-
-        }
-
-        public
-            void removePromocion(string dbname)
-        {
-
+            CAD.CADpromocion aux = new CAD.CADpromocion();
+            aux.remove(id_promocion);
         }
     }
 }
