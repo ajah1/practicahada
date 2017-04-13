@@ -9,22 +9,24 @@ namespace ClassLibrary.CAD
     public class CADdatosbancarios
     {
 
-        public CADdatosbancarios()
-        {
-            
-        }
+        public CADdatosbancarios() { }
 
-        public void create()
+        public void add( EN.DatosBancarios dban )
         {
 
         }
 
-        public void add()
+        public void delete( string titular )
         {
 
         }
 
-        public void remove()
+        public void update( EN.DatosBancarios dban )
+        {
+
+        }
+
+        public void read( string titular )
         {
 
         }
