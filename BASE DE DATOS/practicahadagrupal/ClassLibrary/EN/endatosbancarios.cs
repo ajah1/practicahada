@@ -9,10 +9,10 @@ namespace ClassLibrary.EN
     public class DatosBancarios
     {
 
-        private string titular;
-        private ulong numTarjeta;
-        private DateTime fechaVencimiento;
-        private ushort cvc;
+        private string titular { get; set; }
+        private ulong numTarjeta { get; set; }
+        private DateTime fechaVencimiento { get; set; }
+        private ushort cvc { get; set; }
         // private Usuario usuario;
 
         public DatosBancarios()
@@ -32,31 +32,6 @@ namespace ClassLibrary.EN
             this.cvc = cvc;
             //this.usuario = usuario;
         }
-
-        public string Titular
-        {
-            get { return titular; }
-            set { titular = value; }
-        }
-   
-        public ulong NumTarjeta
-        {
-            get { return numTarjeta; }
-            set { numTarjeta = value; }
-        }
-
-        public DateTime FechaVencimiento
-        {
-            get { return fechaVencimiento; }
-            set { fechaVencimiento = value; }
-        }
-
-        public ushort CVC
-        {
-            get { return cvc; }
-            set { cvc = value; }
-        }
-
 
         public void saveDatosBancarios(string dbname)
         {
