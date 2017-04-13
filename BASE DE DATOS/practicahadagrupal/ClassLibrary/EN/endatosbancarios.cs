@@ -33,19 +33,28 @@ namespace ClassLibrary.EN
             //this.usuario = usuario;
         }
 
-        public void saveDatosBancarios(string dbname)
-        {
-
-        }
-
         public void addDatosBancarios(string dbname)
         {
-
+            CAD.CADdatosbancarios aux = new CAD.CADdatosbancarios();
+            aux.add(this);
         }
 
-        public void removeDatosBancarios(string dbname)
+        public void deleteDatosBancarios(string dbname)
         {
+            CAD.CADdatosbancarios aux = new CAD.CADdatosbancarios();
+            aux.delete(titular);
+        }
 
+        public void updateDatosBancarios(string dbname)
+        {
+            CAD.CADdatosbancarios aux = new CAD.CADdatosbancarios();
+            aux.update(this);
+        }
+
+        public void readDatosBancarios(string dbname)
+        {
+            CAD.CADdatosbancarios aux = new CAD.CADdatosbancarios();
+            aux.read(titular);
         }
     }
 }
