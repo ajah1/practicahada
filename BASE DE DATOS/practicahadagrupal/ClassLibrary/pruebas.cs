@@ -16,16 +16,14 @@ namespace ClassLibrary
     public class pruebas
     {
 
-        /**** insertar un producto ****/
+        /**** probar conexion y editar la bd ****/
         int id;
         string nombre = "ponceDoce";
         string descripcion = "muchas cosas";
         string imagen = "url";
 
         string s = "data source=.\\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\\Database1.mdf;User Instance = true";
-
         SqlConnection c = new SqlConnection(s);
-
         c.Open();
 
     }

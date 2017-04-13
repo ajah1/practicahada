@@ -24,15 +24,25 @@ namespace ClassLibrary.EN
         public int Numero_ventas { get; set; }
 
 
-        public void savePopular (string dbname)
+        public void addPopular (string dbname)
         {
             CAD.CADpopular aux = new CAD.CADpopular();
             aux.add(this);
         }
-        public void removePopular(string dbname)
+        public void deletePopular(string dbname)
         {
             CAD.CADpopular aux = new CAD.CADpopular();
-            aux.remove(id);
+            aux.delete(id);
+        }
+        public void updatePopular(string dbname)
+        {
+            CAD.CADpopular aux = new CAD.CADpopular();
+            aux.update(this);
+        }
+        public void readPopular(string dbname)
+        {
+            CAD.CADpopular aux = new CAD.CADpopular();
+            aux.read(id);
         }
     }
 }

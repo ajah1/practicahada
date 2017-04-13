@@ -48,11 +48,20 @@ namespace ClassLibrary.EN
             CAD.CADpromocion aux = new CAD.CADpromocion();
             aux.add(this);
         }
-
         public void removePromocion(string dbname)
         {
             CAD.CADpromocion aux = new CAD.CADpromocion();
             aux.remove(id_promocion);
+        }
+        public void readPromocion(string dbname)
+        {
+            CAD.CADpromocion aux = new CAD.CADpromocion();
+            aux.read(id_promocion);
+        }
+        public void updatePromocion(string dbname)
+        {
+            CAD.CADpromocion aux = new CAD.CADpromocion();
+            aux.update(this);
         }
     }
 }

@@ -11,18 +11,22 @@ namespace ClassLibrary.CAD
 
         public CADpopular() { }
 
-        public
-            void create( EN.Popular p )
-        {
-
-        }
-
         public void add( EN.Popular p )
         {
 
         }
 
-        public void remove( int id )
+        public void delete( int id )
+        {
+
+        }
+
+        public void update( EN.Popular p)
+        {
+
+        }
+
+        public void read( int id )
         {
 
         }

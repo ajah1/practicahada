@@ -20,5 +20,15 @@ namespace ClassLibrary.CAD
         {
 
         }
+
+        public void update( EN.Promocion p )
+        {
+
+        }
+
+        public void read( int id_promocion )
+        {
+
+        }
     }
 }
