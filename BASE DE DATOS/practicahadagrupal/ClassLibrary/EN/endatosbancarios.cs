@@ -26,10 +26,20 @@ namespace ClassLibrary.EN
         public DatosBancarios(string titular, ulong numTarjeta, DateTime fechaVencimiento, ushort cvc)
         //DatosBancarios datosbancarios
         {
-            this.titular = titular;
-            this.numTarjeta = numTarjeta;
-            this.fechaVencimiento = fechaVencimiento;
-            this.cvc = cvc;
+            // falla con un titular vacio
+            if(!titular.Equals(null)  &&  !titular.Equals(""))
+                this.titular = titular;
+            // falla con un numero igual a 0 o de más de 16 dígitos
+            if(numTarjeta > 0UL  && numTarjeta < 10000000000000000UL)
+                this.numTarjeta = numTarjeta;
+            // falla si la fecha de vencimiento no es mañana o posterior
+            if(DateTime.Compare(fechaVencimiento.ToUniversalTime(), DateTime.UtcNow) > 0)
+                this.fechaVencimiento = fechaVencimiento;
+            // falla con un numero de más de 3 dígitos
+            if(cvc < (ushort)1000)
+                this.cvc = cvc;
+
+
             //this.usuario = usuario;
         }
 

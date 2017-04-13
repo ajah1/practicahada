@@ -9,7 +9,7 @@ namespace ClassLibrary.CAD
     public class CADdatosbancarios
     {
 
-        public CADdatosbancarios() { }
+        public CADdatosbancarios { }
 
         public void add( EN.DatosBancarios dban )
         {
