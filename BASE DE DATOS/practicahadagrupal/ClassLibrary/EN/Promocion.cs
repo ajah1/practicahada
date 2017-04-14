@@ -13,7 +13,7 @@ namespace ClassLibrary.EN
         private double descuento;
         private string f_inicio;
         private string f_limite;
-        private Producto producto;
+        //private Producto producto = new Producto();
 
         public Promocion() { }
 
@@ -21,17 +21,19 @@ namespace ClassLibrary.EN
             Promocion(int id,
                          double descuento,
                          string f_inicio,
-                         string f_limite,
-                         Producto p)
+                         string f_limite)
+                         //Producto p)
         {
             this.id_promocion = id;
             this.descuento = descuento;
             this.f_inicio = f_inicio;
             this.f_limite = f_limite;
+            /*
             producto.id = p.id;
             producto.nombre = p.nombre;
             producto.descripcion = p.descripcion;
             producto.imagen = p.imagen;
+            */
         }
 
         public int Id{ get; set;}

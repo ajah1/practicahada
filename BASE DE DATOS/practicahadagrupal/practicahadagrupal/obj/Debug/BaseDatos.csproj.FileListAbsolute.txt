@@ -28,6 +28,6 @@ C:\Users\alex\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\pra
 C:\Users\alex\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\alex\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.ApplicationInsights.xml
 C:\Users\alex\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\alex\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\BaseDatos.csprojResolveAssemblyReference.cache
 C:\Users\alex\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\practicahadagrupal.dll
 C:\Users\alex\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\practicahadagrupal.pdb
+C:\Users\alex\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\BaseDatos.csprojResolveAssemblyReference.cache
