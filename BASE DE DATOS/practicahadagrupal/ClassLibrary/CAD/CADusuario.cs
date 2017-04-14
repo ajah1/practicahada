@@ -10,7 +10,7 @@ namespace ClassLibrary.CAD{
 
         public CADusuario{}
 		
-		public void Add(EN.usuario user){
+		public void create(EN.usuario user){
 
         }
 
