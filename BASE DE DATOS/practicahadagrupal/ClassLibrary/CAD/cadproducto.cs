@@ -31,5 +31,11 @@ namespace ClassLibrary.CAD{
 
 
         }
+
+        public void consultar() {
+
+
+        }
+
     }
 }

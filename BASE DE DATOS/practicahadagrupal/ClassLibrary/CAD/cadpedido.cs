@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ClassLibrary.EN;
 
 namespace ClassLibrary.CAD{
-    class cadpedido{
-        public cadpedido(){
+    class CADpedido{
+        public CADpedido(){
 
 
         }
@@ -16,12 +17,12 @@ namespace ClassLibrary.CAD{
 
         }
 
-        public void add(){
+        public void add(int numPedido, string fecha, int cantidad){
 
 
         }
 
-        public void remove(){
+        public void remove(int numPedido){
 
 
         }
@@ -31,5 +32,16 @@ namespace ClassLibrary.CAD{
 
         }
 
+        public void consultar() {
+
+
+        }
+        
+        public List<Producto> consultarProducto(int idProducto, List<Producto> p) {
+
+
+
+            return p;
+        }
     }
 }

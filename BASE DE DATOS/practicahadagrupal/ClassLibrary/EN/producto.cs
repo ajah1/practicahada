@@ -11,11 +11,18 @@ namespace ClassLibrary.EN{
         private string descripcion;
         private string imagen;
         
+
+        public int Id { get; set; }
+        public string Nombre { get; set; }
+        public string Descripcion { get; set; }
+        public string Imagen { get; set; }
+
         public Producto (int id, string nombre, string descripcion, string imagen){
             this.id = id;
             this.nombre = nombre;
             this.descripcion = descripcion;
             this.imagen = imagen;
+            
         } 
 
         public Producto() {}
@@ -33,6 +40,13 @@ namespace ClassLibrary.EN{
         public void addProducto(string dbname) {
 
 
+        }
+
+        public bool comprobarStock() {
+            bool existencias = true;
+            //COMPROBAR QUE HAY UNIDADES EN EL STOCK
+
+            return existencias;
         }
 
     }
