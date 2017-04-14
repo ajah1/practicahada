@@ -37,8 +37,7 @@ namespace ClassLibrary.CAD
                        p.Id_producto.ToString()  + ", "  + 
                        p.Descuento.ToString()    + ", "  +
                        p.F_Inicio.ToString()     + ", "  +
-                       p.F_limite.ToString() + ")"
-                    );
+                       p.F_limite.ToString() + ")", conn );
 
                 com.ExecuteNonQuery();
             }
@@ -61,8 +60,8 @@ namespace ClassLibrary.CAD
                 SqlCommand com = new SqlCommand
                     (
                         "DELETE FROM promociones  WHERE ID = " +
-                        id.ToString()
-                    );
+                        id.ToString(), conn);
+
                 com.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -94,12 +93,20 @@ namespace ClassLibrary.CAD
             }
         }
 
-        public void read( int id_promocion )
+        public EN.Promocion read( int id )
         {
             try
             {
                 conn.Open();
-                SqlCommand com = new SqlCommand();
+                SqlCommand com = new SqlCommand("Select * from promociones"+
+                                                "where idpromocion = id", conn);
+                SqlDataReader dr = com.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    
+                }
+
             }
             catch (Exception ex)
             {

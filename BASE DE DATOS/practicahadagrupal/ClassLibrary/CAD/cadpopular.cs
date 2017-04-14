@@ -89,12 +89,22 @@ namespace ClassLibrary.CAD
             }
         }
 
-        public void read( int id )
+        public EN.Popular read( int id )
         {
             try
             {
+                EN.Popular salida = new EN.Popular();
+
                 conn.Open();
-                SqlCommand com = new SqlCommand();
+                SqlCommand com = new SqlCommand("Select * from productoPopular" +
+                                                "where idpromocion = id", conn);
+                SqlDataReader dr = com.ExecuteReader();
+
+                while (dr.Read())
+                {
+
+                }
+
             }
             catch (Exception ex)
             {
@@ -105,6 +115,8 @@ namespace ClassLibrary.CAD
             {
                 conn.Close();
             }
+
+            
         }
     }
 }

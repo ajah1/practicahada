@@ -32,7 +32,7 @@ namespace ClassLibrary.EN
         public void deletePopular(string dbname)
         {
             CAD.CADpopular aux = new CAD.CADpopular();
-            int id = 0;
+            //int id = 0;
 
             aux.delete(id);
         }
@@ -44,7 +44,7 @@ namespace ClassLibrary.EN
         public void readPopular(string dbname)
         {
             CAD.CADpopular aux = new CAD.CADpopular();
-            int id = 0;
+            //int id = 0;
 
             aux.read(id);
         }
