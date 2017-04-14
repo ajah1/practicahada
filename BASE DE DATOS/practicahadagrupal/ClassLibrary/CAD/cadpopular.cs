@@ -26,7 +26,15 @@ namespace ClassLibrary.CAD
             try
             {
                 conn.Open();
-                SqlCommand com = new SqlCommand();
+                SqlCommand com = new SqlCommand
+                    (
+                       "INSERT INTO" +
+                       "productoPopular(id, numeroVentas) VALUES(" +
+                       p.id.ToString() + ", " +
+                       p.Numero_ventas.ToString() + ")"
+                    );
+
+                com.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
@@ -44,7 +52,13 @@ namespace ClassLibrary.CAD
             try
             {
                 conn.Open();
-                SqlCommand com = new SqlCommand();
+
+                SqlCommand com = new SqlCommand
+                    (
+                        "DELETE FROM productoPopular  WHERE ID = " +
+                        id.ToString()
+                    );
+                com.ExecuteNonQuery();
             }
             catch (Exception ex)
             {

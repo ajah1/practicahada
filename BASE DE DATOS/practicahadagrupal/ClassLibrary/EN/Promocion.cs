@@ -10,35 +10,31 @@ namespace ClassLibrary.EN
     {
 
         private int id_promocion;
+        private int id_producto;
         private double descuento;
         private string f_inicio;
         private string f_limite;
-        //private Producto producto = new Producto();
 
         public Promocion() { }
 
         public
-            Promocion(int id,
-                         double descuento,
-                         string f_inicio,
-                         string f_limite)
-                         //Producto p)
+            Promocion(  int id_promocion,
+                        int id_producto,
+                        double descuento,
+                        string f_inicio,
+                        string f_limite)
         {
-            this.id_promocion = id;
+            this.id_promocion = id_promocion;
+            this.id_producto = id_producto;
             this.descuento = descuento;
             this.f_inicio = f_inicio;
             this.f_limite = f_limite;
-            /*
-            producto.id = p.id;
-            producto.nombre = p.nombre;
-            producto.descripcion = p.descripcion;
-            producto.imagen = p.imagen;
-            */
         }
 
-        public int Id{ get; set;}
+        public int Id_producto{ get; set;}
+        public int Id_promocion { get; set; }
         public double Descuento { get; set; }
-        public string Fecha_Inicio { get; set; }
+        public string F_Inicio { get; set; }
         public string F_limite { get; set; }
 
         //public void save(string dbname)

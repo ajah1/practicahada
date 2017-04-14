@@ -28,7 +28,19 @@ namespace ClassLibrary.CAD
             try
             {
                 conn.Open();
-                SqlCommand com = new SqlCommand();
+                SqlCommand com = new SqlCommand
+                    (
+                       "INSERT INTO " +
+                       "promociones(idpromocion, idproducto, descuento, f_inim f_fin)" +
+                       "VALUES(" +
+                       p.Id_promocion.ToString() + ", "  +
+                       p.Id_producto.ToString()  + ", "  + 
+                       p.Descuento.ToString()    + ", "  +
+                       p.F_Inicio.ToString()     + ", "  +
+                       p.F_limite.ToString() + ")"
+                    );
+
+                com.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
@@ -46,7 +58,12 @@ namespace ClassLibrary.CAD
             try
             {
                 conn.Open();
-                SqlCommand com = new SqlCommand();
+                SqlCommand com = new SqlCommand
+                    (
+                        "DELETE FROM promociones  WHERE ID = " +
+                        id.ToString()
+                    );
+                com.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
