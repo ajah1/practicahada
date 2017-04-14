@@ -10,14 +10,16 @@ namespace ClassLibrary.EN{
         private string nombre;
         private string descripcion;
         private string imagen;
+        private int precio;
         
 
         public int Id { get; set; }
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
         public string Imagen { get; set; }
+        public int Precio { get; set; }
 
-        public Producto (int id, string nombre, string descripcion, string imagen){
+        public Producto (int id, int precio, string nombre = "", string descripcion = "", string imagen = ""){
             this.id = id;
             this.nombre = nombre;
             this.descripcion = descripcion;
@@ -28,7 +30,8 @@ namespace ClassLibrary.EN{
         public Producto() {}
 
         public void saveProducto(string dbname) {
-
+            CAD.CADproducto p = new CAD.CADproducto();
+            p.create(this);
 
         }
 

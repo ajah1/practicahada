@@ -12,11 +12,11 @@ namespace ClassLibrary.CAD{
 
         }
 
-        public void create(){
+        public void create(pedido ped){
 
 
         }
-
+        // pensando si quitar esta cosa tan nazi
         public void add(int numPedido, string fecha, int cantidad){
 
 
@@ -27,12 +27,7 @@ namespace ClassLibrary.CAD{
 
         }
 
-        public void save(){
-
-
-        }
-
-        public void consultar() {
+        public void save(int numPedido){
 
 
         }

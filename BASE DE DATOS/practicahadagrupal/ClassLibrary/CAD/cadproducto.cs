@@ -5,19 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ClassLibrary.CAD{
-    class cadproducto{
+    class CADproducto{
 
-        public cadproducto() {
-
-
-        }
-
-        public void create() {
+        public CADproducto() {
 
 
         }
 
-        public void add() {
+        public void create(ClassLibrary.EN.Producto p) {
 
 
         }
