@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ClassLibrary.EN{
-	class ranking{
+	public class ranking{
 		
 		private string usuario;
 		private int puntuacion;
@@ -13,17 +13,11 @@ namespace ClassLibrary.EN{
 
 		public ranking() { }
 
-		public ranking(string user, int pt, string f, puntuacion p)
+		public ranking(string user, int pt, string f)
 		{
-			this.usuario = user;
-			this.puntuacion = pt;
-			this.fecha = f;
-			puntuacion.username = p.username;
-			puntuacion.record = p.record;
-			puntuacion.vidas = p.vidas;
-			puntuacion.puntosTotales = p.puntosTotales;
-
-
+			usuario = user;
+			puntuacion = pt;
+			fecha = f;
 		}
 
 		public string user { get; set; }
@@ -46,7 +40,7 @@ namespace ClassLibrary.EN{
 		public void readRanking(string dbname)
 		{
 			CAD.CADranking aux = new CAD.CADranking();
-			aux.read(this);
+			aux.read(usuario);
 		}
 		public void updateRanking(string dbname)
 		{

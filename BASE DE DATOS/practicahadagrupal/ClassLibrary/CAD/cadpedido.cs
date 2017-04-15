@@ -16,7 +16,6 @@ namespace ClassLibrary.CAD{
 
 
         }
-        // pensando si quitar esta cosa tan nazi
         public void add(int numPedido, string fecha, int cantidad){
 
 

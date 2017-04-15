@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 
 namespace ClassLibrary.CAD{
+
 	public class CADranking{
+
 		public CADranking() { }
 
 		public void add( EN.ranking r) {

@@ -9,7 +9,7 @@ namespace ClassLibrary.EN
     // falta lo que herede de la clase Producto
     // actualizar automaticamente desde la base de datos a todas las tuplas
 
-    public class Popular //: Producto
+    public class Popular : Producto
     {
         private int numero_ventas;
 
@@ -32,9 +32,7 @@ namespace ClassLibrary.EN
         public void deletePopular(string dbname)
         {
             CAD.CADpopular aux = new CAD.CADpopular();
-            //int id = 0;
-
-            aux.delete(id);
+            aux.delete(Id);
         }
         public void updatePopular(string dbname)
         {
@@ -44,9 +42,7 @@ namespace ClassLibrary.EN
         public void readPopular(string dbname)
         {
             CAD.CADpopular aux = new CAD.CADpopular();
-            //int id = 0;
-
-            aux.read(id);
+            aux.read(Id);
         }
     }
 }
