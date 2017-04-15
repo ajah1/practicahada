@@ -1,16 +1,29 @@
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\ApplicationInsights.config
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\csc.exe
+<<<<<<< HEAD
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CSharp.Core.targets
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.VisualBasic.Core.targets
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\vbc.exe
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\VBCSCompiler.exe
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\VBCSCompiler.exe.config
+=======
+>>>>>>> master
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+<<<<<<< HEAD
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\System.Collections.Immutable.dll
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\System.Reflection.Metadata.dll
+=======
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\vbc.exe
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\VBCSCompiler.exe
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\VBCSCompiler.exe.config
+>>>>>>> master
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\practicahadagrupal.dll.config
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\practicahadagrupal.dll
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\practicahadagrupal.pdb
