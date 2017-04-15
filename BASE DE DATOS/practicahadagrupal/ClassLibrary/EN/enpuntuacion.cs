@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ClassLibrary.EN{
-	class puntuacion{
+	public class puntuacion{
 		
 		private string username;
 		private int record;
@@ -14,20 +14,12 @@ namespace ClassLibrary.EN{
 
 		public puntuacion() { }
 
-		public puntuacion(string user, int r, int v, int pt, usuario u)
+		public puntuacion(string user, int r, int v, int pt)
 		{
 			this.username = user;
 			this.record = r;
 			this.vidas = v;
 			this.puntosTotales = pt;
-			usuario.username = u.username;
-			usuario.ciudad = u.ciudad;
-			usuario.pais = u.ciudad;
-			usuario.descripcion = u.descripcion;
-			usuario.edad = u.edad;
-			usuario.email = u.email;
-			usuario.direccion = u.direccion;
-			usuario.contrasenya = u.contrasenya;
 		}
 
 		public string user { get; set; }
@@ -52,7 +44,7 @@ namespace ClassLibrary.EN{
 
 		public void updatePuntuacion(string dbname) {
 			CAD.CADpuntuacion aux = new CAD.CADpuntuacion();
-			aux.update(this)
+			aux.update(this);
 		}
 
 	}
