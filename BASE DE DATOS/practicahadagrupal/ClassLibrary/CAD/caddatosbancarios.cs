@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary.CAD
 {
-    public class CADdatosbancarios
+    public class caddatosbancarios
     {
 
-        public CADdatosbancarios {}
+        public caddatosbancarios() {}
 
         public void add( EN.DatosBancarios dban )
         {
