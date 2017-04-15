@@ -8,12 +8,7 @@ namespace ClassLibrary.CAD
 {
     public class caddatosbancarios
     {
-
-<<<<<<< HEAD
-        public caddatosbancarios (){}
-=======
         public caddatosbancarios() {}
->>>>>>> master
 
         public void add( EN.DatosBancarios dban )
         {
