@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="CAD\cadpopular.cs" />
     <Compile Include="CAD\cadpromocion.cs" />
     <Compile Include="EN\popular.cs" />
@@ -57,6 +58,16 @@
   </ItemGroup>
   <ItemGroup />
 >>>>>>> origin/48781689T
+=======
+    <Compile Include="CAD\cadpedido.cs" />
+    <Compile Include="CAD\cadproducto.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="EN\pedido.cs" />
+    <Compile Include="EN\producto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+>>>>>>> 53245095A
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
