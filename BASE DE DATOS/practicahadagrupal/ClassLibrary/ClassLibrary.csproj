@@ -48,20 +48,20 @@
     <Compile Include="CAD\cadpopular.cs" />
     <Compile Include="CAD\cadproducto.cs" />
     <Compile Include="CAD\cadpromocion.cs" />
-    <Compile Include="CAD\CADpuntuacion.cs" />
-    <Compile Include="CAD\CADranking.cs" />
-    <Compile Include="CAD\CADusuario.cs" />
-    <Compile Include="CAD\StockCAD.cs" />
+    <Compile Include="CAD\cadpuntuacion.cs" />
+    <Compile Include="CAD\cadranking.cs" />
+    <Compile Include="CAD\cadusuario.cs" />
+    <Compile Include="CAD\cadstock.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="EN\endatosbancarios.cs" />
-    <Compile Include="EN\pedido.cs" />
-    <Compile Include="EN\popular.cs" />
-    <Compile Include="EN\producto.cs" />
-    <Compile Include="EN\Promocion.cs" />
-    <Compile Include="EN\Puntuacion.cs" />
-    <Compile Include="EN\ranking.cs" />
-    <Compile Include="EN\Stock.cs" />
-    <Compile Include="EN\usuario.cs" />
+    <Compile Include="EN\enpedido.cs" />
+    <Compile Include="EN\enpopular.cs" />
+    <Compile Include="EN\enproducto.cs" />
+    <Compile Include="EN\enpromocion.cs" />
+    <Compile Include="EN\enpuntuacion.cs" />
+    <Compile Include="EN\enranking.cs" />
+    <Compile Include="EN\enstock.cs" />
+    <Compile Include="EN\enusuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
