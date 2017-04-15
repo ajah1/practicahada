@@ -37,10 +37,6 @@ namespace ClassLibrary.EN
         public string F_Inicio { get; set; }
         public string F_limite { get; set; }
 
-        //public void save(string dbname)
-        //{
-        //}
-
         public void addPromocion(string dbname)
         {
             CAD.CADpromocion aux = new CAD.CADpromocion();
