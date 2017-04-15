@@ -59,10 +59,15 @@
     <Compile Include="Class1.cs" />
     <Compile Include="EN\usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="CAD\CADpuntuacion.cs" />
     <Compile Include="EN\Puntuacion.cs" />
     <Compile Include="CAD\CADranking.cs" />
     <Compile Include="EN\ranking.cs" />
+=======
+    <Compile Include="CAD\StockCAD.cs" />
+    <Compile Include="EN\Stock.cs" />
+>>>>>>> origin/53248225M
   </ItemGroup>
   <ItemGroup />
 >>>>>>> origin/48781689T

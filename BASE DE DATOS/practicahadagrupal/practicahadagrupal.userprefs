@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<Properties StartupConfiguration="{E73E881C-8BE2-4AA1-A397-35EAFFF42F74}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="ClassLibrary/EN/enranking.cs">
     <Files>
@@ -20,12 +21,23 @@
         </State>
       </Pad>
     </Pads>
+=======
+﻿<Properties StartupConfiguration="{2B71AE63-046D-4323-B9B2-DA1B27DB0857}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ClassLibrary/CAD/StockCAD.cs">
+    <Files>
+      <File FileName="ClassLibrary/CAD/StockCAD.cs" Line="107" Column="3" />
+    </Files>
+>>>>>>> origin/53248225M
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+<<<<<<< HEAD
   <MonoDevelop.Ide.ItemProperties.PaginaWeb PreferredExecutionTarget="MonoDevelop.Default" />
+=======
+  <MonoDevelop.Ide.ItemProperties.BaseDatos PreferredExecutionTarget="MonoDevelop.Default" />
+>>>>>>> origin/53248225M
   <MultiItemStartupConfigurations />
 </Properties>
