@@ -44,10 +44,10 @@
     <Compile Include="CAD\caddatosbancarios.designer.cs">
       <DependentUpon>caddatosbancarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="CAD\cadpedido.cs" />
-    <Compile Include="CAD\cadpopular.cs" />
-    <Compile Include="CAD\cadproducto.cs" />
-    <Compile Include="CAD\cadpromocion.cs" />
+    <Compile Include="CAD\CADpedido.cs" />
+    <Compile Include="CAD\CADpopular.cs" />
+    <Compile Include="CAD\CADproducto.cs" />
+    <Compile Include="CAD\CADpromocion.cs" />
     <Compile Include="CAD\cadpuntuacion.cs" />
     <Compile Include="CAD\cadranking.cs" />
     <Compile Include="CAD\cadusuario.cs" />

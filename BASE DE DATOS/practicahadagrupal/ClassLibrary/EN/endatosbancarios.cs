@@ -45,25 +45,25 @@ namespace ClassLibrary.EN
 
         public void addDatosBancarios(string dbname)
         {
-            CAD.CADdatosbancarios aux = new CAD.CADdatosbancarios();
+            CAD.caddatosbancarios aux = new CAD.caddatosbancarios();
             aux.add(this);
         }
 
         public void deleteDatosBancarios(string dbname)
         {
-            CAD.CADdatosbancarios aux = new CAD.CADdatosbancarios();
+            CAD.caddatosbancarios aux = new CAD.caddatosbancarios();
             aux.delete(titular);
         }
 
         public void updateDatosBancarios(string dbname)
         {
-            CAD.CADdatosbancarios aux = new CAD.CADdatosbancarios();
+            CAD.caddatosbancarios aux = new CAD.caddatosbancarios();
             aux.update(this);
         }
 
         public void readDatosBancarios(string dbname)
         {
-            CAD.CADdatosbancarios aux = new CAD.CADdatosbancarios();
+            CAD.caddatosbancarios aux = new CAD.caddatosbancarios();
             aux.read(titular);
         }
     }
