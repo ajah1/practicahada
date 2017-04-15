@@ -30,6 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Configuration.Install" />
@@ -40,8 +42,11 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
     <Compile Include="CAD\cadpopular.cs" />
     <Compile Include="CAD\cadpromocion.cs" />
@@ -54,9 +59,39 @@
     <Compile Include="Class1.cs" />
     <Compile Include="EN\usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
+    <Compile Include="CAD\CADpuntuacion.cs" />
+    <Compile Include="EN\Puntuacion.cs" />
+    <Compile Include="CAD\CADranking.cs" />
+    <Compile Include="EN\ranking.cs" />
+=======
+    <Compile Include="CAD\StockCAD.cs" />
+    <Compile Include="EN\Stock.cs" />
+>>>>>>> origin/53248225M
   </ItemGroup>
   <ItemGroup />
 >>>>>>> origin/48781689T
+=======
+    <Compile Include="CAD\cadpedido.cs" />
+    <Compile Include="CAD\cadproducto.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="EN\pedido.cs" />
+    <Compile Include="EN\producto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+>>>>>>> 53245095A
+=======
+    <Compile Include="CAD\caddatosbancarios.cs" />
+    <Compile Include="CAD\caddatosbancarios.Designer.cs">
+      <DependentUpon>caddatosbancarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="EN\endatosbancarios.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+>>>>>>> origin/48563029R
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
