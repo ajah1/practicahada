@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary.EN{
 
-    class usuario{
+    public class usuario{
 
         // parte privada
 

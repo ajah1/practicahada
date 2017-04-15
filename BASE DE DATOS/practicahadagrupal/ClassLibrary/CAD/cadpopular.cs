@@ -30,7 +30,7 @@ namespace ClassLibrary.CAD
                     (
                        "INSERT INTO" +
                        "productoPopular(id, numeroVentas) VALUES(" +
-                       p.id.ToString() + ", " +
+                       p.Id.ToString() + ", " +
                        p.Numero_ventas.ToString() + ")"
                     );
 
@@ -88,8 +88,8 @@ namespace ClassLibrary.CAD
                 conn.Close();
             }
         }
-
-        public EN.Popular read( int id )
+        //EN.Popular
+        public void read( int id )
         {
             try
             {
