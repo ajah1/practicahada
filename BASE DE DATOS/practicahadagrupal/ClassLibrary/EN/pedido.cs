@@ -13,7 +13,7 @@ namespace ClassLibrary.EN{
         private List<Producto> productos;
         //private Usuario usuario;
 
-        public int numPedido { get; set; }
+        public int NumPedido { get; set; }
         public string Fecha { get; set; }
         public int Cantidad { get; set; }
         
