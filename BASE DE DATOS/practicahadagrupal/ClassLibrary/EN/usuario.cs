@@ -45,43 +45,43 @@ namespace ClassLibrary.EN{
         //********************************************
         // get set
 
-        private string Usuario {
+        public string Usuario {
             get { return user; }
             set { user = value; }
         }
 
-        private string Direccion {
+        public string Direccion {
             get { return direccion; }
             set { direccion = value; }
         }
 
-        private string Contrasena {
+        public string Contrasena {
             get { return contrasena; }
             set { contrasena = value; }
         }
 
-        private string Ciudad {
+        public string Ciudad {
             get { return ciudad; }
             set { ciudad = value; }
         }
 
-        private string Pais {
+        public string Pais {
             get { return pais; }
             set { pais = value; }
         }
 
-        private string Descripcion
+        public string Descripcion
         {
             get { return descripcion; }
             set { descripcion = value; }
         }
 
-        private string Email {
+        public string Email {
             get { return email; }
             set { email = value; }
         }
 
-        private int Edad {
+        public int Edad {
             get { return edad; }
             set { edad = value; }
         }
