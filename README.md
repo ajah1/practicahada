@@ -71,9 +71,4 @@ Entrega 1
 -----------------
 El esquema de la Base de Datos se encuentra en la carpeta raíz, el nombre del archivo es HADA.jpg
 Dentro de la carpeta BASE DE DATOS/practicagrupalhada se encuentra la solucion con los proyectos Libreria y Web Application
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 53245095A
 
