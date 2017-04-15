@@ -93,7 +93,7 @@ namespace ClassLibrary.CAD
             }
         }
 
-        public EN.Promocion read( int id )
+        public void read( int id )
         {
             try
             {
