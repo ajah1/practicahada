@@ -3,3 +3,6 @@ C:\Users\alex\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\Cla
 C:\Users\alex\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
 C:\Users\alex\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\obj\Debug\ClassLibrary.dll
 C:\Users\alex\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\obj\Debug\ClassLibrary.pdb
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\obj\Debug\ClassLibrary.dll
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\obj\Debug\ClassLibrary.pdb
