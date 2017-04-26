@@ -16,7 +16,7 @@ namespace ClassLibrary.CAD
 		private const string ConnectionString = "data source=.\\SQLEXPRESS;Integrated"
 	 	+ "Security = SSPI; AttachDBFilename =| DataDirectory |\\Database1.mdf;"
 		+ "User Instance = true";
-		SqlConnection conn = new SqlConnection(s);
+		SqlConnection conn = new SqlConnection();
 		private EN.Stock productstock;
 
 		// <summary>
@@ -41,8 +41,8 @@ namespace ClassLibrary.CAD
 					(
 					   "INSERT INTO" +
 					   "productoStock(id, cantidad) VALUES(" +
-					   s.Id.ToString() + ", " +
-					   s.cantidad.ToString() + ")"
+					   s.Id.ToString() + ", "// +
+					   //s.cantidad.ToString() + ")"
 					);
 
 				com.ExecuteNonQuery();
