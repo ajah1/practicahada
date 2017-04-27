@@ -7,6 +7,28 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseDatos", "practicahadagr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{EDDA3838-1107-4CEE-BFF3-FAF78D9AD4EE}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebSite5", "..\..\..\..\Visual Studio 2015\WebSites\WebSite5\", "{63A431ED-78C2-47DE-B0F4-B6C1D3E0D451}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_59047"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\Visual Studio 2015\WebSites\WebSite5\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59047\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_59047"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\Visual Studio 2015\WebSites\WebSite5\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59047\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "59047"
+		SlnRelativePath = "..\..\..\..\Visual Studio 2015\WebSites\WebSite5\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +43,10 @@ Global
 		{EDDA3838-1107-4CEE-BFF3-FAF78D9AD4EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDDA3838-1107-4CEE-BFF3-FAF78D9AD4EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDDA3838-1107-4CEE-BFF3-FAF78D9AD4EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63A431ED-78C2-47DE-B0F4-B6C1D3E0D451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63A431ED-78C2-47DE-B0F4-B6C1D3E0D451}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63A431ED-78C2-47DE-B0F4-B6C1D3E0D451}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{63A431ED-78C2-47DE-B0F4-B6C1D3E0D451}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
