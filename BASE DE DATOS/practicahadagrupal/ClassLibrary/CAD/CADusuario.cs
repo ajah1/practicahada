@@ -8,11 +8,7 @@ namespace ClassLibrary.CAD{
 
     class CADusuario{
 
-<<<<<<< HEAD
-        public CADusuario (){}
-=======
         public CADusuario(){}
->>>>>>> master
 		
 		public void create(EN.usuario user){
 

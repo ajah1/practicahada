@@ -8,6 +8,7 @@ namespace ClassLibrary.CAD
 {
     public class caddatosbancarios
     {
+
         public caddatosbancarios() {}
 
         public void add( EN.DatosBancarios dban )
