@@ -1,12 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace EN
+namespace ClassLibrary.EN
 {
+	// falta lo que herede de la clase Producto
+	// actualizar automaticamente desde la base de datos a todas las tuplas
+
 	// <summary>
 	// Esta clase representa la comprobación de stock
 	// </summary>
-	public class StockEN : ENBase
+	public class Stock : Producto
 	{
 		#region Miembros
 		/// <summary>
@@ -20,18 +26,19 @@ namespace EN
 		/// <summary>
 		/// Producto de la comprobación
 		/// </summary>
-		private Product producto;
+		public Producto producto;
 		#endregion
 
 		#region Constructor
-		/// <summary>
-		/// Constructor con el id del producto y el stock
-		/// </summary>
-		/// <param name="producto.id">Id del producto/param>
-		/// <param name="stock">Stock</param>
-		public StockEN(Product producto, int stock)
+
+		public Stock()
 		{
-			this.id = producto.id;
+			
+		}
+
+		public Stock(int id, int stock)
+		{
+			this.id = id;
 			this.cantidad = stock;
 
 		}
@@ -57,71 +64,25 @@ namespace EN
 			return cantidad;
 		}
 
-		// <summary>
-		// Obtiene todas las reservas de la base de datos
-		// </summary>
-		// <returns>Devuelve todas los productos en stock que se encuentran en la DB</returns>
-		static public StockEN[] getStock()
+		public void addStock(string dbname)
 		{
-			return StockCAD.obtenerTodoStock();
+			CAD.StockCAD aux = new CAD.StockCAD();
+			aux.add(this);
 		}
-
-
-		// <summary>
-		// Obtiene un producto y su stock a través del identificador
-		// <summary>
-		// <param name="id">El identificador del producto</param>
-		// <returns>Devuelve el producto y el stock</returns>
-		static public StockEN getProducto(int id)
+		public void deleteStock(string dbname)
 		{
-			return StockCAD.obtenerProducto(id);
+			CAD.StockCAD aux = new CAD.StockCAD();
+			aux.delete(Id);
 		}
-
-		/// <summary>
-		/// Añade stock al producto actual
-		/// </summary>
-		/// <param name="cantidad">cantidad a añador</param>
-		/// <returns>Devuelve true si se añadio el stock y en caso contrario false</returns>
-		public bool addStock(int stockp)
+		public void updateStock(string dbname)
 		{
-			cantidad = cantidad + stockp;
-			if (cantidad >= 0)
-				return true;
-			if (cantidad < 0)
-				return false;
+			CAD.StockCAD aux = new CAD.StockCAD();
+			aux.update(this);
 		}
-		/// <summary>
-		/// Quita stock al pedido actual
-		/// </summary>
-		/// <param name="id">Stock a quitar</param>
-		/// <returns>Devuelve true si se redujo correctamente y false en el caso contrario</returns>
-		public bool quitStock(int stockp)
+		public void readStock(string dbname)
 		{
-			cantidad = cantidad - stockp;
-			if (cantidad >= 0)
-				return true;
-			if (cantidad < 0)
-				return false;
-		}
-
-		/// <summary>
-		/// Confirma los cambios de la reserva en la DB. Inserta o modifica.
-		/// </summary>
-		/// <returns>Devuelve true si se llevó a cabo la insercion/actualización o false en caso contrario</returns>
-		public bool commitDB()
-		{
-			StockCAD cad = new StockCAD(this);
-			return cad.InsertarActualizar();
-		}
-
-		/// <summary>
-		/// Borra la reserva actual de la DB
-		/// </summary>
-		/// <returns>Devuelve true si se borró con éxito o false en caso contrario</returns>
-		public bool borrarDB()
-		{
-			StockCAD cad = new StockCAD(this);
-			return cad.Borrar();
+			CAD.StockCAD aux = new CAD.StockCAD();
+			aux.read(Id);
 		}
 		#endregion
 	}

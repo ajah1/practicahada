@@ -1,107 +1,132 @@
 ﻿using System;
-using Mono.Data.Sqlite;
 using System.Collections.Generic;
-namespace CAD
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using System.Data;
+using System.Data.Common;
+using System.Data.SqlClient;
+using System.Data.SqlTypes;
+
+namespace ClassLibrary.CAD
 {
-	using System;
-	using System.Collections.Generic;
-
-	namespace EN
+	public class StockCAD
 	{
-		public class StockCAD
+		private const string ConnectionString = "data source=.\\SQLEXPRESS;Integrated"
+	 	+ "Security = SSPI; AttachDBFilename =| DataDirectory |\\Database1.mdf;"
+		+ "User Instance = true";
+		SqlConnection conn = new SqlConnection();
+		private EN.Stock productstock;
+
+		// <summary>
+		// Representa la relación entre la EN y la CAD
+		// </summary>
+		public StockCAD()
 		{
-			private const string ConnectionString = "Data Source=EN.sqlite;Version=3;New=False;Compress=True;";
-			// <summary>
-			// Representa la relación entre la EN y la CAD
-			// </summary>
-			private StockEN productstock;
 
-			public StockCAD(StockEN productstock)
+		}
+
+		public StockCAD(EN.Stock productstock)
+		{
+			this.productstock = productstock;
+		}
+
+		public void add(EN.Stock s)
+		{
+			try
 			{
-				this.productstock = productstock;
+				conn.Open();
+				SqlCommand com = new SqlCommand
+					(
+					   "INSERT INTO" +
+					   "productoStock(id, cantidad) VALUES(" +
+					   s.Id.ToString() + ", "// +
+					   //s.cantidad.ToString() + ")"
+					);
+
+				com.ExecuteNonQuery();
 			}
-
-			// <summary>
-			// Obtiene todas las reservas de la DB
-			// </summary>
-			// <returns>Vector con las reservas de la DB</returns>
-			public static StockEN[] obtenerTodasReservas()
+			catch (Exception ex)
 			{
-				List<StockEN> productos = new List<StockEN>();
-				using (SQLiteConnection conexion = new SQLiteConnection())
-				{
-					conexion.ConnectionString = ConnectionString;
-					conexion.Open();
-
-					string consulta = "SELECT * FROM productstock";
-					SQLiteCommand cmd = new SQLiteCommand(consulta, conexion);
-
-					SQLiteDataReader datos = cmd.ExecuteReader();
-					while (datos.Read())
-					{
-						StockEN productstock = new StockEN();
-
-						if (!string.IsNullOrEmpty(Convert.ToInt32(datos[0])))
-							productstock.id = Convert.ToInt32(datos[0]);
-						if (!string.IsNullOrEmpty(Convert.ToInt32(datos[1])))
-							productstock.cantidad = Convert.ToInt32(datos[1]);
-
-						productos.Add(productstock);
-					}
-
-				}
-				return productos.ToArray();
+				Console.WriteLine("Adding Stock failed.");
+				Console.WriteLine(". \nError: {0}", ex.ToString());
 			}
-
-
-			// <summary>
-			// Obtiene una reserva por su identificador
-			// </summary>
-			// <param name="id">Es el identificador de una reserva</param>
-			// <returns>Devuelve la reserva cuyo id se paso como parámetro</returns>
-			public static StockEN getProducto(int id)
+			finally
 			{
-				StockEN productstock = new StockEN();
-
-				using (SQLiteConnection conexion = new SQLiteConnection())
-				{
-					conexion.ConnectionString = ConnectionString;
-					conexion.Open();
-
-					string consulta = "SELECT * FROM productstock WHERE id = " + id;
-					SQLiteCommand cmd = new SQLiteCommand(consulta, conexion);
-
-					SQLiteDataReader datos = cmd.ExecuteReader();
-					while (datos.Read())
-					{
-						if (!string.IsNullOrEmpty(Convert.ToInt32(datos[0])))
-							productstock.id = Convert.ToInt32(datos[0]);
-						if (!string.IsNullOrEmpty(Convert.ToInt32(datos[1])))
-							productstock.usuario = Convert.ToInt32(datos[1]);
-					}
-
-				}
-				return productstock;
-				throw new NotImplementedException();
-			}
-
-
-			// <summary>
-			// Inserta la reserva en la DB si no existe o lo actualiza si ya existia
-			// </summary>
-			// <returns>True si se hicieron cambios y false en caso contrario</returns>
-			public bool InsertarActualizar()
-			{
-				return false;
-			}
-
-			// <summary>
-			// Borra la reserva actual de la DB
-			// </summary>
-			// <returns>True si se borró y false en caso contrario</returns>
-			public bool Borrar()
-			{
-				return false;
+				conn.Close();
 			}
 		}
+
+		public void delete(int id)
+		{
+			try
+			{
+				conn.Open();
+
+				SqlCommand com = new SqlCommand
+					(
+						"DELETE FROM productoStock  WHERE ID = " +
+						id.ToString()
+					);
+				com.ExecuteNonQuery();
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine("Delete Stock Product failed.");
+				Console.WriteLine(". \nError: {0}", ex.ToString());
+			}
+			finally
+			{
+				conn.Close();
+			}
+		}
+
+		public void update(EN.Stock s)
+		{
+			try
+			{
+				conn.Open();
+				SqlCommand com = new SqlCommand();
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine("Update Stock Product failed.");
+				Console.WriteLine(". \nError: {0}", ex.ToString());
+			}
+			finally
+			{
+				conn.Close();
+			}
+		}
+		public void read(int id)
+		{
+			try
+			{
+				EN.Stock salida = new EN.Stock();
+
+				conn.Open();
+				SqlCommand com = new SqlCommand("Select * from productoStock" +
+												"where idstock = id", conn);
+				SqlDataReader dr = com.ExecuteReader();
+
+				while (dr.Read())
+				{
+
+				}
+
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine("Read Stock Product failed.");
+				Console.WriteLine(". \nError: {0}", ex.ToString());
+			}
+			finally
+			{
+				conn.Close();
+			}
+
+
+		}
 	}
+}
