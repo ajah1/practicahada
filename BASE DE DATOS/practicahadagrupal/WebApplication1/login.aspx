@@ -7,8 +7,20 @@
         <meta charset="utf-8" />
 
        <style type="text/css">
-        canvas { border:5px dotted #ccc; }
-        h1 { font-size:50px; text-align: center; padding-bottom: 25px;}
+            canvas { border:5px dotted #ccc; }
+            h1 { font-size:50px; text-align: center; padding-bottom: 25px;}
+
+
+           .auto-style1 {
+               width: 161px;
+           }
+
+
+        .auto-style2 {
+        width: 275px;
+    }
+
+
         </style>
 
         <h1> LOGIN </h1>
@@ -16,38 +28,51 @@
     <table style="width: 100%; height: 237px;">
         <tr>
             <td style="width: 121px">&nbsp;</td>
-            <td style="width: 144px">
-                User</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td style="width: 121px">&nbsp;</td>
-            <td style="width: 144px">
-                <asp:TextBox ID="TextBox1" runat="server" Height="32px" Width="172px"></asp:TextBox>
+            <td class="auto-style2"></td>
+            <td class="auto-style1">
+                <asp:Label ID="Label1" runat="server" Text="Usuario" style="font-size: medium">
+                </asp:Label>
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td style="width: 121px">&nbsp;</td>
-            <td style="width: 144px">Password</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td style="width: 121px">&nbsp;</td>
-            <td style="width: 144px">
-                <asp:TextBox ID="TextBox2" runat="server" Height="33px" Width="177px"></asp:TextBox>
+            <td class="auto-style2">&nbsp;</td>
+            <td class="auto-style1">
+                <asp:TextBox ID="TextBox3" runat="server" Height="30px" Width="200px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
+            <td>&nbsp;</td>
         </tr>
         <tr>
             <td style="width: 121px">&nbsp;</td>
-            <td style="width: 144px">
+            <td class="auto-style2">&nbsp;</td>
+            <td class="auto-style1">
+                <asp:Label ID="Label2" runat="server" Text="Password" style="font-size: medium"></asp:Label>
+            </td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 121px">&nbsp;</td>
+            <td class="auto-style2">&nbsp;</td>
+            <td class="auto-style1">
+                <asp:TextBox ID="TextBox2" runat="server" Height="33px" Width="197px"></asp:TextBox>
+            </td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 121px">&nbsp;</td>
+            <td class="auto-style2">&nbsp;</td>
+            <td class="auto-style1">
                 <asp:Button ID="Button1" runat="server" OnClick="Button1_Click1" Text="Login" Width="120px" style="margin-left: 34px" />
             </td>
+            <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
