@@ -16,22 +16,22 @@
 
     <ul class='main-nav'>
         <li>
-            <a href="#home">Home</a>
+            <a href="home.aspx">Home</a>
         </li>
         <li>
-            <a href="#section1">¡ PLAY IT !</a>
+            <a href="game.aspx">¡ PLAY IT !</a>
         </li>
         <li>
-            <a href="#section2">PRODUCTS ;)</a>
+            <a href="login.aspx">LOGIN</a>
         </li>
         <li>
-            <a href="#section3">section 3</a>
+            <a href="#section3">SING IN</a>
         </li>
         <li>
-            <a href="#section4">section 4</a>
+            <a href="productos.aspx">PRODUCTS ;)</a>
         </li>
         <li>
-            <a href="#section5">section 5</a>
+            <a href="ranking.aspx">RANKING </a>
         </li>
 
     </ul>
@@ -45,6 +45,7 @@
 
     <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
     </asp:contentplaceholder>
+
 
 </form>
 
