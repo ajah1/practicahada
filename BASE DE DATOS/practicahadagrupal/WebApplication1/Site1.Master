@@ -1,126 +1,145 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.Master.cs" Inherits="WebApplication1.Site1" %>
 
 <form id="form1" runat="server">
-    <div class="header">
-  <ul class="header-list">
-    
-    
-    <ul class="left">
-    <li>
-    <p>Title</p>
-    </li>
-      
-    </ul>
-  </ul>
-</div>
 
-<ul class='main-nav'>
-  <li>
-    <a href="#home">Home</a>
-  </li>
-  <li>
-    <a href="#section1">Section 1</a>
-  </li>
-  <li>
-     <a href="#section2">Section 2</a>
-  </li>
-  <li>
-    <a href="#section3">Section 3</a>
-  </li>
-  <li>
-    <a href="#section4">Section 4</a>
-  </li>
-</ul>
+
+    <div class="header">
+        <ul class="header-list">
+            <ul class="left">
+                <li>
+                    <p>Title :D</p>
+                </li>
+
+            </ul>
+        </ul>
+    </div>
+
+    <ul class='main-nav'>
+        <li>
+            <a href="#home">Home</a>
+        </li>
+        <li>
+            <a href="#section1">¡ PLAY IT !</a>
+        </li>
+        <li>
+            <a href="#section2">PRODUCTS ;)</a>
+        </li>
+        <li>
+            <a href="#section3">section 3</a>
+        </li>
+        <li>
+            <a href="#section4">section 4</a>
+        </li>
+        <li>
+            <a href="#section5">section 5</a>
+        </li>
+
+    </ul>
+
+<%--    <p>
+        &nbsp;
+    </p>
     <p>
-        &nbsp;</p>
-    <p>
-        &nbsp;</p>
-    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-    </asp:ContentPlaceHolder>
+        &nbsp;
+    </p>--%>
+
+    <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+    </asp:contentplaceholder>
+
 </form>
 
 
 <style type="text/css">
+
+
+
+
+    /* backgraund*/
+    body {
+        background-color: white;
+    }
+
+    h1 {
+        background-color: lightgrey;
+    }
+
+
     .header {
-  width: 100%;
-  height: 75px;
-  display: inline-block;
-}
+        width: 100%;
+        height: 75px;
+        display: inline-block;
+    }
 
-ul {
-  text-decoration: none;
-  list-style: none;
-}
+    ul {
+        text-decoration: none;
+        list-style: none;
+    }
 
-.header-list {
-  width: 100%;
-  display: inline-block;
-}
+    .header-list {
+        width: 100%;
+        display: inline-block;
+    }
 
-.left{
-  float: left;
-}
+    .left {
+        margin: 40px;
+        float: left;
+    }
 
-.right{
-  position: absolute;
-  right: 20px;
-  float: right;
-  margin: 20px;
-}
+    .right {
+        position: absolute;
+        right: 20px;
+        float: right;
+        margin: 20px;
+    }
 
-.right li {
-}
-.sign-in {
-  float: right;
-}
-li a{
-  text-decoration: none;
-}
+    li a {
+        text-decoration: none;
+    }
 
-li form{
-  position
-}
+    /* esconder el scroll */
+    div{
+        overflow: hidden;
+    }
 
-ul li {
-  float: left;
-}
+    ul li {
+        float: left;
+    }
 
-.login {
-}
+    .main-nav {
+        background-color: lightgrey;
+        font-style: normal;
+        width: 100%;
+        padding: 0;
+        left: 0;
+        margin: 0px;
+        height: 75px;
+    }
 
-html {
-}
+    a {
+        color: black;
+    }
+   
+    .main-nav-scrolled {
+        position: fixed;
+        top: 0;
+    }
 
-.main-nav {
-  width: 100%;
-  padding: 0;
-  left: 0;
-  margin: 0px;
-  height: 75px;
-  
-}
+    .main-nav li {
+        float: left;
+        text-align: center;
+        width: 15%;
+        list-style: none;
+    }
 
-a {
-  color: black;
-}
+    .main-nav a {
+        padding: 30px;
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
 
-.main-nav-scrolled		{ position: fixed; top:0;}
+     .main-nav a:hover {
+            border-bottom: 5px solid black;
+     }
 
-.main-nav li {
-  float: left; 
-  text-align:center; 
-  width: 20%;
-  list-style: none;
-}
-
-.main-nav a	 {
-  padding: 30px;
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.main-nav a:hover {
-  border-bottom: 5px solid black;
-}
-    </style>
+</style>
