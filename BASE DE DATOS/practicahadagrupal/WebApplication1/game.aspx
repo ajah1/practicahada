@@ -9,7 +9,10 @@
         <title>Play Snake Game</title>
 
         <style type="text/css">
-        body {text-align:center;}
+        
+        body {
+            text-align:center;
+        }
         canvas { border:5px dotted #ccc; }
         h1 { font-size:50px; text-align: center; margin: 0; padding-bottom: 25px;}
         </style>
