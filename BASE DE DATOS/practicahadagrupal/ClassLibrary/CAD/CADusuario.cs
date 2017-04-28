@@ -8,7 +8,7 @@ namespace ClassLibrary.CAD{
 
     class CADusuario{
 
-        public CADusuario{}
+        public CADusuario(){}
 		
 		public void create(EN.usuario user){
 
