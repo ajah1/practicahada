@@ -3,15 +3,10 @@
 <form id="form1" runat="server">
 
 
-    <div class="header">
-        <ul class="header-list">
-            <ul class="left">
-                <li>
-                    <p>Title :D</p>
-                </li>
-
-            </ul>
-        </ul>
+    <div class="auto-style1">
+        <h1>
+            <asp:Label ID="Label1" runat="server" CssClass="auto-style2" ForeColor="#000066" Text="The Snake Shop"></asp:Label>
+        </h1>
     </div>
 
     <ul class='main-nav'>
@@ -56,15 +51,20 @@
 
     /* backgraund*/
     body {
+<<<<<<< HEAD
         /*background-color: white;*/
         /*background-image: url(https://img.webme.com/pic/w/webcp/ejbg15.png);*/
        /* background-image: url(http://www.hdfondos.eu/pictures/2013/1104/2/orig_372509.jpg);*/
        background-image: url(asd/8027.jpg);
     
        }
+=======
+        background-color: deepskyblue;
+    }
+>>>>>>> master
 
     h1 {
-        background-color: lightgrey;
+        background-color: greenyellow;
     }
 
 
@@ -143,7 +143,17 @@
     }
 
      .main-nav a:hover {
-            border-bottom: 5px solid black;
+            border-bottom: 10px solid black;
      }
+
+    .auto-style1 {
+        width: 100%;
+        height: 75px;
+        display: inline-block;
+        text-align: center;
+    }
+    .auto-style2 {
+        font-size: xx-large;
+    }
 
 </style>
