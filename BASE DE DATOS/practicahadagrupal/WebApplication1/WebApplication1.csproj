@@ -100,17 +100,10 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-<<<<<<< HEAD
-<<<<<<< HEAD:BASE DE DATOS/practicahadagrupal/WebApplication/PaginaWeb.csproj
-    <Content Include="pagina1.aspx" />
-=======
-=======
     <Content Include="productos.aspx" />
     <Content Include="ranking.aspx" />
     <Content Include="registro.aspx" />
->>>>>>> master
     <Content Include="Site1.Master" />
->>>>>>> master:BASE DE DATOS/practicahadagrupal/WebApplication1/WebApplication1.csproj
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -147,16 +140,6 @@
       <DependentUpon>productos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
-<<<<<<< HEAD:BASE DE DATOS/practicahadagrupal/WebApplication/PaginaWeb.csproj
-    <Compile Include="pagina1.aspx.cs">
-      <DependentUpon>pagina1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="pagina1.aspx.designer.cs">
-      <DependentUpon>pagina1.aspx</DependentUpon>
-=======
-=======
     <Compile Include="ranking.aspx.cs">
       <DependentUpon>ranking.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -171,7 +154,6 @@
     <Compile Include="registro.aspx.designer.cs">
       <DependentUpon>registro.aspx</DependentUpon>
     </Compile>
->>>>>>> master
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -183,14 +165,8 @@
       <DependentUpon>game.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-<<<<<<< HEAD
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
->>>>>>> master:BASE DE DATOS/practicahadagrupal/WebApplication1/WebApplication1.csproj
-=======
     <Compile Include="game.aspx.designer.cs">
       <DependentUpon>game.aspx</DependentUpon>
->>>>>>> master
     </Compile>
   </ItemGroup>
   <PropertyGroup>

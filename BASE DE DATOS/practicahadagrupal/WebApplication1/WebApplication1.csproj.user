@@ -7,15 +7,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-<<<<<<< HEAD
-<<<<<<< HEAD:BASE DE DATOS/practicahadagrupal/WebApplication/PaginaWeb.csproj.user
-          <StartPageUrl>pagina1.aspx</StartPageUrl>
-=======
-          <StartPageUrl>WebForm1.aspx</StartPageUrl>
->>>>>>> master:BASE DE DATOS/practicahadagrupal/WebApplication1/WebApplication1.csproj.user
-=======
           <StartPageUrl>game.aspx</StartPageUrl>
->>>>>>> master
           <StartAction>SpecificPage</StartAction>
           <AspNetDebugging>True</AspNetDebugging>
           <SilverlightDebugging>False</SilverlightDebugging>
