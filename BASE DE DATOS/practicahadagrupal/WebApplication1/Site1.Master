@@ -52,6 +52,7 @@
 
     h1 {
         background-color: greenyellow;
+        font-size:50px; text-align: center; margin: 0; padding-bottom: 25px;
     }
 
 
