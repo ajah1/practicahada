@@ -1,8 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="productos.aspx.cs" Inherits="WebApplication1.productos" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<<<<<<< HEAD
-</asp:Content>
-=======
      <style type="text/css">
         canvas { border:5px dotted #ccc; }
         h1 { font-size:50px; text-align: center; padding-bottom: 25px;}
@@ -94,4 +91,3 @@
         </tr>
     </table>
 </asp:Content>
->>>>>>> master
