@@ -51,17 +51,9 @@
 
     /* backgraund*/
     body {
-<<<<<<< HEAD
-        /*background-color: white;*/
-        /*background-image: url(https://img.webme.com/pic/w/webcp/ejbg15.png);*/
-       /* background-image: url(http://www.hdfondos.eu/pictures/2013/1104/2/orig_372509.jpg);*/
-       background-image: url(asd/8027.jpg);
-    
-       }
-=======
+
         background-color: deepskyblue;
     }
->>>>>>> master
 
     h1 {
         background-color: greenyellow;
