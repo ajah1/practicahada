@@ -46,8 +46,7 @@
 
     /* backgraund*/
     body {
-
-        background-color: deepskyblue;
+        background-color: #0F68B6;
     }
 
     h1 {
@@ -99,6 +98,8 @@
 
     .main-nav {
         background-color: lightgrey;
+        border-radius: 15px;
+
         font-style: normal;
         width: 100%;
         padding: 0;
