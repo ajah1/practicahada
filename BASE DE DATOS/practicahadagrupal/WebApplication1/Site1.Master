@@ -30,13 +30,6 @@
 
     </ul>
 
-<%--    <p>
-        &nbsp;
-    </p>
-    <p>
-        &nbsp;
-    </p>--%>
-
     <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
     </asp:contentplaceholder>
 
