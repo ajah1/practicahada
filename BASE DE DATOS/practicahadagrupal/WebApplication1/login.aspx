@@ -20,6 +20,14 @@
     }
 
 
+           .auto-style3 {
+               color: #FFFFFF;
+           }
+           .auto-style4 {
+               margin-left: 0px;
+           }
+
+
         </style>
 
         <h1> LOGIN </h1>
@@ -29,7 +37,7 @@
             <td style="width: 121px">&nbsp;</td>
             <td class="auto-style2"></td>
             <td class="auto-style1">
-                <asp:Label ID="Label1" runat="server" Text="Usuario" style="font-size: medium">
+                <asp:Label ID="Label1" runat="server" Text="Usuario" style="font-size: medium" CssClass="auto-style3">
                 </asp:Label>
             </td>
             <td>&nbsp;</td>
@@ -49,7 +57,7 @@
             <td style="width: 121px">&nbsp;</td>
             <td class="auto-style2">&nbsp;</td>
             <td class="auto-style1">
-                <asp:Label ID="Label2" runat="server" Text="Password" style="font-size: medium"></asp:Label>
+                <asp:Label ID="Label2" runat="server" Text="Password" style="font-size: medium" CssClass="auto-style3"></asp:Label>
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -69,7 +77,7 @@
             <td style="width: 121px">&nbsp;</td>
             <td class="auto-style2">&nbsp;</td>
             <td class="auto-style1">
-                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click1" Text="Login" Width="120px" style="margin-left: 34px" />
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click1" Text="Login" Width="120px" CssClass="auto-style4" />
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
