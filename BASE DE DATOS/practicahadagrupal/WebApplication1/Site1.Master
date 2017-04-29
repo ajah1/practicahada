@@ -46,6 +46,7 @@
 
     body {
         text-align:center;
+        overflow-x: hidden;
     }
     canvas { border:5px dotted #ccc; }
     h1 {  margin: 15px;}
