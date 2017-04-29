@@ -4,12 +4,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-         <style type="text/css">
-            body {
-                background-color: deepskyblue;
-            }
-
-        </style>
 
         <meta charset="utf-8" />
 
@@ -21,8 +15,6 @@
            .auto-style1 {
                width: 161px;
            }
-
-
         .auto-style2 {
         width: 275px;
     }
