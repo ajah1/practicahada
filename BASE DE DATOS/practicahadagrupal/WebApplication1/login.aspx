@@ -4,6 +4,13 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+         <style type="text/css">
+            body {
+                background-color: deepskyblue;
+            }
+
+        </style>
+
         <meta charset="utf-8" />
 
        <style type="text/css">
