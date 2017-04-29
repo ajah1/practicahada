@@ -1,7 +1,8 @@
-﻿<Properties StartupConfiguration="{2B71AE63-046D-4323-B9B2-DA1B27DB0857}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebApplication1/home.aspx">
+﻿<Properties StartupConfiguration="{2B71AE63-046D-4323-B9B2-DA1B27DB0857}|Pruebas unitarias">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApplication1/ranking.aspx">
     <Files>
-      <File FileName="WebApplication1/home.aspx" Line="1" Column="1" />
+      <File FileName="WebApplication1/Web.config" Line="1" Column="1" />
+      <File FileName="WebApplication1/ranking.aspx" Line="6" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
