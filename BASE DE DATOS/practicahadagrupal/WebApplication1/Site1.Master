@@ -2,7 +2,6 @@
 
 <form id="form1" runat="server">
 
-
     <div class="auto-style1">
         <h1>
             <asp:Label ID="Label1" runat="server" CssClass="auto-style2" ForeColor="#000066" Text="The Snake Shop"></asp:Label>
@@ -14,19 +13,19 @@
             <a href="home.aspx">Home</a>
         </li>
         <li>
-            <a href="game.aspx">¡ PLAY IT !</a>
+            <a href="game.aspx">¡ Play It !</a>
         </li>
         <li>
-            <a href="login.aspx">LOGIN</a>
+            <a href="login.aspx">Login</a>
         </li>
         <li>
-            <a href="registro.aspx">SING IN</a>
+            <a href="registro.aspx">Sing In</a>
         </li>
         <li>
-            <a href="productos.aspx">PRODUCTS ;)</a>
+            <a href="productos.aspx">Products</a>
         </li>
         <li>
-            <a href="ranking.aspx">RANKING </a>
+            <a href="ranking.aspx">Ranking</a>
         </li>
 
     </ul>

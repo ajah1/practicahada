@@ -1,6 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="registro.aspx.cs" Inherits="WebApplication1.registro" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+    <style type="text/css">
+        body {
+            background-color: deepskyblue;
+        }
+    </style>
+
      <title>Registro</title>
 
     <meta charset="utf-8" />
@@ -114,4 +120,5 @@
             </tr>
         </table>
     </p>
+
 </asp:Content>
