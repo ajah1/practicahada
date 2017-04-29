@@ -4,11 +4,6 @@
      <meta charset="utf-8" />
 
        <style type="text/css">
-
-           body {
-                background-color: deepskyblue;
-            }
-
         canvas { border:5px dotted #ccc; }
         h1 { font-size:50px; text-align: center; padding-bottom: 25px;}
            .auto-style1 {
@@ -21,22 +16,16 @@
                text-align: left;
            }
            .auto-style5 {
-               text-align: right;
+               text-align: left;
                width: 147px;
            }
            .auto-style6 {
                width: 147px;
            }
            .auto-style7 {
-               text-align: right;
+               text-align: left;
                height: 22px;
                width: 147px;
-           }
-           .auto-style8 {
-               text-align: right;
-           }
-           .auto-style9 {
-               text-align: center;
            }
         </style>
 
@@ -48,7 +37,7 @@
                 <td class="auto-style5">
                     <asp:Label ID="Label2" runat="server" Text="Usuario :" CssClass="auto-style3"></asp:Label>
                 </td>
-                <td class="auto-style9">
+                <td class="auto-style4">
                     <asp:Label ID="Label11" runat="server" Text="Label"></asp:Label>
                 </td>
             </tr>
@@ -62,7 +51,7 @@
                 <td class="auto-style7">
                     <asp:Label ID="Label5" runat="server" Text="Dirección :" CssClass="auto-style3"></asp:Label>
                 </td>
-                <td style="height: 22px" class="auto-style9">
+                <td style="height: 22px" class="auto-style4">
                     <asp:Label ID="Label12" runat="server" Text="Label"></asp:Label>
                 </td>
             </tr>
@@ -76,7 +65,7 @@
                 <td class="auto-style5">
                     <asp:Label ID="Label6" runat="server" Text="Email :" CssClass="auto-style3"></asp:Label>
                 </td>
-                <td class="auto-style9">
+                <td class="auto-style4">
                     <asp:Label ID="Label13" runat="server" Text="Label"></asp:Label>
                 </td>
             </tr>
@@ -88,7 +77,7 @@
                 <td class="auto-style5">
                     <asp:Label ID="Label7" runat="server" Text="Ciudad :" CssClass="auto-style3"></asp:Label>
                 </td>
-                <td class="auto-style9">
+                <td class="auto-style4">
                     <asp:Label ID="Label17" runat="server" Text="Label"></asp:Label>
                 </td>
             </tr>
@@ -102,7 +91,7 @@
                 <td class="auto-style5">
                     <asp:Label ID="Label8" runat="server" Text="País :" CssClass="auto-style3"></asp:Label>
                 </td>
-                <td class="auto-style9">
+                <td class="auto-style4">
                     <asp:Label ID="Label14" runat="server" Text="Label"></asp:Label>
                 </td>
             </tr>
@@ -115,7 +104,7 @@
                 <td class="auto-style5">
                     <asp:Label ID="Label9" runat="server" Text="Edad :" CssClass="auto-style3"></asp:Label>
                 </td>
-                <td class="auto-style9">
+                <td class="auto-style4">
                     <asp:Label ID="Label15" runat="server" Text="Label"></asp:Label>
                 </td>
             </tr>
@@ -127,14 +116,13 @@
                 <td class="auto-style5">
                     <asp:Label ID="Label10" runat="server" Text="Descripción :" CssClass="auto-style3"></asp:Label>
                 </td>
-                <td class="auto-style9">
+                <td class="auto-style4">
                     <asp:Label ID="Label16" runat="server" Text="Label"></asp:Label>
                 </td>
             </tr>
             <tr>
-                <td colspan="2" class="auto-style8">
-                    <asp:Button ID="Button2" runat="server" Text="Darse de Baja" />
-                </td>
+                <td colspan="2">
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td colspan="2" style="text-align: center">
