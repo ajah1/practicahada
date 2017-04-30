@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-	<p>
+	<p style="color: #FFFFFF">
             RANKING: aquí irán los usuarios con más puntuación 
 	</p>
 </asp:Content>
