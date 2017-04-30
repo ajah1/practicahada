@@ -27,7 +27,11 @@
             <a href="productos.aspx">Products</a>
         </li>
         <li>
+<<<<<<< HEAD
             <a href="ranking.aspx">Ranking</a>
+=======
+            <a href="productos.aspx">PRODUCTOS ;)</a>
+>>>>>>> origin/48721521T
         </li>
         <li>
             <a href="perfil.aspx">Perfil</a>
