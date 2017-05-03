@@ -13,11 +13,8 @@ namespace ClassLibrary.CAD
 {
     public class CADpopular
     {
-
-        const string s = "data source=.\\SQLEXPRESS;Integrated"
-           + "Security = SSPI; AttachDBFilename =| DataDirectory |\\Database1.mdf;"
-           + "User Instance = true";
-        SqlConnection conn = new SqlConnection(s);
+        private SqlConnection conn = null;
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf;Integrated Security=true";
 
         public CADpopular() { }
 
@@ -25,14 +22,18 @@ namespace ClassLibrary.CAD
         {
             try
             {
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+
                 conn.Open();
-                SqlCommand com = new SqlCommand
-                    (
-                       "INSERT INTO" +
-                       "productoPopular(id, numeroVentas) VALUES(" +
-                       p.Id.ToString() + ", " +
-                       p.Numero_ventas.ToString() + ")"
-                    );
+
+                string sentencia = "INSERT INTO productoPopular" +
+                       "(id, numeroVentas) VALUES('" +
+                       p.Id.ToString() + "', '" +
+                       p.Numero_ventas.ToString() + "')";
+
+                SqlCommand com = new SqlCommand(sentencia,conn);
 
                 com.ExecuteNonQuery();
             }
