@@ -40,10 +40,11 @@ namespace ClassLibrary.EN
             CAD.CADpopular aux = new CAD.CADpopular();
             aux.update(this);
         }
-        public void readPopular()
+        // PROVISIONAL
+        public string readPopular()
         {
             CAD.CADpopular aux = new CAD.CADpopular();
-            aux.read(Id);
+            return aux.read(Id);
         }
     }
 }

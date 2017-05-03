@@ -1,0 +1,8 @@
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\pruebas\bin\Debug\pruebas.exe.config
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\pruebas\bin\Debug\pruebas.exe
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\pruebas\bin\Debug\pruebas.pdb
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\pruebas\bin\Debug\ClassLibrary.dll
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\pruebas\bin\Debug\ClassLibrary.pdb
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\pruebas\obj\Debug\pruebasAlex.csprojResolveAssemblyReference.cache
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\pruebas\obj\Debug\pruebas.exe
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\pruebas\obj\Debug\pruebas.pdb

@@ -37,22 +37,22 @@ namespace ClassLibrary.EN
         public string F_Inicio { get; set; }
         public string F_limite { get; set; }
 
-        public void addPromocion(string dbname)
+        public void addPromocion()
         {
             CAD.CADpromocion aux = new CAD.CADpromocion();
             aux.add(this);
         }
-        public void removePromocion(string dbname)
+        public void removePromocion()
         {
             CAD.CADpromocion aux = new CAD.CADpromocion();
             aux.remove(id_promocion);
         }
-        public void readPromocion(string dbname)
+        public void readPromocion()
         {
             CAD.CADpromocion aux = new CAD.CADpromocion();
             aux.read(id_promocion);
         }
-        public void updatePromocion(string dbname)
+        public void updatePromocion()
         {
             CAD.CADpromocion aux = new CAD.CADpromocion();
             aux.update(this);

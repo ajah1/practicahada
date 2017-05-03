@@ -100,21 +100,31 @@ namespace ClassLibrary.CAD
             }
         }
 
-        //EN.Popular
-        public void read( int id )
+        // PROVISIONAL: hasta que se conecte con la pagina web
+        public string read( int id )
         {
+
+            string salida = "";
+
             try
             {
-                EN.Popular salida = new EN.Popular();
 
+                string sentencia = @"SELECT * FROM productoPopular" +
+                                                " WHERE ID = '" + id.ToString() + "'";
+
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
                 conn.Open();
-                SqlCommand com = new SqlCommand("Select * from productoPopular" +
-                                                "where idpromocion = id", conn);
+
+                SqlCommand com = new SqlCommand(sentencia, conn);
                 SqlDataReader dr = com.ExecuteReader();
+                
 
                 while (dr.Read())
                 {
-
+                    salida += dr["id"].ToString() + " ";
+                    salida += dr["numeroVentas"].ToString();
                 }
 
             }
@@ -128,7 +138,7 @@ namespace ClassLibrary.CAD
                 conn.Close();
             }
 
-            
+            return salida;
         }
     }
 }
