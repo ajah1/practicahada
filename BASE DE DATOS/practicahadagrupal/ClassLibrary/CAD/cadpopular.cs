@@ -22,19 +22,17 @@ namespace ClassLibrary.CAD
         {
             try
             {
+                string sentencia = "INSERT INTO productoPopular" +
+                                    "(id, numeroVentas) VALUES('" +
+                                    p.Id.ToString() + "', '" +
+                                    p.Numero_ventas.ToString() + "')";
+
                 conn = new SqlConnection();
 
                 conn.ConnectionString = stringConexion;
-
                 conn.Open();
 
-                string sentencia = "INSERT INTO productoPopular" +
-                       "(id, numeroVentas) VALUES('" +
-                       p.Id.ToString() + "', '" +
-                       p.Numero_ventas.ToString() + "')";
-
                 SqlCommand com = new SqlCommand(sentencia,conn);
-
                 com.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -52,13 +50,15 @@ namespace ClassLibrary.CAD
         {
             try
             {
+                string sentencia = "DELETE FROM productoPopular  WHERE ID = '" +
+                                    id.ToString() + "'";
+
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
                 conn.Open();
 
-                SqlCommand com = new SqlCommand
-                    (
-                        "DELETE FROM productoPopular  WHERE ID = " +
-                        id.ToString()
-                    );
+                SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -72,12 +72,22 @@ namespace ClassLibrary.CAD
             }
         }
 
-        public void update( EN.Popular p)
+        public void update(EN.Popular p)
         {
             try
             {
+
+                string sentencia = @"UPDATE productoPopular SET numeroVentas = '" +
+                                    p.Numero_ventas.ToString() + "' " +
+                                    "WHERE ID = '" + p.Id.ToString() + "'";
+
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
                 conn.Open();
-                SqlCommand com = new SqlCommand();
+
+                SqlCommand com = new SqlCommand(sentencia, conn);
+                com.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
@@ -89,6 +99,7 @@ namespace ClassLibrary.CAD
                 conn.Close();
             }
         }
+
         //EN.Popular
         public void read( int id )
         {
