@@ -12,8 +12,8 @@ namespace ClassLibrary.EN
         private int id_promocion;
         private int id_producto;
         private double descuento;
-        private string f_inicio;
-        private string f_limite;
+        private DateTime f_inicio;
+        private DateTime f_limite;
 
         public Promocion() { }
 
@@ -21,8 +21,8 @@ namespace ClassLibrary.EN
             Promocion(  int id_promocion,
                         int id_producto,
                         double descuento,
-                        string f_inicio,
-                        string f_limite)
+                        DateTime f_inicio,
+                        DateTime f_limite)
         {
             this.id_promocion = id_promocion;
             this.id_producto = id_producto;

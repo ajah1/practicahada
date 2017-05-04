@@ -83,11 +83,12 @@ namespace ClassLibrary.CAD
         {
             try
             {
+                
                 string sentencia = @"UPDATE promociones SET " +
-                                "descuento = " + p.Descuento.ToString() +
-                                ", f_ini = " + p.F_Inicio.ToString() +
-                                ", f_fin = " + p.F_limite.ToString() +
-                                " WHERE idproducto = " + p.Id_producto;
+                                "descuento = '" + p.Descuento.ToString() +
+                                "', f_ini = '" + p.F_Inicio +
+                                "', f_fin = '" + p.F_limite +
+                                "' WHERE idproducto = '" + p.Id_producto.ToString() + "'";
 
                 conn = new SqlConnection();
 
@@ -108,6 +109,7 @@ namespace ClassLibrary.CAD
             }
         }
 
+        // PROVISIONAL: hasta que se una con la web
         public void read( int id )
         {
             try

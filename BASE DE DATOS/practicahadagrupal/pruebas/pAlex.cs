@@ -62,15 +62,16 @@ namespace pruebas
             //r2.removePromocion();
             //Console.ReadLine();
 
-            Console.WriteLine("=> update promocion ¿?");
+            Console.WriteLine("=> update promocion OK");
             Promocion r3 = new Promocion();
             r3.Id_producto = 1;
             r3.Descuento = 500;
-            r3.F_Inicio = "24/2/2024";
-            r3.F_limite = "24/2/5024";
-            r3.updatePromocion();
-            Console.ReadLine();
+            r3.F_Inicio = "1/1/2001";
+            r3.F_limite = "1/1/2001";
+            //r3.updatePromocion();
+            //Console.ReadLine();
 
+            Console.WriteLine("=> read promocion ¿?");
         }
     }
 }
