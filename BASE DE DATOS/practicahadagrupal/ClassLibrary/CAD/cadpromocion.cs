@@ -15,11 +15,8 @@ namespace ClassLibrary.CAD
     public class CADpromocion
     {
 
-        const string s = "data source=.\\SQLEXPRESS;Integrated"
-                   + "Security = SSPI; AttachDBFilename =| DataDirectory |\\Database1.mdf;"
-                   + "User Instance = true";
-        SqlConnection conn = new SqlConnection(s);
-
+        private SqlConnection conn = null;
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf;Integrated Security=true";
 
         public CADpromocion() { }
 
@@ -27,19 +24,22 @@ namespace ClassLibrary.CAD
         {
             try
             {
-                conn.Open();
-                SqlCommand com = new SqlCommand
-                    (
-                       "INSERT INTO " +
-                       "promociones(idpromocion, idproducto, descuento, f_inim f_fin)" +
-                       "VALUES(" +
-                       p.Id_promocion.ToString() + ", "  +
-                       p.Id_producto.ToString()  + ", "  + 
-                       p.Descuento.ToString()    + ", "  +
-                       p.F_Inicio.ToString()     + ", "  +
-                       p.F_limite.ToString() + ")", conn );
+                string sentencia = "INSERT INTO promociones" + 
+                            "(idproducto, descuento, f_ini, f_fin)" +
+                            "VALUES('" +
+                            p.Id_producto.ToString()  + "', '"  + 
+                            p.Descuento.ToString()    + "', '"  +
+                            p.F_Inicio.ToString()     + "', '"  +
+                            p.F_limite.ToString() + "')";
 
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
+
+                SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
+
             }
             catch (Exception ex)
             {
@@ -56,12 +56,15 @@ namespace ClassLibrary.CAD
         {
             try
             {
-                conn.Open();
-                SqlCommand com = new SqlCommand
-                    (
-                        "DELETE FROM promociones  WHERE ID = " +
-                        id.ToString(), conn);
+                string sentencia = "DELETE FROM promociones  WHERE idproducto = " +
+                                    id.ToString();
 
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
+
+                SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -74,13 +77,25 @@ namespace ClassLibrary.CAD
                 conn.Close();
             }
         }
+        
 
         public void update( EN.Promocion p )
         {
             try
             {
+                string sentencia = @"UPDATE promociones SET " +
+                                "descuento = " + p.Descuento.ToString() +
+                                ", f_ini = " + p.F_Inicio.ToString() +
+                                ", f_fin = " + p.F_limite.ToString() +
+                                " WHERE idproducto = " + p.Id_producto;
+
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
                 conn.Open();
-                SqlCommand com = new SqlCommand();
+
+                SqlCommand com = new SqlCommand(sentencia, conn);
+                com.ExecuteNonQuery();
             }
             catch (Exception ex)
             {

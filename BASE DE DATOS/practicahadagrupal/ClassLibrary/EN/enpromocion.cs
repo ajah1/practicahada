@@ -31,6 +31,11 @@ namespace ClassLibrary.EN
             this.f_limite = f_limite;
         }
 
+        public Promocion(int id)
+        {
+            id_producto = id;
+        }
+
         public int Id_producto{ get; set;}
         public int Id_promocion { get; set; }
         public double Descuento { get; set; }
@@ -45,7 +50,7 @@ namespace ClassLibrary.EN
         public void removePromocion()
         {
             CAD.CADpromocion aux = new CAD.CADpromocion();
-            aux.remove(id_promocion);
+            aux.remove(id_producto);
         }
         public void readPromocion()
         {
