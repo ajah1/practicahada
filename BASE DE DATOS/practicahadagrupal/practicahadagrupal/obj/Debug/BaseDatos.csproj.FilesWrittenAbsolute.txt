@@ -1,0 +1,17 @@
+/Users/Laila/Desktop/HADA/practicahada/BASE DE DATOS/practicahadagrupal/practicahadagrupal/obj/Debug/.NETFramework,Version=v4.6.1.AssemblyAttribute.cs
+/Users/Laila/Desktop/HADA/practicahada/BASE DE DATOS/practicahadagrupal/practicahadagrupal/obj/Debug/practicahadagrupal.dll
+/Users/Laila/Desktop/HADA/practicahada/BASE DE DATOS/practicahadagrupal/practicahadagrupal/obj/Debug/practicahadagrupal.pdb
+/Users/Laila/Desktop/HADA/practicahada/BASE DE DATOS/practicahadagrupal/practicahadagrupal/bin/Microsoft.AI.Agent.Intercept.dll
+/Users/Laila/Desktop/HADA/practicahada/BASE DE DATOS/practicahadagrupal/practicahadagrupal/bin/Microsoft.AI.DependencyCollector.dll
+/Users/Laila/Desktop/HADA/practicahada/BASE DE DATOS/practicahadagrupal/practicahadagrupal/bin/Microsoft.AI.PerfCounterCollector.dll
+/Users/Laila/Desktop/HADA/practicahada/BASE DE DATOS/practicahadagrupal/practicahadagrupal/bin/Microsoft.AI.ServerTelemetryChannel.dll
+/Users/Laila/Desktop/HADA/practicahada/BASE DE DATOS/practicahadagrupal/practicahadagrupal/bin/Microsoft.AI.Web.dll
+/Users/Laila/Desktop/HADA/practicahada/BASE DE DATOS/practicahadagrupal/practicahadagrupal/bin/Microsoft.AI.WindowsServer.dll
+/Users/Laila/Desktop/HADA/practicahada/BASE DE DATOS/practicahadagrupal/practicahadagrupal/bin/Microsoft.ApplicationInsights.dll
+/Users/Laila/Desktop/HADA/practicahada/BASE DE DATOS/practicahadagrupal/practicahadagrupal/bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+/Users/Laila/Desktop/HADA/practicahada/BASE DE DATOS/practicahadagrupal/practicahadagrupal/bin/Newtonsoft.Json.dll
+/Users/Laila/Desktop/HADA/practicahada/BASE DE DATOS/practicahadagrupal/practicahadagrupal/bin/nunit.framework.dll
+/Users/Laila/Desktop/HADA/practicahada/BASE DE DATOS/practicahadagrupal/practicahadagrupal/bin/AutoMapper.dll
+/Users/Laila/Desktop/HADA/practicahada/BASE DE DATOS/practicahadagrupal/practicahadagrupal/bin/log4net.dll
+/Users/Laila/Desktop/HADA/practicahada/BASE DE DATOS/practicahadagrupal/practicahadagrupal/bin/Microsoft.Web.XmlTransform.dll
+/Users/Laila/Desktop/HADA/practicahada/BASE DE DATOS/practicahadagrupal/practicahadagrupal/bin/NuGet.Core.dll
