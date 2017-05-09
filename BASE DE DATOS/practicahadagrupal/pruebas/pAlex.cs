@@ -46,6 +46,8 @@ namespace pruebas
             Console.WriteLine(p4.readPopular());
             // Console.ReadLine();
 
+
+
             Console.WriteLine("=> CADPROMOCION PRUEBAS <=");
             Console.WriteLine("=> add promocion OK");
             Promocion r1 = new Promocion();
@@ -72,6 +74,9 @@ namespace pruebas
             //Console.ReadLine();
 
             Console.WriteLine("=> read promocion ¿?");
+            Promocion r4 = new Promocion(7);
+            Console.WriteLine(r4.readPromocion());
+            Console.ReadLine();
         }
     }
 }

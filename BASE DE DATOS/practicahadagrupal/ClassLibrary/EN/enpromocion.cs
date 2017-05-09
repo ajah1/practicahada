@@ -52,10 +52,13 @@ namespace ClassLibrary.EN
             CAD.CADpromocion aux = new CAD.CADpromocion();
             aux.remove(id_producto);
         }
-        public void readPromocion()
+        // PROVISIONAL
+        public string readPromocion()
         {
+            string salida = "empty";
             CAD.CADpromocion aux = new CAD.CADpromocion();
-            aux.read(id_promocion);
+            salida += aux.read(id_producto);
+            return salida;
         }
         public void updatePromocion()
         {

@@ -110,19 +110,32 @@ namespace ClassLibrary.CAD
         }
 
         // PROVISIONAL: hasta que se una con la web
-        public void read( int id )
+        public string read( int id )
         {
+            string salida = "";
+
             try
             {
+                
+                string sentencia = "Select * from promociones " +
+                                   "where idproducto = '" + id.ToString() + "'";
+                
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
                 conn.Open();
-                SqlCommand com = new SqlCommand("Select * from promociones"+
-                                                "where idpromocion = id", conn);
+
+                SqlCommand com = new SqlCommand(sentencia, conn);
                 SqlDataReader dr = com.ExecuteReader();
+
 
                 while (dr.Read())
                 {
-                    
-                }
+                    salida = " " + dr["descuento"].ToString() +
+                        dr["idproducto"].ToString() +" "+
+                        dr["f_ini"].ToString() + " "+
+                        dr["f_fin"].ToString();            
+                    }
 
             }
             catch (Exception ex)
@@ -134,6 +147,8 @@ namespace ClassLibrary.CAD
             {
                 conn.Close();
             }
+
+            return salida;
         }
     }
 }
