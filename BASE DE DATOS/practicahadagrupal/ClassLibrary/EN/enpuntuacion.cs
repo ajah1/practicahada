@@ -27,24 +27,26 @@ namespace ClassLibrary.EN{
 		public int v { get; set; }
 		public int p { get; set; }
 
-		public void addPuntuacion(string dbname) {
-			CAD.CADpuntuacion aux = new CAD.CADpuntuacion();
-			aux.add(this);
-		}
-
-		public void removePuntuacion(string dbname){
+		public void removePuntuacion(){
 			CAD.CADpuntuacion aux = new CAD.CADpuntuacion();
 			aux.remove(username);
 		}
 
-		public void readPuntuacion(string dbname) {
+		public void readPuntuacion() {
 			CAD.CADpuntuacion aux = new CAD.CADpuntuacion();
 			aux.read(username);
 		}
 
-		public void updatePuntuacion(string dbname) {
+        public int obtenerPuntuacion(string usuario)
+        {
 			CAD.CADpuntuacion aux = new CAD.CADpuntuacion();
-			aux.update(this);
+            return aux.obtenerPuntuacion(username);
+
+		}
+
+		public void updatePuntuacion() {
+			CAD.CADpuntuacion aux = new CAD.CADpuntuacion();
+			aux.updatePuntuacion(this);
 		}
 
 	}
