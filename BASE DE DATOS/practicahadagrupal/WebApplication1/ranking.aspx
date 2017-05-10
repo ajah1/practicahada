@@ -22,6 +22,11 @@
 		}
 		</style>
 	<h1 class="auto-style1"> Ranking</h1>
+    <table align="center">
+        <tr>
+            <td class="auto-style2"> Puntuaciones </td>
+        </tr>
 
+    </table>
 
 </asp:Content>
