@@ -22,13 +22,6 @@
 		}
 		</style>
 	<h1 class="auto-style1"> Ranking</h1>
-    <table align="center">
-        <tr>
-			<td class="auto-style2"> Puntuaciones </td>
-		</tr>
-		<tr>
-            <td class="auto-style3"> sacar la info de la base de datos, como? ni idea xD </td>
-        </tr>
-	</table>
+
 
 </asp:Content>
