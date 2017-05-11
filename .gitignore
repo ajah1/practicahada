@@ -2,3 +2,5 @@ BASE DE DATOS/practicahadagrupal/ClassLibrary/bin/Debug/ClassLibrary.dll
 *.dll
 BASE DE DATOS/practicahadagrupal/practicahadagrupal/obj/Debug/practicahadagrupal.dll
 *.dll
+*.suo
+*.cache
