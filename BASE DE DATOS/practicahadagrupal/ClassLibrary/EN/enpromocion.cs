@@ -36,11 +36,11 @@ namespace ClassLibrary.EN
             id_producto = id;
         }
 
-        public int Id_producto{ get; set;}
-        public int Id_promocion { get; set; }
-        public double Descuento { get; set; }
-        public string F_Inicio { get; set; }
-        public string F_limite { get; set; }
+        public int Id_producto{ get { return id_producto; } set { id_producto = value; } }
+        public int Id_promocion { get { return id_promocion; } set { id_promocion = value; } }
+        public double Descuento { get { return descuento; } set { descuento = value; } }
+        public DateTime F_Inicio { get { return f_inicio; } set { f_inicio = value; } }
+        public DateTime F_limite { get { return f_limite; } set { f_limite = value; } }
 
         public void addPromocion()
         {

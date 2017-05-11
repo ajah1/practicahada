@@ -21,8 +21,7 @@ namespace ClassLibrary.EN
             this.numero_ventas = numero_ventas;
         }
         
-        public int Numero_ventas { get; set; }
-
+        public int Numero_ventas { get { return numero_ventas; } set { numero_ventas = value; } }
 
 
         public void addPopular ()
