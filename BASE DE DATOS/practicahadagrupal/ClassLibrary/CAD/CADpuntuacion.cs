@@ -13,153 +13,115 @@ using System.Data.SqlTypes;
 namespace ClassLibrary.CAD
 {
 
-    public class CADpuntuacion
-    {
+	public class CADpuntuacion
+	{
 
-        public CADpuntuacion()
-        { }
+		public CADpuntuacion()
+		{ }
 
-        private SqlConnection conn = null;
-        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=/Users/Laila/Desktop/HADA/practicahada/BASE DE DATOS/practicahadagrupal/practicahadagrupal/App_Data/Database1.mdf;Integrated Security=true";
+		private SqlConnection conn = null;
+		private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Downloads\practicahada-48765284V\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf;Integrated Security=true";
 
+		// poner todo a cero
+		public void remove(string usuario)
+		{
+			try
+			{
+				string sentencia = @"UPDATE puntuacion  SET " +
+						"record = 0" + "vidas = 0" + "puntosTotales= 0 " + " WHERE pusuario " + usuario;
 
-        public void remove(string usuario)
-        {
-            try
-            {
-                string sentencia = @"UPDATE puntuacion  SET " +
-                        "record = 0" + "vidas = 0" + "puntosTotales= 0 " + " WHERE pusuario " + usuario;
+				conn = new SqlConnection();
 
-                conn = new SqlConnection();
+				conn.ConnectionString = stringConexion;
+				conn.Open();
 
-                conn.ConnectionString = stringConexion;
-                conn.Open();
-
-                SqlCommand com = new SqlCommand(sentencia, conn);
-                com.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Remove Puntuacion failed.");
-                Console.WriteLine(". \nError: {0}", ex.ToString());
-            }
-            finally
-            {
-                conn.Close();
-            }
-        }
-
-        //se supone que saca los puntos Totales del usuario
-        public int obtenerPuntuacion(string usuario)
-        {
-
-            int salida = 0;
-
-            try
-            {
-
-                string sentencia = "Select * from puntuacion " +
-                                   "where pusuario = '" + usuario + "'";
-
-                conn = new SqlConnection();
-
-                conn.ConnectionString = stringConexion;
-                conn.Open();
-
-                SqlCommand com = new SqlCommand(sentencia, conn);
-                SqlDataReader dr = com.ExecuteReader();
+				SqlCommand com = new SqlCommand(sentencia, conn);
+				com.ExecuteNonQuery();
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine("Remove Puntuacion failed.");
+				Console.WriteLine(". \nError: {0}", ex.ToString());
+			}
+			finally
+			{
+				conn.Close();
+			}
+		}
 
 
-                while (dr.Read())
-                {
-                    salida = (int)dr["puntosTotales"];
-                }
 
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Read Puntos failed.");
-                Console.WriteLine(". \nError: {0}", ex.ToString());
-            }
-            finally
-            {
-                conn.Close();
-            }
+		public void updatePuntuacion(int suma, EN.puntuacion p)
+		{
+			int puntos = 0;
 
-            return salida;
-        }
+			puntos += suma + p.obtenerPuntuacion();
+
+			try
+			{
+
+				string sentencia = @"UPDATE puntuacion  SET " +
+						   "puntosTotales = '" + puntos.ToString() + "'" +
+						   " WHERE pusuario= '" + p.user + "'";
 
 
-    public void updatePuntuacion(EN.puntuacion p)
-    {
-        int puntos = 0;
-        puntos = p.obtenerPuntuacion(p.user);
-        puntos += p.p;
-        try
-        {
+				conn = new SqlConnection();
 
-            string sentencia = @"UPDATE puntuacion  SET " +
-                       "puntosTotales = '" + puntos.ToString() + "'" + "WHERE pusuario= '" + p.user + "'";
+				conn.ConnectionString = stringConexion;
+				conn.Open();
 
+				SqlCommand com = new SqlCommand(sentencia, conn);
+				com.ExecuteNonQuery();
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine("Update Puntuacion failed.");
+				Console.WriteLine(". \nError: {0}", ex.ToString());
+			}
+			finally
+			{
+				conn.Close();
+			}
+		}
 
-            conn = new SqlConnection();
+		public string read(string usuario)
+		{
+			string salida = "";
 
-            conn.ConnectionString = stringConexion;
-            conn.Open();
+			try
+			{
 
-            SqlCommand com = new SqlCommand(sentencia, conn);
-            com.ExecuteNonQuery();
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine("Update Puntuacion failed.");
-            Console.WriteLine(". \nError: {0}", ex.ToString());
-        }
-        finally
-        {
-            conn.Close();
-        }
-    }
+				string sentencia = "Select * from puntuacion " +
+								   "where pusuario = '" + usuario + "'";
 
-    // PROVISIONAL: hasta que se una con la web
-    public string read(string usuario)
-    {
-        string salida = "";
+				conn = new SqlConnection();
 
-        try
-        {
+				conn.ConnectionString = stringConexion;
+				conn.Open();
 
-            string sentencia = "Select * from puntuacion " +
-                               "where pusuario = '" + usuario + "'";
-
-            conn = new SqlConnection();
-
-            conn.ConnectionString = stringConexion;
-            conn.Open();
-
-            SqlCommand com = new SqlCommand(sentencia, conn);
-            SqlDataReader dr = com.ExecuteReader();
+				SqlCommand com = new SqlCommand(sentencia, conn);
+				SqlDataReader dr = com.ExecuteReader();
 
 
-            while (dr.Read())
-            {
-                salida = " " + dr["record"].ToString() +
-                    dr["vidas"].ToString() + " " +
-                    dr["puntosTotales"].ToString();
-                }
+				while (dr.Read())
+				{
+					salida = " " + dr["record"].ToString() +
+						dr["vidas"].ToString() + " " +
+						dr["puntosTotales"].ToString();
+				}
 
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine("Read Puntuacion failed.");
-            Console.WriteLine(". \nError: {0}", ex.ToString());
-        }
-        finally
-        {
-            conn.Close();
-        }
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine("Read Puntuacion failed.");
+				Console.WriteLine(". \nError: {0}", ex.ToString());
+			}
+			finally
+			{
+				conn.Close();
+			}
 
-        return salida;
-    }
-}
+			return salida;
+		}
+	}
 }
