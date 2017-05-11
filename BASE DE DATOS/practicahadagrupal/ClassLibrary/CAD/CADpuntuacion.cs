@@ -49,7 +49,45 @@ namespace ClassLibrary.CAD
 			}
 		}
 
+		// obtener la puntuación de un usuario
+		public int obtenerPuntuacion(string usuario)
+		{
 
+			int salida = 0;
+
+			try
+			{
+
+				string sentencia = "SELECT * FROM puntuacion " +
+								   "WHERE pusuario = '" + usuario + "'";
+
+				conn = new SqlConnection();
+
+				conn.ConnectionString = stringConexion;
+				conn.Open();
+
+				SqlCommand com = new SqlCommand(sentencia, conn);
+				SqlDataReader dr = com.ExecuteReader();
+
+
+				while (dr.Read())
+				{
+					salida = (int)dr["puntosTotales"];
+				}
+
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine("Read Puntos failed.");
+				Console.WriteLine(". \nError: {0}", ex.ToString());
+			}
+			finally
+			{
+				conn.Close();
+			}
+
+			return salida;
+		}
 
 		public void updatePuntuacion(int suma, EN.puntuacion p)
 		{
