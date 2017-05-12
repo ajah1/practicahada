@@ -8,6 +8,7 @@ namespace ClassLibrary.EN
 {
     public class Promocion
     {
+
         // atributos
         private int id_promocion;
         private int id_producto;
@@ -66,6 +67,9 @@ namespace ClassLibrary.EN
             get { return f_limite; } set { f_limite = value; }
         }
 
+        //-------------------------------------
+        // llamar a la funcion obtenerDescuento
+        //--------------------------------------
 
         // funciones
         public void addPromocion()
@@ -84,7 +88,7 @@ namespace ClassLibrary.EN
         // leer una promocion
         public string readPromocion()
         {
-            string salida = "empty";
+            string salida = "";
             CAD.CADpromocion aux = new CAD.CADpromocion();
             salida += aux.read(id_producto);
             return salida;
@@ -97,15 +101,17 @@ namespace ClassLibrary.EN
             aux.update(this);
         }
 
-        // devuelve el descuento a aplicar
-        public int aplicarPromocion()
+        // devuelve el descuento a aplicar, 0 si no es aplicable
+        public int obtenerDescuento()
         {
             int descuento = 0;
+
             CAD.CADpromocion aux = new CAD.CADpromocion();
 
-            //descuento = aux.aplicarPromocion(this.Id_producto);
+            descuento = aux.aplicarDescuento(id_producto);
 
             return descuento;
         }
+        
     }
 }

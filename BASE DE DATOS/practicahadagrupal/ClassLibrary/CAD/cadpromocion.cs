@@ -17,7 +17,7 @@ namespace ClassLibrary.CAD
 
         // string para la conexion
         private SqlConnection conn = null;
-        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf;Integrated Security=true";
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf;Integrated Security=true";
 
         // constructor
         public CADpromocion() { }
@@ -155,31 +155,109 @@ namespace ClassLibrary.CAD
             return salida;
         }
 
-        /*
-        // devuelve true si el producto tiene promocion
-        public bool tienePromocion(int idProducto)
+        // devuelve la fecha inicio y fin
+        public List<DateTime> obtenerFecha(int idProducto)
         {
-            bool tiene = false;
+            List<DateTime> fechas = new List<DateTime>();
 
-            
-
-            return tiene;
-        }
-
-        // devuelve la cantidad a descontar del producto pasado
-        public int aplicarPromocion(int idProducto)
-        {
-            
-            int descuento = 0;
-
-            // si el producto tiene promocion se obtiene el valor
-            if (tienePromocion(idProducto) == true)
+            try
             {
-                descuento = 
+
+                string sentencia = "Select * from promociones " +
+                                   "where idproducto = '" + idProducto + "'";
+
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
+
+                SqlCommand com = new SqlCommand(sentencia, conn);
+                SqlDataReader dr = com.ExecuteReader();
+
+
+                while (dr.Read())
+                {
+                    fechas.Add((DateTime)dr["f_ini"]);
+                    fechas.Add((DateTime)dr["f_fin"]);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Read Promocion failed.");
+                Console.WriteLine(". \nError: {0}", ex.ToString());
+            }
+            finally
+            {
+                conn.Close();
             }
 
+            return fechas;
+        }
+
+        // devuelve el descuento de un producto
+        public int obtenerDescuento(int id)
+        {
+            int salida = 0;
+
+            try
+            {
+
+                string sentencia = "Select descuento from promociones " +
+                                   "where idproducto = '" + id.ToString() + "'";
+
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
+
+                SqlCommand com = new SqlCommand(sentencia, conn);
+                SqlDataReader dr = com.ExecuteReader();
+
+
+                while (dr.Read())
+                {
+                    salida = (int)dr["descuento"];
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Read Promocion failed.");
+                Console.WriteLine(". \nError: {0}", ex.ToString());
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return salida;
+        }
+
+        // si la promoción esta disponible devuelve el descuento
+        public int aplicarDescuento(int idProducto)
+        {
+            int descuento = 0;
+
+            List<DateTime> fechas = new List<DateTime>();
+
+            DateTime finicio;
+            DateTime ffin;
+            DateTime today;
+
+            fechas = obtenerFecha(idProducto);
+
+            finicio = fechas[0];
+            ffin = fechas[1];
+            today = DateTime.Today;
+
+            // si la fecha de la promocion es valida obtener descuento
+           if (today >= finicio && today <= ffin)
+            {
+                descuento = obtenerDescuento(idProducto);
+            }
+           
             return descuento;
         }
-        */
     }
 }

@@ -31,6 +31,10 @@ namespace ClassLibrary.EN
         }
 
 
+        //--------------------------------
+        // llamar a la funcion updateTable
+        //--------------------------------
+
         // funcion que devuelve una lista con los 3 productos mas comprados
         public List<int> productosPopulares()
         {
