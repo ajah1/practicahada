@@ -8,19 +8,21 @@ namespace ClassLibrary.EN
 {
     public class Promocion
     {
-
+        // atributos
         private int id_promocion;
         private int id_producto;
+
         private double descuento;
+
         private DateTime f_inicio;
         private DateTime f_limite;
 
+        // constructores
         public Promocion() { }
 
-        public
-            Promocion(  int id_promocion,
+        public Promocion(int id_promocion,
                         int id_producto,
-                        double descuento,
+                        double descuento, 
                         DateTime f_inicio,
                         DateTime f_limite)
         {
@@ -31,28 +33,55 @@ namespace ClassLibrary.EN
             this.f_limite = f_limite;
         }
 
+        // constructor pasando el id del producto
         public Promocion(int id)
         {
             id_producto = id;
         }
 
-        public int Id_producto{ get { return id_producto; } set { id_producto = value; } }
-        public int Id_promocion { get { return id_promocion; } set { id_promocion = value; } }
-        public double Descuento { get { return descuento; } set { descuento = value; } }
-        public DateTime F_Inicio { get { return f_inicio; } set { f_inicio = value; } }
-        public DateTime F_limite { get { return f_limite; } set { f_limite = value; } }
 
+        // propiedades
+        public int Id_producto
+        {
+            get { return id_producto; } set { id_producto = value; }
+        }
+
+        public int Id_promocion
+        {
+            get { return id_promocion; } set { id_promocion = value; }
+        }
+
+        public double Descuento
+        {
+            get { return descuento; } set { descuento = value; }
+        }
+
+        public DateTime F_Inicio
+        {
+            get { return f_inicio; } set { f_inicio = value; }
+        }
+
+        public DateTime F_limite
+        {
+            get { return f_limite; } set { f_limite = value; }
+        }
+
+
+        // funciones
         public void addPromocion()
         {
             CAD.CADpromocion aux = new CAD.CADpromocion();
             aux.add(this);
         }
+
+        // borrar una promocion
         public void removePromocion()
         {
             CAD.CADpromocion aux = new CAD.CADpromocion();
             aux.remove(id_producto);
         }
-        // PROVISIONAL
+
+        // leer una promocion
         public string readPromocion()
         {
             string salida = "empty";
@@ -60,10 +89,23 @@ namespace ClassLibrary.EN
             salida += aux.read(id_producto);
             return salida;
         }
+
+        // actualziar una promocion
         public void updatePromocion()
         {
             CAD.CADpromocion aux = new CAD.CADpromocion();
             aux.update(this);
+        }
+
+        // devuelve el descuento a aplicar
+        public int aplicarPromocion()
+        {
+            int descuento = 0;
+            CAD.CADpromocion aux = new CAD.CADpromocion();
+
+            //descuento = aux.aplicarPromocion(this.Id_producto);
+
+            return descuento;
         }
     }
 }

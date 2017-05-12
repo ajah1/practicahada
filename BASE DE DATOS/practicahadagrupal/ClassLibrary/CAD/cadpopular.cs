@@ -18,8 +18,10 @@ namespace ClassLibrary.CAD
         private SqlConnection conn = null;
         private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf;Integrated Security=true";
 
+        //constructor
         public CADpopular() { }
 
+        // añadir un productopopular
         public void add( EN.Popular p )
         {
             try
@@ -48,6 +50,7 @@ namespace ClassLibrary.CAD
             }
         }
 
+        // boorar producto popopular por su id
         public void delete( int id )
         {
             try
@@ -74,6 +77,7 @@ namespace ClassLibrary.CAD
             }
         }
 
+        // actualizar un producto popultar
         public void update(EN.Popular p)
         {
             try
@@ -102,7 +106,7 @@ namespace ClassLibrary.CAD
             }
         }
 
-        // PROVISIONAL: hasta que se conecte con la pagina web
+        // devuelve el nuermo de ventas de un pppopular
         public string read( int id )
         {
 
@@ -143,7 +147,7 @@ namespace ClassLibrary.CAD
             return salida;
         }
 
-        // borrar tabla ProductoPopular
+        // borrar todos los datos de la tabla ProductoPopular
         public void dropPopular()
         {
             try
@@ -210,7 +214,7 @@ namespace ClassLibrary.CAD
 
         }
 
-        // actualiza la productoPopular llamando las funciones anteriores
+        // actualiza la tabla productoPopular llamando las funciones anteriores
         public void updateTable()
         {
             // 1- Borrar tuplas de la tabla

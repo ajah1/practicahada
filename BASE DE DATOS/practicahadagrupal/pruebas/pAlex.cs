@@ -113,9 +113,21 @@ namespace pruebas
             }
             
             Console.ReadLine();
-            */
+            
             Popular p = new Popular();
             p.updateTable();
+            */
+
+            Console.WriteLine("=> lee una prmocion que no esta en la db");
+            Console.WriteLine("=> ver si devuelve vacio o da error");
+
+            Promocion p = new Promocion(4);
+
+            Console.WriteLine(p.readPromocion());
+
+            Console.ReadLine();
+
+
         }
     }
 }

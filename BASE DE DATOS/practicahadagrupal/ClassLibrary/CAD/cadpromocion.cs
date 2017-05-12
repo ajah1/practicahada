@@ -15,11 +15,14 @@ namespace ClassLibrary.CAD
     public class CADpromocion
     {
 
+        // string para la conexion
         private SqlConnection conn = null;
         private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf;Integrated Security=true";
 
+        // constructor
         public CADpromocion() { }
 
+        // añadir una promocion
         public void add( EN.Promocion p )
         {
             try
@@ -52,6 +55,7 @@ namespace ClassLibrary.CAD
             }
         }
 
+        // borrar promocion a partir del id
         public void remove( int id )
         {
             try
@@ -78,7 +82,7 @@ namespace ClassLibrary.CAD
             }
         }
         
-
+        // actualizar promocion
         public void update( EN.Promocion p )
         {
             try
@@ -109,7 +113,7 @@ namespace ClassLibrary.CAD
             }
         }
 
-        // PROVISIONAL: hasta que se una con la web
+        // leer promocion
         public string read( int id )
         {
             string salida = "";
@@ -150,5 +154,32 @@ namespace ClassLibrary.CAD
 
             return salida;
         }
+
+        /*
+        // devuelve true si el producto tiene promocion
+        public bool tienePromocion(int idProducto)
+        {
+            bool tiene = false;
+
+            
+
+            return tiene;
+        }
+
+        // devuelve la cantidad a descontar del producto pasado
+        public int aplicarPromocion(int idProducto)
+        {
+            
+            int descuento = 0;
+
+            // si el producto tiene promocion se obtiene el valor
+            if (tienePromocion(idProducto) == true)
+            {
+                descuento = 
+            }
+
+            return descuento;
+        }
+        */
     }
 }

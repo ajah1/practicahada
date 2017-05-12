@@ -11,17 +11,24 @@ namespace ClassLibrary.EN
 
     public class Popular : Producto
     {
+        // atributos
         private int numero_ventas;
 
+        // constructores
         public Popular() { }
 
-        public 
-            Popular(int id)
+        public Popular(int id)
         {
             this.Id = id;
         }
         
-        public int Numero_ventas { get { return numero_ventas; } set { numero_ventas = value; } }
+
+        // propiedades
+        public int Numero_ventas
+        {
+            get { return numero_ventas; }
+            set { numero_ventas = value; }
+        }
 
 
         // funcion que devuelve una lista con los 3 productos mas comprados
@@ -63,12 +70,14 @@ namespace ClassLibrary.EN
             CAD.CADpopular aux = new CAD.CADpopular();
             aux.delete(Id);
         }
+
         // actualizar las ventas de un popular
         public void updatePopular()
         {
             CAD.CADpopular aux = new CAD.CADpopular();
             aux.update(this);
         }
+
         // PROVISIONAL: devuelve el numero de ventas de un productoPopular
         public string readPopular()
         {
