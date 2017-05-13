@@ -65,6 +65,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="EN\encarrito.cs" />
     <Compile Include="EN\enlineapedido.cs" />
+    <Compile Include="CAD\CADcarrito.cs" />
+    <Compile Include="CAD\CADlineapedido.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
