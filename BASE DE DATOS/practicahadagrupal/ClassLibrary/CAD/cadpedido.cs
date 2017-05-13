@@ -30,7 +30,10 @@ namespace ClassLibrary.CAD{
 
 
         }
-        
+		public void InsertarPedido(EN.ENCarro pedido){
+
+		}
+
         public List<Producto> consultarProducto(int idProducto, List<Producto> p) {
 
 
