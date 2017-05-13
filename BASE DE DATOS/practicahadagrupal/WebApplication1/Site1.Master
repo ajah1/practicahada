@@ -28,7 +28,6 @@
         </li>
         <li>
             <a href="ranking.aspx">Ranking</a>
-        </li>
         <li>
             <a href="perfil.aspx">Perfil</a>
         </li>
@@ -46,6 +45,7 @@
 
     body {
         text-align:center;
+        overflow-x: hidden;
     }
     canvas { border:5px dotted #ccc; }
     h1 {  margin: 15px;}
