@@ -13,7 +13,7 @@
            }
            .auto-style3 {
                font-size: medium;
-               color: #FFFFFF;
+               color: black;
            }
            .auto-style4 {
                width: 278px;
