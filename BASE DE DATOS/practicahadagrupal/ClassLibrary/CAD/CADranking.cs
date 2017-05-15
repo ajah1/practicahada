@@ -24,7 +24,7 @@ namespace ClassLibrary.CAD{
 				try
 				{
                 string sentencia = "INSERT INTO ranking" +
-                "";
+                    "SELECT name FROM puntuacion ORDER BY puntuacion DESC LIMIT 3";
 
 					conn = new SqlConnection();
 

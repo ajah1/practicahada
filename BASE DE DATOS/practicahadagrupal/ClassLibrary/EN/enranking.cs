@@ -32,20 +32,5 @@ namespace ClassLibrary.EN{
 			aux.add(this);
 		}
 
-		public void removeRanking(string dbname)
-		{
-			CAD.CADranking aux = new CAD.CADranking();
-			aux.remove(usuario);
-		}
-		public void readRanking(string dbname)
-		{
-			CAD.CADranking aux = new CAD.CADranking();
-			aux.read(usuario);
-		}
-		public void updateRanking(string dbname)
-		{
-			CAD.CADranking aux = new CAD.CADranking();
-			aux.update(this);
-		}
 	}
 }
