@@ -9,43 +9,30 @@ namespace ClassLibrary.EN{
 
         private int numPedido;
         private string fecha;
-        private int cantidad;
-        private List<Producto> productos;
-        //private Usuario usuario;
+        private usuario usuhario;
 
-        public int NumPedido { get; set; }
-        public string Fecha { get; set; }
-        public int Cantidad { get; set; }
-        
+        public int NumPedido { get { return numPedido; } set { numPedido = value; } }
+        public string Fecha { get { return fecha; } set { fecha = value; } }       
+        public usuario Usuhario { get { return usuhario; } set { usuhario = value; } }
 
-
-        public pedido(int numPedido, int cantidad, string fecha = "") {
+        public pedido(int numPedido, string fecha = "", usuario usuhario) {
             this.numPedido = numPedido;
             this.fecha = fecha;
-            this.cantidad = cantidad;
-            productos = new List<Producto> { };
+            this.usuhario = usuhario;
         }
 
-        public pedido() { }
+        public pedido() {}
 
-        public void savePedido(string dbname) {
+        public void savePedido() {
             CAD.CADpedido pedido = new CAD.CADpedido();
             pedido.create(this);
 
         }
 
-        public void removeProducto(Producto p) {
-            productos.Remove(p);
+        public void removePedido() {
+            CAD.CADpedido pedido = new CAD.CADpedido();
+            pedido.remove(this);
 
-        }
-
-        public void addProducto(Producto p) {
-            productos.Add(p);
-        }
-
-        public void consultarProducto() {
-            CAD.CADpedido aux = new CAD.CADpedido();
-            productos = aux.consultarProducto(this.numPedido, productos);
         }
 
     }
