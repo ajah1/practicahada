@@ -160,10 +160,15 @@ namespace pruebas
             */
 
             CADpromocion aux = new CADpromocion();
+            
+            List<String> l = new List<string>();
 
-            int descuento = aux.obtenerDescuento(5);
+            l = aux.read(3);
 
-            Console.WriteLine(descuento);
+            foreach (string value in l)
+            {
+                Console.WriteLine(value);
+            }
 
             Console.ReadLine();
         }
