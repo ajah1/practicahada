@@ -1,8 +1,11 @@
 ﻿<Properties StartupConfiguration="{2B71AE63-046D-4323-B9B2-DA1B27DB0857}|Pruebas unitarias">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebApplication1/Site1.Master">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ClassLibrary/CAD/CADpuntuacion.cs">
     <Files>
-      <File FileName="WebApplication1/ranking.aspx" Line="9" Column="1" />
-      <File FileName="WebApplication1/Site1.Master" Line="57" Column="29" />
+      <File FileName="ClassLibrary/CAD/CADranking.cs" Line="27" Column="20" />
+      <File FileName="ClassLibrary/EN/enranking.cs" Line="34" Column="9" />
+      <File FileName="WebApplication1/ranking.aspx" Line="31" Column="14" />
+      <File FileName="ClassLibrary/EN/enpuntuacion.cs" Line="23" Column="4" />
+      <File FileName="ClassLibrary/CAD/CADpuntuacion.cs" Line="166" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
