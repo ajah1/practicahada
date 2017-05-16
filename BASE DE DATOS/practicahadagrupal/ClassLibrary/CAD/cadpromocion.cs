@@ -114,15 +114,15 @@ namespace ClassLibrary.CAD
         }
 
         // leer promocion
-        public List<string> read( int id )
+        public string read( int id )
         {
-            List<string> salida = new List<string>();
+            string salida = "";
 
             try
             {
                 
                 string sentencia = "Select * from promociones " +
-                                   "where idpromocion = '" + id.ToString() + "'";
+                                   "where idproducto = '" + id.ToString() + "'";
                 
                 conn = new SqlConnection();
 
@@ -135,11 +135,11 @@ namespace ClassLibrary.CAD
 
                 while (dr.Read())
                 {
-                    salida.Add(dr["idproducto"].ToString());
-                    salida.Add(dr["descuento"].ToString());
-                    salida.Add(dr["f_ini"].ToString());
-                    salida.Add(dr["f_fin"].ToString());            
-                 }
+                    salida = " " + dr["descuento"].ToString() +
+                        dr["idproducto"].ToString() +" "+
+                        dr["f_ini"].ToString() + " "+
+                        dr["f_fin"].ToString();            
+                    }
 
             }
             catch (Exception ex)
