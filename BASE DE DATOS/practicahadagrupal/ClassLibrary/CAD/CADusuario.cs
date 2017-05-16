@@ -81,7 +81,6 @@ namespace ClassLibrary.CAD{
             {
                 conn.Close();
             }
->>>>>>> origin/48781689T
 
         }
 
