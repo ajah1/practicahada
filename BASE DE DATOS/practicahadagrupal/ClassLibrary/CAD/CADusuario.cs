@@ -10,24 +10,7 @@ namespace ClassLibrary.CAD{
 
         public CADusuario(){}
 		
-<<<<<<< HEAD
-		public void create(EN.usuario user){
 
-        }
-=======
->>>>>>> origin/48781689T
-
-        public void delete(string usuario){
-
-        }
-
-<<<<<<< HEAD
-        public void update(EN.usuario user){
-
-        }
-
-        public void read(string usuario){
-=======
         public void create(EN.usuario user)
         {
             try

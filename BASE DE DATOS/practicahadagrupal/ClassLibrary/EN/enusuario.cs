@@ -122,12 +122,5 @@ namespace ClassLibrary.EN{
             cli.update(this);
         }
 
-<<<<<<< HEAD
-        public void leerUsuario(string usuario) {
-            CAD.CADusuario cli = new CAD.CADusuario();
-            cli.read(usuario);
-        }
-=======
->>>>>>> origin/48781689T
     }
 }
