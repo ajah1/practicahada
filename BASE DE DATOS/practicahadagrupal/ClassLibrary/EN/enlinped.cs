@@ -64,20 +64,20 @@ namespace ClassLibrary.EN{
         //********************************************
         // metodos
 
-        public void nuevoLinped(Producto pro, pedido ped)
+        public void addLinped(Producto pro, pedido ped)
         {
             CAD.CADlinped lin = new CAD.CADlinped();
             lin.create(this);
         }
 
-        public void borrarLinped(Producto pro, pedido ped)
+        public void deleteLinped(Producto pro, pedido ped)
         {
             CAD.CADlinped lin = new CAD.CADlinped();
             lin.delete(this);
 
         }
 
-        public void modificarLinped(Producto pro, pedido ped)
+        public void updateLinped(Producto pro, pedido ped)
         {
             CAD.CADlinped lin = new CAD.CADlinped();
             lin.update();

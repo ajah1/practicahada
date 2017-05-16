@@ -76,10 +76,6 @@ namespace ClassLibrary.CAD{
             }
         }
 
-        public void update()
-        {
-           
-        }
 
         public string read(EN.enlinped lin)
         {
@@ -88,7 +84,7 @@ namespace ClassLibrary.CAD{
             try
             {
 
-                string sentencia = "Select * from lineaPedido " + "where numPedido = '" + lin.NumPedido.ToString() 
+                string sentencia = "Select * from lineaPedido " + "where numPedido = '" + lin.NumPedido.ToString()
                     + "' and linea = '" + lin.Linea.ToString() + "'";
 
                 conn = new SqlConnection();
@@ -120,4 +116,9 @@ namespace ClassLibrary.CAD{
             return salida;
         }
     }
+
+    public void update()
+        {
+           
+        }
 }
