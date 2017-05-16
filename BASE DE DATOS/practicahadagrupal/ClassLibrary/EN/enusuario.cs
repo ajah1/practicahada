@@ -18,7 +18,6 @@ namespace ClassLibrary.EN{
         private string descripcion;
         private string email;
         private int edad;
-        private puntuacion puntuacion;
 
         //********************************************
         // constructores
@@ -34,7 +33,14 @@ namespace ClassLibrary.EN{
             descripcion = "";
             email = "";
             edad = 0;
+          //puntuacion = new puntuacion();
         }
+
+        /*
+        public ~usuario(){
+
+        }
+        */
 
         //********************************************
         // get set
@@ -107,11 +113,9 @@ namespace ClassLibrary.EN{
             cli.update(this);
         }
 
-        public string leerUsuario(string usuario) {
-            string salida = "";
+        public void leerUsuario(string usuario) {
             CAD.CADusuario cli = new CAD.CADusuario();
-            salida = salida + cli.read(usuario);
-            return salida;
+            cli.read(usuario);
         }
     }
 }
