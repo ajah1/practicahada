@@ -54,11 +54,11 @@
 
 
     body {
-        background-color: #0F68B6;
+        background-color: black;
     }
 
     h1 {
-        background-color: greenyellow;
+        background-color: red;
         font-size:50px; text-align: center; padding-bottom: 25px;
     }
 
