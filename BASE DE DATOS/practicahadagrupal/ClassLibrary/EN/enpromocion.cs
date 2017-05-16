@@ -86,13 +86,11 @@ namespace ClassLibrary.EN
         }
 
         // leer una promocion
-        public List<string> readPromocion()
+        public string readPromocion()
         {
-            List<string> salida = new List<string>();
-
+            string salida = "";
             CAD.CADpromocion aux = new CAD.CADpromocion();
-            salida = aux.read(id_producto);
-
+            salida += aux.read(id_producto);
             return salida;
         }
 
