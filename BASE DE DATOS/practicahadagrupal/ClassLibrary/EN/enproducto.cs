@@ -27,6 +27,11 @@ namespace ClassLibrary.EN{
             
         } 
 
+        public Producto(int id)
+        {
+            this.id = id;
+        }
+
         public Producto() {}
 
         public void saveProducto(string dbname) {
