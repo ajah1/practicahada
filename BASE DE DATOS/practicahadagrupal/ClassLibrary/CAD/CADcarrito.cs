@@ -24,5 +24,100 @@ namespace ClassLibrary.CAD
 		{
 		}
 
+		public void add(EN.ENCarro c)
+		{
+			try
+			{
+				conn.Open();
+				SqlCommand com = new SqlCommand
+					(
+					   "INSERT INTO " +
+					   "carrito(num_pedido, data, email, precio, productos)" +
+					   "VALUES(" +
+						c.Numpedido.ToString() + ", " +
+						c.Data.ToString() + ", " +
+						c.Email.ToString() + ", " +
+						c.Precio.ToString() + ", " +
+						c.Productos.ToString() + ")", conn);
+
+				com.ExecuteNonQuery();
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine("Fallo al crear carro.");
+				Console.WriteLine(". \nError: {0}", ex.ToString());
+			}
+			finally
+			{
+				conn.Close();
+			}
+		}
+
+		public void remove(int num_pedido)
+		{
+			try
+			{
+				conn.Open();
+				SqlCommand com = new SqlCommand
+					(
+						"DELETE FROM carrito WHERE ID = " +
+						num_pedido.ToString(), conn);
+
+				com.ExecuteNonQuery();
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine("Fallo al limpiar carrito.");
+				Console.WriteLine(". \nError: {0}", ex.ToString());
+			}
+			finally
+			{
+				conn.Close();
+			}
+		}
+
+		public void update(EN.ENCarro c)
+		{
+			try
+			{
+				conn.Open();
+				SqlCommand com = new SqlCommand();
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine("Fallo al actualizar carrito.");
+				Console.WriteLine(". \nError: {0}", ex.ToString());
+			}
+			finally
+			{
+				conn.Close();
+			}
+		}
+
+		public void read(int num_pedido)
+		{
+			try
+			{
+				conn.Open();
+				SqlCommand com = new SqlCommand("Select * from carrito" +
+												"where num_pedido = numpedido", conn);
+				SqlDataReader dr = com.ExecuteReader();
+
+				while (dr.Read())
+				{
+
+				}
+
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine("Fallo al leer carrito.");
+				Console.WriteLine(". \nError: {0}", ex.ToString());
+			}
+			finally
+			{
+				conn.Close();
+			}
+		}
 	}
 }
