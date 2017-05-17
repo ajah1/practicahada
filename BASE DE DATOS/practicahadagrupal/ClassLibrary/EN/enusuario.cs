@@ -86,17 +86,12 @@ namespace ClassLibrary.EN{
         public void borrarUsuario(string usuario)
         {
             CAD.CADusuario cli = new CAD.CADusuario();
-<<<<<<< HEAD
-            //cli.delete(usuario);
-        }
 
-        public void registrarUsuario(string usuario, string direccion, string contrasena, string ciudad, string pais, string descripcion, string email, int edad) {
-=======
             cli.delete(usuario);
         }
 
         public void registrarUsuario() {
->>>>>>> master
+
             CAD.CADusuario cli = new CAD.CADusuario();
             cli.create(this);
         }
@@ -109,23 +104,14 @@ namespace ClassLibrary.EN{
          public void salirWeb(){
 
          }*/
-<<<<<<< HEAD
 
-        public string leerUsuario(string usuario)
-        {
-            string salida = "";
-            CAD.CADusuario cli = new CAD.CADusuario();
-            salida = salida + cli.read(usuario);
-            return salida;
-        }
-=======
         
 
         public List<string> leerUsuario()
         {
             List<string> lista = new List<string>();
             lista = null;
->>>>>>> master
+
 
             CAD.CADusuario cli = new CAD.CADusuario();
             lista = cli.read(this.Usuario);
@@ -133,13 +119,12 @@ namespace ClassLibrary.EN{
             return lista;
         }
 
-<<<<<<< HEAD
-=======
+
         public void modificarUsuario(){
             CAD.CADusuario cli = new CAD.CADusuario();
             cli.update(this);
         }
 
->>>>>>> master
+
     }
 }

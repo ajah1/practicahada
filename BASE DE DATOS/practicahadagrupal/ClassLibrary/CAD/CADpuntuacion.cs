@@ -101,8 +101,6 @@ namespace ClassLibrary.CAD
 
 				conn = new SqlConnection();
 
-				conn.ConnectionString = stringConexion;
-				conn.Open();
 
 				SqlCommand com = new SqlCommand(sentencia, conn);
 				com.ExecuteNonQuery();
@@ -130,8 +128,6 @@ namespace ClassLibrary.CAD
 
 				conn = new SqlConnection();
 
-				conn.ConnectionString = stringConexion;
-				conn.Open();
 
 				SqlCommand com = new SqlCommand(sentencia, conn);
 				SqlDataReader dr = com.ExecuteReader();
