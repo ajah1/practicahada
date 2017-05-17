@@ -15,21 +15,25 @@ namespace pruebasENCAD
 
         static void Main(string[] args)
         {
+            /*
+                Las fechas deben tener mismo formato que en la base de datos (ok)
+                no se si this.usuhario = usuhario funciona
+            */
 
-            // pruebas usuario
-            Console.WriteLine("=> INICIO PRUEBAS  [no terminado] <=");
+            // pruebas pedido
+            Console.WriteLine("=> INICIO PRUEBAS pedido [no terminado] <=");
 
             // ---------------------------------------prueba 1 
-            Console.WriteLine("=> prueba1: add  [ok]<=");
+            Console.WriteLine("=> prueba1: add  pedido[ok]<=");
             
             // ---------------------------------------prueba 2
-            Console.WriteLine("=> prueba2: delete usuario [ok]<=");
+            Console.WriteLine("=> prueba2: delete pedido [ok]<=");
            
             // ---------------------------------------prueba 3
-            Console.WriteLine("=> prueba3: update usuario [ok]<=");
+            Console.WriteLine("=> prueba3: update pedido [ok]<=");
             
             // ---------------------------------------prueba 4
-            Console.WriteLine("=> prueba4: read usuario ok<=");
+            Console.WriteLine("=> prueba4: read pedido ok<=");
 
         }
     }
