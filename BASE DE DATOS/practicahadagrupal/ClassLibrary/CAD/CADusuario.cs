@@ -15,30 +15,9 @@ namespace ClassLibrary.CAD{
         
         private SqlConnection conn = null;
         private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf;Integrated Security=true";
-<<<<<<< HEAD
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> master
-
-        public CADusuario(){
-            string cadenaconexion = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
-            conn = new SqlConnection();
-            conn.ConnectionString = cadenaconexion;
-            conn.Open();
-        }
-<<<<<<< HEAD
-=======
-=======
-        public CADusuario(){}
->>>>>>> parent of 6d4f929... ajustando BD
->>>>>>> master
-
-=======
 
         public CADusuario(){}
->>>>>>> parent of 6d4f929... ajustando BD
 
         public void create(EN.usuario user)
         {
@@ -46,10 +25,6 @@ namespace ClassLibrary.CAD{
             {
 
                 string sentencia = "INSERT INTO usuario " +
-<<<<<<< HEAD
-=======
-
->>>>>>> master
                     "(usuario, direccion, contraseña, ciudad, pais, descripcion, email, edad)" +
                     "VALUES('" +
                     user.Usuario.ToString() + "', '" +
@@ -113,10 +88,6 @@ namespace ClassLibrary.CAD{
                     salida.Add(ur["descripcion"].ToString());
                     salida.Add(ur["email"].ToString());
                     salida.Add(ur["edad"].ToString());
-<<<<<<< HEAD
-=======
-
->>>>>>> master
                 }
 
             }
@@ -134,25 +105,17 @@ namespace ClassLibrary.CAD{
         }
 
         public void update(EN.usuario user){
+
             try{
-<<<<<<< HEAD
-                string sentencia = @"UPDATE usuario SET " +
-=======
 
                 string sentencia = @"UPDATE usuario SET " +
 
->>>>>>> master
                  "direccion = '"        + user.Direccion.ToString() + 
                  "', contraseña = '"    + user.Contrasena.ToString() +
                  "', ciudad = '"        + user.Ciudad.ToString() +
                  "', pais = '"          + user.Pais.ToString() + 
                  "', descripcion = '"   + user.Descripcion.ToString() +
                  "', email = '"         + user.Email.ToString() +
-<<<<<<< HEAD
-                 "', edad = '"          + user.Edad.ToString() + "')" +
-                 "WHERE usuario = '" + user.Usuario.ToString() + "'";
-
-=======
                  "', edad = '"          + user.Edad.ToString() + "'" +
                  "WHERE usuario = '" + user.Usuario.ToString() + "'";
 
@@ -160,10 +123,6 @@ namespace ClassLibrary.CAD{
 
                 conn.ConnectionString = stringConexion;
                 conn.Open();
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> parent of 6d4f929... ajustando BD
 
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();

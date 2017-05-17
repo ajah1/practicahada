@@ -16,31 +16,13 @@ namespace ClassLibrary.CAD
 
     public class CADranking
     {
-        private SqlConnection conn = null;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        public CADranking() {
-            string cadenaconexion = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
-            conn = new SqlConnection();
-            conn.ConnectionString = cadenaconexion;
-            conn.Open();
-        }
         
-
-=======
-=======
->>>>>>> parent of 6d4f929... ajustando BD
         public CADranking() { }
 
         private SqlConnection conn = null;
         private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=/Users/Laila/Desktop/HADA/practicahada/BASE DE DATOS/practicahadagrupal/practicahadagrupal/App_Data/Database1.mdf;Integrated Security=true";
-<<<<<<< HEAD
-=======
 
->>>>>>> parent of 6d4f929... ajustando BD
-
->>>>>>> parent of 6d4f929... ajustando BD
 
         // borrar todas las tuplas de la tabla ranking
         public void drop()
