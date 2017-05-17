@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Configuration;
 
 using System.Data;
 using System.Data.Common;
@@ -19,6 +18,7 @@ namespace ClassLibrary.CAD
     {
         private SqlConnection conn = null;
 
+<<<<<<< HEAD
         public CADranking() {
             string cadenaconexion = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
             conn = new SqlConnection();
@@ -27,6 +27,13 @@ namespace ClassLibrary.CAD
         }
         
 
+=======
+        public CADranking() { }
+
+        private SqlConnection conn = null;
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=/Users/Laila/Desktop/HADA/practicahada/BASE DE DATOS/practicahadagrupal/practicahadagrupal/App_Data/Database1.mdf;Integrated Security=true";
+
+>>>>>>> parent of 6d4f929... ajustando BD
 
         // borrar todas las tuplas de la tabla ranking
         public void drop()
@@ -57,6 +64,11 @@ namespace ClassLibrary.CAD
                 string sentencia = "INSERT INTO ranking(usuario, puntuacion) " +
                     " SELECT pusuario, record FROM puntuacion ORDER BY record ASC";
 
+
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();

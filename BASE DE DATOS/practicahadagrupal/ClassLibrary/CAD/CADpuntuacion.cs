@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Configuration;
 
 using System.Data;
 using System.Data.Common;
@@ -18,23 +17,23 @@ namespace ClassLibrary.CAD
 	{
 
 		public CADpuntuacion()
-		{
-            string cadenaconexion = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
-            conn = new SqlConnection();
-            conn.ConnectionString = cadenaconexion;
-            conn.Open();
-        }
+		{ }
 
 		private SqlConnection conn = null;
+		private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Downloads\practicahada-48765284V\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf;Integrated Security=true";
 
-        // poner todo a cero
-        public void remove(string usuario)
+		// poner todo a cero
+		public void remove(string usuario)
 		{
 			try
 			{
 				string sentencia = @"UPDATE puntuacion  SET " +
 						"record = 0" + "vidas = 0" + "puntosTotales= 0 " + " WHERE pusuario " + usuario;
 
+				conn = new SqlConnection();
+
+				conn.ConnectionString = stringConexion;
+				conn.Open();
 
 				SqlCommand com = new SqlCommand(sentencia, conn);
 				com.ExecuteNonQuery();
@@ -61,6 +60,11 @@ namespace ClassLibrary.CAD
 
 				string sentencia = "SELECT * FROM puntuacion " +
 								   "WHERE pusuario = '" + usuario + "'";
+
+				conn = new SqlConnection();
+
+				conn.ConnectionString = stringConexion;
+				conn.Open();
 
 				SqlCommand com = new SqlCommand(sentencia, conn);
 				SqlDataReader dr = com.ExecuteReader();

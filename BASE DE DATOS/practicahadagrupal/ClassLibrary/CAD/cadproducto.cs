@@ -14,13 +14,10 @@ namespace ClassLibrary.CAD{
     class CADproducto{
 
         private SqlConnection conn = null;
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf ;Integrated Security=true";
 
-        public CADproducto() {
-            string cadenaconexion = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
-            conn = new SqlConnection();
-            conn.ConnectionString = cadenaconexion;
-            conn.Open();
-        }
+
+        public CADproducto() {}
 
         public void create(ClassLibrary.EN.Producto p) {
             try {
@@ -33,6 +30,9 @@ namespace ClassLibrary.CAD{
                     p.Nombre + "', '" +
                     p.Precio.ToString() + "')'";
 
+                conn = new SqlConnection();
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 
                 SqlCommand com = new SqlCommand(sentenciaDB, conn);
                 com.ExecuteNonQuery();
@@ -49,6 +49,10 @@ namespace ClassLibrary.CAD{
         public void remove(int id) {
             try {
                 string sentenciaDB = "DELETE FROM producto WHERE id = " + id.ToString();
+
+                conn = new SqlConnection();
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 
                 SqlCommand com = new SqlCommand(sentenciaDB, conn);
                 com.ExecuteNonQuery();
@@ -72,6 +76,10 @@ namespace ClassLibrary.CAD{
                     "', imagen = '" + p.Nombre + 
                     "', precio = '" + p.Precio.ToString() + "')'";
 
+                conn = new SqlConnection();
+                conn.ConnectionString = stringConexion;
+                conn.Open();
+
                 SqlCommand com = new SqlCommand(sentenciaDB, conn);
                 com.ExecuteNonQuery();
             }
@@ -91,6 +99,10 @@ namespace ClassLibrary.CAD{
             try {
                 string sentenciaDB = "SELECT * FROM producto WHERE id = " +
                     p.Id.ToString() + "'";
+
+                conn = new SqlConnection();
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 
                 SqlCommand com = new SqlCommand(sentenciaDB, conn);
                 SqlDataReader rd = com.ExecuteReader();
