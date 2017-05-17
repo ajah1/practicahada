@@ -2,6 +2,9 @@ BASE DE DATOS/practicahadagrupal/ClassLibrary/bin/Debug/ClassLibrary.dll
 *.dll
 BASE DE DATOS/practicahadagrupal/practicahadagrupal/obj/Debug/practicahadagrupal.dll
 *.dll
-BASE DE DATOS/practicahadagrupal/.vs/practicahadagrupal/v14/.suo
+BASE DE DATOS/practicahadagrupal/.vs/practicahadagrupal/v14/
 BASE DE DATOS/practicahadagrupal/practicahadagrupal/obj/Debug/*.cache
-BASE DE DATOS/practicahadagrupal/ClassLibrary/bin/Debug/*
+BASE DE DATOS/practicahadagrupal/ClassLibrary/bin/Debug/
+BASE DE DATOS/practicahadagrupal/ClassLibrary/obj/Debug/
+BASE DE DATOS/practicahadagrupal/practicahadagrupal/obj/Debug/
+BASE DE DATOS/practicahadagrupal/WebApplication1/obj/Debug/
