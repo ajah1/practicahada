@@ -15,10 +15,14 @@ namespace ClassLibrary.CAD{
     class CADpedido{
 
         private SqlConnection conn = null;
-        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf ;Integrated Security=true";
 
 
-        public CADpedido(){}
+        public CADpedido(){
+            string cadenaconexion = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
+            conn = new SqlConnection();
+            conn.ConnectionString = cadenaconexion;
+            conn.Open();
+        }
 
         public void create(pedido ped){
             try
@@ -30,9 +34,6 @@ namespace ClassLibrary.CAD{
                     ped.Usuhario.Usuario + "', '" +
                     ped.Fecha.ToString() + "', '" + "')'";
 
-                conn = new SqlConnection();
-                conn.ConnectionString = stringConexion;
-                conn.Open();
 
                 SqlCommand com = new SqlCommand(sentenciaDB, conn);
                 com.ExecuteNonQuery();
@@ -52,10 +53,6 @@ namespace ClassLibrary.CAD{
         public void remove(pedido ped){
             try {
                 string sentenciaDB = "DELETE FROM pedido WHERE num_pedido = " + ped.NumPedido;
-
-                conn = new SqlConnection();
-                conn.ConnectionString = stringConexion;
-                conn.Open();
 
                 SqlCommand com = new SqlCommand(sentenciaDB, conn);
                 com.ExecuteNonQuery();

@@ -67,7 +67,7 @@
             <td style="width: 121px">&nbsp;</td>
             <td class="auto-style2">&nbsp;</td>
             <td class="auto-style1">
-                <asp:TextBox ID="TextBox2" runat="server" Height="33px" Width="197px"></asp:TextBox>
+                <asp:TextBox ID="TextBox2" runat="server" Height="33px" Width="197px" TextMode="Password"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
