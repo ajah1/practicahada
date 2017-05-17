@@ -12,26 +12,24 @@ namespace pruebasENCAD
 {
     class Program
     {
+
         static void Main(string[] args)
         {
 
-            // pruebas para usuario
-            Console.WriteLine("=> INICIO PRUEBAS USUARIO <=");
+            // pruebas usuario
+            Console.WriteLine("=> INICIO PRUEBAS  [no terminado] <=");
 
-            // ---------------------------------------prueba 1
-            Console.WriteLine("=> prueba1: add usuario <=");
-
-
-
+            // ---------------------------------------prueba 1 
+            Console.WriteLine("=> prueba1: add  [ok]<=");
+            
             // ---------------------------------------prueba 2
-            Console.WriteLine("=> prueba2: update usuario <=");
+            Console.WriteLine("=> prueba2: delete usuario [ok]<=");
+           
             // ---------------------------------------prueba 3
-            Console.WriteLine("=> prueba3: delete usuario <=");
+            Console.WriteLine("=> prueba3: update usuario [ok]<=");
+            
             // ---------------------------------------prueba 4
-            Console.WriteLine("=> prueba4: read usuario <=");
-
-
-
+            Console.WriteLine("=> prueba4: read usuario ok<=");
 
         }
     }

@@ -11,10 +11,10 @@ using System.Data.SqlTypes;
 
 namespace ClassLibrary.CAD{
 
-    class CADusuario{
-
+    public class CADusuario{
+        
         private SqlConnection conn = null;
-        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf;Integrated Security=true";
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf;Integrated Security=true";
 
         public CADusuario(){}
 
@@ -22,7 +22,7 @@ namespace ClassLibrary.CAD{
         {
             try
             {
-                string sentencia = "INSERT INTO usuario" +
+                string sentencia = "INSERT INTO usuario " +
                     "(usuario, direccion, contraseña, ciudad, pais, descripcion, email, edad)" +
                     "VALUES('" +
                     user.Usuario.ToString() + "', '" +
@@ -53,14 +53,14 @@ namespace ClassLibrary.CAD{
             }
         }
 
-        public string read(string user)
+        public List<string> read(string user)
         {
-            string salida = "";
+            List<string> salida = new List<string>();
 
             try
             {
-
-                string sentencia = "Select * from usuario " + "where usuario = '" + user + "'";
+                string sentencia = "Select * from usuario " + 
+                                    "where usuario = '" + user + "'";
 
                 conn = new SqlConnection();
 
@@ -73,9 +73,18 @@ namespace ClassLibrary.CAD{
 
                 while (ur.Read())
                 {
+                    /*
                     salida = " " + ur["usuario"].ToString() + ur["direccion"].ToString() + " " +
                         ur["ciudad"].ToString() + " " + ur["pais"].ToString() + " " + ur["descripcion"].ToString() +
                         " " + ur["email"].ToString() + " " + ur["edad"].ToString();
+                    */
+                    
+                    salida.Add(ur["direccion"].ToString());
+                    salida.Add(ur["ciudad"].ToString());
+                    salida.Add(ur["pais"].ToString());
+                    salida.Add(ur["descripcion"].ToString());
+                    salida.Add(ur["email"].ToString());
+                    salida.Add(ur["edad"].ToString());
                 }
 
             }
@@ -88,23 +97,21 @@ namespace ClassLibrary.CAD{
             {
                 conn.Close();
             }
-<<<<<<< HEAD
 
-=======
->>>>>>> master
             return salida;
         }
 
         public void update(EN.usuario user){
             try{
-                string sentencia = @"UPDATE usuario SET" +
+                string sentencia = @"UPDATE usuario SET " +
                  "direccion = '"        + user.Direccion.ToString() + 
                  "', contraseña = '"    + user.Contrasena.ToString() +
                  "', ciudad = '"        + user.Ciudad.ToString() +
                  "', pais = '"          + user.Pais.ToString() + 
                  "', descripcion = '"   + user.Descripcion.ToString() +
                  "', email = '"         + user.Email.ToString() +
-                 "', edad = '"          + user.Edad.ToString() + "')";
+                 "', edad = '"          + user.Edad.ToString() + "'" +
+                 "WHERE usuario = '" + user.Usuario.ToString() + "'";
 
                 conn = new SqlConnection();
 
@@ -123,6 +130,31 @@ namespace ClassLibrary.CAD{
                 conn.Close();
             }
         }
-        
+
+        public void delete(string user)
+        {
+            try
+            {
+                string sentencia = "DELETE FROM usuario  WHERE usuario = '" +
+                                    user + "'";
+                
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
+
+                SqlCommand com = new SqlCommand(sentencia, conn);
+                com.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Remove usuario failed.");
+                Console.WriteLine(". \nError: {0}", ex.ToString());
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
     }
 }

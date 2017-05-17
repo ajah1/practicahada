@@ -36,12 +36,6 @@ namespace ClassLibrary.EN{
           //puntuacion = new puntuacion();
         }
 
-        /*
-        public ~usuario(){
-
-        }
-        */
-
         //********************************************
         // get set
 
@@ -92,10 +86,10 @@ namespace ClassLibrary.EN{
         public void borrarUsuario(string usuario)
         {
             CAD.CADusuario cli = new CAD.CADusuario();
-            //cli.delete(usuario);
+            cli.delete(usuario);
         }
 
-        public void registrarUsuario(string usuario, string direccion, string contrasena, string ciudad, string pais, string descripcion, string email, int edad) {
+        public void registrarUsuario() {
             CAD.CADusuario cli = new CAD.CADusuario();
             cli.create(this);
         }
@@ -109,15 +103,18 @@ namespace ClassLibrary.EN{
 
          }*/
 
-        public string leerUsuario(string usuario)
+        public List<string> leerUsuario()
         {
-            string salida = "";
+            List<string> lista = new List<string>();
+            lista = null;
+
             CAD.CADusuario cli = new CAD.CADusuario();
-            salida = salida + cli.read(usuario);
-            return salida;
+            lista = cli.read(this.Usuario);
+
+            return lista;
         }
 
-        public void modificarUsuario(string usuario, string direccion, string contrasena, string ciudad, string pais, string descripcion, string email, int edad){
+        public void modificarUsuario(){
             CAD.CADusuario cli = new CAD.CADusuario();
             cli.update(this);
         }
