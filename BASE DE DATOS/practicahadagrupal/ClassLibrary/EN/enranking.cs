@@ -6,8 +6,17 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary.EN
 {
+<<<<<<< HEAD
     public class ranking
     {
+=======
+	public class ranking
+	{
+
+		private string usuario;
+		private int puntuacion;
+		private string fecha;
+>>>>>>> master
 
         private string usuario;
         private int puntuacion;
@@ -26,7 +35,14 @@ namespace ClassLibrary.EN
         public int p { get; set; }
         public string f { get; set; }
 
+		// borra todas las tuplas de la base de datos
+		public void droptable()
+		{
+			CAD.CADranking aux = new CAD.CADranking();
+			aux.drop();
+		}
 
+<<<<<<< HEAD
 
 
         public void addRanking(string dbname)
@@ -36,4 +52,20 @@ namespace ClassLibrary.EN
         }
 
     }
+=======
+		// actualiza la base de datos
+		public void addRanking()
+		{
+			CAD.CADranking aux = new CAD.CADranking();
+			aux.add();
+		}
+
+
+		// hace el nuevo ranking
+		public void updateTable()
+		{
+
+		}
+	}
+>>>>>>> master
 }
