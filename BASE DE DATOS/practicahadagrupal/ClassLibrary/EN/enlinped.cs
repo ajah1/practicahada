@@ -80,7 +80,7 @@ namespace ClassLibrary.EN{
         public void updateLinped(Producto pro, pedido ped)
         {
             CAD.CADlinped lin = new CAD.CADlinped();
-            lin.update();
+            //lin.update();
         }
 
         public string leerLinped(Producto pro, pedido ped)

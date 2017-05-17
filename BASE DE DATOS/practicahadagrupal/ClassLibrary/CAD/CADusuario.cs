@@ -17,7 +17,6 @@ namespace ClassLibrary.CAD{
         private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf;Integrated Security=true";
 
         public CADusuario(){}
-		
 
         public void create(EN.usuario user)
         {
@@ -89,7 +88,10 @@ namespace ClassLibrary.CAD{
             {
                 conn.Close();
             }
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
             return salida;
         }
 

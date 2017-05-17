@@ -18,7 +18,7 @@ namespace ClassLibrary.EN{
         public pedido(int numPedido, string fecha = "" /*usuario usuhario*/) {
             this.numPedido = numPedido;
             this.fecha = fecha;
-            this.usuhario = usuhario;
+            //this.usuhario = usuhario;
         }
 
         public pedido() {}
