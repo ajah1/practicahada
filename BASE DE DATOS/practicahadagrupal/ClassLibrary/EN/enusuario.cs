@@ -86,6 +86,10 @@ namespace ClassLibrary.EN{
         public void borrarUsuario(string usuario)
         {
             CAD.CADusuario cli = new CAD.CADusuario();
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
             cli.delete(usuario);
         }
 
@@ -111,6 +115,10 @@ namespace ClassLibrary.EN{
         {
             List<string> lista = new List<string>();
             lista = null;
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 
             CAD.CADusuario cli = new CAD.CADusuario();
             lista = cli.read(this.Usuario);
@@ -118,5 +126,15 @@ namespace ClassLibrary.EN{
             return lista;
         }
 
+<<<<<<< HEAD
+=======
+
+        public void modificarUsuario(){
+            CAD.CADusuario cli = new CAD.CADusuario();
+            cli.update(this);
+        }
+
+
+>>>>>>> master
     }
 }
