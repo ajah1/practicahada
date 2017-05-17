@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 
 using System.Data;
 using System.Data.Common;
@@ -15,11 +16,14 @@ namespace ClassLibrary.CAD{
     public class CADranking
     {
 
-        public CADranking() { }
+        public CADranking() {
+            string cadenaconexion = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
+            conn = new SqlConnection();
+            conn.ConnectionString = cadenaconexion;
+            conn.Open();
+        }
 
         private SqlConnection conn = null;
-        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=/Users/Laila/Desktop/HADA/practicahada/BASE DE DATOS/practicahadagrupal/practicahadagrupal/App_Data/Database1.mdf;Integrated Security=true";
-
 
         public void add(EN.ranking r)
         {
@@ -27,11 +31,6 @@ namespace ClassLibrary.CAD{
             {
                 string sentencia = "INSERT INTO ranking" +
                     "SELECT name FROM puntuacion ORDER BY puntuacion DESC LIMIT 3";
-
-                conn = new SqlConnection();
-
-                conn.ConnectionString = stringConexion;
-                conn.Open();
 
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
