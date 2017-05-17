@@ -93,7 +93,7 @@ namespace ClassLibrary.CAD
 		{
 			int puntos = 0;
 
-			puntos += suma + p.obtenerPuntuacion();
+			// puntos += suma + p.obtenerPuntuacion();
 
 			try
 			{

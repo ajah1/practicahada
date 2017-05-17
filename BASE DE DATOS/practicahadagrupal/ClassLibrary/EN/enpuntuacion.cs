@@ -49,7 +49,7 @@ namespace ClassLibrary.EN{
 
 		public void updatePuntuacion() {
 			CAD.CADpuntuacion aux = new CAD.CADpuntuacion();
-			aux.updatePuntuacion(this);
+			//aux.updatePuntuacion(this);
 		}
 
 	}
