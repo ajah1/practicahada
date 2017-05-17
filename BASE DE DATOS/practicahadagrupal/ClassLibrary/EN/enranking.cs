@@ -39,8 +39,7 @@ namespace ClassLibrary.EN
 			CAD.CADranking aux = new CAD.CADranking();
 			aux.add();
 		}
-
-
+        
 		// hace el nuevo ranking
 		public void updateTable()
 		{

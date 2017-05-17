@@ -21,7 +21,6 @@ namespace ClassLibrary.EN{
             this.numPedido = numPedido;
             this.fecha = fecha;
             this.usuhario = usuhario;
-
         }
 
         public pedido() {}
