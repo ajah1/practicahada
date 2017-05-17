@@ -1,0 +1,8 @@
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\bin\Debug\pruebasENCAD.exe.config
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\bin\Debug\pruebasENCAD.exe
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\bin\Debug\pruebasENCAD.pdb
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\bin\Debug\ClassLibrary.dll
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\bin\Debug\ClassLibrary.pdb
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\obj\Debug\pruebasENCAD.csprojResolveAssemblyReference.cache
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\obj\Debug\pruebasENCAD.exe
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\obj\Debug\pruebasENCAD.pdb
