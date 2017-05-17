@@ -19,6 +19,7 @@ namespace ClassLibrary.CAD
         private SqlConnection conn = null;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         public CADranking() {
             string cadenaconexion = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
             conn = new SqlConnection();
@@ -28,10 +29,16 @@ namespace ClassLibrary.CAD
         
 
 =======
+=======
+>>>>>>> parent of 6d4f929... ajustando BD
         public CADranking() { }
 
         private SqlConnection conn = null;
         private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=/Users/Laila/Desktop/HADA/practicahada/BASE DE DATOS/practicahadagrupal/practicahadagrupal/App_Data/Database1.mdf;Integrated Security=true";
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of 6d4f929... ajustando BD
 
 >>>>>>> parent of 6d4f929... ajustando BD
 
@@ -64,6 +71,11 @@ namespace ClassLibrary.CAD
                 string sentencia = "INSERT INTO ranking(usuario, puntuacion) " +
                     " SELECT pusuario, record FROM puntuacion ORDER BY record ASC";
 
+
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 
                 conn = new SqlConnection();
 

@@ -15,6 +15,7 @@ namespace ClassLibrary.CAD{
         
         private SqlConnection conn = null;
         private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf;Integrated Security=true";
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 =======
@@ -34,6 +35,10 @@ namespace ClassLibrary.CAD{
 >>>>>>> parent of 6d4f929... ajustando BD
 >>>>>>> master
 
+=======
+
+        public CADusuario(){}
+>>>>>>> parent of 6d4f929... ajustando BD
 
         public void create(EN.usuario user)
         {
@@ -155,7 +160,10 @@ namespace ClassLibrary.CAD{
 
                 conn.ConnectionString = stringConexion;
                 conn.Open();
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> parent of 6d4f929... ajustando BD
 
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
