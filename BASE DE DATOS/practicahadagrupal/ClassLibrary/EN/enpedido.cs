@@ -15,7 +15,7 @@ namespace ClassLibrary.EN{
         public string Fecha { get { return fecha; } set { fecha = value; } }       
         public usuario Usuhario { get { return usuhario; } set { usuhario = value; } }
 
-        public pedido(int numPedido, string fecha = "", usuario usuhario) {
+        public pedido(int numPedido, string fecha = "" /*usuario usuhario*/) {
             this.numPedido = numPedido;
             this.fecha = fecha;
             this.usuhario = usuhario;

@@ -15,7 +15,7 @@ namespace ClassLibrary.EN{
 
         public int Id { get { return id; } set { id = value; } }
         public string Nombre { get { return nombre; } set { nombre = value; } }
-        public string Descripcion { get {return descripcion } set { descripcion = value; } }
+        public string Descripcion { get { return descripcion; } set { descripcion = value; } }
         public string Imagen { get { return imagen; } set { imagen = value; } }
         public int Precio { get { return precio; } set { precio = value; } }
 
