@@ -44,6 +44,7 @@
     <Compile Include="CAD\caddatosbancarios.designer.cs">
       <DependentUpon>caddatosbancarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="CAD\CADlinped.cs" />
     <Compile Include="CAD\CADpedido.cs" />
     <Compile Include="CAD\CADpopular.cs" />
     <Compile Include="CAD\CADproducto.cs" />
@@ -54,6 +55,7 @@
     <Compile Include="CAD\cadstock.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="EN\endatosbancarios.cs" />
+    <Compile Include="EN\enlinped.cs" />
     <Compile Include="EN\enpedido.cs" />
     <Compile Include="EN\enpopular.cs" />
     <Compile Include="EN\enproducto.cs" />

@@ -1,12 +1,11 @@
-﻿<Properties StartupConfiguration="{2B71AE63-046D-4323-B9B2-DA1B27DB0857}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ClassLibrary/CAD/cadpopular.cs">
+﻿<Properties StartupConfiguration="{2B71AE63-046D-4323-B9B2-DA1B27DB0857}|Pruebas unitarias">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ClassLibrary/CAD/CADpuntuacion.cs">
     <Files>
-      <File FileName="ClassLibrary/EN/enstock.cs" Line="71" Column="4" />
-      <File FileName="ClassLibrary/EN/enpopular.cs" Line="3" Column="1" />
-      <File FileName="ClassLibrary/EN/enproducto.cs" Line="7" Column="26" />
-      <File FileName="practicahadagrupal/BaseDatos.csproj" Line="125" Column="3" />
-      <File FileName="ClassLibrary/CAD/cadpopular.cs" Line="1" Column="1" />
-      <File FileName="ClassLibrary/CAD/cadstock.cs" Line="41" Column="7" />
+      <File FileName="ClassLibrary/CAD/CADranking.cs" Line="27" Column="20" />
+      <File FileName="ClassLibrary/EN/enranking.cs" Line="34" Column="9" />
+      <File FileName="WebApplication1/ranking.aspx" Line="31" Column="14" />
+      <File FileName="ClassLibrary/EN/enpuntuacion.cs" Line="23" Column="4" />
+      <File FileName="ClassLibrary/CAD/CADpuntuacion.cs" Line="166" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -14,5 +13,6 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.BaseDatos PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
 </Properties>
