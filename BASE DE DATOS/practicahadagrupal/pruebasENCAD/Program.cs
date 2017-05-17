@@ -25,7 +25,19 @@ namespace pruebasENCAD
 
             // ---------------------------------------prueba 1 
             Console.WriteLine("=> prueba1: add  pedido[ok]<=");
-            
+
+            usuario u = new usuario();
+            u.Usuario = "hola3";
+
+            pedido p = new pedido();
+            p.Fecha = DateTime.Today;
+            p.NumPedido = 232;
+            p.Usuhario = u;
+
+            p.savePedido();
+
+            Console.ReadLine();
+
             // ---------------------------------------prueba 2
             Console.WriteLine("=> prueba2: delete pedido [ok]<=");
            
@@ -35,8 +47,7 @@ namespace pruebasENCAD
             // ---------------------------------------prueba 4
             Console.WriteLine("=> prueba4: read pedido ok<=");
 
-
-            Console.WriteLine("=> INICIO PRUEBAS RANKING [en ello]<=");
+            Console.ReadLine();
         }
     }
 }

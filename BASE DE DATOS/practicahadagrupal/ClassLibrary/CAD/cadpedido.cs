@@ -15,7 +15,7 @@ namespace ClassLibrary.CAD{
     class CADpedido{
 
         private SqlConnection conn = null;
-        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf ;Integrated Security=true";
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf;Integrated Security=true";
 
 
         public CADpedido(){}
@@ -24,11 +24,10 @@ namespace ClassLibrary.CAD{
             try
             {
                 string sentenciaDB = "INSERT INTO pedido" +
-                    "(num_pedido, usuario, fecha)"
+                    "(usuario, fecha) "
                     + "VALUES('" +
-                    ped.NumPedido.ToString() + "', '" +
-                    ped.Usuhario.Usuario + "', '" +
-                    ped.Fecha.ToString() + "', '" + "')'";
+                    ped.Usuhario.Usuario.ToString() + "', '" +
+                    ped.Fecha.ToString() + "')";
 
                 conn = new SqlConnection();
                 conn.ConnectionString = stringConexion;
@@ -49,6 +48,7 @@ namespace ClassLibrary.CAD{
 
         }
 
+        // en principio no vamos a dejar borrar un pedido
         public void remove(pedido ped){
             try {
                 string sentenciaDB = "DELETE FROM pedido WHERE num_pedido = " + ped.NumPedido;

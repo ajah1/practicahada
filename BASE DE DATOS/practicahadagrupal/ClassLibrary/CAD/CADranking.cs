@@ -10,7 +10,8 @@ using System.Data.SqlClient;
 using System.Data.SqlTypes;
 
 
-namespace ClassLibrary.CAD{
+namespace ClassLibrary.CAD
+{
 
     public class CADranking
     {
