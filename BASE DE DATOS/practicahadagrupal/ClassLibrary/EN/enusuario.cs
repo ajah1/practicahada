@@ -92,7 +92,7 @@ namespace ClassLibrary.EN{
         public void borrarUsuario(string usuario)
         {
             CAD.CADusuario cli = new CAD.CADusuario();
-            cli.delete(usuario);
+            //cli.delete(usuario);
         }
 
         public void registrarUsuario(string usuario, string direccion, string contrasena, string ciudad, string pais, string descripcion, string email, int edad) {

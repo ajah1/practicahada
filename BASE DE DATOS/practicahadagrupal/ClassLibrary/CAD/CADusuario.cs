@@ -4,12 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using System.Data;
+using System.Data.Common;
+using System.Data.SqlClient;
+using System.Data.SqlTypes;
+
 namespace ClassLibrary.CAD{
 
     class CADusuario{
 
+        private SqlConnection conn = null;
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf;Integrated Security=true";
+
         public CADusuario(){}
-		
 
         public void create(EN.usuario user)
         {
@@ -81,7 +88,7 @@ namespace ClassLibrary.CAD{
             {
                 conn.Close();
             }
-
+            return salida;
         }
 
         public void update(EN.usuario user){

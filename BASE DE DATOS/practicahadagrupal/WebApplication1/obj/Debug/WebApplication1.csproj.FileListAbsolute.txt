@@ -28,7 +28,6 @@ C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApp
 C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\Microsoft.ApplicationInsights.xml
 C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
 C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\obj\Debug\WebApplication1.pdb
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\ApplicationInsights.config
