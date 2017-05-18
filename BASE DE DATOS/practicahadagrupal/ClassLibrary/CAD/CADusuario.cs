@@ -15,8 +15,15 @@ namespace ClassLibrary.CAD{
     public class CADusuario{
         
         private SqlConnection conn = null;
+<<<<<<< HEAD
         private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf; Integrated Security=true";
         public CADusuario(){}
+=======
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=$(SolutionDir)\App_Data\Database1.mdf;Integrated Security=true";
+
+        public CADusuario(){}
+
+>>>>>>> origin/48563029R
 
         public void create(EN.usuario user)
         {
