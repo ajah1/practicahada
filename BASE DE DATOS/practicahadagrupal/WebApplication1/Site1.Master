@@ -12,24 +12,24 @@
 
     <ul class='main-nav'>
         <li>
-            <a href="home.aspx">Home</a>
+            <a href="home.aspx">INICIO</a>
         </li>
         <li>
-            <a href="game.aspx">¡ Play It !</a>
+            <a href="game.aspx">¡JUGUEMOS!</a>
         </li>
         <li>
-            <a href="login.aspx">Login</a>
+            <a href="login.aspx">INICIAR SESION</a>
         </li>
         <li>
-            <a href="registro.aspx">Sing In</a>
+            <a href="registro.aspx">REGISTRARSE</a>
         </li>
         <li>
-            <a href="productos.aspx">Products</a>
+            <a href="productos.aspx">PRODUCTOS</a>
         </li>
         <li>
-            <a href="ranking.aspx">Ranking</a>
+            <a href="ranking.aspx">RANKING</a>
         <li>
-            <a href="perfil.aspx">Perfil</a>
+            <a href="perfil.aspx">PERFIL</a>
         </li>
 
     </ul>
