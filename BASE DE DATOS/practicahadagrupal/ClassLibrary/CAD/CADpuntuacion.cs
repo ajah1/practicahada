@@ -20,10 +20,10 @@ namespace ClassLibrary.CAD
 		{ }
 
 		private SqlConnection conn = null;
-		private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Downloads\practicahada-48765284V\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf;Integrated Security=true";
+        private string stringConexion = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf"; Integrated Security = True";
 
-		// poner todo a cero
-		public void remove(string usuario)
+        // poner todo a cero
+        public void remove(string usuario)
 		{
 			try
 			{

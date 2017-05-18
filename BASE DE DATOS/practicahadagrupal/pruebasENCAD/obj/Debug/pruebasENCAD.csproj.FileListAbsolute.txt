@@ -14,3 +14,6 @@ C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\pra
 C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\obj\Debug\pruebasENCAD.pdb
 C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\obj\Debug\pruebasENCAD.csprojResolveAssemblyReference.cache
 C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\obj\Debug\pruebasENCAD.csprojResolveAssemblyReference.cache
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\bin\Debug\pruebasENCAD.exe.config
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\obj\Debug\pruebasENCAD.exe
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\obj\Debug\pruebasENCAD.pdb
