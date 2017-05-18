@@ -15,7 +15,7 @@ namespace ClassLibrary.CAD{
     public class CADusuario{
         
         private SqlConnection conn = null;
-        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=" + Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"\App_Data\Database1.mdf") + ";Integrated Security=true";
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf; Integrated Security=true";
 
 
         public CADusuario(){}
@@ -104,6 +104,26 @@ namespace ClassLibrary.CAD{
             return salida;
         }
 
+        /*
+        // compruena si el usuario existe en la base de datos, return bool 
+        public bool existe(string user)
+        {
+            bool esta = false;
+
+            List<string> l = new List<string>();
+
+            l = null;
+
+            l = read(user);
+
+            if (l)
+            {
+                esta = true;
+            }
+
+            return esta;
+        }
+        */
         public void update(EN.usuario user){
 
             try{

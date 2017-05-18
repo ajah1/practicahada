@@ -18,8 +18,9 @@ namespace pruebasENCAD
 
             usuario u = new usuario();
 
-            u.Usuario = "hola3";
+            u.Usuario = "hola999";
 
+            /*
             List<string> l = new List<string>();
 
 
@@ -28,8 +29,23 @@ namespace pruebasENCAD
             foreach (string valor in l)
             {
                 Console.WriteLine(valor);
-            }
+            }*/
 
+            u.Ciudad = "hola999";
+            u.Contrasena = "hola999";
+            u.Edad = 9;
+            u.Descripcion = "hola999";
+            u.Email = "hola999";
+            u.Direccion = "hola999";
+            u.Pais = "hola999";
+
+            
+
+            Console.WriteLine("PRUEBAS EXISTE USUARIO");
+
+            //Console.WriteLine(u.existe());
+
+            u.registrarUsuario();
 
             Console.ReadLine();
 
