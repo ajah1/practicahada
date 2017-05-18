@@ -47,7 +47,7 @@
             <td style="width: 121px">&nbsp;</td>
             <td class="auto-style2">&nbsp;</td>
             <td class="auto-style1">
-                <asp:TextBox ID="TextBox3" runat="server" Height="30px" Width="200px" OnTextChanged="TextBox3_TextChanged"></asp:TextBox>
+                <asp:TextBox ID="TextBox3" runat="server" Height="30px" Width="200px"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -77,7 +77,7 @@
             <td style="width: 121px">&nbsp;</td>
             <td class="auto-style2">&nbsp;</td>
             <td class="auto-style1">
-                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click1" Text="Login" Width="120px" CssClass="auto-style4" />
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Login" Width="120px" CssClass="auto-style4" />
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>

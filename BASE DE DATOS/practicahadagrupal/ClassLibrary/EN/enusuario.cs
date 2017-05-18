@@ -90,14 +90,11 @@ namespace ClassLibrary.EN{
             cli.delete(usuario);
         }
 
-
         public void registrarUsuario() {
 
             CAD.CADusuario cli = new CAD.CADusuario();
             cli.create(this);
         }
-
-        
 
         public List<string> leerUsuario()
         {

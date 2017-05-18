@@ -16,6 +16,24 @@ namespace pruebasENCAD
         static void Main(string[] args)
         {
 
+            usuario u = new usuario();
+
+            u.Usuario = "hola3";
+
+            List<string> l = new List<string>();
+
+
+            l = u.leerUsuario();
+
+            foreach (string valor in l)
+            {
+                Console.WriteLine(valor);
+            }
+
+
+            Console.ReadLine();
+
+            /*
             // pruebas pedido
             Console.WriteLine("=> INICIO PRUEBAS ranking [terminado] <=");
 
@@ -29,6 +47,7 @@ namespace pruebasENCAD
             r.addRanking();
 
             Console.ReadLine();
+            */
         }
     }
 }

@@ -55,7 +55,6 @@ namespace ClassLibrary.CAD{
             }
         }
 
-
         public List<string> read(string user)
         {
             List<string> salida = new List<string>();
