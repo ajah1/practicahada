@@ -129,3 +129,6 @@ C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal
 C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
 C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\ClassLibrary.dll
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\ClassLibrary.pdb

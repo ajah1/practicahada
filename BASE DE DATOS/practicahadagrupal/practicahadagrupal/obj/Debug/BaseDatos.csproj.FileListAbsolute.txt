@@ -97,5 +97,3 @@ C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practi
 C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\vbc.exe
 C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\VBCSCompiler.exe
 C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\BaseDatos.csprojResolveAssemblyReference.cache
-

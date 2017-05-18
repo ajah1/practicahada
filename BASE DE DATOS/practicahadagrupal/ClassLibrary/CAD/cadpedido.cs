@@ -12,30 +12,30 @@ using System.Data.SqlClient;
 using System.Data.SqlTypes;
 
 namespace ClassLibrary.CAD{
+
     class CADpedido{
 
         private SqlConnection conn = null;
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf;Integrated Security=true";
 
 
-        public CADpedido(){
-            string cadenaconexion = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
-            conn = new SqlConnection();
-            conn.ConnectionString = cadenaconexion;
-            conn.Open();
-        }
+        public CADpedido(){}
 
         public void create(pedido ped){
+
             try
             {
-                string sentenciaDB = "INSERT INTO pedido" +
-                    "(num_pedido, usuario, fecha)"
-                    + "VALUES('" +
-                    ped.NumPedido.ToString() + "', '" +
-                    ped.Usuhario.Usuario + "', '" +
-                    ped.Fecha.ToString() + "', '" + "')'";
+                string sentenciadb = @"INSERT INTO pedido" +
+                    "(usuario, fecha) VALUES ('" +
+                    ped.Usuhario.Usuario.ToString() + "', '" +
+                    ped.Fecha.ToString() + "')";
 
+                conn = new SqlConnection();
 
-                SqlCommand com = new SqlCommand(sentenciaDB, conn);
+                conn.ConnectionString = stringConexion;
+                conn.Open();
+
+                SqlCommand com = new SqlCommand(sentenciadb, conn);
                 com.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -50,9 +50,14 @@ namespace ClassLibrary.CAD{
 
         }
 
+        
         public void remove(pedido ped){
             try {
                 string sentenciaDB = "DELETE FROM pedido WHERE num_pedido = " + ped.NumPedido;
+
+                conn = new SqlConnection();
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 
                 SqlCommand com = new SqlCommand(sentenciaDB, conn);
                 com.ExecuteNonQuery();

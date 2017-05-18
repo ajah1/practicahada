@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Configuration;
 
 using System.Data;
 using System.Data.Common;
@@ -17,14 +16,10 @@ namespace ClassLibrary.CAD
     public class CADpopular
     {
         private SqlConnection conn = null;
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf;Integrated Security=true";
 
         //constructor
-        public CADpopular() {
-            string cadenaconexion = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
-            conn = new SqlConnection();
-            conn.ConnectionString = cadenaconexion;
-            conn.Open();
-        }
+        public CADpopular() { }
 
         // añadir un productopopular
         public void add( EN.Popular p )
@@ -36,6 +31,10 @@ namespace ClassLibrary.CAD
                                     p.Id.ToString() + "', '" +
                                     p.Numero_ventas.ToString() + "')";
 
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 
                 SqlCommand com = new SqlCommand(sentencia,conn);
                 com.ExecuteNonQuery();
@@ -59,6 +58,10 @@ namespace ClassLibrary.CAD
                 string sentencia = "DELETE FROM productoPopular  WHERE ID = '" +
                                     id.ToString() + "'";
 
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
@@ -84,6 +87,10 @@ namespace ClassLibrary.CAD
                                     p.Numero_ventas.ToString() + "' " +
                                     "WHERE ID = '" + p.Id.ToString() + "'";
 
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
@@ -110,6 +117,11 @@ namespace ClassLibrary.CAD
 
                 string sentencia = @"SELECT * FROM productoPopular" +
                                                 " WHERE ID = '" + id.ToString() + "'";
+
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 SqlDataReader dr = com.ExecuteReader();
@@ -143,6 +155,10 @@ namespace ClassLibrary.CAD
 
                 string sentencia = @"TRUNCATE TABLE productoPopular";
 
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
@@ -169,6 +185,10 @@ namespace ClassLibrary.CAD
                 string sentencia = @"SELECT producto from lineaPedido " +
                                     "group by producto having count(*) >= 2";
 
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 SqlDataReader dr = com.ExecuteReader();

@@ -5,12 +5,18 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+using ClassLibrary.EN;
+using ClassLibrary.CAD;
+
 namespace WebApplication1
 {
     public partial class login : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+        
+            /*  sesiones */
+
 
         }
 
@@ -22,6 +28,8 @@ namespace WebApplication1
         protected void Button1_Click1(object sender, EventArgs e)
         {
 
+
         }
+
     }
 }

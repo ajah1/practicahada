@@ -17,14 +17,10 @@ namespace ClassLibrary.CAD
 
         // string para la conexion
         private SqlConnection conn = null;
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf;Integrated Security=true";
 
         // constructor
-        public CADpromocion() {
-            string cadenaconexion = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
-            conn = new SqlConnection();
-            conn.ConnectionString = cadenaconexion;
-            conn.Open();
-        }
+        public CADpromocion() { }
 
         // añadir una promocion
         public void add( EN.Promocion p )
@@ -39,6 +35,10 @@ namespace ClassLibrary.CAD
                             p.F_Inicio.ToString()     + "', '"  +
                             p.F_limite.ToString() + "')";
 
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
@@ -63,6 +63,10 @@ namespace ClassLibrary.CAD
                 string sentencia = "DELETE FROM promociones  WHERE idproducto = " +
                                     id.ToString();
 
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
@@ -90,6 +94,11 @@ namespace ClassLibrary.CAD
                                 "', f_fin = '" + p.F_limite +
                                 "' WHERE idproducto = '" + p.Id_producto.ToString() + "'";
 
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
+
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
             }
@@ -114,6 +123,11 @@ namespace ClassLibrary.CAD
                 
                 string sentencia = "Select * from promociones " +
                                    "where idproducto = '" + id.ToString() + "'";
+                
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 SqlDataReader dr = com.ExecuteReader();
@@ -152,6 +166,11 @@ namespace ClassLibrary.CAD
                 string sentencia = "Select * from promociones " +
                                    "where idproducto = '" + idProducto + "'";
 
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
+
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 SqlDataReader dr = com.ExecuteReader();
 
@@ -186,6 +205,11 @@ namespace ClassLibrary.CAD
 
                 string sentencia = "Select descuento from promociones " +
                                    "where idproducto = '" + id.ToString() + "'";
+
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 SqlDataReader dr = com.ExecuteReader();

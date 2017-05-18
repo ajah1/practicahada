@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Configuration;
 
 using System.Data;
 using System.Data.Common;
@@ -15,13 +14,9 @@ namespace ClassLibrary.CAD{
     public class CADlinped{
 
         private SqlConnection conn = null;
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf;Integrated Security=true";
 
-        public CADlinped() {
-            string cadenaconexion = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
-            conn = new SqlConnection();
-            conn.ConnectionString = cadenaconexion;
-            conn.Open();
-        }
+        public CADlinped() { }
 
         public void create(EN.enlinped lin)
         {
@@ -36,7 +31,11 @@ namespace ClassLibrary.CAD{
                     lin.Precio.ToString() + "', '" +
                     lin.Cantidad.ToString() + "')";
 
-                
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
+
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
             }
@@ -57,6 +56,11 @@ namespace ClassLibrary.CAD{
             {
                 string sentencia = "DELETE FROM lineaPedido WHERE numPedido = " +
                     lin.NumPedido.ToString() + " and linea = " + lin.Linea.ToString();
+
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
@@ -83,6 +87,10 @@ namespace ClassLibrary.CAD{
                 string sentencia = "Select * from lineaPedido " + "where numPedido = '" + lin.NumPedido.ToString()
                     + "' and linea = '" + lin.Linea.ToString() + "'";
 
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 SqlDataReader ur = com.ExecuteReader();
