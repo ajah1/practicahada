@@ -11,15 +11,13 @@ using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
-using System.IO;
 
 namespace ClassLibrary.CAD
 {
     public class CADdatosbancarios
     {
         private SqlConnection conn = null;
-        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=..\..\..\practicahadagrupal\App_Data\Database1.mdf;Integrated Security=true";
-
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=" + Directory.GetCurrentDirectory() + "..\..\..\practicahadagrupal\App_Data\Database1.mdf ";Integrated Security=true";
 
         public CADdatosbancarios() {}
 
