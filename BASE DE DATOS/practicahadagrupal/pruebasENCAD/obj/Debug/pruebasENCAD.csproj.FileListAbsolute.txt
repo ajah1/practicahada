@@ -17,3 +17,8 @@ C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\prueba
 C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\bin\Debug\pruebasENCAD.exe.config
 C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\obj\Debug\pruebasENCAD.exe
 C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\obj\Debug\pruebasENCAD.pdb
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\bin\Debug\pruebasENCAD.exe
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\bin\Debug\pruebasENCAD.pdb
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\bin\Debug\ClassLibrary.dll
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\bin\Debug\ClassLibrary.pdb
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\obj\Debug\pruebasENCAD.csprojResolveAssemblyReference.cache

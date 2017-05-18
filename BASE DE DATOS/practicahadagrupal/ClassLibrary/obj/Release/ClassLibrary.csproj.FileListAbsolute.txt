@@ -1,0 +1,5 @@
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\bin\Release\ClassLibrary.dll
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\bin\Release\ClassLibrary.pdb
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\obj\Release\ClassLibrary.csprojResolveAssemblyReference.cache
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\obj\Release\ClassLibrary.dll
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\obj\Release\ClassLibrary.pdb
