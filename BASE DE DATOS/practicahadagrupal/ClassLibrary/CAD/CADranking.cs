@@ -16,39 +16,33 @@ namespace ClassLibrary.CAD
 
     public class CADranking
     {
-        private SqlConnection conn = null;
 
-<<<<<<< HEAD
-        public CADranking() {
-            string cadenaconexion = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
-            conn = new SqlConnection();
-            conn.ConnectionString = cadenaconexion;
-            conn.Open();
-        }
         
-
-=======
         public CADranking() { }
 
         private SqlConnection conn = null;
-        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=/Users/Laila/Desktop/HADA/practicahada/BASE DE DATOS/practicahadagrupal/practicahadagrupal/App_Data/Database1.mdf;Integrated Security=true";
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf;Integrated Security=true";
 
->>>>>>> parent of 6d4f929... ajustando BD
 
         // borrar todas las tuplas de la tabla ranking
         public void drop()
         {
             try
             {
+
                 string sentencia = @"TRUNCATE TABLE ranking";
 
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Drop ranking failed.");
+                Console.WriteLine("drop rankin failed.");
                 Console.WriteLine(". \nError: {0}", ex.ToString());
             }
             finally
@@ -57,13 +51,19 @@ namespace ClassLibrary.CAD
             }
         }
 
+        // inserta los usuarios con mayor record
         public void add()
         {
             try
             {
                 string sentencia = "INSERT INTO ranking(usuario, puntuacion) " +
-                    " SELECT pusuario, record FROM puntuacion ORDER BY record ASC";
+                    " SELECT pusuario, record FROM puntuacion";
 
+
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 
                 conn = new SqlConnection();
 
@@ -85,6 +85,7 @@ namespace ClassLibrary.CAD
             }
         }
 
+        // actualizar el ranking
         public void updateTable()
         {
 

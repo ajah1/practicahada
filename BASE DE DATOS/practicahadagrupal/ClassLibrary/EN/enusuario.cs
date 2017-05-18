@@ -90,20 +90,12 @@ namespace ClassLibrary.EN{
             cli.delete(usuario);
         }
 
+
         public void registrarUsuario() {
 
             CAD.CADusuario cli = new CAD.CADusuario();
             cli.create(this);
         }
-        
-        /* public void entrarWeb(string usuario, string contrasena){
-
-         }
-
-         // aun no se sabe si se hace aqui, salir de la web
-         public void salirWeb(){
-
-         }*/
 
         
 
@@ -112,19 +104,15 @@ namespace ClassLibrary.EN{
             List<string> lista = new List<string>();
             lista = null;
 
-
             CAD.CADusuario cli = new CAD.CADusuario();
             lista = cli.read(this.Usuario);
 
             return lista;
         }
 
-
         public void modificarUsuario(){
             CAD.CADusuario cli = new CAD.CADusuario();
             cli.update(this);
         }
-
-
     }
 }

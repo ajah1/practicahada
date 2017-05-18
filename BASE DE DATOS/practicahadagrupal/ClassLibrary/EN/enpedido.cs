@@ -10,7 +10,6 @@ namespace ClassLibrary.EN{
     public class pedido{
 
         private int numPedido;
-
         private DateTime fecha;
         private usuario usuhario;
 
@@ -22,7 +21,6 @@ namespace ClassLibrary.EN{
             this.numPedido = numPedido;
             this.fecha = fecha;
             this.usuhario = usuhario;
-
         }
 
         public pedido() {}

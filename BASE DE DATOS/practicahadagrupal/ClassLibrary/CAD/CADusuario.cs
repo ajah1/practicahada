@@ -16,18 +16,8 @@ namespace ClassLibrary.CAD{
         private SqlConnection conn = null;
         private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf;Integrated Security=true";
 
-<<<<<<< HEAD
 
-        public CADusuario(){
-            string cadenaconexion = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
-            conn = new SqlConnection();
-            conn.ConnectionString = cadenaconexion;
-            conn.Open();
-        }
-=======
         public CADusuario(){}
->>>>>>> parent of 6d4f929... ajustando BD
-
 
         public void create(EN.usuario user)
         {
@@ -35,7 +25,6 @@ namespace ClassLibrary.CAD{
             {
 
                 string sentencia = "INSERT INTO usuario " +
-
                     "(usuario, direccion, contraseña, ciudad, pais, descripcion, email, edad)" +
                     "VALUES('" +
                     user.Usuario.ToString() + "', '" +
@@ -99,7 +88,6 @@ namespace ClassLibrary.CAD{
                     salida.Add(ur["descripcion"].ToString());
                     salida.Add(ur["email"].ToString());
                     salida.Add(ur["edad"].ToString());
-
                 }
 
             }
@@ -117,6 +105,7 @@ namespace ClassLibrary.CAD{
         }
 
         public void update(EN.usuario user){
+
             try{
 
                 string sentencia = @"UPDATE usuario SET " +
