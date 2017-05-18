@@ -27,8 +27,8 @@
         function play_game() 
         {
             var level = 160; // Game level, by decreasing will speed up
-            var rect_w = 60; // Width 
-            var rect_h = 60; // Height
+            var rect_w = 50; // Width 
+            var rect_h = 10; // Height
             var inc_score = 50; // Score
             var snake_color = "#FF0000"; // Snake Color
             var ctx; // Canvas attributes
@@ -108,7 +108,7 @@
                 }
                 else if (!tn.length) {
                     var msg_score = document.getElementById("msg");
-                    msg_score.innerHTML = "Thank you for playing game.<br /> Your Score : <b>" + score; //+ "</b><br /><br /><input type='button' value='Play Again' onclick='window.location.reload();' />";
+                    msg_score.innerHTML = "Gracias por jugar.<br /> Tu puntuacion: <b>" + score; //+ "</b><br /><br /><input type='button' value='Play Again' onclick='window.location.reload();' />";
                     
                     // boton que se muestra al teminar la partida
 
