@@ -41,7 +41,7 @@
                     <asp:TextBox ID="TextBox1" runat="server" Width="230px"></asp:TextBox>
                 </td>
                 <td style="text-align: center">
-                    <asp:TextBox ID="TextBox2" runat="server" Width="245px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox2" runat="server" Width="230px" TextMode="Password"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -58,10 +58,10 @@
             </tr>
             <tr>
                 <td style="text-align: center; width: 278px">
-                    <asp:TextBox ID="TextBox3" runat="server" Width="219px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox3" runat="server" Width="230px"></asp:TextBox>
                 </td>
                 <td style="text-align: center">
-                    <asp:TextBox ID="TextBox4" runat="server" Width="283px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox4" runat="server" Width="230px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -78,10 +78,10 @@
             </tr>
             <tr>
                 <td style="text-align: center; width: 278px">
-                    <asp:TextBox ID="TextBox5" runat="server" Width="164px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox5" runat="server" Width="230px"></asp:TextBox>
                 </td>
                 <td style="text-align: center">
-                    <asp:TextBox ID="TextBox6" runat="server" Width="167px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox6" runat="server" Width="230px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -96,7 +96,7 @@
             </tr>
             <tr>
                 <td style="text-align: center; width: 278px">
-                    <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox7" runat="server" Width="230px"></asp:TextBox>
                 </td>
                 <td style="text-align: center">&nbsp;</td>
             </tr>
@@ -117,7 +117,7 @@
             </tr>
             <tr>
                 <td colspan="2" style="text-align: center">
-                    <asp:Button ID="Button1" runat="server" Text="Confirmar" />
+                    <asp:Button ID="Button1" runat="server" Text="Confirmar" OnClick="Button1_Click" />
                 </td>
             </tr>
         </table>

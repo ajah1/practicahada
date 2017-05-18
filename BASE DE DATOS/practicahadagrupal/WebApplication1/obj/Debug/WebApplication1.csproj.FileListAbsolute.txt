@@ -132,6 +132,7 @@ C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal
 C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
 C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\ClassLibrary.dll
 C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\ClassLibrary.pdb
+<<<<<<< HEAD
 C:\Users\EPS\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\ApplicationInsights.config
 C:\Users\EPS\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\roslyn\csc.exe
 C:\Users\EPS\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -167,3 +168,7 @@ C:\Users\EPS\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\WebAp
 C:\Users\EPS\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
 C:\Users\EPS\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\EPS\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\obj\Debug\WebApplication1.pdb
+=======
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\ClassLibrary.dll
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\ClassLibrary.pdb
+>>>>>>> origin/53245095A

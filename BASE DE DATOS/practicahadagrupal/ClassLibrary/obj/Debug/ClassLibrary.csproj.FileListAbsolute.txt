@@ -17,6 +17,7 @@ C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\pra
 C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\obj\Debug\ClassLibrary.dll
 C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\obj\Debug\ClassLibrary.pdb
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
 =======
 C:\Users\EPS\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\bin\Debug\ClassLibrary.dll
@@ -25,3 +26,6 @@ C:\Users\EPS\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\Class
 C:\Users\EPS\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\obj\Debug\ClassLibrary.dll
 C:\Users\EPS\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\obj\Debug\ClassLibrary.pdb
 >>>>>>> origin/48781689T
+=======
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
+>>>>>>> origin/53245095A
