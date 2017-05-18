@@ -14,13 +14,14 @@ namespace ClassLibrary.EN
         private string nombre;
         public string Nombre { get { return nombre; } set { nombre = value; } }
         private string apellido;
-        public string Apellido { get { return apellido } set { apellido = value; } }
+        public string Apellido { get { return apellido; } set { apellido = value; } }
         private DateTime fechaVencimiento;
         public DateTime FechaVencimiento { get { return fechaVencimiento; } set { fechaVencimiento = value; } }
         private ushort cvc;
         public ushort CVC { get { return cvc; } set { cvc = value; } }
         private usuario usuario;
         public usuario Usuario { get { return usuario; } set { usuario = value; } }
+        public static string aux;
 
 
         public datosbancarios() { }

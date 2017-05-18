@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Reflection;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,8 +17,15 @@ namespace ClassLibrary.CAD
 {
     public class CADdatosbancarios
     {
+        private static string entorno(string aux)
+        {
+            int x = aux.Length;
+            for (int j = 0; j < 3; j++) { while (x > 0) { x--; if (aux[x] == '\\') { aux = aux.Remove(x, 1); break; } else { aux = aux.Remove(x, 1); } } }
+            return aux + @"\practicahadagrupal\App_Data\Database1.mdf";
+        }
+
         private SqlConnection conn = null;
-        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=" + Directory.GetCurrentDirectory() + "..\..\..\practicahadagrupal\App_Data\Database1.mdf ";Integrated Security=true";
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=" + entorno(Directory.GetCurrentDirectory()) + @";Integrated Security=true";
 
         public CADdatosbancarios() {}
 
@@ -52,6 +60,7 @@ namespace ClassLibrary.CAD
                 conn.Close();
             }
         }
+
         public void read(EN.datosbancarios dban)
         {
             string mostrado = "";
@@ -75,7 +84,7 @@ namespace ClassLibrary.CAD
                                 rd["nombre"].ToString() +
                                 rd["apellido"].ToString() +
                                 rd["fvencimiento"].ToString() +
-                                rd["codigoSeguridad"].ToString() +;
+                                rd["codigoSeguridad"].ToString();
                 }
             }
             catch (Exception ex)
