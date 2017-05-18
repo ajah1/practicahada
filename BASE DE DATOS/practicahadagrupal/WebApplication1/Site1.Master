@@ -19,6 +19,7 @@
         </li>
         <li>
             <a href="login.aspx">Login</a>
+
         </li>
         <li>
             <a href="registro.aspx">Sing In</a>
@@ -30,6 +31,7 @@
             <a href="ranking.aspx">Ranking</a>
         <li>
             <a href="perfil.aspx">Perfil</a>
+
         </li>
 
     </ul>
