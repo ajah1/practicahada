@@ -22,29 +22,34 @@ namespace ClassLibrary.EN{
 			this.puntosTotales = pt;
 		}
 
-		public string user { get; set; }
-		public int r { get; set; }
-		public int v { get; set; }
-		public int p { get; set; }
+		public string user { get { return username; } set { username = value; } }
+		public int r { get { return record; } set { record = value; } }
+		public int v { get { return vidas; } set { vidas = value; } }
+		public int p { get { return puntosTotales; } set { puntosTotales = value; } }
 
-		public void addPuntuacion(string dbname) {
-			CAD.CADpuntuacion aux = new CAD.CADpuntuacion();
-			aux.add(this);
-		}
-
-		public void removePuntuacion(string dbname){
+		public void removePuntuacion(){
 			CAD.CADpuntuacion aux = new CAD.CADpuntuacion();
 			aux.remove(username);
 		}
 
-		public void readPuntuacion(string dbname) {
+		public string readPuntuacion()
+		{
+			string salida = "";
 			CAD.CADpuntuacion aux = new CAD.CADpuntuacion();
-			aux.read(username);
+			salida = aux.read(username);
+			return salida;
 		}
 
-		public void updatePuntuacion(string dbname) {
+        public int obtenerPuntuacion(string usuario)
+        {
 			CAD.CADpuntuacion aux = new CAD.CADpuntuacion();
-			aux.update(this);
+            return aux.obtenerPuntuacion(username);
+
+		}
+
+		public void updatePuntuacion() {
+			CAD.CADpuntuacion aux = new CAD.CADpuntuacion();
+			//aux.updatePuntuacion(this);
 		}
 
 	}

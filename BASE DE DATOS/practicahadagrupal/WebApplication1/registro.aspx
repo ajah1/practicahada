@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="registro.aspx.cs" Inherits="WebApplication1.registro" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+     <title>Registro</title>
+
     <meta charset="utf-8" />
 
        <style type="text/css">
@@ -11,6 +13,14 @@
            }
            .auto-style3 {
                font-size: medium;
+               color: #FFFFFF;
+           }
+           .auto-style4 {
+               width: 278px;
+               height: 22px;
+           }
+           .auto-style5 {
+               height: 22px;
            }
         </style>
 
@@ -39,10 +49,10 @@
                 <td style="height: 22px"></td>
             </tr>
             <tr>
-                <td style="text-align: center; width: 278px">
+                <td style="text-align: center; " class="auto-style4">
                     <asp:Label ID="Label5" runat="server" Text="Dirección" CssClass="auto-style3"></asp:Label>
                 </td>
-                <td style="text-align: center">
+                <td style="text-align: center" class="auto-style5">
                     <asp:Label ID="Label6" runat="server" Text="Email" CssClass="auto-style3"></asp:Label>
                 </td>
             </tr>
@@ -112,4 +122,5 @@
             </tr>
         </table>
     </p>
+
 </asp:Content>

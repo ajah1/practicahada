@@ -9,7 +9,10 @@
         <title>Play Snake Game</title>
 
         <style type="text/css">
-        body {text-align:center;}
+        
+        body {
+            text-align:center;
+        }
         canvas { border:5px dotted #ccc; }
         h1 { font-size:50px; text-align: center; margin: 0; padding-bottom: 25px;}
         </style>
@@ -21,7 +24,7 @@
             var rect_w = 60; // Width 
             var rect_h = 60; // Height
             var inc_score = 50; // Score
-            var snake_color = "#006699"; // Snake Color
+            var snake_color = "#FF0000"; // Snake Color
             var ctx; // Canvas attributes
             var tn = []; // temp directions storage
             var x_dir = [-1, 0, 1, 0]; // position adjusments

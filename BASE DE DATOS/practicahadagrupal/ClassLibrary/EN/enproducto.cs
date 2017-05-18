@@ -13,11 +13,11 @@ namespace ClassLibrary.EN{
         private int precio;
         
 
-        public int Id { get; set; }
-        public string Nombre { get; set; }
-        public string Descripcion { get; set; }
-        public string Imagen { get; set; }
-        public int Precio { get; set; }
+        public int Id { get { return id; } set { id = value; } }
+        public string Nombre { get { return nombre; } set { nombre = value; } }
+        public string Descripcion { get { return descripcion; } set { descripcion = value; } }
+        public string Imagen { get { return imagen; } set { imagen = value; } }
+        public int Precio { get { return precio; } set { precio = value; } }
 
         public Producto (int id, int precio, string nombre = "", string descripcion = "", string imagen = ""){
             this.id = id;
@@ -27,7 +27,13 @@ namespace ClassLibrary.EN{
             
         } 
 
+        public Producto(int id)
+        {
+            this.id = id;
+        }
+
         public Producto() {}
+
 
         public void saveProducto(string dbname) {
             CAD.CADproducto p = new CAD.CADproducto();
@@ -36,21 +42,27 @@ namespace ClassLibrary.EN{
         }
 
         public void removeProducto(string dbname) {
-
+            CAD.CADproducto aux = new CAD.CADproducto();
+            aux.remove(this.id);
 
         }
 
         public void addProducto(string dbname) {
-
+            CAD.CADproducto aux = new CAD.CADproducto();
+            aux.create(this);
 
         }
 
-        public bool comprobarStock() {
-            bool existencias = true;
-            //COMPROBAR QUE HAY UNIDADES EN EL STOCK
+        public void updateProducto(string dbname) {
+            CAD.CADproducto aux = new CAD.CADproducto();
+            aux.update(this);
 
-            return existencias;
         }
 
+        public void mostrarProducto() {
+            CAD.CADproducto aux = new CAD.CADproducto();
+            aux.consultar(this);
+
+        }
     }
 }

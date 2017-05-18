@@ -36,12 +36,6 @@ namespace ClassLibrary.EN{
           //puntuacion = new puntuacion();
         }
 
-        /*
-        public ~usuario(){
-
-        }
-        */
-
         //********************************************
         // get set
 
@@ -89,33 +83,48 @@ namespace ClassLibrary.EN{
         //********************************************
         // metodos
 
-        public void registrarUsuario(string usuario, string direccion, string contrasena, string ciudad, string pais, string descripcion, string email, int edad) {
+        public void borrarUsuario(string usuario)
+        {
             CAD.CADusuario cli = new CAD.CADusuario();
-            cli.create(this);
-        }
 
-        public void borrarUsuario(string usuario){
-            CAD.CADusuario cli = new CAD.CADusuario();
             cli.delete(usuario);
         }
 
-        public void entrarWeb(string usuario, string contrasena){
+        public void registrarUsuario() {
 
+            CAD.CADusuario cli = new CAD.CADusuario();
+            cli.create(this);
+        }
+        
+        /* public void entrarWeb(string usuario, string contrasena){
+
+         }
+
+         // aun no se sabe si se hace aqui, salir de la web
+         public void salirWeb(){
+
+         }*/
+
+        
+
+        public List<string> leerUsuario()
+        {
+            List<string> lista = new List<string>();
+            lista = null;
+
+
+            CAD.CADusuario cli = new CAD.CADusuario();
+            lista = cli.read(this.Usuario);
+
+            return lista;
         }
 
-        // aun no se sabe si se hace aqui, salir de la web
-        public void salirWeb(){
 
-        }
-
-        public void modificarUsuario(string usuario, string direccion, string contrasena, string ciudad, string pais, string descripcion, string email, int edad){
+        public void modificarUsuario(){
             CAD.CADusuario cli = new CAD.CADusuario();
             cli.update(this);
         }
 
-        public void leerUsuario(string usuario) {
-            CAD.CADusuario cli = new CAD.CADusuario();
-            cli.read(usuario);
-        }
+
     }
 }

@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassLibrary.EN{
-	public class ranking{
-		
+namespace ClassLibrary.EN
+{
+	public class ranking
+	{
+
 		private string usuario;
 		private int puntuacion;
 		private string fecha;
@@ -25,27 +27,25 @@ namespace ClassLibrary.EN{
 		public string f { get; set; }
 
 
-
-
-		public void addRanking(string dbname) {
-			CAD.CADranking aux = new CAD.CADranking();
-			aux.add(this);
-		}
-
-		public void removeRanking(string dbname)
+		// borra todas las tuplas de la base de datos
+		public void droptable()
 		{
 			CAD.CADranking aux = new CAD.CADranking();
-			aux.remove(usuario);
+			aux.drop();
 		}
-		public void readRanking(string dbname)
+
+		// actualiza la base de datos
+		public void addRanking()
 		{
 			CAD.CADranking aux = new CAD.CADranking();
-			aux.read(usuario);
+			aux.add();
 		}
-		public void updateRanking(string dbname)
+
+
+		// hace el nuevo ranking
+		public void updateTable()
 		{
-			CAD.CADranking aux = new CAD.CADranking();
-			aux.update(this);
+
 		}
 	}
 }
