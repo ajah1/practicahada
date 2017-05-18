@@ -14,3 +14,11 @@ C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\pra
 C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\obj\Debug\pruebasENCAD.exe
 C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\obj\Debug\pruebasENCAD.pdb
 C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\obj\Debug\pruebasENCAD.csprojResolveAssemblyReference.cache
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\bin\Debug\pruebasENCAD.exe.config
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\bin\Debug\pruebasENCAD.exe
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\bin\Debug\pruebasENCAD.pdb
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\bin\Debug\ClassLibrary.dll
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\bin\Debug\ClassLibrary.pdb
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\obj\Debug\pruebasENCAD.csprojResolveAssemblyReference.cache
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\obj\Debug\pruebasENCAD.exe
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\pruebasENCAD\obj\Debug\pruebasENCAD.pdb
