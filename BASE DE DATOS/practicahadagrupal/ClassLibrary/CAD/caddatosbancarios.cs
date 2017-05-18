@@ -17,7 +17,7 @@ namespace ClassLibrary.CAD
     public class CADdatosbancarios
     {
         private SqlConnection conn = null;
-        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=" + Directory.GetCurrentDirectory() + @"..\..\..\practicahadagrupal\App_Data\Database1.mdf;Integrated Security=true";
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=" + Directory.GetCurrentDirectory() + "..\..\..\practicahadagrupal\App_Data\Database1.mdf ";Integrated Security=true";
 
         public CADdatosbancarios() {}
 
@@ -75,7 +75,7 @@ namespace ClassLibrary.CAD
                                 rd["nombre"].ToString() +
                                 rd["apellido"].ToString() +
                                 rd["fvencimiento"].ToString() +
-                                rd["codigoSeguridad"].ToString();
+                                rd["codigoSeguridad"].ToString() +;
                 }
             }
             catch (Exception ex)

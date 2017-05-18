@@ -20,7 +20,7 @@ namespace pruebasENCAD
 
             u.Usuario = "hola999";
 
-            
+            /*
             List<string> l = new List<string>();
 
 
@@ -29,8 +29,8 @@ namespace pruebasENCAD
             foreach (string valor in l)
             {
                 Console.WriteLine(valor);
-            }
-            /*
+            }*/
+
             u.Ciudad = "hola999";
             u.Contrasena = "hola999";
             u.Edad = 9;
