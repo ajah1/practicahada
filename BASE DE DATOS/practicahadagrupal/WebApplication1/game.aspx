@@ -27,8 +27,8 @@
         function play_game() 
         {
             var level = 160; // Game level, by decreasing will speed up
-            var rect_w = 50; // Width 
-            var rect_h = 10; // Height
+            var rect_w = 100; // Width 
+            var rect_h = 100; // Height
             var inc_score = 50; // Score
             var snake_color = "#FF0000"; // Snake Color
             var ctx; // Canvas attributes

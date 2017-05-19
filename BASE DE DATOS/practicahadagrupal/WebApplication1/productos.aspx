@@ -47,7 +47,7 @@
             <td class="auto-style9">IMAGEN</td>
         </tr>
         <tr>
-            <td class="auto-style9">NOMBRE</td>
+            <td class="auto-style9"> </td>
             <td class="auto-style9">NOMBRE</td>
             <td class="auto-style9">NOMBRE</td>
         </tr>
