@@ -2,13 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-<<<<<<< HEAD
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-=======
->>>>>>> master
 using System.Threading.Tasks;
 using System.Configuration;
 
@@ -113,11 +106,7 @@ namespace ClassLibrary.CAD
                 {
                     EN.ENCarro carro = new EN.ENCarro();
                     carro.Id = dr.GetInt32(0);
-<<<<<<< HEAD
-                    //carro.Usuario = dr.GetString(1);
-=======
                     carro.Usuario = int.Parse(dr.GetString(1));
->>>>>>> master
                     carro.Producto.Id = dr.GetInt32(2);
                     SqlCommand com2 = new SqlCommand("select precio from productos where id = " + carro.Producto, conn);
                     SqlDataReader dr2 = com.ExecuteReader();
