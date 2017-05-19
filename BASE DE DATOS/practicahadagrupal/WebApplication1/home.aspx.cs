@@ -12,7 +12,8 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Session["Usuario"] = null;
+            //prueba xavito
+            Session["user"] = null;
 
             // prueba alex
             Session["usuario"] = "admin";
