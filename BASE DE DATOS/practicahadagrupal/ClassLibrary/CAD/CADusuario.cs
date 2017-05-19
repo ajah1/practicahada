@@ -15,9 +15,15 @@ namespace ClassLibrary.CAD{
     public class CADusuario{
         
         private SqlConnection conn = null;
+<<<<<<< HEAD
 
         private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf; Integrated Security=true";
         public CADusuario(){}
+=======
+
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf; Integrated Security=true";
+
+>>>>>>> 48765284V
 
 
         public void create(EN.usuario user)
@@ -104,26 +110,61 @@ namespace ClassLibrary.CAD{
             return salida;
         }
 
-        /*
+        public string readstring(string user)
+        {
+            string salida = "";
+
+            try
+            {
+                string sentencia = "Select * from usuario " +
+                                    "where usuario = '" + user + "'";
+
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
+
+                SqlCommand com = new SqlCommand(sentencia, conn);
+                SqlDataReader ur = com.ExecuteReader();
+
+
+                while (ur.Read())
+                {
+                    
+                    salida = ur["usuario"].ToString() + ur["direccion"].ToString() + " " +
+                        ur["ciudad"].ToString() + " " + ur["pais"].ToString() + " " + ur["descripcion"].ToString() +
+                        " " + ur["email"].ToString() + " " + ur["edad"].ToString();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Read Usuario failed.");
+                Console.WriteLine(". \nError: {0}", ex.ToString());
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return salida;
+        }
+        
         // compruena si el usuario existe en la base de datos, return bool 
         public bool existe(string user)
         {
-            bool esta = false;
+            bool encontrado = false;
 
-            List<string> l = new List<string>();
+            string datosUsuario = "";
 
-            l = null;
+            datosUsuario = readstring(user);
 
-            l = read(user);
+            if (datosUsuario != "")
+                encontrado = true;
 
-            if (l)
-            {
-                esta = true;
-            }
-
-            return esta;
+            return encontrado;
         }
-        */
+        
         public void update(EN.usuario user){
 
             try{
