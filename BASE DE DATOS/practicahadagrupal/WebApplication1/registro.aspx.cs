@@ -22,14 +22,14 @@ namespace WebApplication1
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string usuario = null;
-            string password = null;
-            string direccion = null;
-            string email = null;
-            string ciudad = null;
-            string pais = null;
+            string usuario = "";
+            string password = "";
+            string direccion = "";
+            string email = "";
+            string ciudad = "";
+            string pais = "";
             int edad = -1;
-            string descripcion = null;
+            string descripcion = "";
 
             usuario = this.TextBox1.Text;
             password = this.TextBox2.Text;
@@ -44,9 +44,9 @@ namespace WebApplication1
 
             string s = this.TextBox7.Text;
         
-            usuario u = new usuario();
             
-
+            
+            /*
             if (usuario == "" || password == "" || direccion == "" || email == "" || ciudad == "" || pais == ""
                 || edad == -1 || descripcion == "") {
 
@@ -54,6 +54,8 @@ namespace WebApplication1
 
             }
             else {
+            */
+                usuario u = new usuario();
 
                 u.Usuario = usuario;
                 u.Contrasena = password;
@@ -67,7 +69,7 @@ namespace WebApplication1
                 u.registrarUsuario();
 
                 Response.Redirect("login.aspx");
-            }
+            //}
         }
     }
 }
