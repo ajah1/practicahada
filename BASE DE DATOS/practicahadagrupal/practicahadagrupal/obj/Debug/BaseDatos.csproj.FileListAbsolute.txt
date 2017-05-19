@@ -28,7 +28,6 @@ C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\pr
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.ApplicationInsights.xml
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\BaseDatos.csprojResolveAssemblyReference.cache
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\practicahadagrupal.dll
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\practicahadagrupal.pdb
 C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\ApplicationInsights.config
@@ -98,3 +97,4 @@ C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practi
 C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\VBCSCompiler.exe
 C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\System.Web.Entity.dll
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\BaseDatos.csprojResolveAssemblyReference.cache
