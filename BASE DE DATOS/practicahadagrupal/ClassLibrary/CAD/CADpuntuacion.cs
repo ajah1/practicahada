@@ -52,7 +52,6 @@ namespace ClassLibrary.CAD
 		// obtener la puntuación de un usuario
 		public int obtenerPuntuacion(string usuario)
 		{
-
 			int salida = 0;
 
 			try
@@ -93,7 +92,7 @@ namespace ClassLibrary.CAD
 		{
 			int puntos = 0;
 
-			// puntos += suma + p.obtenerPuntuacion();
+			puntos += suma + p.obtenerPuntuacion(p.user);
 
 			try
 			{
