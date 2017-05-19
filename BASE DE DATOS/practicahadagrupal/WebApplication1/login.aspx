@@ -43,9 +43,10 @@
             <td style="width: 121px">&nbsp;</td>
             <td class="auto-style2">
 
+                
                 <div  id="algo" style=display:none;>
                 &nbsp;<asp:label runat="server" text="Label" CssClass="auto-style5">
-                        <a href="admin.aspx">easy</a>
+                         <a class="adminclass" href="admin.aspx">ADMINISTRADOR</a>
                       </asp:label>
                 </div>
 
@@ -99,6 +100,29 @@
         </tr>
     </table>
     
+
+    <%-- css para el label de administrador --%>
+    <style>
+       
+        /* INTENTANDO CAMBIAR EL COLOR */
+
+        /* estilo del link */
+        /*a:link {
+            color: red;
+        }
+
+        a:visited{
+            color:red;
+        }
+        a:active {
+            color: cornflowerblue;
+        }*/
+        #algo {
+            background #fff;
+        }
+
+
+    </style>
 
 
 </asp:Content>

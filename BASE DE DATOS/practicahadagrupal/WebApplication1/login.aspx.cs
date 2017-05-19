@@ -15,7 +15,8 @@ namespace WebApplication1
         protected void Page_Load(object sender, EventArgs e)
         {
 
-              Page.ClientScript.RegisterStartupScript(this.GetType(), "clientscript", "document.getElementById('algo').style.display = 'block';", true);
+            if (Session["usuario"] == "admin")
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "clientscript", "document.getElementById('algo').style.display = 'block';", true);
               
 
         }
