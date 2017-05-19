@@ -68,9 +68,9 @@ namespace ClassLibrary.CAD
         }
 
         // recupera una tupla de la tabla datosBancarios de la base de datos con una tarjeta asociada a un usuario
-        public string read(EN.datosbancarios dban)
+        public List<string> read(EN.datosbancarios dban)
         {
-            string mostrado = "";
+            List<string> mostrado = new List<string>();
 
             // creamos la query en sentenciaDB, conectamos con la base de datos y ejecutamos la query
             try
@@ -87,12 +87,12 @@ namespace ClassLibrary.CAD
 
                 while (rd.Read())
                 {
-                    mostrado =  rd["usuario"].ToString() +
-                                rd["numeroTarjeta"].ToString() +
-                                rd["nombre"].ToString() +
-                                rd["apellido"].ToString() +
-                                rd["fvencimiento"].ToString() +
-                                rd["codigoSeguridad"].ToString();
+                    mostrado.Add(rd["usuario"].ToString());
+                    mostrado.Add(rd["numeroTarjeta"].ToString());
+                    mostrado.Add(rd["nombre"].ToString());
+                    mostrado.Add(rd["apellido"].ToString());
+                    mostrado.Add(rd["fvencimiento"].ToString());
+                    mostrado.Add(rd["codigoSeguridad"].ToString());
                 }
             }
             // capturamos un posible fallo
