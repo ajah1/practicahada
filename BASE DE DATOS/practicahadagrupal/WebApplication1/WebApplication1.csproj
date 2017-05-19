@@ -204,8 +204,6 @@
     <Compile Include="carrito.aspx.cs">
       <DependentUpon>carrito.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
-<<<<<<< HEAD
-=======
     </Compile>
     <Compile Include="WebForm3.aspx.cs">
       <DependentUpon>WebForm3.aspx</DependentUpon>
@@ -213,7 +211,6 @@
     </Compile>
     <Compile Include="WebForm3.aspx.designer.cs">
       <DependentUpon>WebForm3.aspx</DependentUpon>
->>>>>>> master
     </Compile>
   </ItemGroup>
   <ItemGroup>
