@@ -15,19 +15,9 @@ namespace ClassLibrary.CAD{
     public class CADusuario{
         
         private SqlConnection conn = null;
-<<<<<<< HEAD
-
-        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf; Integrated Security=true";
-<<<<<<< HEAD
-=======
-        public CADusuario(){}
-=======
 
         private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf; Integrated Security=true";
-
->>>>>>> 48765284V
->>>>>>> master
-
+        
         // constructor por defecto
         public CADusuario(){}
 
@@ -117,13 +107,9 @@ namespace ClassLibrary.CAD{
             return salida;
         }
 
-<<<<<<< HEAD
-        /*
-        // comprueba si el usuario existe en la base de datos, return bool 
-        public bool existe(string user)
-=======
+        // lee usuario
         public string readstring(string user)
->>>>>>> master
+
         {
             string salida = "";
 
@@ -163,7 +149,7 @@ namespace ClassLibrary.CAD{
             return salida;
         }
         
-        // compruena si el usuario existe en la base de datos, return bool 
+        // comprueba si el usuario existe en la base de datos, return bool 
         public bool existe(string user)
         {
             bool encontrado = false;
@@ -177,13 +163,9 @@ namespace ClassLibrary.CAD{
 
             return encontrado;
         }
-<<<<<<< HEAD
-        */
+
 
         // modifica un usuario que exista en la base de datos
-=======
-        
->>>>>>> master
         public void update(EN.usuario user){
 
             try{
