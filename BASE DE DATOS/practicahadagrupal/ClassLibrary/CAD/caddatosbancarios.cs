@@ -68,7 +68,7 @@ namespace ClassLibrary.CAD
         }
 
         // recupera una tupla de la tabla datosBancarios de la base de datos con una tarjeta asociada a un usuario
-        public void read(EN.datosbancarios dban)
+        public string read(EN.datosbancarios dban)
         {
             string mostrado = "";
 
@@ -106,6 +106,7 @@ namespace ClassLibrary.CAD
             {
                 conn.Close();
             }
+            return mostrado;
         }
         // cambia una tupla de la tabla datosBancarios de la base de datos con una tarjeta asociada a un usuario
         public void update(EN.datosbancarios dban, ulong numerotarjeta)
