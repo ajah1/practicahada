@@ -55,11 +55,20 @@ namespace pruebasENCAD
             
             */
 
+            usuario u = new usuario();
 
-            puntuacion p = new puntuacion();
-            p.user = "hola3";
-            p.p = 10;
-            p.updatePuntuacion();
+            u.Usuario = "pruebaDatabase";
+            u.Ciudad = "pruebaDatabase";
+            u.Contrasena = "pruebaDatabase";
+            u.Edad = 0;
+            u.Descripcion = "pruebaDatabase";
+            u.Email = "pruebaDatabase";
+            u.Direccion = "pruebaDatabase";
+            u.Pais = "pruebaDatabase";
+
+            u.registrarUsuario();
+
+            Console.ReadLine();
 
         }
 
