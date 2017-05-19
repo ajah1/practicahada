@@ -17,28 +17,37 @@ namespace WebApplication1
         // al cargar la pagina, si hay sesion activada te muestra tus datos, sino te redirecciona a registro
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["Usuario"] != null)
+            // cambiar esto
+            if (Session["user"] != null)
             {
-                this.Label11.Text = "Podrá ver sus datos si esta registrado";   // Usuario
-                this.Label12.Text = "Podrá ver sus datos si esta registrado";   // Direccion
-                this.Label13.Text = "Podrá ver sus datos si esta registrado";   // Email
-                this.Label17.Text = "Podrá ver sus datos si esta registrado";   // Ciudad
-                this.Label14.Text = "Podrá ver sus datos si esta registrado";   // Pais
-                this.Label15.Text = "Podrá ver sus datos si esta registrado";   // Edad
-                this.Label16.Text = "Podrá ver sus datos si esta registrado";   // Descripcion
-            }
-            else
-            {
-                //MessageBox.Show("Usted ha sido redireccioando ya que no tiene abierta una sesion");
                 Response.Redirect("login.aspx");
-            }
-            
+            }            
         }
 
         // modificar el usuario (pendiente)
         protected void Button1_Click(object sender, EventArgs e)
         {
+            string usuarios, direccion, email, ciudad, pais, descripcion;
+            int edad = 0;
+            usuarios = direccion = email = ciudad = pais = descripcion = "";
 
+            usuarios = this.users.Text;
+            direccion = this.dir.Text;
+            email = this.ema.Text;
+            ciudad = this.ciu.Text;
+            pais = this.pai.Text;
+            descripcion = this.desc.Text;
+            
+            // añadir que la sesion coincide con el textbox usuarios
+            if (usuarios != "" && direccion != "" && email != "" && ciudad != "" && pais != "" && descripcion != "")
+            {
+                //implementar
+                MessageBox.Show("Furula");
+            }
+            else
+            {
+                MessageBox.Show("Usted no ha rellenado todos los campos");
+            }
         }
 
         // darse de baja
