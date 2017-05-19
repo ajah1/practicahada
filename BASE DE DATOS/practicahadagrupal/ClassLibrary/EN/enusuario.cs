@@ -8,7 +8,7 @@ namespace ClassLibrary.EN{
 
     public class usuario{
 
-        // parte privada
+        // parte privada (propiedades del usuario)
 
         private string user;
         private string direccion;
@@ -22,8 +22,10 @@ namespace ClassLibrary.EN{
         //********************************************
         // constructores
 
+        // constructor por defecto
         public usuario() {  }
 
+        //constructor parametrizado
         public usuario(string usuario, string direccion, string contrasena, string ciudad, string pais, string descripcion, string email, int edad) {
             this.user = usuario;
             this.direccion = direccion;
@@ -83,6 +85,7 @@ namespace ClassLibrary.EN{
         //********************************************
         // metodos
 
+        // borra un usuario de la base de datos
         public void borrarUsuario(string usuario)
         {
             CAD.CADusuario cli = new CAD.CADusuario();
@@ -90,12 +93,14 @@ namespace ClassLibrary.EN{
             cli.delete(usuario);
         }
 
+        // inserta un usuario en la base de datos
         public void registrarUsuario() {
 
             CAD.CADusuario cli = new CAD.CADusuario();
             cli.create(this);
         }
 
+        // lee, muestra los datos de un usuario
         public List<string> leerUsuario()
         {
             List<string> lista = new List<string>();
@@ -107,6 +112,7 @@ namespace ClassLibrary.EN{
             return lista;
         }
 
+        // modifica los datos de un usuario
         public void modificarUsuario(){
             CAD.CADusuario cli = new CAD.CADusuario();
             cli.update(this);
