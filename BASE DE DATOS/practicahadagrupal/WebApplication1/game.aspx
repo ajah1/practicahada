@@ -1,11 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="WebApplication1.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="game.aspx.cs" Inherits="WebApplication1.WebForm1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
         
         
-            <%-- objeto oculto para guardarle el score --%>
-            <asp:Literal runat="server" ID="litInputAmount"></asp:Literal>
+        <%-- objeto oculto para guardarle el score --%>
+        <asp:Literal runat="server" ID="litInputAmount"></asp:Literal>
+
 
 
 <!documentTYPE html>
@@ -106,18 +107,46 @@
                         ctx.clearRect(dir[0] * 10, dir[1] * 10, 10, 10);
                     }
                 }
+
                 else if (!tn.length) {
+
                     var msg_score = document.getElementById("msg");
+
+                    msg_score.innerHTML = "Thank you for playing game.<br /> Your Score :"
+                    + "<b>" + score + "</b><br /><br /><input type='button' value='Play Again' onclick='window.location.reload();' />";
+
                     msg_score.innerHTML = "Gracias por jugar.<br /> Tu puntuacion: <b>" + score; //+ "</b><br /><br /><input type='button' value='Play Again' onclick='window.location.reload();' />";
                     
                     // boton que se muestra al teminar la partida
 
-                   
-                    // guardar resultado en objeto oculto asp
-                    document.getElementById("__VIEWSTATE").value = score;
 
+                    // guardar resultado en objeto oculto asp
+                    var final = document.getElementById("__VIEWSTATE").value = score;
+
+
+
+                    // borrar mapa
                     document.getElementById("playArea").style.display = 'none';
                     window.clearInterval(interval);
+                    
+                    // funcion que llama al codigo servidor para guardar el score
+                    function actualizarPuntuacion() {
+                        $.ajax
+                        ({
+                            type: "POST",
+                            url: "game.aspx.cs",
+                            data: $final,
+                            contentType: "application/json; charset=utf-8",
+                            dataType: "json",
+                            success: OnSuccess,
+                            failure: function (response) {
+                                alert(respose.d);
+                            }
+                        })
+                    }
+
+
+
                 }
             }
 

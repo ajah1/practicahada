@@ -20,7 +20,7 @@ namespace ClassLibrary.CAD
 		{ }
 
 		private SqlConnection conn = null;
-        private string stringConexion = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf; Integrated Security = True";
+        private string stringConexion = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf; Integrated Security = True";
 
         // poner todo a cero
         public void remove(string usuario)
@@ -52,13 +52,12 @@ namespace ClassLibrary.CAD
 		// obtener la puntuación de un usuario
 		public int obtenerPuntuacion(string usuario)
 		{
-
 			int salida = 0;
 
 			try
 			{
 
-				string sentencia = "SELECT * FROM puntuacion " +
+				string sentencia = "SELECT puntosTotales FROM puntuacion " +
 								   "WHERE pusuario = '" + usuario + "'";
 
 				conn = new SqlConnection();
@@ -93,7 +92,7 @@ namespace ClassLibrary.CAD
 		{
 			int puntos = 0;
 
-			// puntos += suma + p.obtenerPuntuacion();
+			puntos += suma + p.obtenerPuntuacion();
 
 			try
 			{
@@ -103,10 +102,13 @@ namespace ClassLibrary.CAD
 						   " WHERE pusuario= '" + p.user + "'";
 
 
-				conn = new SqlConnection();
 
+                conn = new SqlConnection();
 
-				SqlCommand com = new SqlCommand(sentencia, conn);
+                conn.ConnectionString = stringConexion;
+                conn.Open();
+
+                SqlCommand com = new SqlCommand(sentencia, conn);
 				com.ExecuteNonQuery();
 			}
 			catch (Exception ex)
@@ -132,14 +134,17 @@ namespace ClassLibrary.CAD
 
 				conn = new SqlConnection();
 
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 
-				SqlCommand com = new SqlCommand(sentencia, conn);
+                SqlCommand com = new SqlCommand(sentencia, conn);
 				SqlDataReader dr = com.ExecuteReader();
 
 
-				while (dr.Read())
+
+                while (dr.Read())
 				{
-					salida = " " + dr["record"].ToString() +
+					salida = dr["record"].ToString()+ " "+
 						dr["vidas"].ToString() + " " +
 						dr["puntosTotales"].ToString();
 				}
