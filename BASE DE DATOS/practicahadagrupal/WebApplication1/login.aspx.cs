@@ -26,7 +26,7 @@ namespace WebApplication1
             useraux.Contrasena = this.TextBox2.Text;
 
             // en caso de intentar loguearse de nuevo, salta mensaje error
-            if (Session["usuario"] != null && useraux.Usuario == Session["usuario"].ToString())
+            if (Session["user"] != null && useraux.Usuario == Session["user"].ToString())
                 MessageBox.Show("Ya has iniciado sesion");
 
             // comprobaciones de campos vacios
@@ -37,14 +37,14 @@ namespace WebApplication1
             else if (useraux.Usuario == "admin" && useraux.comprobarPass() == true)
             {
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "clientscript", "document.getElementById('algo').style.display = 'block';", true);
-                Session["usuario"] = "admin";
+                Session["user"] = "admin";
                 Response.Redirect("admin.aspx");
             }
 
             // si es usuario...
             else if (useraux.existe() == true && useraux.comprobarPass() == true)
             {
-                Session["usuario"] = useraux.Usuario;
+                Session["user"] = useraux.Usuario;
                 Response.Redirect("game.aspx");
             }
             else
