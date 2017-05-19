@@ -23,7 +23,7 @@ namespace WebApplication1
 
             puntuacion p = new puntuacion();
 
-            p.user = "hola3";
+            p.user = "pruebaDatabase";
             p.p = 10;
             p.updatePuntuacion();
 

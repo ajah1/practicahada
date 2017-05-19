@@ -12,48 +12,23 @@ namespace WebApplication1
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
-        /*
-        // actualiza la puntuación de un usuario
-        void updatePuntuacion(int addScore)
-        {
-            puntuacion score = new puntuacion();
-            
-            // temporal
-            string usuario = "hola3";
-
-            // cuando tengamos la sesiones hechas
-            //user.Usuario = (string)Session["usuario"];
-            
-            // actualizar puntuación del usuario
-            score.p = addScore;
-            score.user = usuario;
-            score.updatePuntuacion();
-        }*/
 
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            if (!Page.IsPostBack)
-            {
-            }
-
         }
 
-        public static void update(string puntuacion)
+        [System.Web.Services.WebMethod]
+        public static double Sumar(double Valor1, double Valor2)
         {
-            puntuacion score = new puntuacion();
 
-            // temporal
-            string usuario = "hola3";
+            puntuacion p = new puntuacion();
 
-            // cuando tengamos la sesiones hechas
-            //user.Usuario = (string)Session["usuario"];
+            p.user = "pruebaDatabase";
+            p.p = (int)Valor1;
+            p.updatePuntuacion();
 
-            // actualizar puntuación del usuario
-            score.p = int.Parse(puntuacion);
-            score.user = usuario;
-            score.updatePuntuacion();
-
+            return 0;
         }
 
     }
