@@ -80,6 +80,10 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="CAD\CADcarrito.cs" />
+    <Compile Include="CAD\CADlineapedido.cs" />
+    <Compile Include="EN\encarrito.cs" />
+    <Compile Include="EN\enlineapedido.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

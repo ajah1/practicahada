@@ -111,8 +111,14 @@
                 else if (!tn.length) {
 
                     var msg_score = document.getElementById("msg");
+<<<<<<< HEAD
                     msg_score.innerHTML = "Thank you for playing game.<br /> Your Score :"
                     + "<b>" + score + "</b><br /><br /><input type='button' value='Play Again' onclick='window.location.reload();' />";
+=======
+                    msg_score.innerHTML = "Gracias por jugar.<br /> Tu puntuacion: <b>" + score; //+ "</b><br /><br /><input type='button' value='Play Again' onclick='window.location.reload();' />";
+                    
+                    // boton que se muestra al teminar la partida
+>>>>>>> master
 
                     // guardar resultado en objeto oculto asp
                     var final = document.getElementById("__VIEWSTATE").value = score;

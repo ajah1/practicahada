@@ -37,7 +37,9 @@ namespace WebApplication1
             email = this.TextBox4.Text;
             ciudad = this.TextBox5.Text;
             pais = this.TextBox6.Text;
-            edad = int.Parse(this.TextBox7.Text);
+            if (this.TextBox7.Text != "") {
+                edad = int.Parse(this.TextBox7.Text);
+            }
             descripcion = this.TextBox8.Text;
 
             string s = this.TextBox7.Text;
