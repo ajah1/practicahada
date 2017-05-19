@@ -46,7 +46,7 @@ namespace WebApplication1
         
             
             
-            /*
+            
             if (usuario == "" || password == "" || direccion == "" || email == "" || ciudad == "" || pais == ""
                 || edad == -1 || descripcion == "") {
 
@@ -54,7 +54,7 @@ namespace WebApplication1
 
             }
             else {
-            */
+            
                 usuario u = new usuario();
 
                 u.Usuario = usuario;
@@ -69,7 +69,7 @@ namespace WebApplication1
                 u.registrarUsuario();
 
                 Response.Redirect("login.aspx");
-            //}
+            }
         }
     }
 }

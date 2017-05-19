@@ -57,16 +57,17 @@ namespace pruebasENCAD
 
             usuario u = new usuario();
 
-            u.Usuario = "pruebaDatabase";
+            u.Usuario = "admin";
             u.Ciudad = "pruebaDatabase";
-            u.Contrasena = "pruebaDatabase";
+            u.Contrasena = "hada";
             u.Edad = 0;
             u.Descripcion = "pruebaDatabase";
             u.Email = "pruebaDatabase";
             u.Direccion = "pruebaDatabase";
             u.Pais = "pruebaDatabase";
 
-            u.registrarUsuario();
+            Console.WriteLine(u.existe());
+            Console.WriteLine(u.comprobarPass());
 
             Console.ReadLine();
 
