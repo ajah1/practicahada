@@ -15,7 +15,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -29,6 +29,16 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'probando|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\probando\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -40,10 +50,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CAD\caddatosbancarios.cs" />
-    <Compile Include="CAD\caddatosbancarios.designer.cs">
-      <DependentUpon>caddatosbancarios.cs</DependentUpon>
+    <Compile Include="CAD\CADdatosbancarios.cs" />
+    <Compile Include="CAD\CADdatosbancarios.designer.cs">
+      <DependentUpon>CADdatosbancarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="CAD\CADlinped.cs" />
     <Compile Include="CAD\CADpedido.cs" />
     <Compile Include="CAD\CADpopular.cs" />
     <Compile Include="CAD\CADproducto.cs" />
@@ -53,7 +64,8 @@
     <Compile Include="CAD\cadusuario.cs" />
     <Compile Include="CAD\cadstock.cs" />
     <Compile Include="Class1.cs" />
-    <Compile Include="EN\endatosbancarios.cs" />
+    <Compile Include="EN\ENdatosbancarios.cs" />
+    <Compile Include="EN\enlinped.cs" />
     <Compile Include="EN\enpedido.cs" />
     <Compile Include="EN\enpopular.cs" />
     <Compile Include="EN\enproducto.cs" />
@@ -63,12 +75,27 @@
     <Compile Include="EN\enstock.cs" />
     <Compile Include="EN\enusuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="EN\encarrito.cs" />
     <Compile Include="EN\enlineapedido.cs" />
     <Compile Include="CAD\CADcarrito.cs" />
     <Compile Include="CAD\CADlineapedido.cs" />
+=======
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+>>>>>>> master
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

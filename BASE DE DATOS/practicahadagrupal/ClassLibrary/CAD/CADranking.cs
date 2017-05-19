@@ -4,27 +4,95 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using System.Data;
+using System.Data.Common;
+using System.Data.SqlClient;
+using System.Data.SqlTypes;
 
-namespace ClassLibrary.CAD{
 
-	public class CADranking{
+namespace ClassLibrary.CAD
+{
+    
 
-		public CADranking() { }
+    public class CADranking
+    {
 
-		public void add( EN.ranking r) {
-			
-		}
+        
+        public CADranking() { }
 
-		public void remove(string usuario) {
-			
-		}
+        private SqlConnection conn = null;
+        private string stringConexion = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf;Integrated Security = True";
 
-		public void read(string usuario) {
-		
-		}
+        // borrar todas las tuplas de la tabla ranking
+        public void drop()
+        {
+            try
+            {
 
-		public void update(EN.ranking r) {
-		
-		}
-	}
+                string sentencia = @"TRUNCATE TABLE ranking";
+
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
+
+                SqlCommand com = new SqlCommand(sentencia, conn);
+                com.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("drop rankin failed.");
+                Console.WriteLine(". \nError: {0}", ex.ToString());
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        // inserta los usuarios con mayor record
+        public void add()
+        {
+            try
+            {
+                string sentencia = "INSERT INTO ranking(usuario, puntuacion) " +
+                    " SELECT pusuario, record FROM puntuacion";
+
+
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
+
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
+
+                SqlCommand com = new SqlCommand(sentencia, conn);
+                com.ExecuteNonQuery();
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Create Ranking failed.");
+                Console.WriteLine(". \nError: {0}", ex.ToString());
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        // actualizar el ranking
+        public void updateTable()
+        {
+
+            // 1- borrar toda la tabla ranking
+            this.drop();
+
+            // 2- actualizar la tabla con el nuevo ranking
+            this.add();
+        }
+    }
 }

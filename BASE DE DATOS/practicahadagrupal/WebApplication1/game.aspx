@@ -2,6 +2,12 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
+        
+        
+            <%-- objeto oculto para guardarle el score --%>
+            <asp:Literal runat="server" ID="litInputAmount"></asp:Literal>
+
+
 <!documentTYPE html>
         <html lang="en">
         <head>
@@ -60,6 +66,8 @@
                 while (map[x][y]);
                 map[x][y] = 1;
                 ctx.fillStyle = snake_color;
+                ctx.strokeStyle = 'red';
+
                 ctx.strokeRect(x * 10 + 1, y * 10 + 1, 8, 8);
             }
 
@@ -100,7 +108,14 @@
                 }
                 else if (!tn.length) {
                     var msg_score = document.getElementById("msg");
-                    msg_score.innerHTML = "Thank you for playing game.<br /> Your Score : <b>" + score + "</b><br /><br /><input type='button' value='Play Again' onclick='window.location.reload();' />";
+                    msg_score.innerHTML = "Gracias por jugar.<br /> Tu puntuacion: <b>" + score; //+ "</b><br /><br /><input type='button' value='Play Again' onclick='window.location.reload();' />";
+                    
+                    // boton que se muestra al teminar la partida
+
+                   
+                    // guardar resultado en objeto oculto asp
+                    document.getElementById("__VIEWSTATE").value = score;
+
                     document.getElementById("playArea").style.display = 'none';
                     window.clearInterval(interval);
                 }

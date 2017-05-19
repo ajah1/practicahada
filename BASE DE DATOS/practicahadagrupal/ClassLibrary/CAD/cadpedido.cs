@@ -5,12 +5,24 @@ using System.Text;
 using System.Threading.Tasks;
 using ClassLibrary.EN;
 using System.Configuration;
+<<<<<<< HEAD
 using System.Collections;
+=======
+>>>>>>> master
 
 using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
+<<<<<<< HEAD
+
+namespace ClassLibrary.CAD{
+
+    class CADpedido{
+
+        private SqlConnection conn = null;
+        private string stringConexion = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf; Integrated Security = True";
+=======
 
 namespace ClassLibrary.CAD{
 
@@ -19,9 +31,15 @@ namespace ClassLibrary.CAD{
         private SqlConnection conn = null;
         private string stringConexion = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf; Integrated Security = True";
 
+>>>>>>> master
 
         public CADpedido(){}
 
+<<<<<<< HEAD
+        public CADpedido(){}
+
+=======
+>>>>>>> master
         public void create(pedido ped){
 
             try
@@ -70,6 +88,7 @@ namespace ClassLibrary.CAD{
             finally {
                 conn.Close();
             }
+<<<<<<< HEAD
 
         }
 
@@ -108,6 +127,10 @@ namespace ClassLibrary.CAD{
 				conn.Close();
 			}
 		}
+=======
+
+        }
+>>>>>>> master
 
     }
 }

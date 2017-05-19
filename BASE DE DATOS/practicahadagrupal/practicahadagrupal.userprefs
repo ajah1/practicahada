@@ -1,9 +1,18 @@
 ﻿<Properties StartupConfiguration="{2B71AE63-046D-4323-B9B2-DA1B27DB0857}|Pruebas unitarias">
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="WebApplication1/carrito.aspx">
     <Files>
       <File FileName="ClassLibrary/EN/encarrito.cs" Line="51" Column="2" />
       <File FileName="ClassLibrary/CAD/CADcarrito.cs" Line="137" Column="2" />
       <File FileName="WebApplication1/carrito.aspx" Line="1" Column="1" />
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="ClassLibrary/CAD/CADranking.cs">
+    <Files>
+      <File FileName="WebApplication1/ranking.aspx" Line="35" Column="1" />
+      <File FileName="ClassLibrary/EN/enranking.cs" Line="1" Column="1" />
+      <File FileName="ClassLibrary/CAD/CADranking.cs" Line="1" Column="1" />
+      <File FileName="ClassLibrary/CAD/cadproducto.cs" Line="1" Column="1" />
+>>>>>>> master
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

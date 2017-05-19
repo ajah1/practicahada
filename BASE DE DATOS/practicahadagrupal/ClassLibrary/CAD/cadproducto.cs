@@ -46,6 +46,7 @@ namespace ClassLibrary.CAD{
             }
         }
 
+<<<<<<< HEAD
         public void InsertarPedido(EN.ENCarro ped)
 		{
 			try
@@ -81,6 +82,8 @@ namespace ClassLibrary.CAD{
 			}
 		}
 
+=======
+>>>>>>> master
         public void remove(int id) {
             try {
                 string sentenciaDB = "DELETE FROM producto WHERE id = " + id.ToString();

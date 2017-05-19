@@ -8,7 +8,7 @@ namespace ClassLibrary.EN{
 
     public class usuario{
 
-        // parte privada
+        // parte privada (propiedades del usuario)
 
         private string user;
         private string direccion;
@@ -22,8 +22,10 @@ namespace ClassLibrary.EN{
         //********************************************
         // constructores
 
+        // constructor por defecto
         public usuario() {  }
 
+        //constructor parametrizado
         public usuario(string usuario, string direccion, string contrasena, string ciudad, string pais, string descripcion, string email, int edad) {
             this.user = usuario;
             this.direccion = direccion;
@@ -35,12 +37,6 @@ namespace ClassLibrary.EN{
             edad = 0;
           //puntuacion = new puntuacion();
         }
-
-        /*
-        public ~usuario(){
-
-        }
-        */
 
         //********************************************
         // get set
@@ -89,33 +85,50 @@ namespace ClassLibrary.EN{
         //********************************************
         // metodos
 
-        public void registrarUsuario(string usuario, string direccion, string contrasena, string ciudad, string pais, string descripcion, string email, int edad) {
+        // borra un usuario de la base de datos
+        public void borrarUsuario(string usuario)
+        {
+            CAD.CADusuario cli = new CAD.CADusuario();
+
+            cli.delete(usuario);
+        }
+
+        // inserta un usuario en la base de datos
+        public void registrarUsuario() {
+
             CAD.CADusuario cli = new CAD.CADusuario();
             cli.create(this);
         }
 
-        public void borrarUsuario(string usuario){
+        // lee, muestra los datos de un usuario
+        public List<string> leerUsuario()
+        {
+            List<string> lista = new List<string>();
+            lista = null;
+
             CAD.CADusuario cli = new CAD.CADusuario();
-            cli.delete(usuario);
+            lista = cli.read(this.Usuario);
+
+            return lista;
         }
 
-        public void entrarWeb(string usuario, string contrasena){
-
-        }
-
-        // aun no se sabe si se hace aqui, salir de la web
-        public void salirWeb(){
-
-        }
-
-        public void modificarUsuario(string usuario, string direccion, string contrasena, string ciudad, string pais, string descripcion, string email, int edad){
+        // modifica los datos de un usuario
+        public void modificarUsuario(){
             CAD.CADusuario cli = new CAD.CADusuario();
             cli.update(this);
         }
+        
+        // devuelve true si el usuario existe
+        public bool existe()
+        {
+            bool existe;
 
-        public void leerUsuario(string usuario) {
-            CAD.CADusuario cli = new CAD.CADusuario();
-            cli.read(usuario);
+            CAD.CADusuario aux = new CAD.CADusuario();
+
+            existe = aux.existe(Usuario);
+
+            return existe;
         }
+    
     }
 }
