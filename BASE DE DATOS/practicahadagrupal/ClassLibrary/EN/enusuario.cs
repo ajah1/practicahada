@@ -117,17 +117,18 @@ namespace ClassLibrary.EN{
             CAD.CADusuario cli = new CAD.CADusuario();
             cli.update(this);
         }
-        /*
+        
+        // devuelve true si el usuario existe
         public bool existe()
         {
             bool existe;
 
             CAD.CADusuario aux = new CAD.CADusuario();
 
-            //existe = aux.existe(Usuario);
+            existe = aux.existe(Usuario);
 
             return existe;
         }
-    */
+    
     }
 }

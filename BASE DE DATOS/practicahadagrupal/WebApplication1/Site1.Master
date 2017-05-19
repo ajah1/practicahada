@@ -18,7 +18,12 @@
             <a href="game.aspx">¡JUGUEMOS!</a>
         </li>
         <li>
+<<<<<<< HEAD
             <a href="login.aspx">INICIAR SESION</a>
+=======
+            <a href="login.aspx">Login</a>
+
+>>>>>>> 48765284V
         </li>
         <li>
             <a href="registro.aspx">REGISTRARSE</a>
@@ -29,7 +34,12 @@
         <li>
             <a href="ranking.aspx">RANKING</a>
         <li>
+<<<<<<< HEAD
             <a href="perfil.aspx">PERFIL</a>
+=======
+            <a href="perfil.aspx">Perfil</a>
+
+>>>>>>> 48765284V
         </li>
 
     </ul>
@@ -90,6 +100,8 @@
         float: right;
         margin: 20px;
     }
+
+    
 
     li a {
         text-decoration: none;

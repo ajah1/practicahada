@@ -14,7 +14,11 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-        
+
+            if (Session["usuario"] == "admin")
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "clientscript", "document.getElementById('algo').style.display = 'block';", true);
+              
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)
