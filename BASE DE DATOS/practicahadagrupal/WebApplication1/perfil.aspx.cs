@@ -14,37 +14,44 @@ namespace WebApplication1
     public partial class perfil : System.Web.UI.Page
     {
         
-        // al cargar la pagina, si hay sesion activada te muestra tus datos, sino te redirecciona a registro
+        // al cargar la pagina, si hay sesion te deja modificar usuario o darte de baja, sino te redirecciona a registro
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["Usuario"] != null)
+            if (Session["User"] == null)
             {
-                this.Label11.Text = "Podrá ver sus datos si esta registrado";   // Usuario
-                this.Label12.Text = "Podrá ver sus datos si esta registrado";   // Direccion
-                this.Label13.Text = "Podrá ver sus datos si esta registrado";   // Email
-                this.Label17.Text = "Podrá ver sus datos si esta registrado";   // Ciudad
-                this.Label14.Text = "Podrá ver sus datos si esta registrado";   // Pais
-                this.Label15.Text = "Podrá ver sus datos si esta registrado";   // Edad
-                this.Label16.Text = "Podrá ver sus datos si esta registrado";   // Descripcion
-            }
-            else
-            {
-                //MessageBox.Show("Usted ha sido redireccioando ya que no tiene abierta una sesion");
                 Response.Redirect("login.aspx");
             }
-            
         }
 
         // modificar el usuario (pendiente)
         protected void Button1_Click(object sender, EventArgs e)
         {
+            string usuarios, direccion, email, ciudad, pais, descripcion;
+            int edad = 0;
+            usuarios = direccion = email = ciudad = pais = descripcion = "";
 
+            usuarios = this.users.Text;
+            direccion = this.users.Text;
+            email = this.users.Text;
+            ciudad = this.users.Text;
+            pais = this.users.Text;
+            descripcion = this.users.Text;
+
+            // añadir que la sesion coincide con el textbox usuarios
+            if (usuarios != "" && direccion != "" && email != "" && ciudad != "" && pais != "" && descripcion != "")
+            {
+               //implementar
+            }
+            else
+            {
+                MessageBox.Show("Usted no ha rellenado todos los campos");
+            }
         }
 
         // darse de baja
         protected void Button2_Click(object sender, EventArgs e)
         {
-            if (Session["Usuario"] != null)
+            if (Session["User"] != null)
             {
                 usuario user = new usuario();
                 user.borrarUsuario(Session["Usuario"].ToString());
