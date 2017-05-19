@@ -19,12 +19,12 @@ namespace WebApplication1
         }
 
         [System.Web.Services.WebMethod]
-        public static double Sumar(double Valor1, double Valor2)
+        public double Sumar(double Valor1, double Valor2)
         {
 
             puntuacion p = new puntuacion();
 
-            p.user = "pruebaDatabase";
+            p.user = Session["user"].ToString();
             p.p = (int)Valor1;
             p.updatePuntuacion();
 
