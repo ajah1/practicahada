@@ -17,14 +17,23 @@ namespace ClassLibrary.CAD
     public class CADranking
     {
 
-        
+        //constructor por defecto
         public CADranking() { }
 
-        private SqlConnection conn = null;
-        private string stringConexion = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf;Integrated Security = True";
 
-        // borrar todas las tuplas de la tabla ranking
-        public void drop()
+		//entorno necesario
+		private static string entorno(string aux)
+		{
+			int x = aux.Length;
+			for (int j = 0; j < 3; j++) { while (x > 0) { x--; if (aux[x] == '\\') { aux = aux.Remove(x, 1); break; } else { aux = aux.Remove(x, 1); } } }
+			return aux + @"\practicahadagrupal\App_Data\Database1.mdf";
+		}
+        //conexión a la base de datos
+		private SqlConnection conn = null;
+		private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=" + entorno(Directory.GetCurrentDirectory()) + @";Integrated Security=true";
+
+		// borrar todas las tuplas de la tabla ranking
+		public void drop()
         {
             try
             {
@@ -50,11 +59,13 @@ namespace ClassLibrary.CAD
             }
         }
 
-        // inserta los usuarios con mayor record
+        // inserta los usuarios con mayor record según la sentencia que hemos hecho
         public void add()
         {
             try
             {
+                //sentencia que escoge de la tabla puntuacion los usuarios y su puntuacion
+                //para añadirlo a la tabla ranking
                 string sentencia = "INSERT INTO ranking(usuario, puntuacion) " +
                     " SELECT pusuario, record FROM puntuacion";
 
@@ -84,14 +95,14 @@ namespace ClassLibrary.CAD
             }
         }
 
-        // actualizar el ranking
+        // actualizar el ranking cada vez que se llama
         public void updateTable()
         {
 
-            // 1- borrar toda la tabla ranking
+            // 1.- borrar toda la tabla ranking
             this.drop();
 
-            // 2- actualizar la tabla con el nuevo ranking
+            // 2.- actualizar la tabla con el nuevo ranking
             this.add();
         }
     }
