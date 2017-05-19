@@ -7,42 +7,51 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary.EN
 {
-	public class ENCarro
-	{
-		private int numpedido;
-		private string data;
-		private bool confirmado;
-		private bool pagado;
-		private bool enviado;
-		private string email;
-		private float precio;
-		private ArrayList productos = new ArrayList();
+    public class ENCarro
+    {
+        private int numpedido;
+        private int usuario;
+        private string data;
+        private bool confirmado;
+        private bool pagado;
+        private bool enviado;
+        private string email;
+        private float precio;
+        private List<Producto> productos = new List<Producto>();
 
-		public ArrayList Productos
-		{
-			get { return productos; }
-			set { productos = value; }
-		}
-		public int Numpedido
-		{
-			get { return numpedido; }
-			set { numpedido = value; }
-		}
-		public string Data
-		{
-			get { return data; }
-			set { data = value; }
-		}
-		public string Email
-		{
-			get { return email; }
-			set { email = value; }
-		}
-		public float Precio
-		{
-			get { return precio; }
-			set { precio = value; }
-		}
+        public List<Producto> Productos
+        {
+            get;
+            set;
+        }
+        public int Usuario
+        {
+            get;
+            set;
+        }
+        public int Numpedido
+        {
+            get { return numpedido; }
+            set { numpedido = value; }
+        }
+        public string Data
+        {
+            get { return data; }
+            set { data = value; }
+        }
+        public string Email
+        {
+            get { return email; }
+            set { email = value; }
+        }
+        public float Precio
+        {
+            get { return precio; }
+            set { precio = value; }
+        }
+        public ENCarro{
+
+        }
 		public ENCarro(string email)
 		{
 			precio = 0;
@@ -65,6 +74,7 @@ namespace ClassLibrary.EN
 		{
 			this.email = en.Email;
 			this.numpedido = en.numpedido;
+            this.usuario = en.usuario;
 			this.data = en.data;
 			this.productos = en.productos;
 			this.confirmado = en.confirmado;
@@ -101,7 +111,7 @@ namespace ClassLibrary.EN
 
 		public void Delete(ENLineapedido linea)
 		{
-			precio -= linea.Cantitat * linea.Producto.Preu;
+            precio -= linea.Cantitat * linea.Producto.Precio;
 
 			this.productos.Remove(linea);
 		}
@@ -112,12 +122,12 @@ namespace ClassLibrary.EN
 			this.productos.Clear();
 		}
 
-		public void preparaCompra()
+		public void PreparaCompra()
 		{
 			data = DateTime.Now.ToString();
 			//dataEnvio = DateTime.Now.AddDays(15);
 		}
-		public void guardarPedido()
+		public void GuardarPedido()
 		{
 			preparaCompra();
 			CAD.CADpedido p = new CAD.CADpedido();
@@ -126,7 +136,7 @@ namespace ClassLibrary.EN
 		public float getPreuTotal()
 		{
 			float precioTotal = 0;
-			foreach (ENLineapedido linea in productos)
+            foreach (ENLineapedido linea in Producto)
 			{
 				precioTotal += linea.Producto.Precio * linea.Cantitat;
 			}

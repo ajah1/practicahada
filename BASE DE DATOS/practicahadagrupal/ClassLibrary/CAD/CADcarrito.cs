@@ -32,12 +32,10 @@ namespace ClassLibrary.CAD
 				SqlCommand com = new SqlCommand
 					(
 					   "INSERT INTO " +
-					   "carrito(num_pedido, data, email, precio, productos)" +
+					   "carrito(Id, usuario, producto)" +
 					   "VALUES(" +
 						c.Numpedido.ToString() + ", " +
-						c.Data.ToString() + ", " +
-						c.Email.ToString() + ", " +
-						c.Precio.ToString() + ", " +
+						c.Usuario.ToString() + ", " +
 						c.Productos.ToString() + ")", conn);
 
 				com.ExecuteNonQuery();

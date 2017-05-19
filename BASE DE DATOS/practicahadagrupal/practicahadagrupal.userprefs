@@ -1,14 +1,15 @@
 ﻿<Properties StartupConfiguration="{2B71AE63-046D-4323-B9B2-DA1B27DB0857}|Pruebas unitarias">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ClassLibrary/CAD/CADlineapedido.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ClassLibrary/EN/enlineapedido.cs">
     <Files>
-      <File FileName="WebApplication1/Site1.Master" Line="1" Column="1" />
-      <File FileName="ClassLibrary/EN/enproducto.cs" Line="1" Column="1" />
-      <File FileName="ClassLibrary/EN/enpedido.cs" Line="23" Column="40" />
       <File FileName="ClassLibrary/CAD/cadpromocion.cs" Line="26" Column="37" />
-      <File FileName="ClassLibrary/EN/encarrito.cs" Line="15" Column="8" />
-      <File FileName="ClassLibrary/EN/enpromocion.cs" Line="1" Column="1" />
-      <File FileName="ClassLibrary/CAD/CADlineapedido.cs" Line="122" Column="4" />
-      <File FileName="ClassLibrary/EN/enlineapedido.cs" Line="49" Column="23" />
+      <File FileName="ClassLibrary/CAD/cadproducto.cs" Line="47" Column="10" />
+      <File FileName="ClassLibrary/CAD/cadpedido.cs" Line="91" Column="36" />
+      <File FileName="ClassLibrary/EN/enlineapedido.cs" Line="17" Column="23" />
+      <File FileName="ClassLibrary/CAD/CADlineapedido.cs" Line="36" Column="61" />
+      <File FileName="WebApplication1/game.aspx" Line="1" Column="1" />
+      <File FileName="WebApplication1/productos.aspx" Line="1" Column="1" />
+      <File FileName="ClassLibrary/EN/encarrito.cs" Line="63" Column="30" />
+      <File FileName="ClassLibrary/CAD/CADcarrito.cs" Line="38" Column="36" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

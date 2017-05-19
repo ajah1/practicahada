@@ -61,7 +61,7 @@ namespace ClassLibrary.CAD
 				conn.Open();
 				SqlCommand com = new SqlCommand
 					(
-						"DELETE FROM promociones  WHERE ID = " +
+						"DELETE FROM lineapedido  WHERE ID = " +
 						lineap.ToString(), conn);
 
 				com.ExecuteNonQuery();
