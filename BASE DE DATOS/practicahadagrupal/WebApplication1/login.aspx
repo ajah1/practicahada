@@ -16,8 +16,9 @@
                width: 161px;
            }
         .auto-style2 {
-        width: 275px;
-    }
+               width: 31px;
+               font-size: xx-large;
+           }
 
 
            .auto-style3 {
@@ -28,6 +29,11 @@
            }
 
 
+           .auto-style5 {
+               color: #FF3300;
+           }
+
+
         </style>
 
         <h1> LOGIN </h1>
@@ -35,7 +41,16 @@
     <table style="width: 100%; height: 237px;">
         <tr>
             <td style="width: 121px">&nbsp;</td>
-            <td class="auto-style2"></td>
+            <td class="auto-style2">
+
+                
+                <div  id="algo" style=display:none;>
+                &nbsp;<asp:label runat="server" text="Label" CssClass="auto-style5">
+                         <a class="adminclass" href="admin.aspx">ADMINISTRADOR</a>
+                      </asp:label>
+                </div>
+
+            </td>
             <td class="auto-style1">
                 <asp:Label ID="Label1" runat="server" Text="Usuario" style="font-size: medium" CssClass="auto-style3">
                 </asp:Label>
@@ -85,6 +100,29 @@
         </tr>
     </table>
     
+
+    <%-- css para el label de administrador --%>
+    <style>
+       
+        /* INTENTANDO CAMBIAR EL COLOR */
+
+        /* estilo del link */
+        /*a:link {
+            color: red;
+        }
+
+        a:visited{
+            color:red;
+        }
+        a:active {
+            color: cornflowerblue;
+        }*/
+        #algo {
+            background #fff;
+        }
+
+
+    </style>
 
 
 </asp:Content>

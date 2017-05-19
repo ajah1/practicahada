@@ -17,19 +17,14 @@ namespace pruebasENCAD
         {
 
             usuario u = new usuario();
+            CADusuario cu = new CADusuario();
+            u.Usuario = "esejuan";
 
-            u.Usuario = "hola999";
+            //string salida = "";
+            //salida = cu.readstring(u.Usuario);
+            //Console.WriteLine(salida);
 
-            /*
-            List<string> l = new List<string>();
-
-
-            l = u.leerUsuario();
-
-            foreach (string valor in l)
-            {
-                Console.WriteLine(valor);
-            }*/
+            
 
             u.Ciudad = "hola999";
             u.Contrasena = "hola999";
@@ -39,15 +34,10 @@ namespace pruebasENCAD
             u.Direccion = "hola999";
             u.Pais = "hola999";
 
-            
-
-            Console.WriteLine("PRUEBAS EXISTE USUARIO");
-
-            //Console.WriteLine(u.existe());
-
-            u.registrarUsuario();
+            Console.WriteLine(u.existe());
 
             Console.ReadLine();
+
 
             /*
             // pruebas pedido
@@ -62,7 +52,7 @@ namespace pruebasENCAD
             r.droptable();
             r.addRanking();
 
-            Console.ReadLine();
+            
             */
         }
     }

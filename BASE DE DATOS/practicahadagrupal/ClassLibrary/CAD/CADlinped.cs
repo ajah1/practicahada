@@ -16,8 +16,10 @@ namespace ClassLibrary.CAD{
         private SqlConnection conn = null;
         private string stringConexion = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf; Integrated Security = True";
 
+        // constructor por defecto
         public CADlinped() { }
 
+        // hace una sentencia para meter la linea de pedido en la base de datos
         public void create(EN.enlinped lin)
         {
             try
@@ -50,6 +52,7 @@ namespace ClassLibrary.CAD{
             }
         }
 
+        // borra la linea de pedido
         public void delete(EN.enlinped lin)
         {
             try
@@ -76,7 +79,7 @@ namespace ClassLibrary.CAD{
             }
         }
 
-
+        // lee una linea de pedido
         public string read(EN.enlinped lin)
         {
             string salida = "";

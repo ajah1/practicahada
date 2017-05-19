@@ -18,7 +18,9 @@
             <a href="game.aspx">¡JUGUEMOS!</a>
         </li>
         <li>
+
             <a href="login.aspx">INICIAR SESION</a>
+
         </li>
         <li>
             <a href="registro.aspx">REGISTRARSE</a>
@@ -29,7 +31,9 @@
         <li>
             <a href="ranking.aspx">RANKING</a>
         <li>
+
             <a href="perfil.aspx">PERFIL</a>
+
         </li>
 
     </ul>
@@ -90,6 +94,8 @@
         float: right;
         margin: 20px;
     }
+
+    
 
     li a {
         text-decoration: none;
