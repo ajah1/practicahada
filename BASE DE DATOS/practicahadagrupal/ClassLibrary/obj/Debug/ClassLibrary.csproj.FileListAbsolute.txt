@@ -22,3 +22,4 @@ C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrar
 C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\bin\Debug\ClassLibrary.dll
 C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\bin\Debug\ClassLibrary.pdb
 C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\bin\Debug\ClassLibrary.dll.config
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache

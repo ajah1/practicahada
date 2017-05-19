@@ -61,8 +61,18 @@ namespace ClassLibrary.EN{
 
         public void mostrarProducto() {
             CAD.CADproducto aux = new CAD.CADproducto();
-            aux.consultar(this);
+            aux.consultarProducto(this);
 
         }
+
+        public static List<Producto> mostrarTodos() {
+
+            CAD.CADproducto a = new CAD.CADproducto();
+
+            List<EN.Producto> p = a.PeticionConsultar();
+
+            return p;
+        }
+
     }
 }

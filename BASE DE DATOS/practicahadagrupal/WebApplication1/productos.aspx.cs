@@ -15,6 +15,7 @@ namespace WebApplication1
         protected void Page_Load(object sender, EventArgs e)
         {
             ocultar();
+            Buttonacer_Click(sender, e);
         }
 
         protected void ocultar() {
@@ -157,6 +158,13 @@ namespace WebApplication1
         protected void Buttonprod7_Click(object sender, EventArgs e)
         {
             Response.Redirect("Producto.aspx?idProd=" + Labelr7.Text);
+        }
+
+        protected void Buttonacer_Click(object sender, EventArgs e)
+        {
+            List<Producto> p = Producto.mostrarTodos();
+
+            actualizarProductos(p);
         }
     }
 }

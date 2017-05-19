@@ -9,12 +9,21 @@
          h4 {
              color: white;
          }
+         h3 {
+            font-style: italic;
+            border-color: aqua;
+            color: white;
+            position: center;
+
+         }
+
            </style>
 
         <h1 class="auto-style1"> Productos</h1>
 
     <div class="clearfix"> </div>
 				<!-- //products ---->
+     <h3><asp:Button  CssClass="product-btn" ID="Buttonacer" runat="server" Text="MOSTRAR PRODUCTOS" OnClick="Buttonacer_Click" /></h3>
 				<!----speical-products---->
 				<div class="special-products all-poroducts">
 					<div class="s-products-head">

@@ -14,10 +14,11 @@ namespace ClassLibrary.CAD{
     class CADproducto{
 
         private SqlConnection conn = null;
-        private string stringConexion = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf; Integrated Security = True";
+        private string stringConexion = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf; Integrated Security = True";
 
-
-        public CADproducto() {}
+        public CADproducto() {
+           // stringConexion = new SqlConnection(ConfigurationManager.ConnectionStrings["Database1"].ConnectionString);
+        }
 
         public void create(ClassLibrary.EN.Producto p) {
             try {
@@ -93,7 +94,7 @@ namespace ClassLibrary.CAD{
 
         }
 
-        public void consultar(ClassLibrary.EN.Producto p) {
+        public void consultarProducto(ClassLibrary.EN.Producto p) {
             string mostrado = "";
 
             try {
@@ -124,6 +125,40 @@ namespace ClassLibrary.CAD{
             }
 
         }
+
+        public List<EN.Producto> PeticionConsultar() {
+            conn = new SqlConnection();
+            conn.ConnectionString = stringConexion;
+
+            return ConsultarTodos(conn);
+        }
+
+
+        public List<EN.Producto> ConsultarTodos(SqlConnection conn) {
+            conn.Open();
+
+            string sentenciaDB = "SELECT * FROM producto'";
+
+            SqlCommand com = new SqlCommand(sentenciaDB, conn);
+            SqlDataReader rd = com.ExecuteReader();
+
+            List<EN.Producto> p = new List<EN.Producto>();
+            while (rd.Read()) {
+                EN.Producto prod = new EN.Producto();
+                prod.Id = rd.GetInt32(0);
+                prod.Nombre = rd.GetString(1);
+                prod.Descripcion = rd.GetString(2);
+                prod.Imagen = rd.GetString(3);
+                prod.Precio = rd.GetInt32(4);
+
+                p.Add(prod);
+            }
+
+            rd.Close();
+            conn.Close();
+            return p;
+        }
+
 
     }
 }
