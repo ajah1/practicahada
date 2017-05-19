@@ -8,7 +8,7 @@ namespace ClassLibrary.EN{
 
     public class enlinped{
 
-        // parte privada
+        // parte privada (propiedades de linea de pedido)
         private int numPedido;
         private int linea;
         private int producto;
@@ -18,8 +18,10 @@ namespace ClassLibrary.EN{
         //********************************************
         // constructores
 
+        // constructor por defecto
         public enlinped() { }
 
+        //constructor parametrizado
         public enlinped(Producto pro, pedido ped) {
             numPedido = ped.NumPedido;
             producto = pro.Id;
@@ -64,12 +66,14 @@ namespace ClassLibrary.EN{
         //********************************************
         // metodos
 
+            // añade una linea de pedido
         public void addLinped(Producto pro, pedido ped)
         {
             CAD.CADlinped lin = new CAD.CADlinped();
             lin.create(this);
         }
 
+        // borra una linea de pedido
         public void deleteLinped(Producto pro, pedido ped)
         {
             CAD.CADlinped lin = new CAD.CADlinped();
@@ -77,12 +81,14 @@ namespace ClassLibrary.EN{
 
         }
 
+        // modifica una linea de pedido
         public void updateLinped(Producto pro, pedido ped)
         {
             CAD.CADlinped lin = new CAD.CADlinped();
             //lin.update();
         }
 
+        // lee, muestra los datos de una linea de pedido
         public string leerLinped(Producto pro, pedido ped)
         {
             string salida = "";

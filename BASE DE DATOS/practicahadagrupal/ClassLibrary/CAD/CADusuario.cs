@@ -17,9 +17,11 @@ namespace ClassLibrary.CAD{
         private SqlConnection conn = null;
 
         private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf; Integrated Security=true";
+
+        // constructor por defecto
         public CADusuario(){}
 
-
+        // hace una sentencia para poder meter el nuevo usuario en la base de datos
         public void create(EN.usuario user)
         {
             try
@@ -56,6 +58,7 @@ namespace ClassLibrary.CAD{
             }
         }
 
+        // sentencia que te lee un usuario en concreto
         public List<string> read(string user)
         {
             List<string> salida = new List<string>();
@@ -105,7 +108,7 @@ namespace ClassLibrary.CAD{
         }
 
         /*
-        // compruena si el usuario existe en la base de datos, return bool 
+        // comprueba si el usuario existe en la base de datos, return bool 
         public bool existe(string user)
         {
             bool esta = false;
@@ -124,6 +127,8 @@ namespace ClassLibrary.CAD{
             return esta;
         }
         */
+
+        // modifica un usuario que exista en la base de datos
         public void update(EN.usuario user){
 
             try{
@@ -157,6 +162,7 @@ namespace ClassLibrary.CAD{
             }
         }
 
+        // hace una sentencia que te borra el usuario de la base de datos
         public void delete(string user)
         {
             try

@@ -14,7 +14,7 @@ namespace WebApplication1
     public partial class perfil : System.Web.UI.Page
     {
         
-        // al cargar la pagina
+        // al cargar la pagina, si hay sesion activada te muestra tus datos, sino te redirecciona a registro
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["Usuario"] != null)
