@@ -16,6 +16,7 @@ namespace pruebasENCAD
         static void Main(string[] args)
         {
 
+            /*
             usuario u = new usuario();
             CADusuario cu = new CADusuario();
             u.Usuario = "esejuan";
@@ -37,7 +38,7 @@ namespace pruebasENCAD
             Console.WriteLine(u.existe());
 
             Console.ReadLine();
-
+            */
 
             /*
             // pruebas pedido
@@ -51,9 +52,16 @@ namespace pruebasENCAD
             //p
             r.droptable();
             r.addRanking();
-
             
             */
+
+
+            puntuacion p = new puntuacion();
+            p.user = "hola3";
+            p.p = 10;
+            p.updatePuntuacion();
+
         }
+
     }
 }

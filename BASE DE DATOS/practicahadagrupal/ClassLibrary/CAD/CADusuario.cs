@@ -13,11 +13,18 @@ using System.IO;
 namespace ClassLibrary.CAD{
 
     public class CADusuario{
-        
-        private SqlConnection conn = null;
 
-        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf; Integrated Security=true";
-        
+        private static string entorno(string aux)
+        {
+            int x = aux.Length;
+            for (int j = 0; j < 3; j++) { while (x > 0) { x--; if (aux[x] == '\\') { aux = aux.Remove(x, 1); break; } else { aux = aux.Remove(x, 1); } } }
+            return aux + @"\practicahadagrupal\App_Data\Database1.mdf";
+        }
+
+        private SqlConnection conn = null;
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=" + entorno(Directory.GetCurrentDirectory()) + @";Integrated Security=true";
+
+
         // constructor por defecto
         public CADusuario(){}
 

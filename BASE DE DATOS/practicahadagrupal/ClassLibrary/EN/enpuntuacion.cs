@@ -40,10 +40,10 @@ namespace ClassLibrary.EN{
 			return salida;
 		}
 
-        public int obtenerPuntuacion(string usuario)
+        public int obtenerPuntuacion()
         {
 			CAD.CADpuntuacion aux = new CAD.CADpuntuacion();
-            return aux.obtenerPuntuacion(username);
+            return aux.obtenerPuntuacion(user);
 
 		}
 
