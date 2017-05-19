@@ -59,7 +59,9 @@
                     </strong>
                 </td>
                 <td class="auto-style11">
-                    <asp:TextBox ID="users" runat="server" Width="300px"></asp:TextBox>
+                    <strong>
+                    <asp:Label ID="Label11" runat="server" Text="Label" CssClass="auto-style13"></asp:Label>
+                    </strong>
                 </td>
             </tr>
             <tr>
@@ -75,7 +77,9 @@
                     </strong>
                 </td>
                 <td class="auto-style16">
-                    <asp:TextBox ID="direc" runat="server" Width="300px"></asp:TextBox>
+                    <strong>
+                    <asp:Label ID="Label12" runat="server" Text="Label" CssClass="auto-style13"></asp:Label>
+                    </strong>
                 </td>
             </tr>
             <tr>
@@ -91,7 +95,9 @@
                     </strong>
                 </td>
                 <td class="auto-style11">
-                    <asp:TextBox ID="correo" runat="server" Width="300px"></asp:TextBox>
+                    <strong>
+                    <asp:Label ID="Label13" runat="server" Text="Label" CssClass="auto-style13"></asp:Label>
+                    </strong>
                 </td>
             </tr>
             <tr>
@@ -105,7 +111,9 @@
                     </strong>
                 </td>
                 <td class="auto-style11">
-                    <asp:TextBox ID="pais" runat="server" Width="300px"></asp:TextBox>
+                    <strong>
+                    <asp:Label ID="Label17" runat="server" Text="Label" CssClass="auto-style13"></asp:Label>
+                    </strong>
                 </td>
             </tr>
             <tr>
@@ -121,7 +129,9 @@
                     </strong>
                 </td>
                 <td class="auto-style11">
-                    <asp:TextBox ID="TextBox5" runat="server" Width="300px"></asp:TextBox>
+                    <strong>
+                    <asp:Label ID="Label14" runat="server" Text="Label" CssClass="auto-style13"></asp:Label>
+                    </strong>
                 </td>
             </tr>
             <tr>
@@ -136,7 +146,9 @@
                     </strong>
                 </td>
                 <td class="auto-style11">
-                    <asp:TextBox ID="edad" runat="server" Width="300px"></asp:TextBox>
+                    <strong>
+                    <asp:Label ID="Label15" runat="server" Text="Label" CssClass="auto-style13"></asp:Label>
+                    </strong>
                 </td>
             </tr>
             <tr>
@@ -150,7 +162,9 @@
                     </strong>
                 </td>
                 <td class="auto-style11">
-                    <asp:TextBox ID="descrip" runat="server" Width="300px"></asp:TextBox>
+                    <strong>
+                    <asp:Label ID="Label16" runat="server" Text="Label" CssClass="auto-style13"></asp:Label>
+                    </strong>
                 </td>
             </tr>
             <tr>

@@ -12,7 +12,7 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Session["User"] = null;
+            Session["Usuario"] = null;
 
             // prueba alex
             Session["usuario"] = "admin";

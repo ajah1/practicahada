@@ -22,13 +22,13 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// Control users.
+        /// Control Label11.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox users;
+        protected global::System.Web.UI.WebControls.Label Label11;
         
         /// <summary>
         /// Control Label5.
@@ -40,13 +40,13 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Label Label5;
         
         /// <summary>
-        /// Control direc.
+        /// Control Label12.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox direc;
+        protected global::System.Web.UI.WebControls.Label Label12;
         
         /// <summary>
         /// Control Label6.
@@ -58,13 +58,13 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Label Label6;
         
         /// <summary>
-        /// Control correo.
+        /// Control Label13.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox correo;
+        protected global::System.Web.UI.WebControls.Label Label13;
         
         /// <summary>
         /// Control Label7.
@@ -76,13 +76,13 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Label Label7;
         
         /// <summary>
-        /// Control pais.
+        /// Control Label17.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox pais;
+        protected global::System.Web.UI.WebControls.Label Label17;
         
         /// <summary>
         /// Control Label8.
@@ -94,13 +94,13 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Label Label8;
         
         /// <summary>
-        /// Control TextBox5.
+        /// Control Label14.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox5;
+        protected global::System.Web.UI.WebControls.Label Label14;
         
         /// <summary>
         /// Control Label9.
@@ -112,13 +112,13 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Label Label9;
         
         /// <summary>
-        /// Control edad.
+        /// Control Label15.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox edad;
+        protected global::System.Web.UI.WebControls.Label Label15;
         
         /// <summary>
         /// Control Label10.
@@ -130,13 +130,13 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.Label Label10;
         
         /// <summary>
-        /// Control descrip.
+        /// Control Label16.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox descrip;
+        protected global::System.Web.UI.WebControls.Label Label16;
         
         /// <summary>
         /// Control Button2.

@@ -191,7 +191,10 @@
     </Compile>
     <Compile Include="carrito.aspx.cs">
       <DependentUpon>carrito.aspx</DependentUpon>
+<<<<<<< HEAD
       <SubType>ASPXCodeBehind</SubType>
+=======
+>>>>>>> master
     </Compile>
   </ItemGroup>
   <ItemGroup>
