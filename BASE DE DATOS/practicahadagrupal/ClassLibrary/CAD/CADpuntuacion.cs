@@ -218,5 +218,39 @@ namespace ClassLibrary.CAD
             // 3. actualizar base de datos
             this.updateVidas(p);
         }
+
+        public void addUser(EN.puntuacion p)
+        {
+            try
+            {
+                string sentencia = "INSERT INTO puntuacion" +
+                            "(pusuario, record, vidas, puntosTotales)" +
+                            "VALUES('" +
+                            p.user.ToString() + "', '" +
+                            p.r.ToString() + "', '" +
+                            p.v.ToString() + "', '" +
+                            p.p.ToString() + "')";
+
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
+
+                SqlCommand com = new SqlCommand(sentencia, conn);
+                com.ExecuteNonQuery();
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("add user to puntuacion  failed.");
+                Console.WriteLine(". \nError: {0}", ex.ToString());
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+        }
+
 	}
 }
