@@ -4,40 +4,49 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
-
+using ClassLibrary.EN;
 using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
+using System.IO;
 
 namespace ClassLibrary.CAD
 {
     public class CADcarrito
     {
-        const string s = "data source=.\\SQLEXPRESS;Integrated"
-                   + "Security = SSPI; AttachDBFilename =| DataDirectory |\\Database1.mdf;"
-                   + "User Instance = true";
+        // obtiene la ruta del ejecutable del programa, y la cambia para que apunte a la base de datos
+        private static string entorno(string aux)
+        {
+            int x = aux.Length;
+            for (int j = 0; j < 3; j++) { while (x > 0) { x--; if (aux[x] == '\\') { aux = aux.Remove(x, 1); break; } else { aux = aux.Remove(x, 1); } } }
+            return aux + @"\WebApplication1\App_Data\database.mdf";
+        }
 
-        SqlConnection conn = new SqlConnection(s);
+        // inicializa una conexion, y apunta en stringConexion los parámetros de conexión
+        private SqlConnection conn = null;
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=" + entorno(Directory.GetCurrentDirectory()) + @";Integrated Security=true";
 
         public CADcarrito()
         {
         }
 
-        public void add(EN.ENCarro c)
+        public void add(ENCarro c)
         {
             try
             {
+                conn = new SqlConnection();
+                conn.ConnectionString = stringConexion;
                 conn.Open();
-                SqlCommand com = new SqlCommand
-                    (
-                       "INSERT INTO " +
+
+                string sentenciaDB = "INSERT INTO " +
                        "carrito(Id, usuario, producto)" +
                        "VALUES(" +
                         c.Id.ToString() + ", " +
                         c.Usuario.ToString() + ", " +
-                        c.Producto.ToString() + ")", conn);
+                        c.Producto.ToString() + ")";
 
+                SqlCommand com = new SqlCommand(sentenciaDB, conn);
                 com.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -55,12 +64,14 @@ namespace ClassLibrary.CAD
         {
             try
             {
+                conn = new SqlConnection();
+                conn.ConnectionString = stringConexion;
                 conn.Open();
-                SqlCommand com = new SqlCommand
-                    (
-                        "DELETE FROM carrito WHERE ID = " +
-                        num_pedido.ToString(), conn);
 
+                string sentenciaDB = "DELETE FROM carrito WHERE ID = " +
+                        num_pedido.ToString();
+
+                SqlCommand com = new SqlCommand(sentenciaDB, conn);
                 com.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -74,12 +85,22 @@ namespace ClassLibrary.CAD
             }
         }
 
-        public void update(EN.ENCarro c)
+        public void update(ENCarro c, ENCarro nuevo)
         {
             try
             {
+                conn = new SqlConnection();
+                conn.ConnectionString = stringConexion;
                 conn.Open();
-                SqlCommand com = new SqlCommand();
+
+                string sentenciaDB = @"UPDATE carrito SET " +
+                    "Id = " + nuevo.Id.ToString() +
+                    ", usuario = '" + nuevo.Usuario.ToString() +
+                    "', ciudad = " + c.Producto.ToString() +
+                    " WHERE Id = " + c.Usuario.ToString();
+
+                SqlCommand com = new SqlCommand(sentenciaDB, conn);
+                com.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
@@ -92,23 +113,28 @@ namespace ClassLibrary.CAD
             }
         }
 
-        public List<EN.ENCarro> read(int num_pedido)
+        public List<ENCarro> read(int num_pedido)
         {
             try
             {
+                conn = new SqlConnection();
+                conn.ConnectionString = stringConexion;
                 conn.Open();
-                List<EN.ENCarro> c = new List<EN.ENCarro>();
-                SqlCommand com = new SqlCommand("select * from carrito where usuario = 'esejuan'", conn);
 
+                List<ENCarro> c = new List<ENCarro>();
+                string sentenciaDB = "select * from carrito where Id = " + num_pedido.ToString();
+
+                SqlCommand com = new SqlCommand(sentenciaDB, conn);
                 SqlDataReader dr = com.ExecuteReader();
 
                 while (dr.Read())
                 {
-                    EN.ENCarro carro = new EN.ENCarro();
+                    ENCarro carro = new ENCarro();
                     carro.Id = dr.GetInt32(0);
                     carro.Usuario = int.Parse(dr.GetString(1));
                     carro.Producto.Id = dr.GetInt32(2);
-                    SqlCommand com2 = new SqlCommand("select precio from productos where id = " + carro.Producto, conn);
+                    string sentenciaDB2 = "select precio from productos where id = " + carro.Producto.ToString();
+                    SqlCommand com2 = new SqlCommand(sentenciaDB2, conn);
                     SqlDataReader dr2 = com.ExecuteReader();
                     if (dr2.Read())
                     {

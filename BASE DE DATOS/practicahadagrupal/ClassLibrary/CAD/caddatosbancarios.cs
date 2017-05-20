@@ -114,7 +114,7 @@ namespace ClassLibrary.CAD
             // creamos la query en sentenciaDB, conectamos con la base de datos y ejecutamos la query
             try
             {
-                string sentenciaDB = "UPDATE datosBancarios  SET " +
+                string sentenciaDB = "UPDATE datosBancarios SET " +
                            "numeroTarjeta = '" + numerotarjeta.ToString() + "'" +
                            " WHERE usuario = '" + dban.Usuario.ToString() + "'";
 

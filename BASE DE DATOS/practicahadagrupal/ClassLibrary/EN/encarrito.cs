@@ -44,8 +44,34 @@ namespace ClassLibrary.EN
 			this.usuario = en.usuario;
 			this.producto = en.producto;
 			this.precio = en.precio;
-		}
+        }
 
+        // manda los atributos de instancia al cad para ser insertados en la BBDD
+        public void createCarro()
+        {
+            CAD.CADcarrito carro = new CAD.CADcarrito();
+            carro.add(this);
+        }
 
-	}
+        // manda los atributos de instancia al cad para ser buscados en la BBDD
+        public void readCarro()
+        {
+            CAD.CADcarrito carro = new CAD.CADcarrito();
+            carro.read(numpedido);
+        }
+
+        // manda los atributos de instancia al cad para ser encontrados en la BBDD y actualizados
+        public void updateCarro(ENCarro nuevo)
+        {
+            CAD.CADcarrito carro = new CAD.CADcarrito();
+            carro.update(this, nuevo);
+        }
+
+        // manda los atributos de instancia al cad para ser borrados de la BBDD
+        public void deleteCarro()
+        {
+            CAD.CADcarrito carro = new CAD.CADcarrito();
+            carro.remove(numpedido);
+        }
+    }
 }
