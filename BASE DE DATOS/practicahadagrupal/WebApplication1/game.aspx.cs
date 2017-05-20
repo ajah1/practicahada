@@ -17,19 +17,24 @@ namespace WebApplication1
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            puntuacion p = new puntuacion();
+            p.user = Session["user"].ToString();
+            p.p = 10;
+            p.v = 1;
+            p.updatePuntuacion();
+            p.updateVidas();
+
         }
 
-        [System.Web.Services.WebMethod]
-        public double Sumar(double Valor1)
+        public void Sumar(int valor1)
         {
-
             puntuacion p = new puntuacion();
 
             p.user = Session["user"].ToString();
-            p.p = (int)Valor1;
+            p.p = valor1;
+            p.v = 2;
             p.updatePuntuacion();
-
-            return 0;
+            p.updateVidas();
         }
 
     }
