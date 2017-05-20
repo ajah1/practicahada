@@ -112,6 +112,18 @@ namespace ClassLibrary.EN
 
             return descuento;
         }
-        
+
+        // devuelve true si la promocion existe
+        public bool existe()
+        {
+            bool existe;
+
+            CAD.CADpromocion aux = new CAD.CADpromocion();
+
+            existe = aux.existePromocion(Id_promocion);
+
+            return existe;
+        }
+
     }
 }
