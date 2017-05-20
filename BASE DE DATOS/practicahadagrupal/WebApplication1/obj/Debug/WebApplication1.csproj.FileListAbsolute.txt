@@ -70,3 +70,5 @@ C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApp
 C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
 C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\App_Data\database.mdf
 C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\App_Data\database_log.ldf
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\App_Data\database.mdf
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\App_Data\database_log.ldf
