@@ -18,31 +18,42 @@ namespace WebApplication1
         protected void Page_Load(object sender, EventArgs e)
         {
             // cambiar esto
-            if (Session["user"] != null)
+            if (Session["usuario"] == null)
             {
                 Response.Redirect("login.aspx");
             }            
         }
 
-        // modificar el usuario (pendiente)
+        // modificar el usuario
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string usuarios, direccion, email, ciudad, pais, descripcion;
-            int edad = 0;
-            usuarios = direccion = email = ciudad = pais = descripcion = "";
+            string contraseña, direccion, email, ciudad, pais, descripcion;
+            string edad = "";
+            contraseña = direccion = email = ciudad = pais = descripcion = "";
 
-            usuarios = this.users.Text;
+            contraseña = this.contra.Text;
             direccion = this.dir.Text;
             email = this.ema.Text;
             ciudad = this.ciu.Text;
             pais = this.pai.Text;
             descripcion = this.desc.Text;
+            edad = this.ed.ToString();
             
-            // añadir que la sesion coincide con el textbox usuarios
-            if (usuarios != "" && direccion != "" && email != "" && ciudad != "" && pais != "" && descripcion != "")
+            if (contraseña != "" && direccion != "" && email != "" && ciudad != "" && pais != "" && descripcion != "" && edad != "")
             {
-                //implementar
-                MessageBox.Show("Furula");
+                usuario userAux = new usuario();
+
+                userAux.Usuario = Session["usuario"].ToString();
+                userAux.Contrasena = contraseña;
+                userAux.Direccion = direccion;
+                userAux.Email = email;
+                userAux.Ciudad = ciudad;
+                userAux.Pais = pais;
+                userAux.Descripcion = descripcion;
+                userAux.Edad = int.Parse(edad);
+
+                // modifica el usuario
+                userAux.modificarUsuario();
             }
             else
             {

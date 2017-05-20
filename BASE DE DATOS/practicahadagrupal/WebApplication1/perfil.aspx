@@ -55,11 +55,11 @@
             <tr>
                 <td class="auto-style8">
                     <strong>
-                    <asp:Label ID="Label2" runat="server" Text="Usuario :" CssClass="auto-style13"></asp:Label>
+                    <asp:Label ID="Label2" runat="server" Text="Contraseña :" CssClass="auto-style13"></asp:Label>
                     </strong>
                 </td>
                 <td class="auto-style11">
-                    <asp:TextBox ID="users" runat="server" Width="300px"></asp:TextBox>
+                    <asp:TextBox ID="contra" runat="server" Width="300px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
