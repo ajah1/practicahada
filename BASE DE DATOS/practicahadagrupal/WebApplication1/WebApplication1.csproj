@@ -96,15 +96,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="admin.aspx" />
-
     <Content Include="Articulo.aspx" />
-
     <Content Include="App_Data\database.mdf" />
     <Content Include="App_Data\database_log.ldf">
       <DependentUpon>database.mdf</DependentUpon>
     </Content>
-
     <Content Include="home.aspx" />
+    <Content Include="imagenes\imagen1.jpg" />
+    <Content Include="imagenes\imagen2.jpg" />
+    <Content Include="imagenes\imagen3.jpg" />
+    <Content Include="imagenes\imagen4.jpg" />
+    <Content Include="imagenes\imagen5.jpg" />
+    <Content Include="imagenes\imagen6.jpg" />
+    <Content Include="imagenes\imagen7.jpg" />
     <Content Include="login.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">

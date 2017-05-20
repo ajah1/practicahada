@@ -136,9 +136,10 @@ namespace ClassLibrary.CAD{
 
 
         public List<EN.Producto> ConsultarTodos(SqlConnection conn) {
+
             conn.Open();
 
-            string sentenciaDB = "SELECT * FROM producto'";
+            string sentenciaDB = "SELECT * FROM Producto";
 
             SqlCommand com = new SqlCommand(sentenciaDB, conn);
             SqlDataReader rd = com.ExecuteReader();
@@ -150,7 +151,8 @@ namespace ClassLibrary.CAD{
                 prod.Nombre = rd.GetString(1);
                 prod.Descripcion = rd.GetString(2);
                 prod.Imagen = rd.GetString(3);
-                prod.Precio = rd.GetInt32(4);
+                //prod.Precio = rd.GetInt32(4);
+                prod.Precio = int.Parse(rd["precio"].ToString());
 
                 p.Add(prod);
             }

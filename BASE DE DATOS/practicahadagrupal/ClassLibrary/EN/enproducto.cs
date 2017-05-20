@@ -32,7 +32,13 @@ namespace ClassLibrary.EN{
             this.id = id;
         }
 
-        public Producto() {}
+        public Producto() {
+            this.id = 0;
+            this.nombre = "";
+            this.descripcion = "";
+            this.imagen = "";
+            this.precio = 0;
+        }
 
 
         public void saveProducto(string dbname) {
