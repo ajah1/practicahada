@@ -14,8 +14,18 @@ namespace ClassLibrary.CAD{
 
     public class CADusuario{
 
-        private SqlConnection conn = null;
-        private string stringConexion = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\App_Data\database.mdf; Integrated Security = True";
+       private SqlConnection conn = null;
+       private string stringConexion = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\App_Data\database.mdf; Integrated Security = True";
+
+        //private static string entorno(string aux)
+        //{
+        //    int x = aux.Length;
+        //    for (int j = 0; j < 3; j++) { while (x > 0) { x--; if (aux[x] == '\\') { aux = aux.Remove(x, 1); break; } else { aux = aux.Remove(x, 1); } } }
+        //    return aux + @"\WebApplication1\App_Data\database.mdf";
+        //}
+
+        //private SqlConnection conn = null;
+        //private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=" + entorno(Directory.GetCurrentDirectory()) + @";Integrated Security=true";
 
 
         // constructor por defecto
