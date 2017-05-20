@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 // par poder usar la libreria
 using ClassLibrary.EN;
 using ClassLibrary.CAD;
+using System.Data;
 
 namespace pruebasENCAD
 {
@@ -23,11 +24,16 @@ namespace pruebasENCAD
             p.v = 1;
             p.p = 1000;
 
+<<<<<<< HEAD
             CADpuntuacion pt = new CADpuntuacion();
             
             p.updateVidas();
             p.updatePuntuacion();
 
+=======
+            
+                p.removePuntuacion();
+>>>>>>> master
             Console.ReadLine();
 
             
