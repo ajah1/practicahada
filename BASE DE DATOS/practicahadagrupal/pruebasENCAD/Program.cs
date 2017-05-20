@@ -22,18 +22,12 @@ namespace pruebasENCAD
 
             p.user = "alex";
             p.v = 1;
-            p.p = 1000;
+            p.p = 1;
 
-<<<<<<< HEAD
             CADpuntuacion pt = new CADpuntuacion();
             
             p.updateVidas();
             p.updatePuntuacion();
-
-=======
-            
-                p.removePuntuacion();
->>>>>>> master
             Console.ReadLine();
 
             

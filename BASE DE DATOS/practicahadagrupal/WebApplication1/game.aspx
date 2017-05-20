@@ -113,11 +113,12 @@
 
                     var msg_score = document.getElementById("msg");
 
-                    msg_score.innerHTML = "Gracias por jugar.<br /> Tu puntuacion : <b>" + score + "</b><br /><br /><input type='button' value='Play Again' onclick='window.location.reload();' />";
-                    
+                    msg_score.innerHTML = "Thank you for playing game.<br /> Your Score :"
+                    + "<b>" + score + "</b><br /><br /><input type='button' value='Play Again' onclick='window.location.reload();' />";
 
                     // guardar resultado en objeto oculto asp
                     var final = document.getElementById("__VIEWSTATE").value = score;
+
 
                     $.ajax({
                         //Tipo de llamada
@@ -127,19 +128,13 @@
                         url: "game.aspx/Sumar",
 
                         //Parámetros para pasarle al método 
-                        data: '{Valor1: ' + final + ', Valor2: 1}',
+                        data: '{Valor1: ' + final + '}',
 
                         //Tipo de contenido
                         contentType: "application/json; charset=utf-8",
 
                         //Tipo de datos
                         dataType: "json",
-
-                        //Función a la cual llamar cuando se pudo llamar satisfactoriamente al método
-                        success: resultado,
-
-                        //Función a la cual llamar cuando se producen errores
-                        error: errores
                     });
 
                     function resultado() {
@@ -154,7 +149,6 @@
                     // borrar mapa
                     document.getElementById("playArea").style.display = 'none';
                     window.clearInterval(interval);
-
 
 
                 }

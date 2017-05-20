@@ -16,13 +16,9 @@ namespace ClassLibrary.CAD
 	public class CADpuntuacion
     {
 
-<<<<<<< HEAD
         private SqlConnection conn = null;
         private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\App_Data\database.mdf; Integrated Security=true";
 
-=======
-        private SqlConnection conexion = null;
->>>>>>> master
         public CADpuntuacion()
 		{
         }
@@ -34,7 +30,6 @@ namespace ClassLibrary.CAD
             try
 			{
 				string sentencia = @"UPDATE puntuacion  SET " +
-<<<<<<< HEAD
 						"record = '0'" + "vidas = '0'" + "puntosTotales= '0' " + " WHERE pusuario '" + usuario + "'";
 
 
@@ -42,11 +37,6 @@ namespace ClassLibrary.CAD
 
                 conn.ConnectionString = stringConexion;
                 conn.Open();
-=======
-						"record = 0" + "vidas = 0" + "puntosTotales= 0 " + " WHERE pusuario " + usuario + "'";
-
-
->>>>>>> master
 
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
@@ -73,7 +63,6 @@ namespace ClassLibrary.CAD
 				string sentencia = "SELECT puntosTotales FROM puntuacion " +
 								   "WHERE pusuario = '" + usuario + "'";
 
-<<<<<<< HEAD
                 conn = new SqlConnection();
 
                 conn.ConnectionString = stringConexion;
@@ -81,10 +70,6 @@ namespace ClassLibrary.CAD
 
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 SqlDataReader dr = com.ExecuteReader();
-=======
-				SqlCommand com = new SqlCommand(sentencia, conn);
-				SqlDataReader dr = com.ExecuteReader();
->>>>>>> master
 
 
                 while (dr.Read())
@@ -121,14 +106,12 @@ namespace ClassLibrary.CAD
 						   " WHERE pusuario= '" + p.user + "'";
 
 
-<<<<<<< HEAD
                 conn = new SqlConnection();
 
                 conn.ConnectionString = stringConexion;
                 conn.Open();
 
-=======
->>>>>>> master
+
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
             }
@@ -152,16 +135,12 @@ namespace ClassLibrary.CAD
 
 				string sentencia = "Select * from puntuacion " +
 								   "where pusuario = '" + usuario + "'";
-<<<<<<< HEAD
 
                 conn = new SqlConnection();
 
                 conn.ConnectionString = stringConexion;
                 conn.Open();
 
-=======
-
->>>>>>> master
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 SqlDataReader dr = com.ExecuteReader();
 
@@ -203,14 +182,12 @@ namespace ClassLibrary.CAD
                            " WHERE pusuario= '" + p.user + "'";
 
 
-<<<<<<< HEAD
                 conn = new SqlConnection();
 
                 conn.ConnectionString = stringConexion;
                 conn.Open();
 
-=======
->>>>>>> master
+
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
             }
@@ -253,16 +230,13 @@ namespace ClassLibrary.CAD
                             p.r.ToString() + "', '" +
                             p.v.ToString() + "', '" +
                             p.p.ToString() + "')";
-<<<<<<< HEAD
 
                 conn = new SqlConnection();
 
                 conn.ConnectionString = stringConexion;
                 conn.Open();
 
-=======
 
->>>>>>> master
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
             }

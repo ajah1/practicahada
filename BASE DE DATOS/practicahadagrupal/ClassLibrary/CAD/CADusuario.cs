@@ -17,13 +17,7 @@ namespace ClassLibrary.CAD{
     public class CADusuario
     {
 
-<<<<<<< HEAD
-        //constructor por defecto
-        // private SqlConnection conexion = null;
-        // private string stringConexion = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\App_Data\database.mdf; Integrated Security = True";
-=======
-        
->>>>>>> master
+
         private SqlConnection conexion = null;
 
         // constructor por defecto

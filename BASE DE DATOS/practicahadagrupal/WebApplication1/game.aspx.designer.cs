@@ -7,11 +7,13 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace WebApplication1 {
-    
-    
-    public partial class WebForm1 {
-        
+namespace WebApplication1
+{
+
+
+    public partial class WebForm1
+    {
+
         /// <summary>
         /// Control litInputAmount.
         /// </summary>

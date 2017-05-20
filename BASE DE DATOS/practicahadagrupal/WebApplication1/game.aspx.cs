@@ -20,15 +20,13 @@ namespace WebApplication1
         }
 
         [System.Web.Services.WebMethod]
-        public double Sumar(double Valor1, double Valor2)
+        public double Sumar(double Valor1)
         {
 
             puntuacion p = new puntuacion();
 
             p.user = Session["user"].ToString();
             p.p = (int)Valor1;
-            p.v = 1;
-            p.updateVidas();
             p.updatePuntuacion();
 
             return 0;
