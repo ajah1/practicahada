@@ -34,7 +34,8 @@
 					
                     <div runat="server" ID="Columna1">
 						<div class="col-md-3 special-products-grid text-center" runat="server" id="hueco0">
-                            <asp:Image ID="Image0" runat="server" />
+                            <tr id="cero" runat="server">
+                            <td><img id="Imagen0" class="imagen0" runat="server" src="" width ="420" height="420"/></td></tr>
                             <h4><asp:Label ID="Label0" runat="server" Text="NAME "></asp:Label>
                                 / ID: 
                                 <asp:Label ID="Labeli0" runat="server" Text=""></asp:Label>
@@ -48,7 +49,8 @@
 						</div>
 
 						<div class="col-md-3 special-products-grid text-center" runat="server" id="hueco1">
-                            <asp:Image ID="Image1" runat="server" />
+                            <tr id="primera" runat="server">
+                            <td><img id="Imagen1" class="imagen1" runat="server" src="" width ="420" height="420"/></td></tr>
 							<h4><asp:Label ID="Label1" runat="server" Text="NAME"></asp:Label>
                                 / ID: 
                                 <asp:Label ID="Labeli1" runat="server" Text=""></asp:Label>
@@ -61,7 +63,8 @@
                         </div>
 
 						<div class="col-md-3 special-products-grid text-center" runat="server" id="hueco2">
-                            <asp:Image ID="Image2" runat="server" />
+                            <tr id="segunda" runat="server">
+                            <td><img id="Imagen2" class="imagen2" runat="server" src="" width ="420" height="420"/></td></tr>
 							<h4><asp:Label ID="Label2" runat="server" Text="NAME"></asp:Label>
                                 / ID: 
                                 <asp:Label ID="Labeli2" runat="server" Text=""></asp:Label>
@@ -75,7 +78,8 @@
 
 
 						<div class="col-md-3 special-products-grid text-center" runat="server" id="hueco3">
-                            <asp:Image ID="Image3" runat="server" />
+                            <tr id="tercera" runat="server">
+                            <td><img id="Imagen3" class="imagen3" runat="server" src="" width ="420" height="420"/></td></tr>
 							<h4><asp:Label ID="Label3" runat="server" Text="NAME"></asp:Label>
                                 / ID: 
                                 <asp:Label ID="Labeli3" runat="server" Text=""></asp:Label>
@@ -88,7 +92,8 @@
 						</div>
 
                         <div class="col-md-3 special-products-grid text-center" runat="server" id="hueco4">
-                            <asp:Image ID="Image4" runat="server" />
+                            <tr id="cuarta" runat="server">
+                            <td><img id="Imagen4" class="imagen4" runat="server" src="" width ="420" height="420"/></td></tr>
 							<h4><asp:Label ID="Label4" runat="server" Text="NAME"></asp:Label>
                                 / ID: 
                                 <asp:Label ID="Labeli4" runat="server" Text=""></asp:Label>
@@ -101,7 +106,8 @@
 						</div>
 
                         <div class="col-md-3 special-products-grid text-center" runat="server" id="hueco5">
-                            <asp:Image ID="Image5_1" runat="server" />
+                            <tr id="quinta" runat="server">
+                            <td><img id="Imagen5" class="imagen5" runat="server" src="" width ="420" height="420"/></td></tr>
 							<h4><asp:Label ID="Label5" runat="server" Text="NAME"></asp:Label>
                                 / ID: 
                                 <asp:Label ID="Labeli5" runat="server" Text=""></asp:Label>
@@ -114,7 +120,8 @@
 						</div>
 
                         <div class="col-md-3 special-products-grid text-center" runat="server" id="hueco6">
-                            <asp:Image ID="Image6_1" runat="server" />
+                            <tr id="sexta" runat="server">
+                            <td><img id="Imagen6" class="imagen6" runat="server" src="" width ="420" height="420"/></td></tr>
 							<h4><asp:Label ID="Label6" runat="server" Text="NAME"></asp:Label>
                                 / ID: 
                                 <asp:Label ID="Labeli6" runat="server" Text=""></asp:Label>
@@ -127,7 +134,8 @@
 						</div>
 
                         <div class="col-md-3 special-products-grid text-center" runat="server" id="hueco7">
-                            <asp:Image ID="Image7_1" runat="server" />
+                            <tr id="septima" runat="server">
+                            <td><img id="Imagen7" class="imagen7" runat="server" src="" width ="420" height="420"/></td></tr>
 							<h4><asp:Label ID="Label7" runat="server" Text="NAME"></asp:Label>
                                 / ID: 
                                 <asp:Label ID="Labeli7" runat="server" Text=""></asp:Label>

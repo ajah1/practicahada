@@ -40,13 +40,22 @@ namespace WebApplication1 {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl hueco0;
         
         /// <summary>
-        /// Control Image0.
+        /// Control cero.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image0;
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow cero;
+        
+        /// <summary>
+        /// Control Imagen0.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage Imagen0;
         
         /// <summary>
         /// Control Label0.
@@ -103,13 +112,22 @@ namespace WebApplication1 {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl hueco1;
         
         /// <summary>
-        /// Control Image1.
+        /// Control primera.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow primera;
+        
+        /// <summary>
+        /// Control Imagen1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage Imagen1;
         
         /// <summary>
         /// Control Label1.
@@ -166,13 +184,22 @@ namespace WebApplication1 {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl hueco2;
         
         /// <summary>
-        /// Control Image2.
+        /// Control segunda.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image2;
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow segunda;
+        
+        /// <summary>
+        /// Control Imagen2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage Imagen2;
         
         /// <summary>
         /// Control Label2.
@@ -229,13 +256,22 @@ namespace WebApplication1 {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl hueco3;
         
         /// <summary>
-        /// Control Image3.
+        /// Control tercera.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image3;
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow tercera;
+        
+        /// <summary>
+        /// Control Imagen3.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage Imagen3;
         
         /// <summary>
         /// Control Label3.
@@ -292,13 +328,22 @@ namespace WebApplication1 {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl hueco4;
         
         /// <summary>
-        /// Control Image4.
+        /// Control cuarta.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image4;
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow cuarta;
+        
+        /// <summary>
+        /// Control Imagen4.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage Imagen4;
         
         /// <summary>
         /// Control Label4.
@@ -355,13 +400,22 @@ namespace WebApplication1 {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl hueco5;
         
         /// <summary>
-        /// Control Image5_1.
+        /// Control quinta.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image5_1;
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow quinta;
+        
+        /// <summary>
+        /// Control Imagen5.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage Imagen5;
         
         /// <summary>
         /// Control Label5.
@@ -418,13 +472,22 @@ namespace WebApplication1 {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl hueco6;
         
         /// <summary>
-        /// Control Image6_1.
+        /// Control sexta.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image6_1;
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow sexta;
+        
+        /// <summary>
+        /// Control Imagen6.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage Imagen6;
         
         /// <summary>
         /// Control Label6.
@@ -481,13 +544,22 @@ namespace WebApplication1 {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl hueco7;
         
         /// <summary>
-        /// Control Image7_1.
+        /// Control septima.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image7_1;
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow septima;
+        
+        /// <summary>
+        /// Control Imagen7.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage Imagen7;
         
         /// <summary>
         /// Control Label7.

@@ -21,7 +21,8 @@
     </div>
 
     <div>
-        <asp:Image ID="Image1" runat="server" Width="300" Height="300" />
+        <tr id="primera" runat="server">
+             <td><img id="Imagen1" class="imagen1" runat="server" src="" width ="420" height="420"/></td></tr>
     </div>
 
     <div>
