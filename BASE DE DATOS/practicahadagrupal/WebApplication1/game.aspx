@@ -31,7 +31,6 @@
             var level = 160; // Game level, by decreasing will speed up
             var rect_w = 60; // Width 
             var rect_h = 60; // Height
-
             var inc_score = 50; // Score
             var snake_color = "#FF0000"; // Snake Color
             var ctx; // Canvas attributes

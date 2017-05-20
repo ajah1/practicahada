@@ -17,7 +17,7 @@ namespace ClassLibrary.CAD{
     public class CADusuario
     {
 
-        
+
         private SqlConnection conexion = null;
 
         // constructor por defecto

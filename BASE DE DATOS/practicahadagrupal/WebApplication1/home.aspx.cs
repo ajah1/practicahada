@@ -12,7 +12,10 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 48765284V
         }
     }
 }
