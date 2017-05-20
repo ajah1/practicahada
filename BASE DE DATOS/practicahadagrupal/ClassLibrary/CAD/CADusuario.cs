@@ -12,9 +12,19 @@ using System.IO;
 
 namespace ClassLibrary.CAD{
 
+<<<<<<< HEAD
     public class CADusuario
     {
         // obtiene la ruta del ejecutable del programa, y la cambia para que apunte a la base de datos
+=======
+    public class CADusuario{
+
+
+       private SqlConnection conn = null;
+      private string stringConexion = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\App_Data\database.mdf; Integrated Security = True";
+
+        /*
+>>>>>>> 48765284V
         private static string entorno(string aux)
         {
             int x = aux.Length;
@@ -25,6 +35,10 @@ namespace ClassLibrary.CAD{
         // inicializa una conexion, y apunta en stringConexion los parámetros de conexión
         private SqlConnection conn = null;
         private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=" + entorno(Directory.GetCurrentDirectory()) + @";Integrated Security=true";
+<<<<<<< HEAD
+=======
+        */
+>>>>>>> 48765284V
 
         // constructor por defecto
         public CADusuario(){}
@@ -32,9 +46,16 @@ namespace ClassLibrary.CAD{
         // hace una sentencia para poder meter el nuevo usuario en la base de datos
         public void create(EN.usuario user)
         {
+
+            // cuando se añada un usuario también se hará en puntuacion con 3 vidas
+            EN.puntuacion p = new EN.puntuacion();
+            p.user = user.Usuario;
+            p.r = 0;
+            p.v = 3;
+            p.p = 0;
+
             try
             {
-
                 string sentencia = "INSERT INTO usuario " +
                     "(usuario, direccion, contraseña, ciudad, pais, descripcion, email, edad)" +
                     "VALUES('" +
@@ -64,6 +85,9 @@ namespace ClassLibrary.CAD{
             {
                 conn.Close();
             }
+
+            p.addUser();
+
         }
 
         // sentencia que te lee un usuario en concreto
@@ -187,7 +211,7 @@ namespace ClassLibrary.CAD{
                  "', descripcion = '"   + user.Descripcion.ToString() +
                  "', email = '"         + user.Email.ToString() +
                  "', edad = '"          + user.Edad.ToString() + "'" +
-                 "WHERE usuario = '" + user.Usuario.ToString() + "'";
+                 " WHERE usuario = '" + user.Usuario.ToString() + "'";
 
                 conn = new SqlConnection();
 

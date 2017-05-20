@@ -18,10 +18,10 @@ namespace WebApplication1
         protected void Page_Load(object sender, EventArgs e)
         {
             // cambiar esto
-            if (Session["usuario"] == null)
+            if (Session["user"] == null)
             {
                 Response.Redirect("login.aspx");
-            }            
+            }       
         }
 
         // modificar el usuario
@@ -37,13 +37,13 @@ namespace WebApplication1
             ciudad = this.ciu.Text;
             pais = this.pai.Text;
             descripcion = this.desc.Text;
-            edad = this.ed.ToString();
+            edad = this.ed.Text;
             
             if (contraseña != "" && direccion != "" && email != "" && ciudad != "" && pais != "" && descripcion != "" && edad != "")
             {
                 usuario userAux = new usuario();
 
-                userAux.Usuario = Session["usuario"].ToString();
+                userAux.Usuario = Session["user"].ToString();
                 userAux.Contrasena = contraseña;
                 userAux.Direccion = direccion;
                 userAux.Email = email;
@@ -64,10 +64,10 @@ namespace WebApplication1
         // darse de baja
         protected void Button2_Click(object sender, EventArgs e)
         {
-            if (Session["Usuario"] != null)
+            if (Session["user"] != null)
             {
                 usuario user = new usuario();
-                user.borrarUsuario(Session["Usuario"].ToString());
+                user.borrarUsuario(Session["user"].ToString());
             }
             else
             {
