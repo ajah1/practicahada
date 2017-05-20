@@ -18,6 +18,7 @@ namespace WebApplication1
             Buttonacer_Click(sender, e);
         }
 
+        //Oculta los visibilidad de los labels
         protected void ocultar() {
             for (int i = 0; i <= 7; i++) {
                 switch (i) {
@@ -51,7 +52,7 @@ namespace WebApplication1
 
         }
 
-
+        //Actualiza la vista de la pagina a partir de la lista de articulos que hay ne la Base de DAtos.
         protected void actualizarProductos(List<Producto> p) {
             ocultar();
 
@@ -126,48 +127,48 @@ namespace WebApplication1
                 }
             }
         }
-
+        //Muestra el producto y su opcion de compra.
         protected void Buttonprod0_Click(object sender, EventArgs e)
         {
             Response.Redirect("Articulo.aspx?productoId=" + Labeli0.Text);
-            
         }
-
+        //Muestra el producto y su opcion de compra.
         protected void Buttonprod1_Click(object sender, EventArgs e)
         {
             Response.Redirect("Articulo.aspx?productoId=" + Labeli1.Text);
         }
-
+        //Muestra el producto y su opcion de compra.
         protected void Buttonprod2_Click(object sender, EventArgs e)
         {
             Response.Redirect("Articulo.aspx?productoId=" + Labeli2.Text);
         }
-
+        //Muestra el producto y su opcion de compra.
         protected void Buttonprod3_Click(object sender, EventArgs e)
         {
             Response.Redirect("Articulo.aspx?productoId=" + Labeli3.Text);
         }
-
+        //Muestra el producto y su opcion de compra.
         protected void Buttonprod4_Click(object sender, EventArgs e)
         {
             Response.Redirect("Articulo.aspx?productoId=" + Labeli4.Text);
         }
-
+        //Muestra el producto y su opcion de compra.
         protected void Buttonprod5_Click(object sender, EventArgs e)
         {
             Response.Redirect("Articulo.aspx?productoId=" + Labeli5.Text);
         }
-
+        //Muestra el producto y su opcion de compra.
         protected void Buttonprod6_Click(object sender, EventArgs e)
         {
             Response.Redirect("Articulo.aspx?productoId=" + Labeli6.Text);
         }
-
+        //Muestra el producto y su opcion de compra.
         protected void Buttonprod7_Click(object sender, EventArgs e)
         {
             Response.Redirect("Articulo.aspx?productoId=" + Labeli7.Text);
         }
 
+        //Muestra todos los Productos de la Base de Datos.
         protected void Buttonacer_Click(object sender, EventArgs e)
         {
             List<Producto> p = Producto.mostrarTodos();

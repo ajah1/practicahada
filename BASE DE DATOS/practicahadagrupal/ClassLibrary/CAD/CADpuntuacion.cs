@@ -15,19 +15,7 @@ namespace ClassLibrary.CAD
 
 	public class CADpuntuacion
     {
-        /*
-        // obtiene la ruta del ejecutable del programa, y la cambia para que apunte a la base de datos
-        private static string entorno(string aux)
-        {
-            int x = aux.Length;
-            for (int j = 0; j < 3; j++) { while (x > 0) { x--; if (aux[x] == '\\') { aux = aux.Remove(x, 1); break; } else { aux = aux.Remove(x, 1); } } }
-            return aux + @"\WebApplication1\App_Data\database.mdf";
-        }
 
-        // inicializa una conexion, y apunta en stringConexion los parámetros de conexión
-        private SqlConnection conn = null;
-        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=" + entorno(Directory.GetCurrentDirectory()) + @";Integrated Security=true";
-        */
         private SqlConnection conexion = null;
         public CADpuntuacion()
 		{
@@ -43,13 +31,9 @@ namespace ClassLibrary.CAD
             try
 			{
 				string sentencia = @"UPDATE puntuacion  SET " +
-						"record = 0" + "vidas = 0" + "puntosTotales= 0 " + " WHERE pusuario " + usuario;
+						"record = 0" + "vidas = 0" + "puntosTotales= 0 " + " WHERE pusuario " + usuario + "'";
 
-                /*
-                conn = new SqlConnection();
-                conn.Open();
-                 SqlConnection c = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
-                 */
+
 
                 SqlCommand com = new SqlCommand(sentencia, conn);
 				com.ExecuteNonQuery();
@@ -76,10 +60,7 @@ namespace ClassLibrary.CAD
 
 				string sentencia = "SELECT puntosTotales FROM puntuacion " +
 								   "WHERE pusuario = '" + usuario + "'";
-                /*
-				conn = new SqlConnection();
-				conn.Open();
-                */
+
 				SqlCommand com = new SqlCommand(sentencia, conn);
 				SqlDataReader dr = com.ExecuteReader();
 
@@ -119,12 +100,7 @@ namespace ClassLibrary.CAD
 						   "puntosTotales = '" + puntos.ToString() + "'" +
 						   " WHERE pusuario= '" + p.user + "'";
 
-                /*
-                conn = new SqlConnection();
-                //SqlConnection coon = new SqlConnection(ConfigurationManager.ConnectionStrings[ConnectionString].ConnectionString);
-                conn.ConnectionString = stringConexion;
-                conn.Open();
-                */
+
                 SqlCommand com = new SqlCommand(sentencia, conn);
 				com.ExecuteNonQuery();
 			}
@@ -150,12 +126,7 @@ namespace ClassLibrary.CAD
 
 				string sentencia = "Select * from puntuacion " +
 								   "where pusuario = '" + usuario + "'";
-/*
-				conn = new SqlConnection();
 
-                conn.ConnectionString = stringConexion;
-                conn.Open();
-                */
                 SqlCommand com = new SqlCommand(sentencia, conn);
 				SqlDataReader dr = com.ExecuteReader();
 
@@ -195,15 +166,10 @@ namespace ClassLibrary.CAD
             try
             {
                 string sentencia = @"UPDATE puntuacion  SET " +
-                           "vidas = '" + p.p + "'" +
+                           "vidas = '" + p.v + "'" +
                            " WHERE pusuario= '" + p.user + "'";
 
-                /*
-                conn = new SqlConnection();
-                //SqlConnection coon = new SqlConnection(ConfigurationManager.ConnectionStrings[ConnectionString].ConnectionString);
-                conn.ConnectionString = stringConexion;
-                conn.Open();
-                */
+
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
             }
@@ -248,12 +214,7 @@ namespace ClassLibrary.CAD
                             p.r.ToString() + "', '" +
                             p.v.ToString() + "', '" +
                             p.p.ToString() + "')";
-                /*
-                conn = new SqlConnection();
 
-                conn.ConnectionString = stringConexion;
-                conn.Open();
-                */
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
 

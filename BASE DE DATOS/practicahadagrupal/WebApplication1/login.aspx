@@ -92,7 +92,7 @@
             <td style="width: 121px">&nbsp;</td>
             <td class="auto-style2">&nbsp;</td>
             <td class="auto-style1">
-                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Login" Width="120px" CssClass="auto-style4" />
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Login" Width="120px" CssClass="auto-style4" /> <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Logout" Width="120px" CssClass="auto-style4" />
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>

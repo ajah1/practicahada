@@ -28,6 +28,7 @@ namespace ClassLibrary.EN{
 		public int p { get { return puntosTotales; } set { puntosTotales = value; } }
 
 		public void removePuntuacion(){
+
 			CAD.CADpuntuacion aux = new CAD.CADpuntuacion();
 			aux.remove(username);
 		}

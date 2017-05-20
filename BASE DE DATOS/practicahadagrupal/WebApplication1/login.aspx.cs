@@ -15,7 +15,18 @@ namespace WebApplication1
         protected void Page_Load(object sender, EventArgs e)
         {
             // FALTA CORREGIR CUANDO SE MUESTRA EL LABEL DEL PANELADMINISTRADOR
-                //Page.ClientScript.RegisterStartupScript(this.GetType(), "clientscript", "document.getElementById('algo').style.display = 'block';", true);
+            //Page.ClientScript.RegisterStartupScript(this.GetType(), "clientscript", "document.getElementById('algo').style.display = 'block';", true);
+            if (Session["user"] != null)
+            {
+                Button1.Visible = false;
+                Button2.Visible = true;
+            }
+            else
+            {
+                Button1.Visible = true;
+                Button2.Visible = false;
+            }
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -74,10 +85,12 @@ namespace WebApplication1
             {
                 MessageBox.Show("Hay campos incorrectos");
             }
+        }
 
-        
-
-
+        //Cierra la sesion del usuario
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Session["user"] = null;
         }
     }
 }
