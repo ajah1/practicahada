@@ -21,7 +21,7 @@ namespace ClassLibrary.CAD
         {
             int x = aux.Length;
             for (int j = 0; j < 3; j++) { while (x > 0) { x--; if (aux[x] == '\\') { aux = aux.Remove(x, 1); break; } else { aux = aux.Remove(x, 1); } } }
-            return aux + @"\practicahadagrupal\App_Data\Database1.mdf";
+            return aux + @"\WebApplication1\App_Data\database.mdf";
         }
 
         // inicializa una conexion, y apunta en stringConexion los parámetros de conexión

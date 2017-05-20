@@ -33,3 +33,5 @@ C:\Users\User\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplica
 C:\Users\User\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
 C:\Users\User\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\User\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\User\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\App_Data\database.mdf
+C:\Users\User\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\App_Data\database_log.ldf
