@@ -16,6 +16,7 @@ namespace ClassLibrary.CAD{
 
     public class CADusuario
     {
+<<<<<<< HEAD
         /*
         // obtiene la ruta del ejecutable del programa, y la cambia para que apunte a la base de datos
         private static string entorno(string aux)
@@ -29,6 +30,13 @@ namespace ClassLibrary.CAD{
         private SqlConnection conn = null;
         private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=" + entorno(Directory.GetCurrentDirectory()) + @";Integrated Security=true";
         */
+=======
+       
+       private SqlConnection conn = null;
+      private string stringConexion = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\App_Data\database.mdf; Integrated Security = True";
+
+
+>>>>>>> master
         // constructor por defecto
         private SqlConnection conexion = null;
         //private string stringConexion = ""; //@"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf; Integrated Security = True";
@@ -42,13 +50,23 @@ namespace ClassLibrary.CAD{
         // hace una sentencia para poder meter el nuevo usuario en la base de datos
         public void create(EN.usuario user)
         {
+<<<<<<< HEAD
             
             SqlConnection conn = conexion;
             conn.Open();
             
+=======
+
+            // cuando se añada un usuario también se hará en puntuacion con 3 vidas
+            EN.puntuacion p = new EN.puntuacion();
+            p.user = user.Usuario;
+            p.r = 0;
+            p.v = 3;
+            p.p = 0;
+
+>>>>>>> master
             try
             {
-
                 string sentencia = "INSERT INTO usuario " +
                     "(usuario, direccion, contraseña, ciudad, pais, descripcion, email, edad)" +
                     "VALUES('" +
@@ -78,6 +96,9 @@ namespace ClassLibrary.CAD{
             {
                 conn.Close();
             }
+
+            p.addUser();
+
         }
 
         // sentencia que te lee un usuario en concreto
@@ -212,8 +233,13 @@ namespace ClassLibrary.CAD{
                  "', descripcion = '"   + user.Descripcion.ToString() +
                  "', email = '"         + user.Email.ToString() +
                  "', edad = '"          + user.Edad.ToString() + "'" +
+<<<<<<< HEAD
                  "WHERE usuario = '" + user.Usuario.ToString() + "'";
                 /*
+=======
+                 " WHERE usuario = '" + user.Usuario.ToString() + "'";
+
+>>>>>>> master
                 conn = new SqlConnection();
 
                 conn.ConnectionString = stringConexion;
