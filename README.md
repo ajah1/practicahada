@@ -71,3 +71,21 @@ Entrega 1
 -----------------
 El esquema de la Base de Datos se encuentra en la carpeta raíz, el nombre del archivo es HADA.jpg
 Dentro de la carpeta BASE DE DATOS/practicagrupalhada se encuentra la solucion con los proyectos Libreria y Web Application
+
+
+-----------------
+Entrega Final
+-----------------
+
+-> Tareas hechas por cada miembro del grupo, planificación inicial y resultado final
+
+-Javier Ponce: 
+  * inicial: CAD y EN de usuario, interfaces relacionadas con mis EN y CAD, proyecto de la base de datos, administrador.
+  * final: CAD y EN de usuario, trabajo en equipo con puche con los EN y CAD de linea de pedido, interfaces de pagina de inicio,
+  login compartido con Alejandro, perfil de usuario más sus implementaciones, registro pero sin contar las implementaciones, administrador y sus funciones.
+  
+  -Alfonso Aracil: 
+  * inicial: CAD y EN de datos bancarios
+  * final: CAD y EN de datos bancarios, ligera contribución a CAD y EN de carrito en algunas consultas SQL, apuntar a base de datos con una ruta relativa al ejecutable del proyecto.
+
+  
