@@ -20,7 +20,7 @@ namespace WebApplication1
 
             NomProd.Text=producto.Nombre;
             Image1.ImageUrl = producto.Imagen;
-            CantPrecio.Text = producto.Precio.ToString()+ " EUROS ";
+            CantPrecio.Text = producto.Precio.ToString()+ " PUNTOS ";
 
             if (Session["Login"] != null)
             {
