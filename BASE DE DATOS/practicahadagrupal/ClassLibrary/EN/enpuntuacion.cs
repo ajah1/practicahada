@@ -32,13 +32,15 @@ namespace ClassLibrary.EN{
 			aux.remove(username);
 		}
 
-		public string readPuntuacion()
+		public List<string> readPuntuacion()
 		{
-			string salida = "";
+            List<string> l = new List<string>();
+
 			CAD.CADpuntuacion aux = new CAD.CADpuntuacion();
-			salida = aux.read(username);
-			return salida;
-		}
+			l = aux.read(username);
+
+            return l;
+        }
 
         public int obtenerPuntuacion()
         {
@@ -52,5 +54,10 @@ namespace ClassLibrary.EN{
 			aux.updatePuntuacion(p,this);
 		}
 
+        public void updateVidas()
+        {
+            CAD.CADpuntuacion p = new CAD.CADpuntuacion();
+            p.modificarVidas(this);
+        }
 	}
 }

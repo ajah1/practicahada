@@ -69,6 +69,18 @@ namespace pruebasENCAD
             Console.WriteLine(u.existe());
             Console.WriteLine(u.comprobarPass());
 
+            puntuacion p = new puntuacion();
+            p.user = "pruebaDatabase";
+            p.p = 10;
+            p.v = 10;
+
+            p.updatePuntuacion();
+            p.updateVidas();
+            Console.WriteLine(p.readPuntuacion()[1]);
+            Console.WriteLine(p.obtenerPuntuacion());
+            
+            //p.updateVidas();
+
             Console.ReadLine();
 
         }
