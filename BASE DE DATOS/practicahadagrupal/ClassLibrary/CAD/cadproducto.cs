@@ -9,6 +9,7 @@ using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
+using ClassLibrary.EN;
 
 namespace ClassLibrary.CAD{
     class CADproducto{
@@ -96,35 +97,27 @@ namespace ClassLibrary.CAD{
 
         }
 
-        public void consultarProducto(ClassLibrary.EN.Producto p) {
-            string mostrado = "";
+        public EN.Producto consultarProducto(int id) {
             SqlConnection conn = conexion;
             conn.Open();
 
-            try {
-                string sentenciaDB = "SELECT * FROM producto WHERE id = " +
-                    p.Id.ToString() + "'";
+            string sentenciaDB = "SELECT * FROM producto WHERE id = '" +
+                id + "'";
+            EN.Producto prod = new EN.Producto();
 
+            SqlCommand com = new SqlCommand(sentenciaDB, conn);
+            SqlDataReader rd = com.ExecuteReader();
 
-                SqlCommand com = new SqlCommand(sentenciaDB, conn);
-                SqlDataReader rd = com.ExecuteReader();
-
-                while (rd.Read()) {
-                    mostrado = " " + rd["id"].ToString() +
-                                     rd["nombre"] +
-                                     rd["descripcion"] +
-                                     rd["imagen"] +
-                                     rd["precio"].ToString();
-                }
-            }
-            catch (Exception ex) {
-                Console.WriteLine("Fallo a la hora de mostrar un producto");
-                Console.WriteLine(".\nError: {0}", ex.ToString());
-            }
-            finally {
-                conn.Close();
+            while (rd.Read()) {
+                prod.Id = int.Parse(rd["id"].ToString());
+                prod.Nombre = rd["nombre"].ToString();
+                prod.Descripcion = rd["descripcion"].ToString();
+                prod.Imagen = rd["imagen"].ToString();
+                prod.Precio = int.Parse(rd["precio"].ToString());
             }
 
+            conn.Close();
+            return prod;
         }
 
         public List<EN.Producto> PeticionConsultar() {
@@ -151,7 +144,6 @@ namespace ClassLibrary.CAD{
                 prod.Nombre = rd.GetString(1);
                 prod.Descripcion = rd.GetString(2);
                 prod.Imagen = rd.GetString(3);
-                //prod.Precio = rd.GetInt32(4);
                 prod.Precio = int.Parse(rd["precio"].ToString());
 
                 p.Add(prod);
