@@ -1,3 +1,216 @@
+
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\ApplicationInsights.config
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\csc.exe
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\vbc.exe
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\VBCSCompiler.exe
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\practicahadagrupal.dll.config
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\practicahadagrupal.dll
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\practicahadagrupal.pdb
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.Web.dll
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.Web.xml
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\BaseDatos.csprojResolveAssemblyReference.cache
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\practicahadagrupal.dll
+C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\practicahadagrupal.pdb
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\ApplicationInsights.config
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\csc.exe
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\vbc.exe
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\VBCSCompiler.exe
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\practicahadagrupal.dll.config
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\practicahadagrupal.dll
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\practicahadagrupal.pdb
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.Web.dll
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.ApplicationInsights.dll
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.Web.xml
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.ApplicationInsights.xml
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\BaseDatos.csprojResolveAssemblyReference.cache
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\practicahadagrupal.dll
+C:\Users\alihyder\Documents\GitHub\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\practicahadagrupal.pdb
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\ApplicationInsights.config
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\csc.exe
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\practicahadagrupal.dll.config
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\practicahadagrupal.dll
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\practicahadagrupal.pdb
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.Web.dll
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.ApplicationInsights.dll
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\System.Web.Entity.dll
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.Web.xml
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.ApplicationInsights.xml
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\practicahadagrupal.dll
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\practicahadagrupal.pdb
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\vbc.exe
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\VBCSCompiler.exe
+C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\VBCSCompiler.exe.config
+
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\ApplicationInsights.config
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\csc.exe
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\vbc.exe
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\VBCSCompiler.exe
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\practicahadagrupal.dll.config
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\practicahadagrupal.dll
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\practicahadagrupal.pdb
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.Web.dll
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.ApplicationInsights.dll
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\System.Web.Entity.dll
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.Web.xml
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.ApplicationInsights.xml
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\BaseDatos.csprojResolveAssemblyReference.cache
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\practicahadagrupal.dll
+C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\practicahadagrupal.pdb
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\ApplicationInsights.config
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\csc.exe
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\vbc.exe
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\VBCSCompiler.exe
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\practicahadagrupal.dll.config
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\practicahadagrupal.dll
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\practicahadagrupal.pdb
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.Web.dll
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.ApplicationInsights.dll
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\System.Web.Entity.dll
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.Web.xml
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.ApplicationInsights.xml
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\practicahadagrupal.dll
+C:\Users\EPS\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\practicahadagrupal.pdb
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\ApplicationInsights.config
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\csc.exe
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\vbc.exe
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\VBCSCompiler.exe
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\VBCSCompiler.exe.config
+
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\vbc.exe
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\VBCSCompiler.exe
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\VBCSCompiler.exe.config
+
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\practicahadagrupal.dll.config
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\practicahadagrupal.dll
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\practicahadagrupal.pdb
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.Web.dll
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.ApplicationInsights.dll
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\System.Web.Entity.dll
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.Web.xml
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.ApplicationInsights.xml
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\BaseDatos.csprojResolveAssemblyReference.cache
+
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\practicahadagrupal.dll
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\practicahadagrupal.pdb
+
 C:\Users\User\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\ApplicationInsights.config
 C:\Users\User\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\csc.exe
 C:\Users\User\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CSharp.Core.targets
@@ -32,3 +245,4 @@ C:\Users\User\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicaha
 C:\Users\User\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\BaseDatos.csprojResolveAssemblyReference.cache
 C:\Users\User\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\practicahadagrupal.dll
 C:\Users\User\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\practicahadagrupal.pdb
+

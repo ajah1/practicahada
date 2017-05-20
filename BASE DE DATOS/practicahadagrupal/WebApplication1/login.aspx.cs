@@ -25,20 +25,21 @@ namespace WebApplication1
             useraux.Usuario = this.TextBox3.Text;
             useraux.Contrasena = this.TextBox2.Text;
 
-            Session["user"] = this.TextBox3.ToString();
+            //Session["user"] = this.TextBox3.ToString();
 
+            /*
             // en caso de intentar loguearse de nuevo, salta mensaje error
-            if (Session["user"] != null && useraux.Usuario == Session["user"].ToString())
+            if (useraux.Usuario != null && useraux.Usuario == Session["user"].ToString())
                 MessageBox.Show("Ya has iniciado sesion");
-
+                */
             // comprobaciones de campos vacios
-            else if (useraux.Usuario == "" || useraux.Contrasena == "")
+             if (useraux.Usuario == "" || useraux.Contrasena == "")
                 MessageBox.Show("Faltan campos por rellenar");
 
             // si el usuario es administrador...
             else if (useraux.Usuario == "admin" && useraux.comprobarPass() == true)
             {
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "clientscript", "document.getElementById('algo').style.display = 'block';", true);
+                //Page.ClientScript.RegisterStartupScript(this.GetType(), "clientscript", "document.getElementById('algo').style.display = 'block';", true);
                 Session["user"] = "admin";
                 Response.Redirect("admin.aspx");
             }
@@ -46,28 +47,31 @@ namespace WebApplication1
             // si es usuario...
             else if (useraux.existe() == true && useraux.comprobarPass() == true)
             {
-                
                 puntuacion p = new puntuacion();
                 p.user = useraux.Usuario;
-                
+
                 List<string> l = new List<string>();
                 l = p.readPuntuacion();
 
                 int vidasActuales = int.Parse(l[1]);
 
+                Session["user"] = useraux.Usuario;
+                
                 //si no tiene vidas, regidirigir a productos, para que compre
                 if (vidasActuales == 0)
                 {
                     MessageBox.Show("Tiene 0 vidas, puedes compralas en la tienda :D");
                     Response.Redirect("productos.aspx");
+                    //Server.Transfer("productos.aspx", true);
                 }
-                
-                // si tienes vidas te lleva a game
-                Response.Redirect("game.aspx");
-            }
+                else
+                { 
+                    //Server.Transfer("perfil.aspx", true);
+                    Response.Redirect("productos.aspx");
+                 }   
+        }
             else
             {
-                Session["user"] = null;
                 MessageBox.Show("Hay campos incorrectos");
             }
 

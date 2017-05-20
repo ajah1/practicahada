@@ -16,21 +16,20 @@ namespace ClassLibrary.CAD
 
     public class CADranking
     {
+        // obtiene la ruta del ejecutable del programa, y la cambia para que apunte a la base de datos
+        private static string entorno(string aux)
+        {
+            int x = aux.Length;
+            for (int j = 0; j < 3; j++) { while (x > 0) { x--; if (aux[x] == '\\') { aux = aux.Remove(x, 1); break; } else { aux = aux.Remove(x, 1); } } }
+            return aux + @"\WebApplication1\App_Data\database.mdf";
+        }
+
+        // inicializa una conexion, y apunta en stringConexion los parámetros de conexión
+        private SqlConnection conn = null;
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=" + entorno(Directory.GetCurrentDirectory()) + @";Integrated Security=true";
 
         //constructor por defecto
         public CADranking() { }
-
-
-		//entorno necesario
-		private static string entorno(string aux)
-		{
-			int x = aux.Length;
-			for (int j = 0; j < 3; j++) { while (x > 0) { x--; if (aux[x] == '\\') { aux = aux.Remove(x, 1); break; } else { aux = aux.Remove(x, 1); } } }
-			return aux + @"\practicahadagrupal\App_Data\Database1.mdf";
-		}
-        //conexión a la base de datos
-		private SqlConnection conn = null;
-		private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=" + entorno(Directory.GetCurrentDirectory()) + @";Integrated Security=true";
 
 		// borrar todas las tuplas de la tabla ranking
 		public void drop()

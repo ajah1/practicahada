@@ -58,5 +58,11 @@ namespace ClassLibrary.EN{
             CAD.CADpuntuacion p = new CAD.CADpuntuacion();
             p.modificarVidas(this);
         }
+
+        public void addUser()
+        {
+            CAD.CADpuntuacion aux = new CAD.CADpuntuacion();
+            aux.addUser(this);
+        }
 	}
 }

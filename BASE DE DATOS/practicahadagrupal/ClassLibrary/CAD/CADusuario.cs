@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 
 using System.Data;
 using System.Data.Common;
@@ -12,33 +13,39 @@ using System.IO;
 
 namespace ClassLibrary.CAD{
 
-    public class CADusuario{
 
-
-       private SqlConnection conn = null;
-       private string stringConexion = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\App_Data\database.mdf; Integrated Security = True";
-
-        //private static string entorno(string aux)
-        //{
-        //    int x = aux.Length;
-        //    for (int j = 0; j < 3; j++) { while (x > 0) { x--; if (aux[x] == '\\') { aux = aux.Remove(x, 1); break; } else { aux = aux.Remove(x, 1); } } }
-        //    return aux + @"\WebApplication1\App_Data\database.mdf";
-        //}
-
-        //private SqlConnection conn = null;
-        //private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=" + entorno(Directory.GetCurrentDirectory()) + @";Integrated Security=true";
-
-
+    public class CADusuario
+    {
 
         // constructor por defecto
-        public CADusuario(){}
+        private SqlConnection conexion = null;
+        //private string stringConexion = ""; //@"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf; Integrated Security = True";
+
+
+        public CADusuario()
+        {
+            conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["database"].ConnectionString);
+        }
 
         // hace una sentencia para poder meter el nuevo usuario en la base de datos
         public void create(EN.usuario user)
         {
+            
+            SqlConnection conn = conexion;
+            conn.Open();
+            
+
+
+            // cuando se añada un usuario también se hará en puntuacion con 3 vidas
+            EN.puntuacion p = new EN.puntuacion();
+            p.user = user.Usuario;
+            p.r = 0;
+            p.v = 3;
+            p.p = 0;
+
+
             try
             {
-
                 string sentencia = "INSERT INTO usuario " +
                     "(usuario, direccion, contraseña, ciudad, pais, descripcion, email, edad)" +
                     "VALUES('" +
@@ -50,12 +57,12 @@ namespace ClassLibrary.CAD{
                     user.Descripcion.ToString() + "', '" +
                     user.Email.ToString() + "', '" +
                     user.Edad.ToString() + "')";
-
+                /*
                 conn = new SqlConnection();
 
                 conn.ConnectionString = stringConexion;
                 conn.Open();
-
+                */
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
             }
@@ -68,23 +75,29 @@ namespace ClassLibrary.CAD{
             {
                 conn.Close();
             }
+
+            p.addUser();
+
         }
 
         // sentencia que te lee un usuario en concreto
         public List<string> read(string user)
         {
             List<string> salida = new List<string>();
-
+            
+            SqlConnection conn = conexion;
+            conn.Open();
+            
             try
             {
                 string sentencia = "Select * from usuario " + 
                                     "where usuario = '" + user + "'";
-
+                /*
                 conn = new SqlConnection();
 
                 conn.ConnectionString = stringConexion;
                 conn.Open();
-
+                */
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 SqlDataReader ur = com.ExecuteReader();
 
@@ -125,17 +138,21 @@ namespace ClassLibrary.CAD{
 
         {
             string salida = "";
-
+            
+            SqlConnection conn = conexion;
+            conn.Open();
+            
             try
             {
                 string sentencia = "Select * from usuario " +
                                     "where usuario = '" + user + "'";
-
+                
+                /*
                 conn = new SqlConnection();
 
                 conn.ConnectionString = stringConexion;
                 conn.Open();
-
+                */
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 SqlDataReader ur = com.ExecuteReader();
 
@@ -179,8 +196,12 @@ namespace ClassLibrary.CAD{
         
         // modifica un usuario que exista en la base de datos
         public void update(EN.usuario user){
-
-            try{
+            
+            SqlConnection conn = conexion;
+            conn.Open();
+            
+            try
+            {
 
                 string sentencia = @"UPDATE usuario SET " +
 
@@ -191,13 +212,14 @@ namespace ClassLibrary.CAD{
                  "', descripcion = '"   + user.Descripcion.ToString() +
                  "', email = '"         + user.Email.ToString() +
                  "', edad = '"          + user.Edad.ToString() + "'" +
-                 "WHERE usuario = '" + user.Usuario.ToString() + "'";
-
+                 " WHERE usuario = '" + user.Usuario.ToString() + "'";
+                
+                /*
                 conn = new SqlConnection();
 
                 conn.ConnectionString = stringConexion;
                 conn.Open();
-
+                */
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
 
@@ -214,16 +236,20 @@ namespace ClassLibrary.CAD{
         // hace una sentencia que te borra el usuario de la base de datos
         public void delete(string user)
         {
+            
+            SqlConnection conn = conexion;
+            conn.Open();
+            
             try
             {
                 string sentencia = "DELETE FROM usuario  WHERE usuario = '" +
                                     user + "'";
-                
+                /*
                 conn = new SqlConnection();
 
                 conn.ConnectionString = stringConexion;
                 conn.Open();
-
+                */
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
             }
