@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.IO;
 using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
@@ -13,10 +13,19 @@ namespace ClassLibrary.CAD
 {
 	public class StockCAD
 	{
-		private const string ConnectionString = "data source=.\\SQLEXPRESS;Integrated"
-	 	+ "Security = SSPI; AttachDBFilename =| DataDirectory |\\Database1.mdf;"
-		+ "User Instance = true";
-		SqlConnection conn = new SqlConnection();
+
+        // obtiene la ruta del ejecutable del programa, y la cambia para que apunte a la base de datos
+        private static string entorno(string aux)
+        {
+            int x = aux.Length;
+            for (int j = 0; j < 3; j++) { while (x > 0) { x--; if (aux[x] == '\\') { aux = aux.Remove(x, 1); break; } else { aux = aux.Remove(x, 1); } } }
+            return aux + @"\WebApplication1\App_Data\database.mdf";
+        }
+
+        // inicializa una conexion, y apunta en stringConexion los parámetros de conexión
+        private SqlConnection conn = null;
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=" + entorno(Directory.GetCurrentDirectory()) + @";Integrated Security=true";
+
 		private EN.Stock productstock;
 
 		// <summary>
@@ -36,7 +45,9 @@ namespace ClassLibrary.CAD
 		{
 			try
 			{
-				conn.Open();
+                conn = new SqlConnection();
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 				SqlCommand com = new SqlCommand
 					(
 					   "INSERT INTO" +
@@ -62,7 +73,9 @@ namespace ClassLibrary.CAD
 		{
 			try
 			{
-				conn.Open();
+                conn = new SqlConnection();
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 
 				SqlCommand com = new SqlCommand
 					(
@@ -86,7 +99,9 @@ namespace ClassLibrary.CAD
 		{
 			try
 			{
-				conn.Open();
+                conn = new SqlConnection();
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 				SqlCommand com = new SqlCommand();
 			}
 			catch (Exception ex)
@@ -105,7 +120,9 @@ namespace ClassLibrary.CAD
 			{
 				EN.Stock salida = new EN.Stock();
 
-				conn.Open();
+                conn = new SqlConnection();
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 				SqlCommand com = new SqlCommand("Select * from productoStock" +
 												"where idstock = id", conn);
 				SqlDataReader dr = com.ExecuteReader();

@@ -129,6 +129,16 @@ namespace ClassLibrary.EN{
 
             return existe;
         }
-    
+
+        public bool comprobarPass()
+        {
+            bool correcta;
+            CAD.CADusuario aux = new CAD.CADusuario();
+
+            correcta = aux.comprobarPass(user,contrasena);
+
+            return correcta;
+        }
+
     }
 }

@@ -3,6 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
         
+        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.5.2.min.js" type="text/javascript"></script>
         
         <%-- objeto oculto para guardarle el score --%>
         <asp:Literal runat="server" ID="litInputAmount"></asp:Literal>
@@ -116,35 +117,51 @@
                     msg_score.innerHTML = "Thank you for playing game.<br /> Your Score :"
                     + "<b>" + score + "</b><br /><br /><input type='button' value='Play Again' onclick='window.location.reload();' />";
 
-                    msg_score.innerHTML = "Gracias por jugar.<br /> Tu puntuacion: <b>" + score; //+ "</b><br /><br /><input type='button' value='Play Again' onclick='window.location.reload();' />";
+                    msg_score.innerHTML = "Gracias por jugar.<br /> Tu puntuacion: <b>" + score + "</b><br /><br /><input type='button' value='Play Again' onclick='window.location.reload();' />";
                     
-                    // boton que se muestra al teminar la partida
-
 
                     // guardar resultado en objeto oculto asp
                     var final = document.getElementById("__VIEWSTATE").value = score;
 
 
+                    $.ajax({
+                        //Tipo de llamada
+                        type: "POST",
+
+                        //Dirección del WebMethod, o sea, Página.aspx/Método
+                        url: "WebForm3.aspx/Sumar",
+
+                        //Parámetros para pasarle al método 
+                        data: '{Valor1: ' + final + ', Valor2: 1}',
+
+                        //Tipo de contenido
+                        contentType: "application/json; charset=utf-8",
+
+                        //Tipo de datos
+                        dataType: "json",
+
+                        //Función a la cual llamar cuando se pudo llamar satisfactoriamente al método
+                        success: resultado,
+
+                        //Función a la cual llamar cuando se producen errores
+                        error: errores
+                    });
+
+                    function resultado() {
+                        //msg.d tiene el resultado devuelto por el método
+
+                    }
+                    function errores() {
+                        //msg.responseText tiene el mensaje de error enviado por el servidor
+
+                    }
 
                     // borrar mapa
                     document.getElementById("playArea").style.display = 'none';
                     window.clearInterval(interval);
                     
-                    // funcion que llama al codigo servidor para guardar el score
-                    function actualizarPuntuacion() {
-                        $.ajax
-                        ({
-                            type: "POST",
-                            url: "game.aspx.cs",
-                            data: $final,
-                            contentType: "application/json; charset=utf-8",
-                            dataType: "json",
-                            success: OnSuccess,
-                            failure: function (response) {
-                                alert(respose.d);
-                            }
-                        })
-                    }
+
+
 
 
 

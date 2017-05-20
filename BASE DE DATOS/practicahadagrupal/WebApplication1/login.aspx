@@ -44,9 +44,9 @@
             <td class="auto-style2">
 
                 
-                <div  id="algo" style=display:none;>
+                <div id="algo" style=display:none;>
                 &nbsp;<asp:label runat="server" text="Label" CssClass="auto-style5">
-                         <a class="adminclass" href="admin.aspx">ADMINISTRADOR</a>
+                         <a class="adminclass" href="admin.aspx">PANELADMIN</a>
                       </asp:label>
                 </div>
 
@@ -82,7 +82,7 @@
             <td style="width: 121px">&nbsp;</td>
             <td class="auto-style2">&nbsp;</td>
             <td class="auto-style1">
-                <asp:TextBox ID="TextBox2" runat="server" Height="33px" Width="197px"></asp:TextBox>
+                <asp:TextBox ID="TextBox2" runat="server" Height="33px" Width="197px" TextMode="Password"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>

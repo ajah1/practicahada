@@ -14,36 +14,71 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            if ((string)Session["usuario"] == "admin")
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "clientscript", "document.getElementById('algo').style.display = 'block';", true);
-              
-
+            // FALTA CORREGIR CUANDO SE MUESTRA EL LABEL DEL PANELADMINISTRADOR
+                //Page.ClientScript.RegisterStartupScript(this.GetType(), "clientscript", "document.getElementById('algo').style.display = 'block';", true);
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string usuario = "";
-            string pass = "";
 
-            usuario = this.TextBox3.Text;
-            pass = this.TextBox2.Text;
+            usuario useraux = new usuario();
+            useraux.Usuario = this.TextBox3.Text;
+            useraux.Contrasena = this.TextBox2.Text;
 
+            Session["user"] = this.TextBox3.ToString();
 
-            if (usuario == "")
-                MessageBox.Show("El campo usuario sin rellenar");
-            else if (pass == "")
-                MessageBox.Show("El campo password sin rellenar");
-            else if (usuario == "" && pass == "")
-                MessageBox.Show("Ambos campos están vacios");
-            else
+            // en caso de intentar loguearse de nuevo, salta mensaje error
+            if (Session["user"] != null && useraux.Usuario == Session["user"].ToString())
+                MessageBox.Show("Ya has iniciado sesion");
+
+            // comprobaciones de campos vacios
+            else if (useraux.Usuario == "" || useraux.Contrasena == "")
+                MessageBox.Show("Faltan campos por rellenar");
+
+            // si el usuario es administrador...
+            else if (useraux.Usuario == "admin" && useraux.comprobarPass() == true)
             {
-                Session["usuario"] = usuario;
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "clientscript", "document.getElementById('algo').style.display = 'block';", true);
+                Session["user"] = "admin";
+                Response.Redirect("admin.aspx");
+            }
+
+            // si es usuario...
+            else if (useraux.existe() == true && useraux.comprobarPass() == true)
+            {
+                
+                puntuacion p = new puntuacion();
+                p.user = useraux.Usuario;
+                
+                List<string> l = new List<string>();
+                l = p.readPuntuacion();
+
+                int vidasActuales = int.Parse(l[1]);
+
+                //si no tiene vidas, regidirigir a productos, para que compre
+                if (vidasActuales == 0)
+                {
+                    MessageBox.Show("Tiene 0 vidas, puedes compralas en la tienda :D");
+                    Response.Redirect("productos.aspx");
+                }
+                
+                // si tienes vidas te lleva a game
                 Response.Redirect("game.aspx");
             }
-            // FALTA CONTROLAR QUE EL USUARIO SEA ADMINISTRADOR CUANDO HAGAMOS LAS PESTAÑA
-            // el usuario este en la base de datos
+            else
+            {
+                Session["user"] = null;
+                MessageBox.Show("Hay campos incorrectos");
+            }
+
+        
+
 
         }
     }
 }
+
+
+
+
+

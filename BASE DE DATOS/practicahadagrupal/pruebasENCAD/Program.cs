@@ -16,57 +16,36 @@ namespace pruebasENCAD
         static void Main(string[] args)
         {
 
-            /*
-            usuario u = new usuario();
-            CADusuario cu = new CADusuario();
-            u.Usuario = "esejuan";
-
-            //string salida = "";
-            //salida = cu.readstring(u.Usuario);
-            //Console.WriteLine(salida);
-
-            
-
-            u.Ciudad = "hola999";
-            u.Contrasena = "hola999";
-            u.Edad = 9;
-            u.Descripcion = "hola999";
-            u.Email = "hola999";
-            u.Direccion = "hola999";
-            u.Pais = "hola999";
-
-            Console.WriteLine(u.existe());
-
-            Console.ReadLine();
-            */
-
-            /*
-            // pruebas pedido
-            Console.WriteLine("=> INICIO PRUEBAS ranking [terminado] <=");
-
-            // ---------------------------------------prueba 1 
-            Console.WriteLine("=> prueba1: add  ranking[terminado]<=");
-
-            ranking r = new ranking();
-
-            //p
-            r.droptable();
-            r.addRanking();
-            
-            */
-
             usuario u = new usuario();
 
-            u.Usuario = "pruebaDatabase";
+            u.Usuario = "aaaaadmin";
             u.Ciudad = "pruebaDatabase";
-            u.Contrasena = "pruebaDatabase";
-            u.Edad = 0;
+            u.Contrasena = "aaaahada";
+            u.Edad = 4;
             u.Descripcion = "pruebaDatabase";
             u.Email = "pruebaDatabase";
             u.Direccion = "pruebaDatabase";
             u.Pais = "pruebaDatabase";
 
             u.registrarUsuario();
+
+            Console.WriteLine(u.existe());
+            Console.WriteLine(u.comprobarPass());
+
+
+            puntuacion p = new puntuacion();
+            p.user = "pruebaDatabase";
+
+            List<string> l = new List<string>();
+            l = p.readPuntuacion();
+
+            int vidasActuales = int.Parse(l[1]);
+
+            //si no tiene vidas, regidirigir a productos, para que compre
+            if (vidasActuales == 0)
+            {
+                Console.WriteLine("vidas 0");
+            }
 
             Console.ReadLine();
 

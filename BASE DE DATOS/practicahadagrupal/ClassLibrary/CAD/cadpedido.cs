@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ClassLibrary.EN;
 using System.Configuration;
-
+using System.IO;
 using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
@@ -13,10 +13,19 @@ using System.Data.SqlTypes;
 
 namespace ClassLibrary.CAD{
 
-    class CADpedido{
+    class CADpedido
+    {
+        // obtiene la ruta del ejecutable del programa, y la cambia para que apunte a la base de datos
+        private static string entorno(string aux)
+        {
+            int x = aux.Length;
+            for (int j = 0; j < 3; j++) { while (x > 0) { x--; if (aux[x] == '\\') { aux = aux.Remove(x, 1); break; } else { aux = aux.Remove(x, 1); } } }
+            return aux + @"\WebApplication1\App_Data\database.mdf";
+        }
 
+        // inicializa una conexion, y apunta en stringConexion los parámetros de conexión
         private SqlConnection conn = null;
-        private string stringConexion = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf; Integrated Security = True";
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=" + entorno(Directory.GetCurrentDirectory()) + @";Integrated Security=true";
 
 
         public CADpedido(){}

@@ -17,28 +17,48 @@ namespace WebApplication1
         // al cargar la pagina, si hay sesion activada te muestra tus datos, sino te redirecciona a registro
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["Usuario"] != null)
+            // cambiar esto
+            if (Session["usuario"] == null)
             {
-                this.Label11.Text = "Podrá ver sus datos si esta registrado";   // Usuario
-                this.Label12.Text = "Podrá ver sus datos si esta registrado";   // Direccion
-                this.Label13.Text = "Podrá ver sus datos si esta registrado";   // Email
-                this.Label17.Text = "Podrá ver sus datos si esta registrado";   // Ciudad
-                this.Label14.Text = "Podrá ver sus datos si esta registrado";   // Pais
-                this.Label15.Text = "Podrá ver sus datos si esta registrado";   // Edad
-                this.Label16.Text = "Podrá ver sus datos si esta registrado";   // Descripcion
+                Response.Redirect("login.aspx");
+            }            
+        }
+
+        // modificar el usuario
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            string contraseña, direccion, email, ciudad, pais, descripcion;
+            string edad = "";
+            contraseña = direccion = email = ciudad = pais = descripcion = "";
+
+            contraseña = this.contra.Text;
+            direccion = this.dir.Text;
+            email = this.ema.Text;
+            ciudad = this.ciu.Text;
+            pais = this.pai.Text;
+            descripcion = this.desc.Text;
+            edad = this.ed.ToString();
+            
+            if (contraseña != "" && direccion != "" && email != "" && ciudad != "" && pais != "" && descripcion != "" && edad != "")
+            {
+                usuario userAux = new usuario();
+
+                userAux.Usuario = Session["usuario"].ToString();
+                userAux.Contrasena = contraseña;
+                userAux.Direccion = direccion;
+                userAux.Email = email;
+                userAux.Ciudad = ciudad;
+                userAux.Pais = pais;
+                userAux.Descripcion = descripcion;
+                userAux.Edad = int.Parse(edad);
+
+                // modifica el usuario
+                userAux.modificarUsuario();
             }
             else
             {
-                //MessageBox.Show("Usted ha sido redireccioando ya que no tiene abierta una sesion");
-                Response.Redirect("login.aspx");
+                MessageBox.Show("Usted no ha rellenado todos los campos");
             }
-            
-        }
-
-        // modificar el usuario (pendiente)
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-
         }
 
         // darse de baja

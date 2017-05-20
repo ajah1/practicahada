@@ -13,6 +13,7 @@ using System.IO;
 
 namespace ClassLibrary.CAD{
 
+<<<<<<< HEAD
     public class CADusuario{
         
                 private static string entorno(string aux)
@@ -26,6 +27,22 @@ namespace ClassLibrary.CAD{
                 private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=" + entorno(Directory.GetCurrentDirectory()) + @";Integrated Security=true";
                 
         private SqlConnection conn = null;
+=======
+    public class CADusuario
+    {
+        // obtiene la ruta del ejecutable del programa, y la cambia para que apunte a la base de datos
+        private static string entorno(string aux)
+        {
+            int x = aux.Length;
+            for (int j = 0; j < 3; j++) { while (x > 0) { x--; if (aux[x] == '\\') { aux = aux.Remove(x, 1); break; } else { aux = aux.Remove(x, 1); } } }
+            return aux + @"\WebApplication1\App_Data\database.mdf";
+        }
+
+        // inicializa una conexion, y apunta en stringConexion los parámetros de conexión
+        private SqlConnection conn = null;
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=" + entorno(Directory.GetCurrentDirectory()) + @";Integrated Security=true";
+
+>>>>>>> master
         // constructor por defecto
         public CADusuario(){
            // conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["Database1"].ConnectionString);
@@ -108,6 +125,7 @@ namespace ClassLibrary.CAD{
                     salida.Add(ur["descripcion"].ToString());
                     salida.Add(ur["email"].ToString());
                     salida.Add(ur["edad"].ToString());
+                    salida.Add(ur["contraseña"].ToString());
                 }
 
             }
@@ -183,8 +201,7 @@ namespace ClassLibrary.CAD{
 
             return encontrado;
         }
-
-
+        
         // modifica un usuario que exista en la base de datos
         public void update(EN.usuario user){
             /*
@@ -253,6 +270,21 @@ namespace ClassLibrary.CAD{
                 conn.Close();
             }
         }
+
+        // devuelve un booleano
+        public bool comprobarPass(string user, string pass)
+        {
+            bool correcta = false;
+
+            List<string> l = new List<string>();
+            l = read(user);
+
+            if (existe(user) == true)
+                if (pass == l[6])
+                    correcta = true;
         
+            return correcta;
+        }
+
     }
 }
