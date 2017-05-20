@@ -16,46 +16,6 @@ namespace pruebasENCAD
         static void Main(string[] args)
         {
 
-            /*
-            usuario u = new usuario();
-            CADusuario cu = new CADusuario();
-            u.Usuario = "esejuan";
-
-            //string salida = "";
-            //salida = cu.readstring(u.Usuario);
-            //Console.WriteLine(salida);
-
-            
-
-            u.Ciudad = "hola999";
-            u.Contrasena = "hola999";
-            u.Edad = 9;
-            u.Descripcion = "hola999";
-            u.Email = "hola999";
-            u.Direccion = "hola999";
-            u.Pais = "hola999";
-
-            Console.WriteLine(u.existe());
-
-            Console.ReadLine();
-            */
-
-            /*
-            // pruebas pedido
-            Console.WriteLine("=> INICIO PRUEBAS ranking [terminado] <=");
-
-            // ---------------------------------------prueba 1 
-            Console.WriteLine("=> prueba1: add  ranking[terminado]<=");
-
-            ranking r = new ranking();
-
-            //p
-            r.droptable();
-            r.addRanking();
-            
-            */
-<<<<<<< HEAD
-
             usuario u = new usuario();
 
             u.Usuario = "aaaaadmin";
@@ -72,8 +32,7 @@ namespace pruebasENCAD
             Console.WriteLine(u.existe());
             Console.WriteLine(u.comprobarPass());
 
-=======
->>>>>>> 48765284V
+
             puntuacion p = new puntuacion();
             p.user = "pruebaDatabase";
 
