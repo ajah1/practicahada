@@ -17,11 +17,10 @@ namespace ClassLibrary.CAD{
     public class CADusuario
     {
 
-        // constructor por defecto
+        
         private SqlConnection conexion = null;
-        //private string stringConexion = ""; //@"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf; Integrated Security = True";
 
-
+        // constructor por defecto
         public CADusuario()
         {
             conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["database"].ConnectionString);
@@ -57,12 +56,7 @@ namespace ClassLibrary.CAD{
                     user.Descripcion.ToString() + "', '" +
                     user.Email.ToString() + "', '" +
                     user.Edad.ToString() + "')";
-                /*
-                conn = new SqlConnection();
 
-                conn.ConnectionString = stringConexion;
-                conn.Open();
-                */
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
             }
@@ -92,23 +86,13 @@ namespace ClassLibrary.CAD{
             {
                 string sentencia = "Select * from usuario " + 
                                     "where usuario = '" + user + "'";
-                /*
-                conn = new SqlConnection();
 
-                conn.ConnectionString = stringConexion;
-                conn.Open();
-                */
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 SqlDataReader ur = com.ExecuteReader();
 
 
                 while (ur.Read())
                 {
-                    /*
-                    salida = " " + ur["usuario"].ToString() + ur["direccion"].ToString() + " " +
-                        ur["ciudad"].ToString() + " " + ur["pais"].ToString() + " " + ur["descripcion"].ToString() +
-                        " " + ur["email"].ToString() + " " + ur["edad"].ToString();
-                    */
                     
                     salida.Add(ur["direccion"].ToString());
                     salida.Add(ur["ciudad"].ToString());
@@ -147,12 +131,6 @@ namespace ClassLibrary.CAD{
                 string sentencia = "Select * from usuario " +
                                     "where usuario = '" + user + "'";
                 
-                /*
-                conn = new SqlConnection();
-
-                conn.ConnectionString = stringConexion;
-                conn.Open();
-                */
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 SqlDataReader ur = com.ExecuteReader();
 
@@ -214,12 +192,7 @@ namespace ClassLibrary.CAD{
                  "', edad = '"          + user.Edad.ToString() + "'" +
                  " WHERE usuario = '" + user.Usuario.ToString() + "'";
                 
-                /*
-                conn = new SqlConnection();
 
-                conn.ConnectionString = stringConexion;
-                conn.Open();
-                */
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
 
@@ -244,12 +217,7 @@ namespace ClassLibrary.CAD{
             {
                 string sentencia = "DELETE FROM usuario  WHERE usuario = '" +
                                     user + "'";
-                /*
-                conn = new SqlConnection();
 
-                conn.ConnectionString = stringConexion;
-                conn.Open();
-                */
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
             }

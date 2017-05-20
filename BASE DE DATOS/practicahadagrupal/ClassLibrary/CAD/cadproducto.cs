@@ -21,13 +21,13 @@ namespace ClassLibrary.CAD{
 
 
         private SqlConnection conexion = null;
-        //private string stringConexion = ""; //@"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf; Integrated Security = True";
 
-
+        //constructor por defecto.
         public CADproducto() {
             conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["database"].ConnectionString);
         }
 
+        //Metodo que crea un producto a partir del que le pasan por parametro
         public void create(ClassLibrary.EN.Producto p) {
             SqlConnection conn = conexion;
             conn.Open();
@@ -40,11 +40,6 @@ namespace ClassLibrary.CAD{
                     p.Descripcion + "', '" +
                     p.Nombre + "', '" +
                     p.Precio.ToString() + "')'";
-                /*
-                conn = new SqlConnection();
-                conn.ConnectionString = stringConexion;
-                conn.Open();
-                */
                
 
                 SqlCommand com = new SqlCommand(sentenciaDB, conn);
@@ -57,6 +52,7 @@ namespace ClassLibrary.CAD{
             conn.Close();
         }
 
+        //Metodo que elimina el producto que tenga la id pasada porparametro.
         public void remove(int id) {
             SqlConnection conn = conexion;
             conn.Open();
@@ -78,6 +74,7 @@ namespace ClassLibrary.CAD{
 
         }
 
+        //Metodo que modifica un producto pasado por parametro.
         public void update(ClassLibrary.EN.Producto p) {
             SqlConnection conn = conexion;
             conn.Open();
@@ -104,6 +101,7 @@ namespace ClassLibrary.CAD{
 
         }
 
+        //Metodo que te devuleve el objeto que contenga la id pasada por parametro.
         public EN.Producto consultarProducto(int id) {
             SqlConnection conn = conexion;
             conn.Open();
@@ -127,6 +125,7 @@ namespace ClassLibrary.CAD{
             return prod;
         }
 
+        //Metodo que recibe la peticion de consultar todos los producos
         public List<EN.Producto> PeticionConsultar() {
 
             SqlConnection conn = conexion;
@@ -134,7 +133,7 @@ namespace ClassLibrary.CAD{
             return ConsultarTodos(conn);
         }
 
-
+        //Metodo que consulta todos los productos de la pagina web
         public List<EN.Producto> ConsultarTodos(SqlConnection conn) {
 
             conn.Open();

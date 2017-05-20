@@ -11,9 +11,9 @@ namespace WebApplication1
 {
     public partial class Articulo : System.Web.UI.Page
     {
+        //Nos lleva a la pagina de compra del producto seleccionado. 
         protected void Page_Load(object sender, EventArgs e)
         {
-           // int id = int.Parse(Request["productoId"].ToString());
             int id = Convert.ToInt32(Request.QueryString["productoId"]);
 
             Producto producto = new Producto(id);
@@ -29,8 +29,6 @@ namespace WebApplication1
             }
             else
             {
-                
-
                 Button1.Visible = false;
                 Label4.Visible = true;
             }
