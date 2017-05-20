@@ -64,7 +64,7 @@ namespace WebApplication1
                         Label0.Text = p[0].Nombre;
                         Labeli0.Text = p[0].Id.ToString();
                         Labelr0.Text = p[0].Descripcion;
-                        Image0.ImageUrl = p[0].Imagen;
+                        Imagen0.Src = p[0].Imagen;
                         Button0.Text = p[0].Precio.ToString() + " puntos";
                         break;
                     case 1:
@@ -72,7 +72,7 @@ namespace WebApplication1
                         Label1.Text = p[1].Nombre;
                         Labeli1.Text = p[1].Id.ToString();
                         Labelr1.Text = p[1].Descripcion;
-                        Image1.ImageUrl = p[1].Imagen;
+                        Imagen1.Src = p[1].Imagen;
                         Button1.Text = p[1].Precio.ToString() + " puntos";
                         break;
                     case 2:
@@ -80,7 +80,7 @@ namespace WebApplication1
                         Label2.Text = p[2].Nombre;
                         Labeli2.Text = p[2].Id.ToString();
                         Labelr2.Text = p[2].Descripcion;
-                        Image2.ImageUrl = p[2].Imagen;
+                        Imagen2.Src = p[2].Imagen;
                         Button2.Text = p[2].Precio.ToString() + " puntos";
                         break;
                     case 3:
@@ -88,7 +88,7 @@ namespace WebApplication1
                         Label3.Text = p[3].Nombre;
                         Labeli3.Text = p[3].Id.ToString();
                         Labelr3.Text = p[3].Descripcion;
-                        Image3.ImageUrl = p[3].Imagen;
+                        Imagen3.Src = p[3].Imagen;
                         Button3.Text = p[3].Precio.ToString() + " puntos";
                         break;
                     case 4:
@@ -96,7 +96,7 @@ namespace WebApplication1
                         Label4.Text = p[4].Nombre;
                         Labeli4.Text = p[4].Id.ToString();
                         Labelr4.Text = p[4].Descripcion;
-                        Image4.ImageUrl = p[4].Imagen;
+                        Imagen4.Src = p[4].Imagen;
                         Button4.Text = p[4].Precio.ToString() + " puntos";
                         break;
                     case 5:
@@ -104,7 +104,7 @@ namespace WebApplication1
                         Label5.Text = p[5].Nombre;
                         Labeli5.Text = p[5].Id.ToString();
                         Labelr5.Text = p[5].Descripcion;
-                        Image5_1.ImageUrl = p[5].Imagen;
+                        Imagen5.Src = p[5].Imagen;
                         Button5.Text = p[5].Precio.ToString() + " puntos";
                         break;
                     case 6:
@@ -112,7 +112,7 @@ namespace WebApplication1
                         Label6.Text = p[6].Nombre;
                         Labeli6.Text = p[6].Id.ToString();
                         Labelr6.Text = p[6].Descripcion;
-                        Image6_1.ImageUrl = p[6].Imagen;
+                        Imagen6.Src = p[6].Imagen;
                         Button6.Text = p[6].Precio.ToString() + " puntos";
                         break;
                     case 7:
@@ -121,7 +121,7 @@ namespace WebApplication1
                         Label7.Text = p[7].Nombre;
                         Labeli7.Text = p[7].Id.ToString();
                         Labelr7.Text = p[7].Descripcion;
-                        Image7_1.ImageUrl = p[7].Imagen;
+                        Imagen7.Src = p[7].Imagen;
                         Button7.Text = p[7].Precio.ToString() + " puntos";
                         break;
                 }

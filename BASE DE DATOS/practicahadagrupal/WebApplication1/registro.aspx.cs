@@ -15,7 +15,10 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["user"] != null)
+            {
+                Response.Redirect("login.aspx");
+            }
         }
 
 
@@ -54,7 +57,7 @@ namespace WebApplication1
                 if (this.TextBox7.Text != ""){
                     
                     
-                    numero = int.TryParse(this.TextBox1.Text, out number);
+                    numero = int.TryParse(this.TextBox7.Text, out number);
                     if (numero == true)
                     {
                         edad = int.Parse(this.TextBox7.Text);

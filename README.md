@@ -79,13 +79,19 @@ Entrega Final
 
 -> Tareas hechas por cada miembro del grupo, planificación inicial y resultado final
 
--Javier Ponce: 
-  * inicial: CAD y EN de usuario, interfaces relacionadas con mis EN y CAD, proyecto de la base de datos, administrador.
+ * Instrucciones de instalación y requisitos:
+ 
+
+--Javier Ponce: 
+  * inicial: CAD y EN de usuario, interfaces relacionadas con mis EN y CAD, proyecto de la base de datos, administrador web.
   * final: CAD y EN de usuario, trabajo en equipo con puche con los EN y CAD de linea de pedido, interfaces de pagina de inicio,
-  login compartido con Alejandro, perfil de usuario más sus implementaciones, registro pero sin contar las implementaciones, administrador y sus funciones.
+  login compartido con Alejandro y Jose Ignacio, perfil de usuario más sus implementaciones, registro pero sin contar las implementaciones, administrador y sus funciones y construccion de la base de datos.
   
-  -Alfonso Aracil: 
+--Alfonso Aracil: 
   * inicial: CAD y EN de datos bancarios
   * final: CAD y EN de datos bancarios, ligera contribución a CAD y EN de carrito en algunas consultas SQL, apuntar a base de datos con una ruta relativa al ejecutable del proyecto.
 
+--Jose Ignacio:
+  * inicial: CAD y EN de Productos, interfaces de los respectivos EN y CAD, construccion de la base de datos.
+  * final: CAD Y EN de Productos y Pedido, así como la interfaz de Producto y Articulo, la implementacion de Registro, muy levemente la interfaz y la implementacion de login y logout, construccion de la base de datos, asi como la conexion entre la base de datos y la pagina web.
   

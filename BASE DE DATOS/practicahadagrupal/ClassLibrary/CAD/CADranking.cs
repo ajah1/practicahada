@@ -74,11 +74,6 @@ namespace ClassLibrary.CAD
                 conn.ConnectionString = stringConexion;
                 conn.Open();
 
-                conn = new SqlConnection();
-
-                conn.ConnectionString = stringConexion;
-                conn.Open();
-
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
 
