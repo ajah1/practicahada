@@ -31,7 +31,6 @@
             var level = 160; // Game level, by decreasing will speed up
             var rect_w = 60; // Width 
             var rect_h = 60; // Height
-
             var inc_score = 50; // Score
             var snake_color = "#FF0000"; // Snake Color
             var ctx; // Canvas attributes
@@ -114,22 +113,18 @@
 
                     var msg_score = document.getElementById("msg");
 
-                    msg_score.innerHTML = "Thank you for playing game.<br /> Your Score :"
-                    + "<b>" + score + "</b><br /><br /><input type='button' value='Play Again' onclick='window.location.reload();' />";
-
-                    msg_score.innerHTML = "Gracias por jugar.<br /> Tu puntuacion: <b>" + score + "</b><br /><br /><input type='button' value='Play Again' onclick='window.location.reload();' />";
+                    msg_score.innerHTML = "Gracias por jugar.<br /> Tu puntuacion : <b>" + score + "</b><br /><br /><input type='button' value='Play Again' onclick='window.location.reload();' />";
                     
 
                     // guardar resultado en objeto oculto asp
                     var final = document.getElementById("__VIEWSTATE").value = score;
-
 
                     $.ajax({
                         //Tipo de llamada
                         type: "POST",
 
                         //Dirección del WebMethod, o sea, Página.aspx/Método
-                        url: "WebForm3.aspx/Sumar",
+                        url: "game.aspx/Sumar",
 
                         //Parámetros para pasarle al método 
                         data: '{Valor1: ' + final + ', Valor2: 1}',
@@ -159,9 +154,6 @@
                     // borrar mapa
                     document.getElementById("playArea").style.display = 'none';
                     window.clearInterval(interval);
-                    
-
-
 
 
 
