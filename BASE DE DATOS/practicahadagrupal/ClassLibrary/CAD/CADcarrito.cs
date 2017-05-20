@@ -96,7 +96,7 @@ namespace ClassLibrary.CAD
                 string sentenciaDB = @"UPDATE carrito SET " +
                     "Id = " + nuevo.Id.ToString() +
                     ", usuario = '" + nuevo.Usuario.ToString() +
-                    "', ciudad = " + c.Producto.ToString() +
+                    "', ciudad = " + nuevo.Producto.ToString() +
                     " WHERE Id = " + c.Usuario.ToString();
 
                 SqlCommand com = new SqlCommand(sentenciaDB, conn);
