@@ -54,32 +54,19 @@ namespace pruebasENCAD
             r.addRanking();
             
             */
-
-            usuario u = new usuario();
-
-            u.Usuario = "admin";
-            u.Ciudad = "pruebaDatabase";
-            u.Contrasena = "hada";
-            u.Edad = 0;
-            u.Descripcion = "pruebaDatabase";
-            u.Email = "pruebaDatabase";
-            u.Direccion = "pruebaDatabase";
-            u.Pais = "pruebaDatabase";
-
-            Console.WriteLine(u.existe());
-            Console.WriteLine(u.comprobarPass());
-
             puntuacion p = new puntuacion();
             p.user = "pruebaDatabase";
-            p.p = 10;
-            p.v = 10;
 
-            p.updatePuntuacion();
-            p.updateVidas();
-            Console.WriteLine(p.readPuntuacion()[1]);
-            Console.WriteLine(p.obtenerPuntuacion());
-            
-            //p.updateVidas();
+            List<string> l = new List<string>();
+            l = p.readPuntuacion();
+
+            int vidasActuales = int.Parse(l[1]);
+
+            //si no tiene vidas, regidirigir a productos, para que compre
+            if (vidasActuales == 0)
+            {
+                Console.WriteLine("vidas 0");
+            }
 
             Console.ReadLine();
 
