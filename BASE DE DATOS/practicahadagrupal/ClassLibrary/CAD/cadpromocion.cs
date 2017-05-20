@@ -266,5 +266,21 @@ namespace ClassLibrary.CAD
            
             return descuento;
         }
+
+        // comprobar si existe la promocion
+        public bool existePromocion(int id)
+        {
+            bool encontrado = false;
+
+            string datospromocion = "";
+
+            datospromocion = read(id);
+
+            if (datospromocion != "")
+                encontrado = true;
+
+            return encontrado;
+
+        }
     }
 }
