@@ -14,6 +14,7 @@ namespace WebApplication1
         {
             //prueba xavito
             Session["user"] = null;
+            Response.Redirect("admin.aspx");
         }
     }
 }
