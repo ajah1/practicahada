@@ -34,9 +34,6 @@ C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApp
 C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\Microsoft.ApplicationInsights.xml
 C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-<<<<<<< HEAD
-C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\obj\Debug\WebApplication1.dll
-C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\obj\Debug\WebApplication1.pdb
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\ApplicationInsights.config
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\roslyn\csc.exe
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
@@ -175,6 +172,5 @@ C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\pra
 C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
 C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\obj\Debug\WebApplication1.pdb
-=======
-C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
->>>>>>> master
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\App_Data\database.mdf
+C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\bin\App_Data\database_log.ldf

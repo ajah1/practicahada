@@ -96,14 +96,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="admin.aspx" />
-<<<<<<< HEAD
+
     <Content Include="Articulo.aspx" />
-    <Content Include="App_Data\database.mdf" />
-=======
+
     <Content Include="App_Data\database.mdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
->>>>>>> master
+
     <Content Include="App_Data\database_log.ldf">
       <DependentUpon>database.mdf</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

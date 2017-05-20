@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\ApplicationInsights.config
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\csc.exe
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -210,7 +210,7 @@ C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\pra
 
 C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\practicahadagrupal.dll
 C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\practicahadagrupal.pdb
-=======
+
 C:\Users\User\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\ApplicationInsights.config
 C:\Users\User\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\csc.exe
 C:\Users\User\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\bin\roslyn\Microsoft.CSharp.Core.targets
@@ -245,4 +245,4 @@ C:\Users\User\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicaha
 C:\Users\User\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\BaseDatos.csprojResolveAssemblyReference.cache
 C:\Users\User\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\practicahadagrupal.dll
 C:\Users\User\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\obj\Debug\practicahadagrupal.pdb
->>>>>>> master
+

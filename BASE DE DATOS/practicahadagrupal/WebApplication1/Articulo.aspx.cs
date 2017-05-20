@@ -38,7 +38,8 @@ namespace WebApplication1
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-
+            //MARIO ESTE ES EL METODO QUE EJECUTA EL BOTON DE COMPRAR, DE MOMENTO NO HACE NADA
+            //AHORA YA TU, LE PONES LO QUE QUIERAS Y LLAMAS A LOS METODOS QUE NECESITES
         }
     }
 }
