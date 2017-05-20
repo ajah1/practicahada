@@ -202,7 +202,7 @@ namespace ClassLibrary.CAD
             }
         }
 
-        // función para modificar las vidas disponibles 
+        // función para modificar las vidas disponibles
         public void modificarVidas(EN.puntuacion p)
         {
             // 1. obtener vidas actuales
