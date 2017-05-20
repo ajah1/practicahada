@@ -13,11 +13,11 @@ using System.IO;
 namespace ClassLibrary.CAD{
 
     public class CADusuario{
-        
-        private SqlConnection conn = null;
 
-        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf; Integrated Security=true";
-        
+        private SqlConnection conn = null;
+        private string stringConexion = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\App_Data\database.mdf; Integrated Security = True";
+
+
         // constructor por defecto
         public CADusuario(){}
 
@@ -91,6 +91,7 @@ namespace ClassLibrary.CAD{
                     salida.Add(ur["descripcion"].ToString());
                     salida.Add(ur["email"].ToString());
                     salida.Add(ur["edad"].ToString());
+                    salida.Add(ur["contraseña"].ToString());
                 }
 
             }
@@ -163,8 +164,7 @@ namespace ClassLibrary.CAD{
 
             return encontrado;
         }
-
-
+        
         // modifica un usuario que exista en la base de datos
         public void update(EN.usuario user){
 
@@ -225,6 +225,21 @@ namespace ClassLibrary.CAD{
                 conn.Close();
             }
         }
+
+        // devuelve un booleano
+        public bool comprobarPass(string user, string pass)
+        {
+            bool correcta = false;
+
+            List<string> l = new List<string>();
+            l = read(user);
+
+            if (existe(user) == true)
+                if (pass == l[6])
+                    correcta = true;
         
+            return correcta;
+        }
+
     }
 }

@@ -8,7 +8,8 @@ using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
-
+using System.IO;
+using System.Configuration;
 
 namespace ClassLibrary.CAD
 {
@@ -19,8 +20,17 @@ namespace ClassLibrary.CAD
 		public CADpuntuacion()
 		{ }
 
-		private SqlConnection conn = null;
-        private string stringConexion = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\EPS\Desktop\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf; Integrated Security = True";
+        private static string entorno(string aux)
+        {
+            int x = aux.Length;
+            for (int j = 0; j < 3; j++) { while (x > 0) { x--; if (aux[x] == '\\') { aux = aux.Remove(x, 1); break; } else { aux = aux.Remove(x, 1); } } }
+            return aux + @"\WebApplication1\App_Data\database.mdf";
+        }
+
+        private SqlConnection conn = null;
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=" + entorno(Directory.GetCurrentDirectory()) + @";Integrated Security=true";
+
+        private string ConnectionString = "data source=.\\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\\Database.mdf;User Instance=true";
 
         // poner todo a cero
         public void remove(string usuario)
@@ -30,10 +40,13 @@ namespace ClassLibrary.CAD
 				string sentencia = @"UPDATE puntuacion  SET " +
 						"record = 0" + "vidas = 0" + "puntosTotales= 0 " + " WHERE pusuario " + usuario;
 
-				conn = new SqlConnection();
+                //conn = new SqlConnection();
 
-				conn.ConnectionString = stringConexion;
-				conn.Open();
+                //conn.ConnectionString = stringConexion;
+
+                SqlConnection c = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+
+                conn.Open();
 
 				SqlCommand com = new SqlCommand(sentencia, conn);
 				com.ExecuteNonQuery();
@@ -52,13 +65,12 @@ namespace ClassLibrary.CAD
 		// obtener la puntuación de un usuario
 		public int obtenerPuntuacion(string usuario)
 		{
-
 			int salida = 0;
 
 			try
 			{
 
-				string sentencia = "SELECT * FROM puntuacion " +
+				string sentencia = "SELECT puntosTotales FROM puntuacion " +
 								   "WHERE pusuario = '" + usuario + "'";
 
 				conn = new SqlConnection();
@@ -93,7 +105,7 @@ namespace ClassLibrary.CAD
 		{
 			int puntos = 0;
 
-			// puntos += suma + p.obtenerPuntuacion();
+			puntos += suma + p.obtenerPuntuacion();
 
 			try
 			{
@@ -103,10 +115,12 @@ namespace ClassLibrary.CAD
 						   " WHERE pusuario= '" + p.user + "'";
 
 
-				conn = new SqlConnection();
+                conn = new SqlConnection();
+                //SqlConnection coon = new SqlConnection(ConfigurationManager.ConnectionStrings[ConnectionString].ConnectionString);
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 
-
-				SqlCommand com = new SqlCommand(sentencia, conn);
+                SqlCommand com = new SqlCommand(sentencia, conn);
 				com.ExecuteNonQuery();
 			}
 			catch (Exception ex)
@@ -132,14 +146,17 @@ namespace ClassLibrary.CAD
 
 				conn = new SqlConnection();
 
+                conn.ConnectionString = stringConexion;
+                conn.Open();
 
-				SqlCommand com = new SqlCommand(sentencia, conn);
+                SqlCommand com = new SqlCommand(sentencia, conn);
 				SqlDataReader dr = com.ExecuteReader();
 
 
-				while (dr.Read())
+
+                while (dr.Read())
 				{
-					salida = " " + dr["record"].ToString() +
+					salida = dr["record"].ToString()+ " "+
 						dr["vidas"].ToString() + " " +
 						dr["puntosTotales"].ToString();
 				}
