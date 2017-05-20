@@ -88,4 +88,7 @@ Entrega Final
   * inicial: CAD y EN de datos bancarios
   * final: CAD y EN de datos bancarios, ligera contribución a CAD y EN de carrito en algunas consultas SQL, apuntar a base de datos con una ruta relativa al ejecutable del proyecto.
 
+-Laila Pascual:
+ * inicial: CAD y EN de puntuaciones y ranking.
+ * final: CAD y EN de puntuaciones y ranking, hilado de datos con la base de datos referente a mis CAD/EN.
   
