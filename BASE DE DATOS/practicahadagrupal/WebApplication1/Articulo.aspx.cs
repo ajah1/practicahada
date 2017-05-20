@@ -22,7 +22,7 @@ namespace WebApplication1
             Image1.ImageUrl = producto.Imagen;
             CantPrecio.Text = producto.Precio.ToString()+ " PUNTOS ";
 
-            if (Session["Login"] != null)
+            if (Session["user"] != null)
             {
                 Button1.Visible = true;
                 Label4.Visible = false;
