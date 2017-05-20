@@ -95,7 +95,7 @@ namespace ClassLibrary.EN{
 
         // inserta un usuario en la base de datos
         public void registrarUsuario() {
-
+            
             CAD.CADusuario cli = new CAD.CADusuario();
             cli.create(this);
         }
