@@ -131,7 +131,6 @@ namespace ClassLibrary.CAD
 		{
             List<string> salida = new List<string>();
 
-
             try
 			{
 

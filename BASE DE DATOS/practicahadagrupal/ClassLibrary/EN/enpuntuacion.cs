@@ -46,7 +46,6 @@ namespace ClassLibrary.EN{
         {
 			CAD.CADpuntuacion aux = new CAD.CADpuntuacion();
             return aux.obtenerPuntuacion(user);
-
 		}
 
 		public void updatePuntuacion() {

@@ -25,6 +25,8 @@ namespace WebApplication1
             useraux.Usuario = this.TextBox3.Text;
             useraux.Contrasena = this.TextBox2.Text;
 
+            Session["user"] = this.TextBox3.ToString();
+
             // en caso de intentar loguearse de nuevo, salta mensaje error
             if (Session["user"] != null && useraux.Usuario == Session["user"].ToString())
                 MessageBox.Show("Ya has iniciado sesion");
@@ -44,15 +46,35 @@ namespace WebApplication1
             // si es usuario...
             else if (useraux.existe() == true && useraux.comprobarPass() == true)
             {
-                Session["user"] = useraux.Usuario;
+
+                // si no tienes vidas te lleva a la tienda
+                puntuacion p = new puntuacion();
+                p.user = useraux.Usuario;
+
+                //si no tiene vidas, regidirigir a productos, para que compre
+                List<string> l = new List<string>();
+                l = p.readPuntuacion();
+
+                int vidasActuales = int.Parse(l[1]);
+
+                if (vidasActuales == 0)
+                {
+                    MessageBox.Show("Tiene 0 vidas, puedes compralas en la tienda :D");
+                    Response.Redirect("productos.aspx");
+                }
+
+                // si tienes vidas te lleva a game
                 Response.Redirect("game.aspx");
             }
             else
             {
+                Session["user"] = null;
                 MessageBox.Show("Hay campos incorrectos");
             }
 
         
+
+
         }
     }
 }
