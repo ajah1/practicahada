@@ -29,8 +29,4 @@ C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\Cl
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\bin\Debug\ClassLibrary.pdb
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\obj\Debug\ClassLibrary.dll
 C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\obj\Debug\ClassLibrary.pdb
-<<<<<<< HEAD
-C:\Users\Javier\Desktop\HadaWeb\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
-=======
 C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\ClassLibrary\obj\Debug\ClassLibrary.csprojResolveAssemblyReference.cache
->>>>>>> 48765284V

@@ -32,7 +32,7 @@ namespace WebApplication1
 
             p.user = Session["user"].ToString();
             p.p = valor1;
-            p.v = 2;
+            p.v = 1;
             p.updatePuntuacion();
             p.updateVidas();
         }

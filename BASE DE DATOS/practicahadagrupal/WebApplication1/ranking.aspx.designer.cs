@@ -22,6 +22,24 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.DataList DataList2;
         
         /// <summary>
+        /// Control datosRanking2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource datosRanking2;
+        
+        /// <summary>
+        /// Control datosranking.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource datosranking;
+        
+        /// <summary>
         /// Control SqlDataSource2.
         /// </summary>
         /// <remarks>
