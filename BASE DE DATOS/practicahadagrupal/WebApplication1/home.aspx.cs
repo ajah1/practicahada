@@ -12,16 +12,9 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             //prueba xavito
             Session["user"] = null;
-
-            // prueba alex
-            Session["usuario"] = "admin";
-=======
-            Session["usuario"] = null;
-
->>>>>>> origin/48781689T
+            
         }
     }
 }
