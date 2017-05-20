@@ -76,22 +76,44 @@ Dentro de la carpeta BASE DE DATOS/practicagrupalhada se encuentra la solucion c
 -----------------
 Entrega Final
 -----------------
+* Nuestro proyecto consistia en una pagina web en la cual se podian adquirir productos relacionados con el juego de "the snake", no han habido grandes cambios con lo que se pensaba hacer en un primer momento, salvo omision de algunas funciones extra. Hemos tenido problemas con un compañero del grupo, Mario Puche, por diversas razones, aunque mas o menos se han solucionado.
+
+
+
+* Instrucciones de instalación y requisitos: Instrucciones de instalacion no son requeridas, ya que no hace falta instalar ningun programa aparte de visual studio 2015. En cuanto a los requisitos, el unico posible requisito es que al momento de abrir la solucion con el visual studio se tenga que establecer la solucion de WebApplication como proyecto de inicio.
+ 
 
 -> Tareas hechas por cada miembro del grupo, planificación inicial y resultado final
 
- * Instrucciones de instalación y requisitos:
- 
-
 --Javier Ponce: 
   * inicial: CAD y EN de usuario, interfaces relacionadas con mis EN y CAD, proyecto de la base de datos, administrador web.
-  * final: CAD y EN de usuario, trabajo en equipo con puche con los EN y CAD de linea de pedido, interfaces de pagina de inicio,
+  * final: CAD y EN de usuario, trabajo en equipo con Mario Puche con los EN y CAD de linea de pedido, interfaces de pagina de inicio,
   login compartido con Alejandro y Jose Ignacio, perfil de usuario más sus implementaciones, registro pero sin contar las implementaciones, administrador y sus funciones y construccion de la base de datos.
   
 --Alfonso Aracil: 
   * inicial: CAD y EN de datos bancarios
-  * final: CAD y EN de datos bancarios, ligera contribución a CAD y EN de carrito en algunas consultas SQL, apuntar a base de datos con una ruta relativa al ejecutable del proyecto.
+  * final: CAD y EN de datos bancarios, ligera contribución a CAD y EN de carrito en algunas consultas SQL, apuntar a base de datos con una ruta relativa al ejecutable del proyecto, asi como parte de la redaccion de la presentacion.
 
 --Jose Ignacio:
   * inicial: CAD y EN de Productos, interfaces de los respectivos EN y CAD, construccion de la base de datos.
-  * final: CAD Y EN de Productos y Pedido, así como la interfaz de Producto y Articulo, la implementacion de Registro, muy levemente la interfaz y la implementacion de login y logout, construccion de la base de datos, asi como la conexion entre la base de datos y la pagina web.
+  * final: CAD Y EN de Productos y Pedido, así como la interfaz de Producto y Articulo, la implementacion de Registro, muy levemente la interfaz y la implementacion de login y logout, construccion de la base de datos y redaccion de la presentacion, asi como la conexion entre la base de datos y la pagina web.
   
+--Alejandro Aliaga:
+
+  * inicial: CAD/EN ProductoPopular, CAD/EN Promociones, base de datos, venta producto en la presentacion
+  * final: he participado: encuanto a en/cad productopopular, promociones, ranking, puntuacion, usuario, pedido además del
+  proyecto con las pruebas correspondientes
+  encuanto a web: game, parte codigo del login, parte codigo registro, una forma de conectar la base de datos
+  Además de buscar como crear los proyectos, información etc
+
+--Laila Pascual:
+ + * inicial: CAD y EN de puntuaciones y ranking.
+ + * final: CAD y EN de puntuaciones y ranking, hilado de datos con la base de datos referente a mis CAD/EN.
+  
+--Mario Puche:
+   *inicial: CAD y EN de stock asi como su interfaz e implementacion.
+   *final: CAD y EN de stock, aunque por decisiones del grupo se decidio que no se desarrollaria, CAD y EN de carrito asi como su implementacion e interfaz, powerpoint completo de la presentacion grupal, además de colaboracion con Javier Ponce respecto a los EN y CAD de linea de pedido.
+   
+   
+   
+   
