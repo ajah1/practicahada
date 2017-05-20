@@ -15,45 +15,32 @@ namespace ClassLibrary.CAD
 
 	public class CADpuntuacion
     {
-        /*
-        // obtiene la ruta del ejecutable del programa, y la cambia para que apunte a la base de datos
-        private static string entorno(string aux)
-        {
-            int x = aux.Length;
-            for (int j = 0; j < 3; j++) { while (x > 0) { x--; if (aux[x] == '\\') { aux = aux.Remove(x, 1); break; } else { aux = aux.Remove(x, 1); } } }
-            return aux + @"\WebApplication1\App_Data\database.mdf";
-        }
 
-        // inicializa una conexion, y apunta en stringConexion los parámetros de conexión
         private SqlConnection conn = null;
-        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=" + entorno(Directory.GetCurrentDirectory()) + @";Integrated Security=true";
-        */
-        private SqlConnection conexion = null;
+        private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\App_Data\database.mdf; Integrated Security=true";
+
         public CADpuntuacion()
 		{
-            conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["database"].ConnectionString);
         }
 
         // poner todo a cero
         public void remove(string usuario)
 		{
-            SqlConnection conn = conexion;
-            conn.Open();
 
             try
 			{
 				string sentencia = @"UPDATE puntuacion  SET " +
-						"record = 0" + "vidas = 0" + "puntosTotales= 0 " + " WHERE pusuario " + usuario;
+						"record = '0'" + "vidas = '0'" + "puntosTotales= '0' " + " WHERE pusuario '" + usuario + "'";
 
-                /*
+
                 conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
                 conn.Open();
-                 SqlConnection c = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
-                 */
 
                 SqlCommand com = new SqlCommand(sentencia, conn);
-				com.ExecuteNonQuery();
-			}
+                com.ExecuteNonQuery();
+            }
 			catch (Exception ex)
 			{
 				Console.WriteLine("Remove Puntuacion failed.");
@@ -69,22 +56,23 @@ namespace ClassLibrary.CAD
 		public int obtenerPuntuacion(string usuario)
 		{
 			int salida = 0;
-            SqlConnection conn = conexion;
-            conn.Open();
+
             try
 			{
 
 				string sentencia = "SELECT puntosTotales FROM puntuacion " +
 								   "WHERE pusuario = '" + usuario + "'";
-                /*
-				conn = new SqlConnection();
-				conn.Open();
-                */
-				SqlCommand com = new SqlCommand(sentencia, conn);
-				SqlDataReader dr = com.ExecuteReader();
+
+                conn = new SqlConnection();
+
+                conn.ConnectionString = stringConexion;
+                conn.Open();
+
+                SqlCommand com = new SqlCommand(sentencia, conn);
+                SqlDataReader dr = com.ExecuteReader();
 
 
-				while (dr.Read())
+                while (dr.Read())
 				{
 					salida = (int)dr["puntosTotales"];
 				}
@@ -109,8 +97,6 @@ namespace ClassLibrary.CAD
 			int puntos = 0;
 
 			puntos += suma + p.obtenerPuntuacion();
-            SqlConnection conn = conexion;
-            conn.Open();
 
             try
 			{
@@ -119,15 +105,15 @@ namespace ClassLibrary.CAD
 						   "puntosTotales = '" + puntos.ToString() + "'" +
 						   " WHERE pusuario= '" + p.user + "'";
 
-                /*
+
                 conn = new SqlConnection();
-                //SqlConnection coon = new SqlConnection(ConfigurationManager.ConnectionStrings[ConnectionString].ConnectionString);
+
                 conn.ConnectionString = stringConexion;
                 conn.Open();
-                */
+
                 SqlCommand com = new SqlCommand(sentencia, conn);
-				com.ExecuteNonQuery();
-			}
+                com.ExecuteNonQuery();
+            }
 			catch (Exception ex)
 			{
 				Console.WriteLine("Update Puntuacion failed.");
@@ -143,21 +129,19 @@ namespace ClassLibrary.CAD
 		public List<string> read(string usuario)
 		{
             List<string> salida = new List<string>();
-            SqlConnection conn = conexion;
-            conn.Open();
             try
 			{
 
 				string sentencia = "Select * from puntuacion " +
 								   "where pusuario = '" + usuario + "'";
-/*
-				conn = new SqlConnection();
+
+                conn = new SqlConnection();
 
                 conn.ConnectionString = stringConexion;
                 conn.Open();
-                */
+
                 SqlCommand com = new SqlCommand(sentencia, conn);
-				SqlDataReader dr = com.ExecuteReader();
+                SqlDataReader dr = com.ExecuteReader();
 
 
 
@@ -190,20 +174,18 @@ namespace ClassLibrary.CAD
         // update vidas
         public void updateVidas(EN.puntuacion p)
         {
-            SqlConnection conn = conexion;
-            conn.Open();
             try
             {
                 string sentencia = @"UPDATE puntuacion  SET " +
-                           "vidas = '" + p.p + "'" +
+                           "vidas = '" + p.v + "'" +
                            " WHERE pusuario= '" + p.user + "'";
 
-                /*
+
                 conn = new SqlConnection();
-                //SqlConnection coon = new SqlConnection(ConfigurationManager.ConnectionStrings[ConnectionString].ConnectionString);
+
                 conn.ConnectionString = stringConexion;
                 conn.Open();
-                */
+
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
             }
@@ -218,7 +200,7 @@ namespace ClassLibrary.CAD
             }
         }
 
-        // función para modificar las vidas disponibles
+        // función para modificar las vidas disponibles (updatevidas del en)
         public void modificarVidas(EN.puntuacion p)
         {
             // 1. obtener vidas actuales
@@ -228,7 +210,7 @@ namespace ClassLibrary.CAD
             int vidasActuales = int.Parse(l[1]);
 
             // 2. calcular vidas
-            int nuevoValor = vidasActuales + p.v;
+            int nuevoValor = vidasActuales - p.v;
             p.v = nuevoValor;
 
             // 3. actualizar base de datos
@@ -237,8 +219,6 @@ namespace ClassLibrary.CAD
 
         public void addUser(EN.puntuacion p)
         {
-            SqlConnection conn = conexion;
-            conn.Open();
             try
             {
                 string sentencia = "INSERT INTO puntuacion" +
@@ -248,15 +228,14 @@ namespace ClassLibrary.CAD
                             p.r.ToString() + "', '" +
                             p.v.ToString() + "', '" +
                             p.p.ToString() + "')";
-                /*
+
                 conn = new SqlConnection();
 
                 conn.ConnectionString = stringConexion;
                 conn.Open();
-                */
+
                 SqlCommand com = new SqlCommand(sentencia, conn);
                 com.ExecuteNonQuery();
-
             }
             catch (Exception ex)
             {

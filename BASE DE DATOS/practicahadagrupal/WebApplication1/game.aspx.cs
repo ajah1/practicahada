@@ -28,6 +28,8 @@ namespace WebApplication1
             p.user = Session["user"].ToString();
             p.p = (int)Valor1;
             p.updatePuntuacion();
+            p.v = 1;
+            p.updateVidas();
 
             return 0;
         }

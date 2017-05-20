@@ -20,14 +20,18 @@ namespace pruebasENCAD
             puntuacion p = new puntuacion();
 
             p.user = "alex";
-            p.p = 0;
-            p.r = 0;
-            p.v = 3;
+            p.v = 500;
+            p.p = 1000;
 
-            p.addUser();
+            CADpuntuacion pt = new CADpuntuacion();
+
+            //pt.updateVidas(p);
+
+            //p.updateVidas();
 
             Console.ReadLine();
 
+            //p.updatePuntuacion();
         }
 
     }

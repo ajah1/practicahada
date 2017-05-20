@@ -5,8 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 
-using System.Configuration;
-
 using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
@@ -19,10 +17,10 @@ namespace ClassLibrary.CAD{
     public class CADusuario
     {
 
-        // constructor por defecto
+        //constructor por defecto
+        // private SqlConnection conexion = null;
+        // private string stringConexion = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\App_Data\database.mdf; Integrated Security = True";
         private SqlConnection conexion = null;
-        //private string stringConexion = ""; //@"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\JOSEIGNACIO\Desktop\HADA\PRACTICA GRUPAL\practicahada\BASE DE DATOS\practicahadagrupal\practicahadagrupal\App_Data\Database1.mdf; Integrated Security = True";
-
 
         public CADusuario()
         {
