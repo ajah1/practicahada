@@ -14,6 +14,7 @@ namespace ClassLibrary.CAD{
 
     public class CADusuario{
 
+
        private SqlConnection conn = null;
        private string stringConexion = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\alihyder\Documents\practicahada\BASE DE DATOS\practicahadagrupal\WebApplication1\App_Data\database.mdf; Integrated Security = True";
 
@@ -26,6 +27,7 @@ namespace ClassLibrary.CAD{
 
         //private SqlConnection conn = null;
         //private string stringConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDBFilename=" + entorno(Directory.GetCurrentDirectory()) + @";Integrated Security=true";
+
 
 
         // constructor por defecto

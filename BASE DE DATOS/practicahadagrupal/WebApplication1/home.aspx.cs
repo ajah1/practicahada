@@ -14,7 +14,6 @@ namespace WebApplication1
         {
             //prueba xavito
             Session["user"] = null;
-            
         }
     }
 }
