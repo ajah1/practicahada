@@ -1,4 +1,4 @@
-# practicahada
+﻿# practicahada
 practica grupal hada
 
 Proyecto en grupo: Aplicación web
@@ -116,4 +116,5 @@ Entrega Final
    
    
    
+   *La memoria de la presentacion asi como el pdf del powerpoint se encuentra en la carpeta presentacion.
    

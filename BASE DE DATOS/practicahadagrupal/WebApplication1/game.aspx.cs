@@ -16,14 +16,19 @@ namespace WebApplication1
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["user"] != null)
+            {
             puntuacion p = new puntuacion();
             p.user = Session["user"].ToString();
             p.p = 10;
             p.v = 1;
             p.updatePuntuacion();
             p.updateVidas();
-
+            }
+            else
+            {
+                Response.Redirect("login.aspx");
+            }
         }
 
         public void Sumar(int valor1)
